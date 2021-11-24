@@ -6,5 +6,6 @@
 3. 把所有firebase permission 刪除
 4. 再recompile apk即可
 
-update log :  
+update log :   
+  
 24/11/2021 因appupdate 更新了2.1.5
