@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Catalyst.LogBox" parent="@style/Theme.Catalyst">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Catalyst.LogBox</item>
+        <item name="android:inAnimation">@android:anim/fade_in</item>
+        <item name="android:outAnimation">@android:anim/fade_out</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+</resources>

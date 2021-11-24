@@ -1,0 +1,79 @@
+.class Lcom/peel/react/b$a;
+.super Ljava/lang/Object;
+.source "TcpSocketManager.java"
+
+# interfaces
+.implements Lg/g/a/q/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/peel/react/b;->j(Ljava/lang/Integer;Lg/g/a/f;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Ljava/lang/Integer;
+
+.field final synthetic b:Lcom/peel/react/b;
+
+
+# direct methods
+.method constructor <init>(Lcom/peel/react/b;Ljava/lang/Integer;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/peel/react/b$a;->b:Lcom/peel/react/b;
+
+    iput-object p2, p0, Lcom/peel/react/b$a;->a:Ljava/lang/Integer;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Exception;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/peel/react/b$a;->b:Lcom/peel/react/b;
+
+    invoke-static {v0}, Lcom/peel/react/b;->a(Lcom/peel/react/b;)Ljava/lang/ref/WeakReference;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/peel/react/a;
+
+    if-eqz v0, :cond_1
+
+    .line 2
+    iget-object v1, p0, Lcom/peel/react/b$a;->a:Ljava/lang/Integer;
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-interface {v0, v1, p1}, Lcom/peel/react/a;->onClose(Ljava/lang/Integer;Ljava/lang/String;)V
+
+    :cond_1
+    return-void
+.end method

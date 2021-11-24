@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/pickerWrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/android_native_theme" android:id="@id/year" android:tag="year" style="@style/android_native" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/android_native_theme" android:id="@id/month" android:tag="month" style="@style/android_native" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/android_native_theme" android:id="@id/date" android:tag="date" style="@style/android_native_small" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/android_native_theme" android:id="@id/day" android:tag="day" style="@style/android_native" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/android_native_theme" android:id="@id/hour" android:tag="hour" style="@style/android_native_small" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/android_native_theme" android:id="@id/minutes" android:tag="minutes" style="@style/android_native_small" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/android_native_theme" android:id="@id/ampm" android:tag="ampm" style="@style/android_native" />
+    </LinearLayout>
+</LinearLayout>

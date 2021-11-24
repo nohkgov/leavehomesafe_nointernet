@@ -1,0 +1,177 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: LeaveHomeSafe_2.1.5.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- assets/databases/venues_ts.txt
+- assets/net/time4j/calendar/names/buddhist_bs.properties
+- assets/net/time4j/calendar/names/buddhist_en.properties
+- assets/net/time4j/calendar/names/buddhist_eu.properties
+- assets/net/time4j/calendar/names/buddhist_hr.properties
+- assets/net/time4j/calendar/names/buddhist_it.properties
+- assets/net/time4j/calendar/names/buddhist_km.properties
+- assets/net/time4j/calendar/names/buddhist_lb.properties
+- assets/net/time4j/calendar/names/buddhist_lo.properties
+- assets/net/time4j/calendar/names/buddhist_sr.properties
+- assets/net/time4j/calendar/names/coptic_am.properties
+- assets/net/time4j/calendar/names/generic_es_DO.properties
+- assets/net/time4j/calendar/names/generic_es_MX.properties
+- assets/net/time4j/calendar/names/generic_es_US.properties
+- assets/net/time4j/calendar/names/generic_pt_PT.properties
+- assets/net/time4j/calendar/names/hebrew_bs.properties
+- assets/net/time4j/calendar/names/hebrew_hr.properties
+- assets/net/time4j/calendar/names/hebrew_it.properties
+- assets/net/time4j/calendar/names/hebrew_lb.properties
+- assets/net/time4j/calendar/names/hebrew_ug.properties
+- assets/net/time4j/calendar/names/islamic_en.properties
+- assets/net/time4j/calendar/names/islamic_it.properties
+- assets/net/time4j/calendar/names/islamic_lb.properties
+- assets/net/time4j/calendar/names/islamic_pt_PT.properties
+- assets/net/time4j/calendar/names/islamic_vi.properties
+- assets/net/time4j/calendar/names/japanese_pt_PT.properties
+- assets/net/time4j/calendar/names/roc_lo.properties
+- assets/net/time4j/calendar/names/roc_pt_PT.properties
+- assets/net/time4j/i18n/numbers/symbol_af.properties
+- assets/net/time4j/i18n/numbers/symbol_am.properties
+- assets/net/time4j/i18n/numbers/symbol_ar.properties
+- assets/net/time4j/i18n/numbers/symbol_ar_DZ.properties
+- assets/net/time4j/i18n/numbers/symbol_ar_EH.properties
+- assets/net/time4j/i18n/numbers/symbol_ar_LY.properties
+- assets/net/time4j/i18n/numbers/symbol_ar_MA.properties
+- assets/net/time4j/i18n/numbers/symbol_ar_TN.properties
+- assets/net/time4j/i18n/numbers/symbol_ast.properties
+- assets/net/time4j/i18n/numbers/symbol_az.properties
+- assets/net/time4j/i18n/numbers/symbol_be.properties
+- assets/net/time4j/i18n/numbers/symbol_bg.properties
+- assets/net/time4j/i18n/numbers/symbol_br.properties
+- assets/net/time4j/i18n/numbers/symbol_bs.properties
+- assets/net/time4j/i18n/numbers/symbol_ca.properties
+- assets/net/time4j/i18n/numbers/symbol_cs.properties
+- assets/net/time4j/i18n/numbers/symbol_cy.properties
+- assets/net/time4j/i18n/numbers/symbol_da.properties
+- assets/net/time4j/i18n/numbers/symbol_de.properties
+- assets/net/time4j/i18n/numbers/symbol_ee.properties
+- assets/net/time4j/i18n/numbers/symbol_el.properties
+- assets/net/time4j/i18n/numbers/symbol_en.properties
+- assets/net/time4j/i18n/numbers/symbol_eo.properties
+- assets/net/time4j/i18n/numbers/symbol_es.properties
+- assets/net/time4j/i18n/numbers/symbol_et.properties
+- assets/net/time4j/i18n/numbers/symbol_eu.properties
+- assets/net/time4j/i18n/numbers/symbol_fi.properties
+- assets/net/time4j/i18n/numbers/symbol_fil.properties
+- assets/net/time4j/i18n/numbers/symbol_fo.properties
+- assets/net/time4j/i18n/numbers/symbol_fr.properties
+- assets/net/time4j/i18n/numbers/symbol_fy.properties
+- assets/net/time4j/i18n/numbers/symbol_ga.properties
+- assets/net/time4j/i18n/numbers/symbol_gd.properties
+- assets/net/time4j/i18n/numbers/symbol_gl.properties
+- assets/net/time4j/i18n/numbers/symbol_gu.properties
+- assets/net/time4j/i18n/numbers/symbol_hi.properties
+- assets/net/time4j/i18n/numbers/symbol_hr.properties
+- assets/net/time4j/i18n/numbers/symbol_hu.properties
+- assets/net/time4j/i18n/numbers/symbol_hy.properties
+- assets/net/time4j/i18n/numbers/symbol_id.properties
+- assets/net/time4j/i18n/numbers/symbol_is.properties
+- assets/net/time4j/i18n/numbers/symbol_it.properties
+- assets/net/time4j/i18n/numbers/symbol_ja.properties
+- assets/net/time4j/i18n/numbers/symbol_ka.properties
+- assets/net/time4j/i18n/numbers/symbol_kab.properties
+- assets/net/time4j/i18n/numbers/symbol_kk.properties
+- assets/net/time4j/i18n/numbers/symbol_km.properties
+- assets/net/time4j/i18n/numbers/symbol_kn.properties
+- assets/net/time4j/i18n/numbers/symbol_ko.properties
+- assets/net/time4j/i18n/numbers/symbol_ky.properties
+- assets/net/time4j/i18n/numbers/symbol_lb.properties
+- assets/net/time4j/i18n/numbers/symbol_lo.properties
+- assets/net/time4j/i18n/numbers/symbol_lt.properties
+- assets/net/time4j/i18n/numbers/symbol_lv.properties
+- assets/net/time4j/i18n/numbers/symbol_mk.properties
+- assets/net/time4j/i18n/numbers/symbol_ml.properties
+- assets/net/time4j/i18n/numbers/symbol_mn.properties
+- assets/net/time4j/i18n/numbers/symbol_ms.properties
+- assets/net/time4j/i18n/numbers/symbol_mt.properties
+- assets/net/time4j/i18n/numbers/symbol_nb.properties
+- assets/net/time4j/i18n/numbers/symbol_nl.properties
+- assets/net/time4j/i18n/numbers/symbol_nn.properties
+- assets/net/time4j/i18n/numbers/symbol_or.properties
+- assets/net/time4j/i18n/numbers/symbol_pa.properties
+- assets/net/time4j/i18n/numbers/symbol_pl.properties
+- assets/net/time4j/i18n/numbers/symbol_pt.properties
+- assets/net/time4j/i18n/numbers/symbol_ro.properties
+- assets/net/time4j/i18n/numbers/symbol_ru.properties
+- assets/net/time4j/i18n/numbers/symbol_sd.properties
+- assets/net/time4j/i18n/numbers/symbol_si.properties
+- assets/net/time4j/i18n/numbers/symbol_sk.properties
+- assets/net/time4j/i18n/numbers/symbol_sl.properties
+- assets/net/time4j/i18n/numbers/symbol_sq.properties
+- assets/net/time4j/i18n/numbers/symbol_sr.properties
+- assets/net/time4j/i18n/numbers/symbol_sv.properties
+- assets/net/time4j/i18n/numbers/symbol_sw.properties
+- assets/net/time4j/i18n/numbers/symbol_ta.properties
+- assets/net/time4j/i18n/numbers/symbol_te.properties
+- assets/net/time4j/i18n/numbers/symbol_th.properties
+- assets/net/time4j/i18n/numbers/symbol_tk.properties
+- assets/net/time4j/i18n/numbers/symbol_to.properties
+- assets/net/time4j/i18n/numbers/symbol_tr.properties
+- assets/net/time4j/i18n/numbers/symbol_ug.properties
+- assets/net/time4j/i18n/numbers/symbol_uk.properties
+- assets/net/time4j/i18n/numbers/symbol_ur_IN.properties
+- assets/net/time4j/i18n/numbers/symbol_uz.properties
+- assets/net/time4j/i18n/numbers/symbol_vi.properties
+- assets/net/time4j/i18n/numbers/symbol_zh.properties
+- assets/net/time4j/i18n/numbers/symbol_zu.properties
+- assets/net/time4j/i18n/units/upattern_en_GB.properties
+- png
+- jpg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '30'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: '8'
+  common.properties: '8'
+  firebase-annotations.properties: '8'
+  firebase-common.properties: '8'
+  firebase-components.properties: '8'
+  firebase-datatransport.properties: '8'
+  firebase-encoders-json.properties: '8'
+  firebase-encoders.properties: '8'
+  firebase-iid-interop.properties: '8'
+  firebase-iid.properties: '8'
+  firebase-installations-interop.properties: '8'
+  firebase-installations.properties: '8'
+  firebase-measurement-connector.properties: '8'
+  firebase-messaging.properties: '8'
+  play-services-auth-api-phone.properties: '8'
+  play-services-auth-base.properties: '8'
+  play-services-auth.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-clearcut.properties: '8'
+  play-services-cloud-messaging.properties: '8'
+  play-services-flags.properties: '8'
+  play-services-iid.properties: '8'
+  play-services-mlkit-text-recognition.properties: '8'
+  play-services-phenotype.properties: '8'
+  play-services-stats.properties: '8'
+  play-services-tasks.properties: '8'
+  play-services-vision-common.properties: '8'
+  play-services-vision.properties: '8'
+  transport-api.properties: '8'
+  transport-backend-cct.properties: '8'
+  transport-runtime.properties: '8'
+  vision-common.properties: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.5.0
+versionInfo:
+  versionCode: '134'
+  versionName: 2.1.5
