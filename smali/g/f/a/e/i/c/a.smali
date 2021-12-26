@@ -1,20 +1,23 @@
 .class public Lg/f/a/e/i/c/a;
-.super Landroid/os/Binder;
-.source "com.google.android.gms:play-services-base@@17.4.0"
+.super Ljava/lang/Object;
 
 # interfaces
 .implements Landroid/os/IInterface;
 
 
+# instance fields
+.field private final a:Landroid/os/IBinder;
+
+
 # direct methods
-.method protected constructor <init>(Ljava/lang/String;)V
+.method protected constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/os/Binder;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {p0, p0, p1}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    iput-object p1, p0, Lg/f/a/e/i/c/a;->a:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -22,65 +25,10 @@
 
 # virtual methods
 .method public asBinder()Landroid/os/IBinder;
-    .locals 0
-
-    return-object p0
-.end method
-
-.method protected k0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    const p0, 0x0
-
-    throw p0
-.end method
-
-.method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    const v0, 0xffffff
-
-    if-le p1, v0, :cond_0
 
     .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    iget-object v0, p0, Lg/f/a/e/i/c/a;->a:Landroid/os/IBinder;
 
-    move-result v0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Landroid/os/Binder;->getInterfaceDescriptor()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_1
-
-    const/4 p1, 0x1
-
-    return p1
-
-    .line 3
-    :cond_1
-    invoke-virtual {p0, p1, p2, p3, p4}, Lg/f/a/e/i/c/a;->k0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-
-    move-result p1
-
-    return p1
+    return-object v0
 .end method

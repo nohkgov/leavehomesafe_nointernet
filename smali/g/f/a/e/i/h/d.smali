@@ -1,54 +1,35 @@
 .class public final Lg/f/a/e/i/h/d;
 .super Ljava/lang/Object;
+.source "com.google.firebase:firebase-messaging@@21.1.0"
+
+
+# static fields
+.field private static final a:Lg/f/a/e/i/h/a;
+
+.field private static volatile b:Lg/f/a/e/i/h/a;
 
 
 # direct methods
-.method public static a(Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+.method static constructor <clinit>()V
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/concurrent/Callable<",
-            "TT;>;)TT;"
-        }
-    .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
+    new-instance v0, Lg/f/a/e/i/h/c;
 
-    .line 1
-    invoke-static {}, Landroid/os/StrictMode;->getThreadPolicy()Landroid/os/StrictMode$ThreadPolicy;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    invoke-direct {v0, v1}, Lg/f/a/e/i/h/c;-><init>(Lg/f/a/e/i/h/b;)V
 
-    .line 2
-    :try_start_0
-    sget-object v1, Landroid/os/StrictMode$ThreadPolicy;->LAX:Landroid/os/StrictMode$ThreadPolicy;
+    sput-object v0, Lg/f/a/e/i/h/d;->a:Lg/f/a/e/i/h/a;
 
-    invoke-static {v1}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+    sput-object v0, Lg/f/a/e/i/h/d;->b:Lg/f/a/e/i/h/a;
 
-    .line 3
-    invoke-interface {p0}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
+    return-void
+.end method
 
-    move-result-object p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+.method public static a()Lg/f/a/e/i/h/a;
+    .locals 1
 
-    .line 4
-    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+    sget-object v0, Lg/f/a/e/i/h/d;->b:Lg/f/a/e/i/h/a;
 
-    return-object p0
-
-    :catchall_0
-    move-exception p0
-
-    .line 5
-    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
-
-    throw p0
+    return-object v0
 .end method

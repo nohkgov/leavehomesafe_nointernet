@@ -1,11 +1,11 @@
 .class Lcom/swmansion/reanimated/f/b$a;
-.super Ld/r/y;
+.super Ld/s/y;
 .source "Scale.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/swmansion/reanimated/f/b;->t0(Landroid/view/View;FFLd/r/d0;)Landroid/animation/Animator;
+    value = Lcom/swmansion/reanimated/f/b;->t0(Landroid/view/View;FFLd/s/d0;)Landroid/animation/Animator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -37,14 +37,14 @@
 
     iput p4, p0, Lcom/swmansion/reanimated/f/b$a;->c:F
 
-    invoke-direct {p0}, Ld/r/y;-><init>()V
+    invoke-direct {p0}, Ld/s/y;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public e(Ld/r/x;)V
+.method public e(Ld/s/x;)V
     .locals 2
 
     .line 1
@@ -62,7 +62,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setScaleY(F)V
 
     .line 3
-    invoke-virtual {p1, p0}, Ld/r/x;->W(Ld/r/x$f;)Ld/r/x;
+    invoke-virtual {p1, p0}, Ld/s/x;->W(Ld/s/x$f;)Ld/s/x;
 
     return-void
 .end method

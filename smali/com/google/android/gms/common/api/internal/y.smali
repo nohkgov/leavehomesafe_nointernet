@@ -1,113 +1,70 @@
-.class public final Lcom/google/android/gms/common/api/internal/y;
-.super Landroid/content/BroadcastReceiver;
+.class final Lcom/google/android/gms/common/api/internal/y;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.4.0"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private a:Landroid/content/Context;
-
-.field private final b:Lcom/google/android/gms/common/api/internal/a0;
+.field private final synthetic c:Lcom/google/android/gms/common/api/internal/x;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/api/internal/a0;)V
+.method constructor <init>(Lcom/google/android/gms/common/api/internal/x;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/y;->c:Lcom/google/android/gms/common/api/internal/x;
 
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/y;->b:Lcom/google/android/gms/common/api/internal/a0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a()V
-    .locals 1
-
-    monitor-enter p0
+.method public final run()V
+    .locals 3
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/y;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/y;->c:Lcom/google/android/gms/common/api/internal/x;
 
-    if-eqz v0, :cond_0
+    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/x;->a:Lcom/google/android/gms/common/api/internal/f$a;
+
+    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/f$a;->w(Lcom/google/android/gms/common/api/internal/f$a;)Lcom/google/android/gms/common/api/a$f;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/y;->c:Lcom/google/android/gms/common/api/internal/x;
+
+    iget-object v1, v1, Lcom/google/android/gms/common/api/internal/x;->a:Lcom/google/android/gms/common/api/internal/f$a;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/y;->a:Landroid/content/Context;
+    invoke-static {v1}, Lcom/google/android/gms/common/api/internal/f$a;->w(Lcom/google/android/gms/common/api/internal/f$a;)Lcom/google/android/gms/common/api/a$f;
 
-    invoke-virtual {v0, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    move-result-object v1
 
-    :cond_0
-    const/4 v0, 0x0
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 3
-    iput-object v0, p0, Lcom/google/android/gms/common/api/internal/y;->a:Landroid/content/Context;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result-object v1
 
-    .line 4
-    monitor-exit p0
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    return-void
+    move-result-object v1
 
-    :catchall_0
-    move-exception v0
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    monitor-exit p0
+    move-result-object v1
 
-    throw v0
-.end method
+    const-string v2, " disconnecting because it was signed out."
 
-.method public final b(Landroid/content/Context;)V
-    .locals 0
+    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/y;->a:Landroid/content/Context;
-
-    return-void
-.end method
-
-.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    invoke-virtual {p1}, Landroid/net/Uri;->getSchemeSpecificPart()Ljava/lang/String;
-
-    move-result-object p1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    const-string p2, "com.google.android.gms"
+    move-result-object v1
 
     .line 3
-    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v0, v1}, Lcom/google/android/gms/common/api/a$f;->e(Ljava/lang/String;)V
 
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    .line 4
-    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/y;->b:Lcom/google/android/gms/common/api/internal/a0;
-
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/a0;->a()V
-
-    .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/internal/y;->a()V
-
-    :cond_1
     return-void
 .end method

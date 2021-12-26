@@ -1,20 +1,31 @@
-.class public final Lg/f/a/e/i/m/a;
-.super Landroid/os/Handler;
-.source "com.google.android.gms:play-services-tasks@@17.2.0"
+.class public Lg/f/a/e/i/m/a;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# instance fields
+.field private final a:Landroid/os/IBinder;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method protected constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lg/f/a/e/i/m/a;->a:Landroid/os/IBinder;
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/os/Looper;)V
-    .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+# virtual methods
+.method public asBinder()Landroid/os/IBinder;
+    .locals 1
 
-    return-void
+    iget-object v0, p0, Lg/f/a/e/i/m/a;->a:Landroid/os/IBinder;
+
+    return-object v0
 .end method

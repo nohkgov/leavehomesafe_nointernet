@@ -68,12 +68,12 @@
     const-wide/32 v3, 0x100001
 
     .line 4
-    invoke-static {v0, v3, v4}, Lg/f/a/e/i/g/g;->b(Ljava/io/InputStream;J)Ljava/io/InputStream;
+    invoke-static {v0, v3, v4}, Lg/f/a/e/i/h/g;->b(Ljava/io/InputStream;J)Ljava/io/InputStream;
 
     move-result-object v1
 
     .line 5
-    invoke-static {v1}, Lg/f/a/e/i/g/g;->a(Ljava/io/InputStream;)[B
+    invoke-static {v1}, Lg/f/a/e/i/h/g;->a(Ljava/io/InputStream;)[B
 
     move-result-object v1
     :try_end_0
@@ -170,7 +170,7 @@
     :catchall_1
     move-exception v0
 
-    invoke-static {v1, v0}, Lg/f/a/e/i/g/o;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0}, Lg/f/a/e/i/h/o;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     :cond_3
     :goto_0
@@ -405,7 +405,7 @@
     iget-object v0, p0, Lcom/google/firebase/messaging/f0;->e:Ljava/io/InputStream;
 
     .line 1
-    invoke-static {v0}, Lg/f/a/e/i/g/h;->a(Ljava/io/InputStream;)V
+    invoke-static {v0}, Lg/f/a/e/i/h/h;->a(Ljava/io/InputStream;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 

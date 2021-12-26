@@ -165,28 +165,28 @@
 
 .field public static final select_dialog_singlechoice_material:I = 0x7f0d0063
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0064
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0066
 
-.field public static final test_action_chip:I = 0x7f0d0066
+.field public static final test_action_chip:I = 0x7f0d0068
 
-.field public static final test_design_checkbox:I = 0x7f0d0067
+.field public static final test_design_checkbox:I = 0x7f0d0069
 
-.field public static final test_reflow_chipgroup:I = 0x7f0d0068
+.field public static final test_reflow_chipgroup:I = 0x7f0d006a
 
-.field public static final test_toolbar:I = 0x7f0d0069
+.field public static final test_toolbar:I = 0x7f0d006b
 
-.field public static final test_toolbar_custom_background:I = 0x7f0d006a
+.field public static final test_toolbar_custom_background:I = 0x7f0d006c
 
-.field public static final test_toolbar_elevation:I = 0x7f0d006b
+.field public static final test_toolbar_elevation:I = 0x7f0d006d
 
-.field public static final test_toolbar_surface:I = 0x7f0d006c
+.field public static final test_toolbar_surface:I = 0x7f0d006e
 
-.field public static final text_view_with_line_height_from_appearance:I = 0x7f0d006d
+.field public static final text_view_with_line_height_from_appearance:I = 0x7f0d006f
 
-.field public static final text_view_with_line_height_from_layout:I = 0x7f0d006e
+.field public static final text_view_with_line_height_from_layout:I = 0x7f0d0070
 
-.field public static final text_view_with_line_height_from_style:I = 0x7f0d006f
+.field public static final text_view_with_line_height_from_style:I = 0x7f0d0071
 
-.field public static final text_view_with_theme_line_height:I = 0x7f0d0070
+.field public static final text_view_with_theme_line_height:I = 0x7f0d0072
 
-.field public static final text_view_without_line_height:I = 0x7f0d0071
+.field public static final text_view_without_line_height:I = 0x7f0d0073

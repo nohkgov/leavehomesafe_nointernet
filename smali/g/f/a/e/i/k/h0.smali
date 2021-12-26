@@ -1,26 +1,40 @@
-.class public abstract Lg/f/a/e/i/k/h0;
+.class final Lg/f/a/e/i/k/h0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 # interfaces
-.implements Ljava/util/Iterator;
+.implements Lcom/google/firebase/m/d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<E:",
         "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Iterator<",
-        "TE;>;"
+        "Lcom/google/firebase/m/d<",
+        "Lg/f/a/e/i/k/k;",
+        ">;"
     }
 .end annotation
 
 
+# static fields
+.field static final a:Lg/f/a/e/i/k/h0;
+
+
 # direct methods
-.method protected constructor <init>()V
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lg/f/a/e/i/k/h0;
+
+    invoke-direct {v0}, Lg/f/a/e/i/k/h0;-><init>()V
+
+    sput-object v0, Lg/f/a/e/i/k/h0;->a:Lg/f/a/e/i/k/h0;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -30,15 +44,19 @@
 
 
 # virtual methods
-.method public final remove()V
-    .locals 1
-    .annotation runtime Ljava/lang/Deprecated;
+.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
     .end annotation
 
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    check-cast p1, Lg/f/a/e/i/k/k;
 
-    .line 1
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    check-cast p2, Lcom/google/firebase/m/e;
 
-    throw v0
+    const/4 p1, 0x0
+
+    throw p1
 .end method

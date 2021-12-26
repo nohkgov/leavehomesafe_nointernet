@@ -1,87 +1,21 @@
-.class final Lg/f/a/e/i/k/g;
-.super Ljava/util/AbstractCollection;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
-
-
-# instance fields
-.field final synthetic c:Lg/f/a/e/i/k/h;
-
-
-# direct methods
-.method constructor <init>(Lg/f/a/e/i/k/h;)V
-    .locals 0
-
-    iput-object p1, p0, Lg/f/a/e/i/k/g;->c:Lg/f/a/e/i/k/h;
-
-    .line 1
-    invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
-
-    return-void
-.end method
+.class public final Lg/f/a/e/i/k/g;
+.super Ljava/lang/Object;
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 
 # virtual methods
-.method public final clear()V
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 0
 
-    iget-object v0, p0, Lg/f/a/e/i/k/g;->c:Lg/f/a/e/i/k/h;
+    const/4 p1, 0x0
 
-    .line 1
-    invoke-virtual {v0}, Lg/f/a/e/i/k/h;->clear()V
-
-    return-void
+    throw p1
 .end method
 
-.method public final iterator()Ljava/util/Iterator;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Iterator;"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lg/f/a/e/i/k/g;->c:Lg/f/a/e/i/k/h;
-
-    .line 1
-    invoke-virtual {v0}, Lg/f/a/e/i/k/h;->c()Ljava/util/Map;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 2
-    invoke-interface {v1}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v1, Lg/f/a/e/i/k/b;
-
-    .line 3
-    invoke-direct {v1, v0}, Lg/f/a/e/i/k/b;-><init>(Lg/f/a/e/i/k/h;)V
-
-    move-object v0, v1
-
-    :goto_0
-    return-object v0
-.end method
-
-.method public final size()I
+.method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lg/f/a/e/i/k/g;->c:Lg/f/a/e/i/k/h;
+    const/4 v0, 0x0
 
-    .line 1
-    invoke-virtual {v0}, Lg/f/a/e/i/k/h;->size()I
-
-    move-result v0
-
-    return v0
+    throw v0
 .end method

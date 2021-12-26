@@ -1,62 +1,44 @@
-.class final Lg/f/a/e/i/j/f0;
-.super Ljava/lang/Object;
-.source "com.google.mlkit:vision-common@@16.2.0"
-
-# interfaces
-.implements Lcom/google/firebase/m/d;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/j/i;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field static final a:Lg/f/a/e/i/j/f0;
+.class public final Lg/f/a/e/i/j/f0;
+.super Lg/f/a/e/i/j/a0;
+.source "com.google.mlkit:common@@17.1.0"
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public static a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 2
+    .param p0    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
 
-    new-instance v0, Lg/f/a/e/i/j/f0;
+    const/4 v0, 0x0
 
-    invoke-direct {v0}, Lg/f/a/e/i/j/f0;-><init>()V
+    const/4 v1, 0x1
 
-    sput-object v0, Lg/f/a/e/i/j/f0;->a:Lg/f/a/e/i/j/f0;
+    if-eq p0, p1, :cond_1
 
-    return-void
-.end method
+    if-eqz p0, :cond_2
 
-.method private constructor <init>()V
-    .locals 0
+    .line 1
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result p0
 
-    return-void
-.end method
+    if-eqz p0, :cond_0
 
+    goto :goto_0
 
-# virtual methods
-.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    :cond_0
+    return v0
 
-    check-cast p1, Lg/f/a/e/i/j/i;
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
 
-    check-cast p2, Lcom/google/firebase/m/e;
-
-    const/4 p1, 0x0
-
-    throw p1
+    :cond_2
+    return v0
 .end method

@@ -1,44 +1,77 @@
 .class public final Lg/f/a/e/i/a/b;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-auth@@19.0.0"
+.source "com.google.android.gms:play-services-auth-api-phone@@17.4.0"
 
 
 # static fields
-.field private static final a:Ljava/util/Random;
+.field public static final a:Lg/f/a/e/e/c;
+
+.field public static final b:Lg/f/a/e/e/c;
+
+.field public static final c:Lg/f/a/e/e/c;
+
+.field public static final d:[Lg/f/a/e/e/c;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 4
 
     .line 1
-    new-instance v0, Ljava/util/Random;
+    new-instance v0, Lg/f/a/e/e/c;
 
-    invoke-direct {v0}, Ljava/util/Random;-><init>()V
+    const-string v1, "sms_code_autofill"
 
-    sput-object v0, Lg/f/a/e/i/a/b;->a:Ljava/util/Random;
+    const-wide/16 v2, 0x2
 
-    return-void
-.end method
+    invoke-direct {v0, v1, v2, v3}, Lg/f/a/e/e/c;-><init>(Ljava/lang/String;J)V
 
-.method public static a()Ljava/lang/String;
-    .locals 2
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [B
-
-    .line 1
-    sget-object v1, Lg/f/a/e/i/a/b;->a:Ljava/util/Random;
-
-    invoke-virtual {v1, v0}, Ljava/util/Random;->nextBytes([B)V
-
-    const/16 v1, 0xb
+    sput-object v0, Lg/f/a/e/i/a/b;->a:Lg/f/a/e/e/c;
 
     .line 2
-    invoke-static {v0, v1}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+    new-instance v0, Lg/f/a/e/e/c;
 
-    move-result-object v0
+    const-string v1, "sms_retrieve"
 
-    return-object v0
+    const-wide/16 v2, 0x1
+
+    invoke-direct {v0, v1, v2, v3}, Lg/f/a/e/e/c;-><init>(Ljava/lang/String;J)V
+
+    sput-object v0, Lg/f/a/e/i/a/b;->b:Lg/f/a/e/e/c;
+
+    .line 3
+    new-instance v0, Lg/f/a/e/e/c;
+
+    const-string v1, "user_consent"
+
+    const-wide/16 v2, 0x3
+
+    invoke-direct {v0, v1, v2, v3}, Lg/f/a/e/e/c;-><init>(Ljava/lang/String;J)V
+
+    sput-object v0, Lg/f/a/e/i/a/b;->c:Lg/f/a/e/e/c;
+
+    const/4 v1, 0x3
+
+    new-array v1, v1, [Lg/f/a/e/e/c;
+
+    .line 4
+    sget-object v2, Lg/f/a/e/i/a/b;->a:Lg/f/a/e/e/c;
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    sget-object v2, Lg/f/a/e/i/a/b;->b:Lg/f/a/e/e/c;
+
+    const/4 v3, 0x1
+
+    aput-object v2, v1, v3
+
+    const/4 v2, 0x2
+
+    aput-object v0, v1, v2
+
+    sput-object v1, Lg/f/a/e/i/a/b;->d:[Lg/f/a/e/e/c;
+
+    return-void
 .end method

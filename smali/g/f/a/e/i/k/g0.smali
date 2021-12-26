@@ -1,115 +1,62 @@
-.class abstract Lg/f/a/e/i/k/g0;
+.class final Lg/f/a/e/i/k/g0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 # interfaces
-.implements Ljava/util/Iterator;
+.implements Lcom/google/firebase/m/d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<F:",
         "Ljava/lang/Object;",
-        "T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Iterator<",
-        "TT;>;"
+        "Lcom/google/firebase/m/d<",
+        "Lg/f/a/e/i/k/l;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field final c:Ljava/util/Iterator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Iterator<",
-            "+TF;>;"
-        }
-    .end annotation
-.end field
+# static fields
+.field static final a:Lg/f/a/e/i/k/g0;
 
 
 # direct methods
-.method constructor <init>(Ljava/util/Iterator;)V
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lg/f/a/e/i/k/g0;
+
+    invoke-direct {v0}, Lg/f/a/e/i/k/g0;-><init>()V
+
+    sput-object v0, Lg/f/a/e/i/k/g0;->a:Lg/f/a/e/i/k/g0;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Iterator<",
-            "+TF;>;)V"
-        }
-    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-eqz p1, :cond_0
-
-    .line 1
-    iput-object p1, p0, Lg/f/a/e/i/k/g0;->c:Ljava/util/Iterator;
-
     return-void
-
-    :cond_0
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method abstract b(Ljava/lang/Object;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
+.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(TF;)TT;"
-        }
-    .end annotation
-.end method
-
-.method public final hasNext()Z
-    .locals 1
-
-    iget-object v0, p0, Lg/f/a/e/i/k/g0;->c:Ljava/util/Iterator;
-
-    .line 1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final next()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
+            Ljava/io/IOException;
         }
     .end annotation
 
-    iget-object v0, p0, Lg/f/a/e/i/k/g0;->c:Ljava/util/Iterator;
+    check-cast p1, Lg/f/a/e/i/k/l;
 
-    .line 1
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    check-cast p2, Lcom/google/firebase/m/e;
 
-    move-result-object v0
+    const/4 p1, 0x0
 
-    invoke-virtual {p0, v0}, Lg/f/a/e/i/k/g0;->b(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final remove()V
-    .locals 1
-
-    iget-object v0, p0, Lg/f/a/e/i/k/g0;->c:Ljava/util/Iterator;
-
-    .line 1
-    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
-
-    return-void
+    throw p1
 .end method

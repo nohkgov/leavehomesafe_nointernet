@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/auth/api/signin/internal/v;
-.super Lg/f/a/e/i/a/d;
+.super Lg/f/a/e/i/b/d;
 .source "com.google.android.gms:play-services-auth@@19.0.0"
 
 # interfaces
@@ -13,7 +13,7 @@
     const-string v0, "com.google.android.gms.auth.api.signin.internal.ISignInService"
 
     .line 1
-    invoke-direct {p0, p1, v0}, Lg/f/a/e/i/a/d;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    invoke-direct {p0, p1, v0}, Lg/f/a/e/i/b/d;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -29,25 +29,25 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lg/f/a/e/i/a/d;->k0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lg/f/a/e/i/b/d;->l0()Landroid/os/Parcel;
 
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lg/f/a/e/i/a/e;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, p1}, Lg/f/a/e/i/b/e;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     .line 3
-    invoke-static {v0, p2}, Lg/f/a/e/i/a/e;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p2}, Lg/f/a/e/i/b/e;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/16 p1, 0x66
 
     .line 4
-    invoke-virtual {p0, p1, v0}, Lg/f/a/e/i/a/d;->l0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lg/f/a/e/i/b/d;->m0(ILandroid/os/Parcel;)V
 
     return-void
 .end method
 
-.method public final x(Lcom/google/android/gms/auth/api/signin/internal/q;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
+.method public final y(Lcom/google/android/gms/auth/api/signin/internal/q;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -56,20 +56,20 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lg/f/a/e/i/a/d;->k0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lg/f/a/e/i/b/d;->l0()Landroid/os/Parcel;
 
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lg/f/a/e/i/a/e;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, p1}, Lg/f/a/e/i/b/e;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     .line 3
-    invoke-static {v0, p2}, Lg/f/a/e/i/a/e;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p2}, Lg/f/a/e/i/b/e;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/16 p1, 0x67
 
     .line 4
-    invoke-virtual {p0, p1, v0}, Lg/f/a/e/i/a/d;->l0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lg/f/a/e/i/b/d;->m0(ILandroid/os/Parcel;)V
 
     return-void
 .end method

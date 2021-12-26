@@ -1,150 +1,231 @@
-.class Ld/r/a;
+.class public final Ld/r/a;
 .super Ljava/lang/Object;
-.source "AnimatorUtils.java"
+.source "Trace.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Ld/r/a$a;
-    }
-.end annotation
+# static fields
+.field private static a:J
+
+.field private static b:Ljava/lang/reflect/Method;
 
 
 # direct methods
-.method static a(Landroid/animation/Animator;Landroid/animation/AnimatorListenerAdapter;)V
+.method public static a(Ljava/lang/String;)V
     .locals 2
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x13
+    const/16 v1, 0x12
 
     if-lt v0, v1, :cond_0
 
     .line 2
-    invoke-virtual {p0, p1}, Landroid/animation/Animator;->addPauseListener(Landroid/animation/Animator$AnimatorPauseListener;)V
+    invoke-static {p0}, Ld/r/b;->a(Ljava/lang/String;)V
 
     :cond_0
     return-void
 .end method
 
-.method static b(Landroid/animation/Animator;)V
-    .locals 5
+.method public static b()V
+    .locals 2
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x13
+    const/16 v1, 0x12
 
     if-lt v0, v1, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Landroid/animation/Animator;->pause()V
+    invoke-static {}, Ld/r/b;->b()V
 
-    goto :goto_1
-
-    .line 3
     :cond_0
-    invoke-virtual {p0}, Landroid/animation/Animator;->getListeners()Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v2
-
-    :goto_0
-    if-ge v1, v2, :cond_2
-
-    .line 5
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/animation/Animator$AnimatorListener;
-
-    .line 6
-    instance-of v4, v3, Ld/r/a$a;
-
-    if-eqz v4, :cond_1
-
-    .line 7
-    check-cast v3, Ld/r/a$a;
-
-    invoke-interface {v3, p0}, Ld/r/a$a;->onAnimationPause(Landroid/animation/Animator;)V
-
-    :cond_1
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    :goto_1
     return-void
 .end method
 
-.method static c(Landroid/animation/Animator;)V
-    .locals 5
+.method private static c(Ljava/lang/String;Ljava/lang/Exception;)V
+    .locals 2
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    instance-of v0, p1, Ljava/lang/reflect/InvocationTargetException;
 
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_0
+    if-eqz v0, :cond_1
 
     .line 2
-    invoke-virtual {p0}, Landroid/animation/Animator;->resume()V
+    invoke-virtual {p1}, Ljava/lang/Exception;->getCause()Ljava/lang/Throwable;
 
-    goto :goto_1
+    move-result-object p0
 
     .line 3
-    :cond_0
-    invoke-virtual {p0}, Landroid/animation/Animator;->getListeners()Ljava/util/ArrayList;
+    instance-of p1, p0, Ljava/lang/RuntimeException;
 
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    const/4 v1, 0x0
+    if-eqz p1, :cond_0
 
     .line 4
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    check-cast p0, Ljava/lang/RuntimeException;
 
-    move-result v2
-
-    :goto_0
-    if-ge v1, v2, :cond_2
+    throw p0
 
     .line 5
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    :cond_0
+    new-instance p1, Ljava/lang/RuntimeException;
 
-    move-result-object v3
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
-    check-cast v3, Landroid/animation/Animator$AnimatorListener;
+    throw p1
 
     .line 6
-    instance-of v4, v3, Ld/r/a$a;
+    :cond_1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    if-eqz v4, :cond_1
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Unable to call "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, " via reflection"
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "Trace"
+
+    invoke-static {v0, p0, p1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    return-void
+.end method
+
+.method public static d()Z
+    .locals 1
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "NewApi"
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    sget-object v0, Ld/r/a;->b:Ljava/lang/reflect/Method;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    invoke-static {}, Landroid/os/Trace;->isEnabled()Z
+
+    move-result v0
+    :try_end_0
+    .catch Ljava/lang/NoSuchMethodError; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/NoClassDefFoundError; {:try_start_0 .. :try_end_0} :catch_0
+
+    return v0
+
+    .line 3
+    :catch_0
+    :cond_0
+    invoke-static {}, Ld/r/a;->e()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method private static e()Z
+    .locals 7
+
+    const-string v0, "isTagEnabled"
+
+    .line 1
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/4 v2, 0x0
+
+    const/16 v3, 0x12
+
+    if-lt v1, v3, :cond_1
+
+    .line 2
+    :try_start_0
+    sget-object v1, Ld/r/a;->b:Ljava/lang/reflect/Method;
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    if-nez v1, :cond_0
+
+    .line 3
+    const-class v1, Landroid/os/Trace;
+
+    const-string v5, "TRACE_TAG_APP"
+
+    invoke-virtual {v1, v5}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v1
+
+    .line 4
+    invoke-virtual {v1, v4}, Ljava/lang/reflect/Field;->getLong(Ljava/lang/Object;)J
+
+    move-result-wide v5
+
+    sput-wide v5, Ld/r/a;->a:J
+
+    .line 5
+    const-class v1, Landroid/os/Trace;
+
+    new-array v5, v3, [Ljava/lang/Class;
+
+    sget-object v6, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+
+    aput-object v6, v5, v2
+
+    .line 6
+    invoke-virtual {v1, v0, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    sput-object v1, Ld/r/a;->b:Ljava/lang/reflect/Method;
 
     .line 7
-    check-cast v3, Ld/r/a$a;
+    :cond_0
+    sget-object v1, Ld/r/a;->b:Ljava/lang/reflect/Method;
 
-    invoke-interface {v3, p0}, Ld/r/a$a;->onAnimationResume(Landroid/animation/Animator;)V
+    new-array v3, v3, [Ljava/lang/Object;
+
+    sget-wide v5, Ld/r/a;->a:J
+
+    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v5
+
+    aput-object v5, v3, v2
+
+    invoke-virtual {v1, v4, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return v0
+
+    :catch_0
+    move-exception v1
+
+    .line 8
+    invoke-static {v0, v1}, Ld/r/a;->c(Ljava/lang/String;Ljava/lang/Exception;)V
 
     :cond_1
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    :goto_1
-    return-void
+    return v2
 .end method

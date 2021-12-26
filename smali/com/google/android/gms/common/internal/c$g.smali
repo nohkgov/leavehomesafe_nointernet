@@ -1,5 +1,5 @@
 .class final Lcom/google/android/gms/common/internal/c$g;
-.super Lg/f/a/e/i/f/h;
+.super Lg/f/a/e/i/g/h;
 .source "com.google.android.gms:play-services-basement@@17.4.0"
 
 
@@ -26,7 +26,7 @@
     iput-object p1, p0, Lcom/google/android/gms/common/internal/c$g;->a:Lcom/google/android/gms/common/internal/c;
 
     .line 2
-    invoke-direct {p0, p2}, Lg/f/a/e/i/f/h;-><init>(Landroid/os/Looper;)V
+    invoke-direct {p0, p2}, Lg/f/a/e/i/g/h;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method

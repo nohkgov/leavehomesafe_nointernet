@@ -173,7 +173,7 @@
     iget-object v2, p0, Lg/b/a/a/b;->c:Lg/f/a/d/a/a;
 
     .line 5
-    invoke-interface {v2, v0}, Lg/f/a/d/a/a;->y(Landroid/os/Bundle;)Landroid/os/Bundle;
+    invoke-interface {v2, v0}, Lg/f/a/d/a/a;->z(Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v0
 

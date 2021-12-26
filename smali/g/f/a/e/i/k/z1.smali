@@ -1,6 +1,6 @@
 .class final Lg/f/a/e/i/k/z1;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 # interfaces
 .implements Lcom/google/firebase/m/d;
@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/k/f1;",
+        "Lg/f/a/e/i/k/m4;",
         ">;"
     }
 .end annotation
@@ -45,40 +45,18 @@
 
 # virtual methods
 .method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    check-cast p1, Lg/f/a/e/i/k/f1;
+    check-cast p1, Lg/f/a/e/i/k/m4;
 
     check-cast p2, Lcom/google/firebase/m/e;
 
-    invoke-virtual {p1}, Lg/f/a/e/i/k/f1;->a()Lg/f/a/e/i/k/e1;
+    const/4 p1, 0x0
 
-    move-result-object v0
-
-    const-string v1, "logEventKey"
-
-    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
-
-    invoke-virtual {p1}, Lg/f/a/e/i/k/f1;->b()Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v1, "eventCount"
-
-    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
-
-    invoke-virtual {p1}, Lg/f/a/e/i/k/f1;->c()Lg/f/a/e/i/k/f5;
-
-    move-result-object p1
-
-    const-string v0, "inferenceDurationStats"
-
-    invoke-interface {p2, v0, p1}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
-
-    return-void
+    throw p1
 .end method

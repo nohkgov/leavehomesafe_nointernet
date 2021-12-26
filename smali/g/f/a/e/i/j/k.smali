@@ -1,21 +1,70 @@
-.class public final Lg/f/a/e/i/j/k;
-.super Ljava/lang/Object;
-.source "com.google.mlkit:vision-common@@16.2.0"
+.class public abstract Lg/f/a/e/i/j/k;
+.super Lg/f/a/e/i/j/j;
+.source "com.google.mlkit:common@@17.1.0"
+
+# interfaces
+.implements Ljava/util/ListIterator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lg/f/a/e/i/j/j<",
+        "TE;>;",
+        "Ljava/util/ListIterator<",
+        "TE;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method protected constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lg/f/a/e/i/j/j;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final add(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)V"
+        }
+    .end annotation
 
-    const/4 p1, 0x0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 1
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     throw p1
 .end method
 
-.method public final hashCode()I
-    .locals 1
+.method public final set(Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)V"
+        }
+    .end annotation
 
-    const/4 v0, 0x0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    throw v0
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 1
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
 .end method

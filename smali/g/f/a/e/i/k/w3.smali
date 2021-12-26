@@ -1,62 +1,129 @@
-.class final Lg/f/a/e/i/k/w3;
+.class public final Lg/f/a/e/i/k/w3;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
-
-# interfaces
-.implements Lcom/google/firebase/m/d;
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/k/o6;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field private final a:Ljava/lang/Long;
 
+.field private final b:Lg/f/a/e/i/k/v3;
 
-# static fields
-.field static final a:Lg/f/a/e/i/k/w3;
+.field private final c:Lg/f/a/e/i/k/q3;
+
+.field private final d:Ljava/lang/Integer;
+
+.field private final e:Ljava/lang/Integer;
+
+.field private final f:Ljava/lang/Integer;
+
+.field private final g:Ljava/lang/Integer;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lg/f/a/e/i/k/w3;
-
-    invoke-direct {v0}, Lg/f/a/e/i/k/w3;-><init>()V
-
-    sput-object v0, Lg/f/a/e/i/k/w3;->a:Lg/f/a/e/i/k/w3;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method synthetic constructor <init>(Lg/f/a/e/i/k/u3;Lg/f/a/e/i/k/t3;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {p1}, Lg/f/a/e/i/k/u3;->i(Lg/f/a/e/i/k/u3;)Ljava/lang/Long;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lg/f/a/e/i/k/w3;->a:Ljava/lang/Long;
+
+    invoke-static {p1}, Lg/f/a/e/i/k/u3;->j(Lg/f/a/e/i/k/u3;)Lg/f/a/e/i/k/v3;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lg/f/a/e/i/k/w3;->b:Lg/f/a/e/i/k/v3;
+
+    invoke-static {p1}, Lg/f/a/e/i/k/u3;->k(Lg/f/a/e/i/k/u3;)Lg/f/a/e/i/k/q3;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lg/f/a/e/i/k/w3;->c:Lg/f/a/e/i/k/q3;
+
+    invoke-static {p1}, Lg/f/a/e/i/k/u3;->l(Lg/f/a/e/i/k/u3;)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lg/f/a/e/i/k/w3;->d:Ljava/lang/Integer;
+
+    invoke-static {p1}, Lg/f/a/e/i/k/u3;->m(Lg/f/a/e/i/k/u3;)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lg/f/a/e/i/k/w3;->e:Ljava/lang/Integer;
+
+    invoke-static {p1}, Lg/f/a/e/i/k/u3;->n(Lg/f/a/e/i/k/u3;)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lg/f/a/e/i/k/w3;->f:Ljava/lang/Integer;
+
+    invoke-static {p1}, Lg/f/a/e/i/k/u3;->o(Lg/f/a/e/i/k/u3;)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lg/f/a/e/i/k/w3;->g:Ljava/lang/Integer;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final a()Ljava/lang/Long;
+    .locals 1
 
-    check-cast p1, Lg/f/a/e/i/k/o6;
+    iget-object v0, p0, Lg/f/a/e/i/k/w3;->a:Ljava/lang/Long;
 
-    check-cast p2, Lcom/google/firebase/m/e;
+    return-object v0
+.end method
 
-    const/4 p1, 0x0
+.method public final b()Lg/f/a/e/i/k/v3;
+    .locals 1
 
-    throw p1
+    iget-object v0, p0, Lg/f/a/e/i/k/w3;->b:Lg/f/a/e/i/k/v3;
+
+    return-object v0
+.end method
+
+.method public final c()Lg/f/a/e/i/k/q3;
+    .locals 1
+
+    iget-object v0, p0, Lg/f/a/e/i/k/w3;->c:Lg/f/a/e/i/k/q3;
+
+    return-object v0
+.end method
+
+.method public final d()Ljava/lang/Integer;
+    .locals 1
+
+    iget-object v0, p0, Lg/f/a/e/i/k/w3;->d:Ljava/lang/Integer;
+
+    return-object v0
+.end method
+
+.method public final e()Ljava/lang/Integer;
+    .locals 1
+
+    iget-object v0, p0, Lg/f/a/e/i/k/w3;->e:Ljava/lang/Integer;
+
+    return-object v0
+.end method
+
+.method public final f()Ljava/lang/Integer;
+    .locals 1
+
+    iget-object v0, p0, Lg/f/a/e/i/k/w3;->f:Ljava/lang/Integer;
+
+    return-object v0
+.end method
+
+.method public final g()Ljava/lang/Integer;
+    .locals 1
+
+    iget-object v0, p0, Lg/f/a/e/i/k/w3;->g:Ljava/lang/Integer;
+
+    return-object v0
 .end method

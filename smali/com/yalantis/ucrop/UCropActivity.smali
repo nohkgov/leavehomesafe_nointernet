@@ -48,7 +48,7 @@
 
 .field private P:Landroid/view/View;
 
-.field private Q:Ld/r/x;
+.field private Q:Ld/s/x;
 
 .field private R:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -315,9 +315,9 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/yalantis/ucrop/UCropActivity;->Q:Ld/r/x;
+    iget-object v1, p0, Lcom/yalantis/ucrop/UCropActivity;->Q:Ld/s/x;
 
-    invoke-static {v0, v1}, Ld/r/z;->a(Landroid/view/ViewGroup;Ld/r/x;)V
+    invoke-static {v0, v1}, Ld/s/z;->a(Landroid/view/ViewGroup;Ld/s/x;)V
 
     .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity;->I:Landroid/view/ViewGroup;
@@ -2145,16 +2145,16 @@
     invoke-virtual {v1, v3, v0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     .line 19
-    new-instance v0, Ld/r/b;
+    new-instance v0, Ld/s/b;
 
-    invoke-direct {v0}, Ld/r/b;-><init>()V
+    invoke-direct {v0}, Ld/s/b;-><init>()V
 
-    iput-object v0, p0, Lcom/yalantis/ucrop/UCropActivity;->Q:Ld/r/x;
+    iput-object v0, p0, Lcom/yalantis/ucrop/UCropActivity;->Q:Ld/s/x;
 
     const-wide/16 v1, 0x32
 
     .line 20
-    invoke-virtual {v0, v1, v2}, Ld/r/x;->c0(J)Ld/r/x;
+    invoke-virtual {v0, v1, v2}, Ld/s/x;->c0(J)Ld/s/x;
 
     .line 21
     sget v0, Lcom/yalantis/ucrop/d;->state_aspect_ratio:I

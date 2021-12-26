@@ -1,36 +1,29 @@
-.class final Lg/f/a/e/i/d/d;
-.super Landroid/database/ContentObserver;
-
-
-# instance fields
-.field private final synthetic a:Lg/f/a/e/i/d/c;
+.class public Lg/f/a/e/i/d/d;
+.super Landroid/os/Handler;
+.source "com.google.android.gms:play-services-base@@17.4.0"
 
 
 # direct methods
-.method constructor <init>(Lg/f/a/e/i/d/c;Landroid/os/Handler;)V
+.method static constructor <clinit>()V
     .locals 0
-
-    iput-object p1, p0, Lg/f/a/e/i/d/d;->a:Lg/f/a/e/i/d/c;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final onChange(Z)V
+.method public constructor <init>(Landroid/os/Looper;)V
     .locals 0
 
-    iget-object p1, p0, Lg/f/a/e/i/d/d;->a:Lg/f/a/e/i/d/c;
+    .line 1
+    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    invoke-virtual {p1}, Lg/f/a/e/i/d/c;->d()V
+    return-void
+.end method
 
-    iget-object p1, p0, Lg/f/a/e/i/d/d;->a:Lg/f/a/e/i/d/c;
+.method public constructor <init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+    .locals 0
 
-    invoke-static {p1}, Lg/f/a/e/i/d/c;->b(Lg/f/a/e/i/d/c;)V
+    .line 2
+    invoke-direct {p0, p1, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
     return-void
 .end method

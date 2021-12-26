@@ -1,6 +1,6 @@
-.class abstract Lg/f/a/e/i/k/e6;
-.super Lg/f/a/e/i/k/i0;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.class Lg/f/a/e/i/k/e6;
+.super Lg/f/a/e/i/k/f6;
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 
 # annotations
@@ -9,172 +9,143 @@
         "<E:",
         "Ljava/lang/Object;",
         ">",
-        "Lg/f/a/e/i/k/i0<",
+        "Lg/f/a/e/i/k/f6<",
         "TE;>;"
     }
 .end annotation
 
 
 # instance fields
-.field private final c:I
+.field a:[Ljava/lang/Object;
 
-.field private d:I
+.field b:I
+
+.field c:Z
 
 
 # direct methods
-.method protected constructor <init>(II)V
-    .locals 1
+.method constructor <init>(I)V
+    .locals 0
 
-    invoke-direct {p0}, Lg/f/a/e/i/k/i0;-><init>()V
+    invoke-direct {p0}, Lg/f/a/e/i/k/f6;-><init>()V
 
-    const-string v0, "index"
+    const/4 p1, 0x4
+
+    new-array p1, p1, [Ljava/lang/Object;
+
+    iput-object p1, p0, Lg/f/a/e/i/k/e6;->a:[Ljava/lang/Object;
+
+    const/4 p1, 0x0
+
+    iput p1, p0, Lg/f/a/e/i/k/e6;->b:I
+
+    return-void
+.end method
+
+.method private final b(I)V
+    .locals 4
+
+    iget-object v0, p0, Lg/f/a/e/i/k/e6;->a:[Ljava/lang/Object;
 
     .line 1
-    invoke-static {p2, p1, v0}, Lg/f/a/e/i/k/c4;->c(IILjava/lang/String;)I
+    array-length v1, v0
 
-    iput p1, p0, Lg/f/a/e/i/k/e6;->c:I
+    const/4 v2, 0x0
 
-    iput p2, p0, Lg/f/a/e/i/k/e6;->d:I
+    if-ge v1, p1, :cond_2
 
+    shr-int/lit8 v3, v1, 0x1
+
+    add-int/2addr v1, v3
+
+    add-int/lit8 v1, v1, 0x1
+
+    if-ge v1, p1, :cond_0
+
+    add-int/lit8 p1, p1, -0x1
+
+    .line 2
+    invoke-static {p1}, Ljava/lang/Integer;->highestOneBit(I)I
+
+    move-result p1
+
+    add-int v1, p1, p1
+
+    :cond_0
+    if-gez v1, :cond_1
+
+    const v1, 0x7fffffff
+
+    .line 3
+    :cond_1
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lg/f/a/e/i/k/e6;->a:[Ljava/lang/Object;
+
+    iput-boolean v2, p0, Lg/f/a/e/i/k/e6;->c:Z
+
+    return-void
+
+    :cond_2
+    iget-boolean p1, p0, Lg/f/a/e/i/k/e6;->c:Z
+
+    if-eqz p1, :cond_3
+
+    .line 4
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, [Ljava/lang/Object;
+
+    iput-object p1, p0, Lg/f/a/e/i/k/e6;->a:[Ljava/lang/Object;
+
+    iput-boolean v2, p0, Lg/f/a/e/i/k/e6;->c:Z
+
+    :cond_3
     return-void
 .end method
 
 
 # virtual methods
-.method protected abstract b(I)Ljava/lang/Object;
+.method public final a(Ljava/lang/Object;)Lg/f/a/e/i/k/e6;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(I)TE;"
-        }
-    .end annotation
-.end method
-
-.method public final hasNext()Z
-    .locals 2
-
-    iget v0, p0, Lg/f/a/e/i/k/e6;->d:I
-
-    iget v1, p0, Lg/f/a/e/i/k/e6;->c:I
-
-    if-ge v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final hasPrevious()Z
-    .locals 1
-
-    iget v0, p0, Lg/f/a/e/i/k/e6;->d:I
-
-    if-lez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final next()Ljava/lang/Object;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TE;"
+            "(TE;)",
+            "Lg/f/a/e/i/k/e6<",
+            "TE;>;"
         }
     .end annotation
 
-    invoke-virtual {p0}, Lg/f/a/e/i/k/e6;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 1
-    iget v0, p0, Lg/f/a/e/i/k/e6;->d:I
+    iget v0, p0, Lg/f/a/e/i/k/e6;->b:I
 
-    add-int/lit8 v1, v0, 0x1
-
-    iput v1, p0, Lg/f/a/e/i/k/e6;->d:I
+    add-int/lit8 v0, v0, 0x1
 
     .line 2
-    invoke-virtual {p0, v0}, Lg/f/a/e/i/k/e6;->b(I)Ljava/lang/Object;
+    invoke-direct {p0, v0}, Lg/f/a/e/i/k/e6;->b(I)V
 
-    move-result-object v0
+    iget-object v0, p0, Lg/f/a/e/i/k/e6;->a:[Ljava/lang/Object;
 
-    return-object v0
+    iget v1, p0, Lg/f/a/e/i/k/e6;->b:I
 
-    .line 3
-    :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
+    add-int/lit8 v2, v1, 0x1
 
-    .line 4
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    throw v0
-.end method
-
-.method public final nextIndex()I
-    .locals 1
-
-    iget v0, p0, Lg/f/a/e/i/k/e6;->d:I
-
-    return v0
-.end method
-
-.method public final previous()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TE;"
-        }
-    .end annotation
-
-    invoke-virtual {p0}, Lg/f/a/e/i/k/e6;->hasPrevious()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 1
-    iget v0, p0, Lg/f/a/e/i/k/e6;->d:I
-
-    add-int/lit8 v0, v0, -0x1
-
-    iput v0, p0, Lg/f/a/e/i/k/e6;->d:I
-
-    .line 2
-    invoke-virtual {p0, v0}, Lg/f/a/e/i/k/e6;->b(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
+    iput v2, p0, Lg/f/a/e/i/k/e6;->b:I
 
     .line 3
+    aput-object p1, v0, v1
+
+    return-object p0
+
     :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
+    const/4 p1, 0x0
 
     .line 4
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    throw v0
-.end method
-
-.method public final previousIndex()I
-    .locals 1
-
-    iget v0, p0, Lg/f/a/e/i/k/e6;->d:I
-
-    add-int/lit8 v0, v0, -0x1
-
-    return v0
+    throw p1
 .end method

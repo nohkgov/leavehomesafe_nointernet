@@ -1,62 +1,82 @@
 .class final Lg/f/a/e/i/j/y;
-.super Ljava/lang/Object;
-.source "com.google.mlkit:vision-common@@16.2.0"
-
-# interfaces
-.implements Lcom/google/firebase/m/d;
+.super Lg/f/b/a/c/e;
+.source "com.google.mlkit:common@@17.1.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/j/c;",
+        "Lg/f/b/a/c/e<",
+        "Ljava/lang/String;",
+        "Lg/f/a/e/i/j/v;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field static final a:Lg/f/a/e/i/j/y;
+# instance fields
+.field private final b:Lg/f/a/e/i/j/w;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method synthetic constructor <init>(Lg/f/a/e/i/j/x;)V
     .locals 1
 
-    new-instance v0, Lg/f/a/e/i/j/y;
+    invoke-direct {p0}, Lg/f/b/a/c/e;-><init>()V
 
-    invoke-direct {v0}, Lg/f/a/e/i/j/y;-><init>()V
+    new-instance p1, Lg/f/a/e/i/j/w;
 
-    sput-object v0, Lg/f/a/e/i/j/y;->a:Lg/f/a/e/i/j/y;
+    invoke-static {}, Lg/f/b/a/c/i;->c()Lg/f/b/a/c/i;
 
-    return-void
-.end method
+    move-result-object v0
 
-.method private constructor <init>()V
-    .locals 0
+    invoke-virtual {v0}, Lg/f/b/a/c/i;->b()Landroid/content/Context;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
+
+    invoke-direct {p1, v0}, Lg/f/a/e/i/j/w;-><init>(Landroid/content/Context;)V
+
+    iput-object p1, p0, Lg/f/a/e/i/j/y;->b:Lg/f/a/e/i/j/w;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method protected final bridge synthetic a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
-    check-cast p1, Lg/f/a/e/i/j/c;
+    move-object v4, p1
 
-    check-cast p2, Lcom/google/firebase/m/e;
+    check-cast v4, Ljava/lang/String;
 
-    const/4 p1, 0x0
+    new-instance p1, Lg/f/a/e/i/j/v;
 
-    throw p1
+    invoke-static {}, Lg/f/b/a/c/i;->c()Lg/f/b/a/c/i;
+
+    move-result-object v0
+
+    iget-object v3, p0, Lg/f/a/e/i/j/y;->b:Lg/f/a/e/i/j/w;
+
+    invoke-virtual {v0}, Lg/f/b/a/c/i;->b()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-class v2, Lg/f/b/a/c/m;
+
+    invoke-virtual {v0, v2}, Lg/f/b/a/c/i;->a(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lg/f/b/a/c/m;
+
+    const/4 v5, 0x0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v5}, Lg/f/a/e/i/j/v;-><init>(Landroid/content/Context;Lg/f/b/a/c/m;Lg/f/a/e/i/j/w;Ljava/lang/String;[B)V
+
+    return-object p1
 .end method

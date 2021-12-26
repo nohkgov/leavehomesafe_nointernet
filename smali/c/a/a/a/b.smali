@@ -69,7 +69,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lc/a/a/a/a$a;->k0(Landroid/os/IBinder;)Lc/a/a/a/a;
+    invoke-static {p1}, Lc/a/a/a/a$a;->l0(Landroid/os/IBinder;)Lc/a/a/a/a;
 
     move-result-object p1
 

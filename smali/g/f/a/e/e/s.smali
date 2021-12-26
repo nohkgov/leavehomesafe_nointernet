@@ -57,7 +57,7 @@
 
 
 # virtual methods
-.method final l0()[B
+.method final m0()[B
     .locals 2
 
     .line 1
@@ -76,7 +76,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    invoke-virtual {p0}, Lg/f/a/e/e/s;->n0()[B
+    invoke-virtual {p0}, Lg/f/a/e/e/s;->o0()[B
 
     move-result-object v0
 
@@ -104,5 +104,5 @@
     throw v0
 .end method
 
-.method protected abstract n0()[B
+.method protected abstract o0()[B
 .end method

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private a:Lcom/google/android/gms/common/api/internal/m;
+.field private a:Lcom/google/android/gms/common/api/internal/n;
 
 .field private b:Landroid/os/Looper;
 
@@ -38,7 +38,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/e$a$a;->a:Lcom/google/android/gms/common/api/internal/m;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/e$a$a;->a:Lcom/google/android/gms/common/api/internal/n;
 
     if-nez v0, :cond_0
 
@@ -47,7 +47,7 @@
 
     invoke-direct {v0}, Lcom/google/android/gms/common/api/internal/a;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/common/api/e$a$a;->a:Lcom/google/android/gms/common/api/internal/m;
+    iput-object v0, p0, Lcom/google/android/gms/common/api/e$a$a;->a:Lcom/google/android/gms/common/api/internal/n;
 
     .line 3
     :cond_0
@@ -66,20 +66,20 @@
     :cond_1
     new-instance v0, Lcom/google/android/gms/common/api/e$a;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/e$a$a;->a:Lcom/google/android/gms/common/api/internal/m;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/e$a$a;->a:Lcom/google/android/gms/common/api/internal/n;
 
     iget-object v2, p0, Lcom/google/android/gms/common/api/e$a$a;->b:Landroid/os/Looper;
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v3, v2, v3}, Lcom/google/android/gms/common/api/e$a;-><init>(Lcom/google/android/gms/common/api/internal/m;Landroid/accounts/Account;Landroid/os/Looper;Lcom/google/android/gms/common/api/o;)V
+    invoke-direct {v0, v1, v3, v2, v3}, Lcom/google/android/gms/common/api/e$a;-><init>(Lcom/google/android/gms/common/api/internal/n;Landroid/accounts/Account;Landroid/os/Looper;Lcom/google/android/gms/common/api/o;)V
 
     return-object v0
 .end method
 
-.method public b(Lcom/google/android/gms/common/api/internal/m;)Lcom/google/android/gms/common/api/e$a$a;
+.method public b(Lcom/google/android/gms/common/api/internal/n;)Lcom/google/android/gms/common/api/e$a$a;
     .locals 1
-    .param p1    # Lcom/google/android/gms/common/api/internal/m;
+    .param p1    # Lcom/google/android/gms/common/api/internal/n;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
@@ -92,7 +92,7 @@
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/q;->k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/e$a$a;->a:Lcom/google/android/gms/common/api/internal/m;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/e$a$a;->a:Lcom/google/android/gms/common/api/internal/n;
 
     return-object p0
 .end method

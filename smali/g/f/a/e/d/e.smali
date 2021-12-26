@@ -127,7 +127,7 @@
     :cond_0
     iget-object v0, p0, Lg/f/a/e/d/e;->d:Lg/f/a/e/d/c;
 
-    invoke-interface {v0, p1}, Lg/f/a/e/d/c;->E(Landroid/os/Message;)V
+    invoke-interface {v0, p1}, Lg/f/a/e/d/c;->F(Landroid/os/Message;)V
 
     return-void
 .end method

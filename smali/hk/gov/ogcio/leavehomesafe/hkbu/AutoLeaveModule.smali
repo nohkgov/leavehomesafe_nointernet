@@ -110,7 +110,7 @@
 .end method
 
 .method private registerBroadcastReceiver()V
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Landroid/content/IntentFilter;
@@ -128,11 +128,9 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 4
-    sget-object v1, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
+    iget-object v1, p0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->receiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->receiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v0}, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->registerLocalReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
     return-void
 .end method
@@ -281,33 +279,29 @@
 .end method
 
 .method public onHostDestroy()V
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-object v0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
+    iget-object v0, p0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->receiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v1, p0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->receiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->unregisterLocalReceiver(Landroid/content/BroadcastReceiver;)V
 
     return-void
 .end method
 
 .method public onHostPause()V
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-object v0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
+    iget-object v0, p0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->receiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v1, p0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->receiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->unregisterLocalReceiver(Landroid/content/BroadcastReceiver;)V
 
     return-void
 .end method
 
 .method public onHostResume()V
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Landroid/content/IntentFilter;
@@ -325,11 +319,9 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 4
-    sget-object v1, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
+    iget-object v1, p0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->receiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->receiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v0}, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->registerLocalReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
     return-void
 .end method
@@ -465,6 +457,23 @@
     return-void
 .end method
 
+.method public registerLocalReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ld/o/a/a;->b(Landroid/content/Context;)Ld/o/a/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1, p2}, Ld/o/a/a;->c(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
+
+    return-void
+.end method
+
 .method public resetCounter()V
     .locals 1
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
@@ -538,6 +547,23 @@
     sget-object v1, Lhk/gov/ogcio/leavehomesafe/hkbu/AutoLeaveModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
     invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->stopService(Landroid/content/Intent;)Z
+
+    return-void
+.end method
+
+.method public unregisterLocalReceiver(Landroid/content/BroadcastReceiver;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ld/o/a/a;->b(Landroid/content/Context;)Ld/o/a/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ld/o/a/a;->f(Landroid/content/BroadcastReceiver;)V
 
     return-void
 .end method

@@ -2,6 +2,9 @@
 <resources>
     <string name="ENV">PRD</string>
     <string name="EVT_SERVICE_NAME">hk.gov.ogcio.leavehomesafe</string>
+    <string name="HCS_BASE_URL">https://localhost</string>
+    <string name="HCS_REG_URL">https://localhost</string>
+    <string name="HCS_WEB_URL">https://localhost</string>
     <string name="HKEN_BASE_URL">https://localhost</string>
     <string name="HKEN_DEFAULT_BASE_URL">https://localhost</string>
     <string name="HKEN_JSON_BASE_URL">https://localhost</string>

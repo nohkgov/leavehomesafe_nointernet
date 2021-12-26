@@ -149,6 +149,23 @@
     return-void
 .end method
 
+.method private c(Landroid/content/Intent;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ld/o/a/a;->b(Landroid/content/Context;)Ld/o/a/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ld/o/a/a;->e(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
@@ -508,7 +525,7 @@
     move-result-object p1
 
     .line 20
-    invoke-virtual {p0, p1}, Landroid/app/Service;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-direct {p0, p1}, Lhk/gov/ogcio/leavehomesafe/hkbu/ALService;->c(Landroid/content/Intent;)V
 
     .line 21
     invoke-virtual {p0, v6}, Landroid/app/Service;->stopForeground(Z)V
@@ -612,7 +629,7 @@
     move-result-object p1
 
     .line 31
-    invoke-virtual {p0, p1}, Landroid/app/Service;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-direct {p0, p1}, Lhk/gov/ogcio/leavehomesafe/hkbu/ALService;->c(Landroid/content/Intent;)V
 
     .line 32
     invoke-virtual {p0, v6}, Landroid/app/Service;->stopForeground(Z)V
@@ -716,7 +733,7 @@
     move-result-object p1
 
     .line 42
-    invoke-virtual {p0, p1}, Landroid/app/Service;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-direct {p0, p1}, Lhk/gov/ogcio/leavehomesafe/hkbu/ALService;->c(Landroid/content/Intent;)V
 
     .line 43
     invoke-virtual {p0, v6}, Landroid/app/Service;->stopForeground(Z)V
@@ -820,7 +837,7 @@
     move-result-object p1
 
     .line 53
-    invoke-virtual {p0, p1}, Landroid/app/Service;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-direct {p0, p1}, Lhk/gov/ogcio/leavehomesafe/hkbu/ALService;->c(Landroid/content/Intent;)V
 
     .line 54
     invoke-virtual {p0, v6}, Landroid/app/Service;->stopForeground(Z)V

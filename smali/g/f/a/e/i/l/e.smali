@@ -1,94 +1,152 @@
-.class public final Lg/f/a/e/i/l/e;
-.super Lcom/google/android/gms/common/internal/g;
+.class final Lg/f/a/e/i/l/e;
+.super Ljava/util/AbstractSet;
+.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/internal/g<",
-        "Lg/f/a/e/i/l/b;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field final synthetic c:Lg/f/a/e/i/l/h;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
-    .locals 7
+.method constructor <init>(Lg/f/a/e/i/l/h;)V
+    .locals 0
 
-    const/16 v3, 0x33
+    iput-object p1, p0, Lg/f/a/e/i/l/e;->c:Lg/f/a/e/i/l/h;
 
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    move-object v6, p5
-
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/g;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/d;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
+    .line 1
+    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final B()Ljava/lang/String;
+.method public final clear()V
     .locals 1
 
-    const-string v0, "com.google.android.gms.phenotype.internal.IPhenotypeService"
+    iget-object v0, p0, Lg/f/a/e/i/l/e;->c:Lg/f/a/e/i/l/h;
 
-    return-object v0
+    .line 1
+    invoke-virtual {v0}, Lg/f/a/e/i/l/h;->clear()V
+
+    return-void
 .end method
 
-.method protected final C()Ljava/lang/String;
+.method public final contains(Ljava/lang/Object;)Z
     .locals 1
 
-    const-string v0, "com.google.android.gms.phenotype.service.START"
+    iget-object v0, p0, Lg/f/a/e/i/l/e;->c:Lg/f/a/e/i/l/h;
 
-    return-object v0
+    .line 1
+    invoke-virtual {v0, p1}, Lg/f/a/e/i/l/h;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
 .end method
 
-.method public final h()I
-    .locals 1
-
-    const v0, 0xb5f608
-
-    return v0
-.end method
-
-.method protected final synthetic r(Landroid/os/IBinder;)Landroid/os/IInterface;
+.method public final iterator()Ljava/util/Iterator;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator;"
+        }
+    .end annotation
 
-    if-nez p1, :cond_0
+    iget-object v0, p0, Lg/f/a/e/i/l/e;->c:Lg/f/a/e/i/l/h;
 
-    const/4 p1, 0x0
+    .line 1
+    invoke-virtual {v0}, Lg/f/a/e/i/l/h;->c()Ljava/util/Map;
 
-    return-object p1
+    move-result-object v1
 
-    :cond_0
-    const-string v0, "com.google.android.gms.phenotype.internal.IPhenotypeService"
+    if-eqz v1, :cond_0
 
-    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    .line 2
+    invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
-    instance-of v1, v0, Lg/f/a/e/i/l/b;
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    if-eqz v1, :cond_1
+    move-result-object v0
 
-    check-cast v0, Lg/f/a/e/i/l/b;
+    goto :goto_0
 
+    :cond_0
+    new-instance v1, Lg/f/a/e/i/l/n8;
+
+    .line 3
+    invoke-direct {v1, v0}, Lg/f/a/e/i/l/n8;-><init>(Lg/f/a/e/i/l/h;)V
+
+    move-object v0, v1
+
+    :goto_0
     return-object v0
+.end method
+
+.method public final remove(Ljava/lang/Object;)Z
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    iget-object v0, p0, Lg/f/a/e/i/l/e;->c:Lg/f/a/e/i/l/h;
+
+    .line 1
+    invoke-virtual {v0}, Lg/f/a/e/i/l/h;->c()Ljava/util/Map;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lg/f/a/e/i/l/e;->c:Lg/f/a/e/i/l/h;
+
+    .line 3
+    invoke-static {v0, p1}, Lg/f/a/e/i/l/h;->i(Lg/f/a/e/i/l/h;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {}, Lg/f/a/e/i/l/h;->j()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne p1, v0, :cond_1
+
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
 
     :cond_1
-    new-instance v0, Lg/f/a/e/i/l/c;
+    const/4 p1, 0x1
 
-    invoke-direct {v0, p1}, Lg/f/a/e/i/l/c;-><init>(Landroid/os/IBinder;)V
+    return p1
+.end method
 
-    return-object v0
+.method public final size()I
+    .locals 1
+
+    iget-object v0, p0, Lg/f/a/e/i/l/e;->c:Lg/f/a/e/i/l/h;
+
+    .line 1
+    invoke-virtual {v0}, Lg/f/a/e/i/l/h;->size()I
+
+    move-result v0
+
+    return v0
 .end method

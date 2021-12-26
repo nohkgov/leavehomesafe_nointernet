@@ -1,62 +1,65 @@
-.class final Lg/f/a/e/i/k/e4;
+.class public final Lg/f/a/e/i/k/e4;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
-
-# interfaces
-.implements Lcom/google/firebase/m/d;
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/k/u6;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field private final a:Lg/f/a/e/i/k/k5;
 
+.field private final b:Lg/f/a/e/i/k/a4;
 
-# static fields
-.field static final a:Lg/f/a/e/i/k/e4;
+.field private final c:Lg/f/a/e/i/k/w3;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lg/f/a/e/i/k/e4;
-
-    invoke-direct {v0}, Lg/f/a/e/i/k/e4;-><init>()V
-
-    sput-object v0, Lg/f/a/e/i/k/e4;->a:Lg/f/a/e/i/k/e4;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method synthetic constructor <init>(Lg/f/a/e/i/k/c4;Lg/f/a/e/i/k/b4;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {p1}, Lg/f/a/e/i/k/c4;->e(Lg/f/a/e/i/k/c4;)Lg/f/a/e/i/k/k5;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lg/f/a/e/i/k/e4;->a:Lg/f/a/e/i/k/k5;
+
+    invoke-static {p1}, Lg/f/a/e/i/k/c4;->f(Lg/f/a/e/i/k/c4;)Lg/f/a/e/i/k/a4;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lg/f/a/e/i/k/e4;->b:Lg/f/a/e/i/k/a4;
+
+    invoke-static {p1}, Lg/f/a/e/i/k/c4;->g(Lg/f/a/e/i/k/c4;)Lg/f/a/e/i/k/w3;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lg/f/a/e/i/k/e4;->c:Lg/f/a/e/i/k/w3;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final a()Lg/f/a/e/i/k/k5;
+    .locals 1
 
-    check-cast p1, Lg/f/a/e/i/k/u6;
+    iget-object v0, p0, Lg/f/a/e/i/k/e4;->a:Lg/f/a/e/i/k/k5;
 
-    check-cast p2, Lcom/google/firebase/m/e;
+    return-object v0
+.end method
 
-    const/4 p1, 0x0
+.method public final b()Lg/f/a/e/i/k/a4;
+    .locals 1
 
-    throw p1
+    iget-object v0, p0, Lg/f/a/e/i/k/e4;->b:Lg/f/a/e/i/k/a4;
+
+    return-object v0
+.end method
+
+.method public final c()Lg/f/a/e/i/k/w3;
+    .locals 1
+
+    iget-object v0, p0, Lg/f/a/e/i/k/e4;->c:Lg/f/a/e/i/k/w3;
+
+    return-object v0
 .end method

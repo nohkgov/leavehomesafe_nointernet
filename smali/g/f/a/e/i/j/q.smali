@@ -1,21 +1,21 @@
-.class public final Lg/f/a/e/i/j/q;
-.super Ljava/lang/Object;
-.source "com.google.mlkit:vision-common@@16.2.0"
+.class final Lg/f/a/e/i/j/q;
+.super Lg/f/a/e/i/j/m;
+.source "com.google.mlkit:common@@17.1.0"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lg/f/a/e/i/j/m;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     .locals 0
 
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    throw v0
+    return-void
 .end method

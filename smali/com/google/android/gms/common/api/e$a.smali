@@ -20,8 +20,15 @@
 .end annotation
 
 
+# static fields
+.field public static final c:Lcom/google/android/gms/common/api/e$a;
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
+.end field
+
+
 # instance fields
-.field public final a:Lcom/google/android/gms/common/api/internal/m;
+.field public final a:Lcom/google/android/gms/common/api/internal/n;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end field
@@ -43,17 +50,21 @@
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/e$a$a;->a()Lcom/google/android/gms/common/api/e$a;
 
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/common/api/e$a;->c:Lcom/google/android/gms/common/api/e$a;
+
     return-void
 .end method
 
-.method private constructor <init>(Lcom/google/android/gms/common/api/internal/m;Landroid/accounts/Account;Landroid/os/Looper;)V
+.method private constructor <init>(Lcom/google/android/gms/common/api/internal/n;Landroid/accounts/Account;Landroid/os/Looper;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/e$a;->a:Lcom/google/android/gms/common/api/internal/m;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/e$a;->a:Lcom/google/android/gms/common/api/internal/n;
 
     .line 3
     iput-object p3, p0, Lcom/google/android/gms/common/api/e$a;->b:Landroid/os/Looper;
@@ -61,13 +72,13 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/google/android/gms/common/api/internal/m;Landroid/accounts/Account;Landroid/os/Looper;Lcom/google/android/gms/common/api/o;)V
+.method synthetic constructor <init>(Lcom/google/android/gms/common/api/internal/n;Landroid/accounts/Account;Landroid/os/Looper;Lcom/google/android/gms/common/api/o;)V
     .locals 0
 
     const/4 p2, 0x0
 
     .line 4
-    invoke-direct {p0, p1, p2, p3}, Lcom/google/android/gms/common/api/e$a;-><init>(Lcom/google/android/gms/common/api/internal/m;Landroid/accounts/Account;Landroid/os/Looper;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/google/android/gms/common/api/e$a;-><init>(Lcom/google/android/gms/common/api/internal/n;Landroid/accounts/Account;Landroid/os/Looper;)V
 
     return-void
 .end method

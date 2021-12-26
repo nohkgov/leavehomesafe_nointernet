@@ -1,62 +1,30 @@
-.class final Lg/f/a/e/i/j/w;
+.class public final Lg/f/a/e/i/j/w;
 .super Ljava/lang/Object;
-.source "com.google.mlkit:vision-common@@16.2.0"
-
-# interfaces
-.implements Lcom/google/firebase/m/d;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/j/v6;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field static final a:Lg/f/a/e/i/j/w;
+.source "com.google.mlkit:common@@17.1.0"
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-
-    new-instance v0, Lg/f/a/e/i/j/w;
-
-    invoke-direct {v0}, Lg/f/a/e/i/j/w;-><init>()V
-
-    sput-object v0, Lg/f/a/e/i/j/w;->a:Lg/f/a/e/i/j/w;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
-    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 1
+    invoke-static {p1}, Lg/f/a/c/i/r;->f(Landroid/content/Context;)V
+
+    .line 2
+    invoke-static {}, Lg/f/a/c/i/r;->c()Lg/f/a/c/i/r;
+
+    move-result-object p1
+
+    sget-object v0, Lcom/google/android/datatransport/cct/a;->g:Lcom/google/android/datatransport/cct/a;
+
+    invoke-virtual {p1, v0}, Lg/f/a/c/i/r;->g(Lg/f/a/c/i/e;)Lg/f/a/c/g;
+
+    .line 3
+    new-instance p1, Lcom/google/firebase/components/x;
+
+    new-instance p1, Lcom/google/firebase/components/x;
+
     return-void
-.end method
-
-
-# virtual methods
-.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    check-cast p1, Lg/f/a/e/i/j/v6;
-
-    check-cast p2, Lcom/google/firebase/m/e;
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

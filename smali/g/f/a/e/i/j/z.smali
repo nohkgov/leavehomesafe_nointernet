@@ -1,62 +1,56 @@
-.class final Lg/f/a/e/i/j/z;
+.class public final Lg/f/a/e/i/j/z;
 .super Ljava/lang/Object;
-.source "com.google.mlkit:vision-common@@16.2.0"
-
-# interfaces
-.implements Lcom/google/firebase/m/d;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/j/f;",
-        ">;"
-    }
-.end annotation
+.source "com.google.mlkit:common@@17.1.0"
 
 
 # static fields
-.field static final a:Lg/f/a/e/i/j/z;
+.field private static a:Lg/f/a/e/i/j/y;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public static declared-synchronized a(Ljava/lang/String;)Lg/f/a/e/i/j/v;
+    .locals 2
 
-    new-instance v0, Lg/f/a/e/i/j/z;
+    const-class p0, Lg/f/a/e/i/j/z;
 
-    invoke-direct {v0}, Lg/f/a/e/i/j/z;-><init>()V
+    monitor-enter p0
 
-    sput-object v0, Lg/f/a/e/i/j/z;->a:Lg/f/a/e/i/j/z;
+    :try_start_0
+    sget-object v0, Lg/f/a/e/i/j/z;->a:Lg/f/a/e/i/j/y;
 
-    return-void
-.end method
+    if-nez v0, :cond_0
 
-.method private constructor <init>()V
-    .locals 0
+    new-instance v0, Lg/f/a/e/i/j/y;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x0
 
-    return-void
-.end method
+    .line 1
+    invoke-direct {v0, v1}, Lg/f/a/e/i/j/y;-><init>(Lg/f/a/e/i/j/x;)V
 
+    sput-object v0, Lg/f/a/e/i/j/z;->a:Lg/f/a/e/i/j/y;
 
-# virtual methods
-.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    :cond_0
+    sget-object v0, Lg/f/a/e/i/j/z;->a:Lg/f/a/e/i/j/y;
 
-    check-cast p1, Lg/f/a/e/i/j/f;
+    const-string v1, "common"
 
-    check-cast p2, Lcom/google/firebase/m/e;
+    .line 2
+    invoke-virtual {v0, v1}, Lg/f/b/a/c/e;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 p1, 0x0
+    move-result-object v0
 
-    throw p1
+    check-cast v0, Lg/f/a/e/i/j/v;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method

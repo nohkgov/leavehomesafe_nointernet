@@ -105,8 +105,8 @@
 
 .field public static final select_dialog_singlechoice_material:I = 0x7f0d0063
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0064
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0066
 
-.field public static final surface_view:I = 0x7f0d0065
+.field public static final surface_view:I = 0x7f0d0067
 
-.field public static final texture_view:I = 0x7f0d0072
+.field public static final texture_view:I = 0x7f0d0074

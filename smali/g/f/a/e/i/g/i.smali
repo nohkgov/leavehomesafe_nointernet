@@ -1,18 +1,23 @@
-.class abstract Lg/f/a/e/i/g/i;
+.class public final Lg/f/a/e/i/g/i;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-messaging@@21.1.0"
+.source "com.google.android.gms:play-services-basement@@17.4.0"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final enum a:I = 0x2
 
 
 # direct methods
-.method constructor <init>()V
+.method static constructor <clinit>()V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     return-void
-.end method
-
-
-# virtual methods
-.method public abstract a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 .end method

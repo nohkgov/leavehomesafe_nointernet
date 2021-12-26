@@ -77,7 +77,7 @@
 
     invoke-direct {v0, p0, p1, p2}, Lcom/facebook/react/views/swiperefresh/SwipeRefreshLayoutManager$a;-><init>(Lcom/facebook/react/views/swiperefresh/SwipeRefreshLayoutManager;Lcom/facebook/react/uimanager/k0;Lcom/facebook/react/views/swiperefresh/a;)V
 
-    invoke-virtual {p2, v0}, Ld/p/b/c;->setOnRefreshListener(Ld/p/b/c$j;)V
+    invoke-virtual {p2, v0}, Ld/q/b/c;->setOnRefreshListener(Ld/q/b/c$j;)V
 
     return-void
 .end method
@@ -360,7 +360,7 @@
 
     .line 7
     :cond_1
-    invoke-virtual {p1, v1}, Ld/p/b/c;->setColorSchemeColors([I)V
+    invoke-virtual {p1, v1}, Ld/q/b/c;->setColorSchemeColors([I)V
 
     goto :goto_2
 
@@ -368,7 +368,7 @@
     new-array p2, v0, [I
 
     .line 8
-    invoke-virtual {p1, p2}, Ld/p/b/c;->setColorSchemeColors([I)V
+    invoke-virtual {p1, p2}, Ld/q/b/c;->setColorSchemeColors([I)V
 
     :goto_2
     return-void
@@ -397,7 +397,7 @@
     .end annotation
 
     .line 2
-    invoke-virtual {p1, p2}, Ld/p/b/c;->setEnabled(Z)V
+    invoke-virtual {p1, p2}, Ld/q/b/c;->setEnabled(Z)V
 
     return-void
 .end method
@@ -454,7 +454,7 @@
     move-result p2
 
     :goto_0
-    invoke-virtual {p1, p2}, Ld/p/b/c;->setProgressBackgroundColorSchemeColor(I)V
+    invoke-virtual {p1, p2}, Ld/q/b/c;->setProgressBackgroundColorSchemeColor(I)V
 
     return-void
 .end method
@@ -528,7 +528,7 @@
     .locals 0
 
     .line 2
-    invoke-virtual {p1, p2}, Ld/p/b/c;->setSize(I)V
+    invoke-virtual {p1, p2}, Ld/q/b/c;->setSize(I)V
 
     return-void
 .end method
@@ -549,7 +549,7 @@
     if-eqz v0, :cond_0
 
     .line 4
-    invoke-virtual {p1, v1}, Ld/p/b/c;->setSize(I)V
+    invoke-virtual {p1, v1}, Ld/q/b/c;->setSize(I)V
 
     goto :goto_0
 
@@ -568,7 +568,7 @@
 
     move-result p2
 
-    invoke-virtual {p1, p2}, Ld/p/b/c;->setSize(I)V
+    invoke-virtual {p1, p2}, Ld/q/b/c;->setSize(I)V
 
     goto :goto_0
 
@@ -597,7 +597,7 @@
     if-eqz v0, :cond_2
 
     .line 10
-    invoke-virtual {p1, v1}, Ld/p/b/c;->setSize(I)V
+    invoke-virtual {p1, v1}, Ld/q/b/c;->setSize(I)V
 
     goto :goto_0
 
@@ -614,7 +614,7 @@
     const/4 p2, 0x0
 
     .line 12
-    invoke-virtual {p1, p2}, Ld/p/b/c;->setSize(I)V
+    invoke-virtual {p1, p2}, Ld/q/b/c;->setSize(I)V
 
     :goto_0
     return-void

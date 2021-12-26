@@ -1,6 +1,6 @@
 .class final Lg/f/a/e/i/k/a2;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 # interfaces
 .implements Lcom/google/firebase/m/d;
@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/k/e1;",
+        "Lg/f/a/e/i/k/n4;",
         ">;"
     }
 .end annotation
@@ -45,46 +45,18 @@
 
 # virtual methods
 .method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    check-cast p1, Lg/f/a/e/i/k/e1;
+    check-cast p1, Lg/f/a/e/i/k/n4;
 
     check-cast p2, Lcom/google/firebase/m/e;
 
-    invoke-virtual {p1}, Lg/f/a/e/i/k/e1;->a()Lg/f/a/e/i/k/s5;
+    const/4 p1, 0x0
 
-    move-result-object v0
-
-    const-string v1, "errorCode"
-
-    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
-
-    const-string v0, "hasResult"
-
-    const/4 v1, 0x0
-
-    invoke-interface {p2, v0, v1}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
-
-    invoke-virtual {p1}, Lg/f/a/e/i/k/e1;->b()Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    const-string v1, "isColdCall"
-
-    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
-
-    invoke-virtual {p1}, Lg/f/a/e/i/k/e1;->c()Lg/f/a/e/i/k/k5;
-
-    move-result-object p1
-
-    const-string v0, "imageInfo"
-
-    invoke-interface {p2, v0, p1}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
-
-    return-void
+    throw p1
 .end method

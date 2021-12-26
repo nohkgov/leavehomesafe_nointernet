@@ -20,6 +20,12 @@
 
 .field public static final FLAVOR_version:Ljava/lang/String; = "google"
 
+.field public static final HCS_BASE_URL:Ljava/lang/String; = "https://localhost"
+
+.field public static final HCS_REG_URL:Ljava/lang/String; = "https://localhost"
+
+.field public static final HCS_WEB_URL:Ljava/lang/String; = "https://localhost"
+
 .field public static final HKCT_IV:Ljava/lang/String; = "0000000000000000"
 
 .field public static final HKEN_BASE_URL:Ljava/lang/String; = "https://localhost"
@@ -32,9 +38,9 @@
 
 .field public static final VERIFICATION_PAYLOAD:Ljava/lang/String; = "PUBLIC_HEALTH_AUTHORITY"
 
-.field public static final VERSION_CODE:I = 0x86
+.field public static final VERSION_CODE:I = 0x8f
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "2.1.5"
+.field public static final VERSION_NAME:Ljava/lang/String; = "3.0.1"
 
 .field public static final flavor:Ljava/lang/String; = "google"
 

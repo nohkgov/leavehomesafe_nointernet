@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Lg/f/a/e/i/n/i;
+.field private a:Lg/f/a/e/i/o/i;
 
 .field private b:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -21,14 +21,14 @@
 
 
 # direct methods
-.method constructor <init>(Lg/f/a/e/i/n/i;)V
+.method constructor <init>(Lg/f/a/e/i/o/i;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/n/i;
+    iput-object p1, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/o/i;
 
     return-void
 .end method
@@ -54,11 +54,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/n/i;
+    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/o/i;
 
-    iget-object v0, v0, Lg/f/a/e/i/n/i;->d:Lg/f/a/e/i/n/c;
+    iget-object v0, v0, Lg/f/a/e/i/o/i;->d:Lg/f/a/e/i/o/c;
 
-    invoke-static {v0}, Lg/f/a/e/n/f/h;->b(Lg/f/a/e/i/n/c;)[Landroid/graphics/Point;
+    invoke-static {v0}, Lg/f/a/e/n/f/h;->b(Lg/f/a/e/i/o/c;)[Landroid/graphics/Point;
 
     move-result-object v0
 
@@ -71,9 +71,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/n/i;
+    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/o/i;
 
-    iget-object v0, v0, Lg/f/a/e/i/n/i;->i:Ljava/lang/String;
+    iget-object v0, v0, Lg/f/a/e/i/o/i;->i:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -94,9 +94,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/n/i;
+    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/o/i;
 
-    iget-object v0, v0, Lg/f/a/e/i/n/i;->c:[Lg/f/a/e/i/n/p;
+    iget-object v0, v0, Lg/f/a/e/i/o/i;->c:[Lg/f/a/e/i/o/p;
 
     array-length v0, v0
 
@@ -120,9 +120,9 @@
     .line 4
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v2, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/n/i;
+    iget-object v2, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/o/i;
 
-    iget-object v2, v2, Lg/f/a/e/i/n/i;->c:[Lg/f/a/e/i/n/p;
+    iget-object v2, v2, Lg/f/a/e/i/o/i;->c:[Lg/f/a/e/i/o/p;
 
     array-length v2, v2
 
@@ -131,9 +131,9 @@
     iput-object v0, p0, Lg/f/a/e/n/f/b;->b:Ljava/util/List;
 
     .line 5
-    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/n/i;
+    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/o/i;
 
-    iget-object v0, v0, Lg/f/a/e/i/n/i;->c:[Lg/f/a/e/i/n/p;
+    iget-object v0, v0, Lg/f/a/e/i/o/i;->c:[Lg/f/a/e/i/o/p;
 
     array-length v2, v0
 
@@ -147,7 +147,7 @@
 
     new-instance v5, Lg/f/a/e/n/f/a;
 
-    invoke-direct {v5, v3}, Lg/f/a/e/n/f/a;-><init>(Lg/f/a/e/i/n/p;)V
+    invoke-direct {v5, v3}, Lg/f/a/e/n/f/a;-><init>(Lg/f/a/e/i/o/p;)V
 
     invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -168,9 +168,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/n/i;
+    iget-object v0, p0, Lg/f/a/e/n/f/b;->a:Lg/f/a/e/i/o/i;
 
-    iget-object v0, v0, Lg/f/a/e/i/n/i;->g:Ljava/lang/String;
+    iget-object v0, v0, Lg/f/a/e/i/o/i;->g:Ljava/lang/String;
 
     return-object v0
 .end method

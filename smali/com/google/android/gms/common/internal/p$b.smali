@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract j(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/b;
+.method public abstract k(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/b;
 .end method

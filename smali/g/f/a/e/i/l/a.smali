@@ -1,31 +1,3 @@
-.class public Lg/f/a/e/i/l/a;
+.class Lg/f/a/e/i/l/a;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Landroid/os/IInterface;
-
-
-# instance fields
-.field private final a:Landroid/os/IBinder;
-
-
-# direct methods
-.method protected constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lg/f/a/e/i/l/a;->a:Landroid/os/IBinder;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public asBinder()Landroid/os/IBinder;
-    .locals 1
-
-    iget-object v0, p0, Lg/f/a/e/i/l/a;->a:Landroid/os/IBinder;
-
-    return-object v0
-.end method
+.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"

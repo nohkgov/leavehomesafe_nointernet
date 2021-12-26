@@ -58,6 +58,32 @@
         .end annotation
     .end param
 
+    .line 5
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/t/a;-><init>()V
+
+    .line 6
+    iput-object p1, p0, Lg/f/a/e/e/c;->c:Ljava/lang/String;
+
+    .line 7
+    iput p2, p0, Lg/f/a/e/e/c;->d:I
+
+    .line 8
+    iput-wide p3, p0, Lg/f/a/e/e/c;->e:J
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;J)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # J
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/t/a;-><init>()V
 
@@ -65,10 +91,12 @@
     iput-object p1, p0, Lg/f/a/e/e/c;->c:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lg/f/a/e/e/c;->d:I
+    iput-wide p2, p0, Lg/f/a/e/e/c;->e:J
+
+    const/4 p1, -0x1
 
     .line 4
-    iput-wide p3, p0, Lg/f/a/e/e/c;->e:J
+    iput p1, p0, Lg/f/a/e/e/c;->d:I
 
     return-void
 .end method

@@ -76,7 +76,7 @@
 
     iget-object v1, p0, Lcom/google/android/gms/common/internal/c0;->d:Lcom/google/android/gms/common/internal/p$b;
 
-    invoke-interface {v1, p1}, Lcom/google/android/gms/common/internal/p$b;->j(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/b;
+    invoke-interface {v1, p1}, Lcom/google/android/gms/common/internal/p$b;->k(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/b;
 
     move-result-object p1
 

@@ -96,7 +96,7 @@
     .line 2
     iget-object v0, p0, Landroid/support/v4/media/session/e$b;->a:Landroid/support/v4/media/session/e$a;
 
-    invoke-interface {v0, p1}, Landroid/support/v4/media/session/e$a;->k(Landroid/os/Bundle;)V
+    invoke-interface {v0, p1}, Landroid/support/v4/media/session/e$a;->l(Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -137,7 +137,7 @@
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/e$b;->a:Landroid/support/v4/media/session/e$a;
 
-    invoke-interface {v0, p1}, Landroid/support/v4/media/session/e$a;->l(Ljava/util/List;)V
+    invoke-interface {v0, p1}, Landroid/support/v4/media/session/e$a;->m(Ljava/util/List;)V
 
     return-void
 .end method

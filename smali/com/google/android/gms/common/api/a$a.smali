@@ -86,9 +86,9 @@
     .line 1
     invoke-virtual/range {p0 .. p6}, Lcom/google/android/gms/common/api/a$a;->b(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Ljava/lang/Object;Lcom/google/android/gms/common/api/internal/e;Lcom/google/android/gms/common/api/internal/j;)Lcom/google/android/gms/common/api/a$f;
 
-    const/4 p1, 0x0
+    move-result-object p1
 
-    throw p1
+    return-object p1
 .end method
 
 .method public b(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Ljava/lang/Object;Lcom/google/android/gms/common/api/internal/e;Lcom/google/android/gms/common/api/internal/j;)Lcom/google/android/gms/common/api/a$f;

@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract b0(ILandroid/os/Bundle;)V
+.method public abstract c0(ILandroid/os/Bundle;)V
     .param p1    # I
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
@@ -39,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract i0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
+.method public abstract j0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
     .param p1    # I
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation

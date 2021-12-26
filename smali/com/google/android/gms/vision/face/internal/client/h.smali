@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract C(Lg/f/a/e/f/a;Lcom/google/android/gms/vision/face/internal/client/f;)Lcom/google/android/gms/vision/face/internal/client/g;
+.method public abstract D(Lg/f/a/e/f/a;Lcom/google/android/gms/vision/face/internal/client/f;)Lcom/google/android/gms/vision/face/internal/client/g;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

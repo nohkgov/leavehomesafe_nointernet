@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/google/android/gms/common/api/internal/b;Lg/f/a/e/e/c;Lcom/google/android/gms/common/api/internal/s;)V
+.method synthetic constructor <init>(Lcom/google/android/gms/common/api/internal/b;Lg/f/a/e/e/c;Lcom/google/android/gms/common/api/internal/u;)V
     .locals 0
 
     .line 4

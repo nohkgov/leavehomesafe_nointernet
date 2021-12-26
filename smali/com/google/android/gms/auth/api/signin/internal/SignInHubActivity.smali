@@ -197,7 +197,7 @@
 
     move-result-object v2
 
-    invoke-static {p1}, Lg/f/a/e/i/a/a;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lg/f/a/e/i/b/a;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object v3, p1
 
@@ -281,7 +281,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lg/f/a/e/i/a/a;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Lg/f/a/e/i/b/a;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/String;
 
@@ -367,7 +367,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lg/f/a/e/i/a/a;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lg/f/a/e/i/b/a;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast v0, Landroid/os/Bundle;
 
@@ -511,7 +511,7 @@
 
     check-cast p1, Landroid/content/Intent;
 
-    invoke-static {p1}, Lg/f/a/e/i/a/a;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lg/f/a/e/i/b/a;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Landroid/content/Intent;
 

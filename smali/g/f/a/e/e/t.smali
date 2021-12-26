@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method final l0()[B
+.method final m0()[B
     .locals 1
 
     .line 1

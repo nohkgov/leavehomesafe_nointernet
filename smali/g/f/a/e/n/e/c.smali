@@ -165,7 +165,7 @@
     :cond_0
     iget-object v1, p0, Lg/f/a/e/n/e/c;->d:Lcom/google/android/gms/vision/face/internal/client/b;
 
-    invoke-virtual {v1}, Lg/f/a/e/i/n/v6;->d()V
+    invoke-virtual {v1}, Lg/f/a/e/i/o/v6;->d()V
 
     const/4 v1, 0x0
 
@@ -261,12 +261,12 @@
 
     check-cast v2, [Landroid/media/Image$Plane;
 
-    invoke-static {p1}, Lg/f/a/e/i/n/u6;->t(Lg/f/a/e/n/b;)Lg/f/a/e/i/n/u6;
+    invoke-static {p1}, Lg/f/a/e/i/o/u6;->t(Lg/f/a/e/n/b;)Lg/f/a/e/i/o/u6;
 
     move-result-object p1
 
     .line 8
-    invoke-virtual {v1, v2, p1}, Lcom/google/android/gms/vision/face/internal/client/b;->h([Landroid/media/Image$Plane;Lg/f/a/e/i/n/u6;)[Lg/f/a/e/n/e/b;
+    invoke-virtual {v1, v2, p1}, Lcom/google/android/gms/vision/face/internal/client/b;->h([Landroid/media/Image$Plane;Lg/f/a/e/i/o/u6;)[Lg/f/a/e/n/e/b;
 
     move-result-object p1
 
@@ -314,7 +314,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lg/f/a/e/i/n/y6;->b(Landroid/graphics/Bitmap;Z)Ljava/nio/ByteBuffer;
+    invoke-static {v0, v1}, Lg/f/a/e/i/o/y6;->b(Landroid/graphics/Bitmap;Z)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
@@ -346,12 +346,12 @@
 
     check-cast v0, Ljava/nio/ByteBuffer;
 
-    invoke-static {p1}, Lg/f/a/e/i/n/u6;->t(Lg/f/a/e/n/b;)Lg/f/a/e/i/n/u6;
+    invoke-static {p1}, Lg/f/a/e/i/o/u6;->t(Lg/f/a/e/n/b;)Lg/f/a/e/i/o/u6;
 
     move-result-object p1
 
     .line 19
-    invoke-virtual {v2, v0, p1}, Lcom/google/android/gms/vision/face/internal/client/b;->g(Ljava/nio/ByteBuffer;Lg/f/a/e/i/n/u6;)[Lg/f/a/e/n/e/b;
+    invoke-virtual {v2, v0, p1}, Lcom/google/android/gms/vision/face/internal/client/b;->g(Ljava/nio/ByteBuffer;Lg/f/a/e/i/o/u6;)[Lg/f/a/e/n/e/b;
 
     move-result-object p1
 
@@ -479,7 +479,7 @@
     .line 1
     iget-object v0, p0, Lg/f/a/e/n/e/c;->d:Lcom/google/android/gms/vision/face/internal/client/b;
 
-    invoke-virtual {v0}, Lg/f/a/e/i/n/v6;->c()Z
+    invoke-virtual {v0}, Lg/f/a/e/i/o/v6;->c()Z
 
     move-result v0
 

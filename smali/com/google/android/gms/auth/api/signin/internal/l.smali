@@ -21,7 +21,7 @@
 
 
 # virtual methods
-.method public final t(Lcom/google/android/gms/common/api/Status;)V
+.method public final u(Lcom/google/android/gms/common/api/Status;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {

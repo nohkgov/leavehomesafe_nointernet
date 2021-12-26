@@ -7,8 +7,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/android/gms/common/api/a$a<",
-        "Lcom/google/android/gms/auth/api/signin/internal/h;",
-        "Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;",
+        "Lg/f/a/e/i/b/f;",
+        "Lg/f/a/e/a/a/a$a;",
         ">;"
     }
 .end annotation
@@ -32,10 +32,10 @@
     .line 1
     move-object v4, p4
 
-    check-cast v4, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    check-cast v4, Lg/f/a/e/a/a/a$a;
 
     .line 2
-    new-instance p4, Lcom/google/android/gms/auth/api/signin/internal/h;
+    new-instance p4, Lg/f/a/e/i/b/f;
 
     move-object v0, p4
 
@@ -49,7 +49,7 @@
 
     move-object v6, p6
 
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/auth/api/signin/internal/h;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
+    invoke-direct/range {v0 .. v6}, Lg/f/a/e/i/b/f;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Lg/f/a/e/a/a/a$a;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
 
     return-object p4
 .end method

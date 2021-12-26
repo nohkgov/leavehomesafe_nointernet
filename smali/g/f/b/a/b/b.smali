@@ -137,7 +137,7 @@
     const-string v0, "RemoteModel"
 
     .line 1
-    invoke-static {v0}, Lg/f/a/e/i/i/e0;->a(Ljava/lang/String;)Lg/f/a/e/i/i/d0;
+    invoke-static {v0}, Lg/f/a/e/i/j/e0;->a(Ljava/lang/String;)Lg/f/a/e/i/j/d0;
 
     move-result-object v0
 
@@ -146,24 +146,24 @@
     const-string v2, "modelName"
 
     .line 2
-    invoke-virtual {v0, v2, v1}, Lg/f/a/e/i/i/d0;->a(Ljava/lang/String;Ljava/lang/Object;)Lg/f/a/e/i/i/d0;
+    invoke-virtual {v0, v2, v1}, Lg/f/a/e/i/j/d0;->a(Ljava/lang/String;Ljava/lang/Object;)Lg/f/a/e/i/j/d0;
 
     iget-object v1, p0, Lg/f/b/a/b/b;->b:Lg/f/b/a/c/o/a;
 
     const-string v2, "baseModel"
 
     .line 3
-    invoke-virtual {v0, v2, v1}, Lg/f/a/e/i/i/d0;->a(Ljava/lang/String;Ljava/lang/Object;)Lg/f/a/e/i/i/d0;
+    invoke-virtual {v0, v2, v1}, Lg/f/a/e/i/j/d0;->a(Ljava/lang/String;Ljava/lang/Object;)Lg/f/a/e/i/j/d0;
 
     iget-object v1, p0, Lg/f/b/a/b/b;->c:Lg/f/b/a/c/l;
 
     const-string v2, "modelType"
 
     .line 4
-    invoke-virtual {v0, v2, v1}, Lg/f/a/e/i/i/d0;->a(Ljava/lang/String;Ljava/lang/Object;)Lg/f/a/e/i/i/d0;
+    invoke-virtual {v0, v2, v1}, Lg/f/a/e/i/j/d0;->a(Ljava/lang/String;Ljava/lang/Object;)Lg/f/a/e/i/j/d0;
 
     .line 5
-    invoke-virtual {v0}, Lg/f/a/e/i/i/d0;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lg/f/a/e/i/j/d0;->toString()Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,107 +1,48 @@
-.class public Lg/f/a/e/i/a/e;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-auth@@19.0.0"
+.class public final Lg/f/a/e/i/a/e;
+.super Lg/f/a/e/i/a/c;
+.source "com.google.android.gms:play-services-auth-api-phone@@17.4.0"
+
+# interfaces
+.implements Lg/f/a/e/i/a/f;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method constructor <init>(Landroid/os/IBinder;)V
     .locals 1
 
-    .line 1
-    const-class v0, Lg/f/a/e/i/a/e;
+    const-string v0, "com.google.android.gms.auth.api.phone.internal.ISmsRetrieverApiService"
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    .line 1
+    invoke-direct {p0, p1, v0}, Lg/f/a/e/i/a/c;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method private constructor <init>()V
-    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+# virtual methods
+.method public final a0(Ljava/lang/String;Lg/f/a/e/i/a/h;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "<T::",
-            "Landroid/os/Parcelable;",
-            ">(",
-            "Landroid/os/Parcel;",
-            "Landroid/os/Parcelable$Creator<",
-            "TT;>;)TT;"
+            Landroid/os/RemoteException;
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
+    invoke-virtual {p0}, Lg/f/a/e/i/a/c;->l0()Landroid/os/Parcel;
 
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
+    move-result-object v0
 
     .line 2
-    :cond_0
-    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/os/Parcelable;
-
-    return-object p0
-.end method
-
-.method public static b(Landroid/os/Parcel;Landroid/os/IInterface;)V
-    .locals 0
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
-
-    return-void
-
-    .line 2
-    :cond_0
-    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
-
-    return-void
-.end method
-
-.method public static c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
-    .locals 2
-
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_0
-
-    .line 1
-    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
-
-    return-void
-
-    :cond_0
-    const/4 v1, 0x1
-
-    .line 2
-    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 3
-    invoke-interface {p1, p0, v0}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
+    invoke-static {v0, p2}, Lg/f/a/e/i/a/d;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+
+    const/4 p1, 0x2
+
+    .line 4
+    invoke-virtual {p0, p1, v0}, Lg/f/a/e/i/a/c;->m0(ILandroid/os/Parcel;)V
 
     return-void
 .end method

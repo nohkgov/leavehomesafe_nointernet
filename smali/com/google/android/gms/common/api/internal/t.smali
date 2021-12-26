@@ -1,42 +1,37 @@
-.class final Lcom/google/android/gms/common/api/internal/t;
-.super Ljava/lang/Object;
+.class public abstract Lcom/google/android/gms/common/api/internal/t;
+.super Lcom/google/android/gms/common/api/internal/g0;
 .source "com.google.android.gms:play-services-base@@17.4.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field private final synthetic c:I
-
-.field private final synthetic d:Lcom/google/android/gms/common/api/internal/f$a;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/f$a;I)V
+.method public constructor <init>(I)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/t;->d:Lcom/google/android/gms/common/api/internal/f$a;
-
-    iput p2, p0, Lcom/google/android/gms/common/api/internal/t;->c:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/internal/g0;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public abstract g(Lcom/google/android/gms/common/api/internal/f$a;)[Lg/f/a/e/e/c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/internal/f$a<",
+            "*>;)[",
+            "Lg/f/a/e/e/c;"
+        }
+    .end annotation
+.end method
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/t;->d:Lcom/google/android/gms/common/api/internal/f$a;
-
-    iget v1, p0, Lcom/google/android/gms/common/api/internal/t;->c:I
-
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/api/internal/f$a;->i(Lcom/google/android/gms/common/api/internal/f$a;I)V
-
-    return-void
+.method public abstract h(Lcom/google/android/gms/common/api/internal/f$a;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/internal/f$a<",
+            "*>;)Z"
+        }
+    .end annotation
 .end method

@@ -36,7 +36,7 @@
     return-object v0
 .end method
 
-.method protected final k0()Landroid/os/Parcel;
+.method protected final l0()Landroid/os/Parcel;
     .locals 2
 
     .line 1
@@ -52,7 +52,7 @@
     return-object v0
 .end method
 
-.method protected final l0(Landroid/os/Parcel;)Landroid/os/Parcel;
+.method protected final m0(Landroid/os/Parcel;)Landroid/os/Parcel;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {

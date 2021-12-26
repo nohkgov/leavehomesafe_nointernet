@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final j(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/b;
+.method public final k(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/b;
     .locals 0
 
     .line 1

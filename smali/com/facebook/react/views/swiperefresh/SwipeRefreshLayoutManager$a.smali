@@ -3,7 +3,7 @@
 .source "SwipeRefreshLayoutManager.java"
 
 # interfaces
-.implements Ld/p/b/c$j;
+.implements Ld/q/b/c$j;
 
 
 # annotations

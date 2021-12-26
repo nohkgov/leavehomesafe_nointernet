@@ -36,7 +36,7 @@
 
 
 # virtual methods
-.method public E(Landroid/os/Message;)V
+.method public F(Landroid/os/Message;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {

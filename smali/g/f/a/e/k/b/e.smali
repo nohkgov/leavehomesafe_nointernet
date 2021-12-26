@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public final F(Lg/f/a/e/k/b/h;)V
+.method public final G(Lg/f/a/e/k/b/h;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -48,7 +48,7 @@
     return-void
 .end method
 
-.method public final j(Lcom/google/android/gms/common/api/Status;)V
+.method public final k(Lcom/google/android/gms/common/api/Status;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -59,7 +59,7 @@
     return-void
 .end method
 
-.method public final o(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
+.method public final p(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

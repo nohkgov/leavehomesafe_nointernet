@@ -1,20 +1,42 @@
-.class public interface abstract Lcom/google/android/gms/common/api/internal/i0;
+.class final Lcom/google/android/gms/common/api/internal/i0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.4.0"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# virtual methods
-.method public abstract b(Lcom/google/android/gms/common/internal/j;Ljava/util/Set;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/internal/j;",
-            "Ljava/util/Set<",
-            "Lcom/google/android/gms/common/api/Scope;",
-            ">;)V"
-        }
-    .end annotation
+
+# instance fields
+.field private final synthetic c:Lg/f/a/e/k/b/n;
+
+.field private final synthetic d:Lcom/google/android/gms/common/api/internal/h0;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/common/api/internal/h0;Lg/f/a/e/k/b/n;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/i0;->d:Lcom/google/android/gms/common/api/internal/h0;
+
+    iput-object p2, p0, Lcom/google/android/gms/common/api/internal/i0;->c:Lg/f/a/e/k/b/n;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
 .end method
 
-.method public abstract c(Lg/f/a/e/e/a;)V
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/i0;->d:Lcom/google/android/gms/common/api/internal/h0;
+
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/i0;->c:Lg/f/a/e/k/b/n;
+
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/api/internal/h0;->o0(Lcom/google/android/gms/common/api/internal/h0;Lg/f/a/e/k/b/n;)V
+
+    return-void
 .end method

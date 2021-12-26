@@ -99,9 +99,9 @@
     invoke-static {p0, v0}, Lcom/google/android/gms/common/internal/q;->k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    new-instance v0, Lcom/google/android/gms/common/api/internal/n;
+    new-instance v0, Lcom/google/android/gms/common/api/internal/o;
 
-    invoke-direct {v0, p1}, Lcom/google/android/gms/common/api/internal/n;-><init>(Lcom/google/android/gms/common/api/f;)V
+    invoke-direct {v0, p1}, Lcom/google/android/gms/common/api/internal/o;-><init>(Lcom/google/android/gms/common/api/f;)V
 
     .line 3
     invoke-virtual {v0, p0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->f(Lcom/google/android/gms/common/api/k;)V

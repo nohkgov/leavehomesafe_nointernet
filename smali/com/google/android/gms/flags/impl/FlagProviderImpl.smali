@@ -148,7 +148,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Lg/f/a/e/f/b;->m0(Lg/f/a/e/f/a;)Ljava/lang/Object;
+    invoke-static {p1}, Lg/f/a/e/f/b;->n0(Lg/f/a/e/f/a;)Ljava/lang/Object;
 
     move-result-object p1
 

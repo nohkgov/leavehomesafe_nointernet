@@ -79,18 +79,18 @@
 
 .field public static final select_dialog_singlechoice_material:I = 0x7f0d0063
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0064
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0066
 
-.field public static final ucrop_activity_photobox:I = 0x7f0d0073
+.field public static final ucrop_activity_photobox:I = 0x7f0d0075
 
-.field public static final ucrop_aspect_ratio:I = 0x7f0d0074
+.field public static final ucrop_aspect_ratio:I = 0x7f0d0076
 
-.field public static final ucrop_controls:I = 0x7f0d0075
+.field public static final ucrop_controls:I = 0x7f0d0077
 
-.field public static final ucrop_fragment_photobox:I = 0x7f0d0076
+.field public static final ucrop_fragment_photobox:I = 0x7f0d0078
 
-.field public static final ucrop_layout_rotate_wheel:I = 0x7f0d0077
+.field public static final ucrop_layout_rotate_wheel:I = 0x7f0d0079
 
-.field public static final ucrop_layout_scale_wheel:I = 0x7f0d0078
+.field public static final ucrop_layout_scale_wheel:I = 0x7f0d007a
 
-.field public static final ucrop_view:I = 0x7f0d0079
+.field public static final ucrop_view:I = 0x7f0d007b

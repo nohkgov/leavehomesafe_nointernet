@@ -1,3 +1,3 @@
 .class public final Lg/f/a/e/i/k/s4;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.source "com.google.mlkit:vision-common@@16.2.0"

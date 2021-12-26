@@ -38,7 +38,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, p2, p3, p4}, Ld/s/a/a/h;->c(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Ld/s/a/a/h;
+    invoke-static {p1, p2, p3, p4}, Ld/t/a/a/h;->c(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Ld/t/a/a/h;
 
     move-result-object p1
     :try_end_0

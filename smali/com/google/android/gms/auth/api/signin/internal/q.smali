@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract t(Lcom/google/android/gms/common/api/Status;)V
+.method public abstract u(Lcom/google/android/gms/common/api/Status;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

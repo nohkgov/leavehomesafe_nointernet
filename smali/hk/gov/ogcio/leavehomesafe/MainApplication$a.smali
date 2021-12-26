@@ -75,6 +75,13 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    .line 5
+    new-instance v1, Lhk/gov/ogcio/leavehomesafe/sms/b;
+
+    invoke-direct {v1}, Lhk/gov/ogcio/leavehomesafe/sms/b;-><init>()V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
     return-object v0
 .end method
 

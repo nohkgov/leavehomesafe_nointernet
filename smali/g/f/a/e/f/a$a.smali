@@ -1,5 +1,5 @@
 .class public Lg/f/a/e/f/a$a;
-.super Lg/f/a/e/i/f/a;
+.super Lg/f/a/e/i/g/a;
 .source "com.google.android.gms:play-services-basement@@17.4.0"
 
 # interfaces
@@ -30,12 +30,12 @@
     const-string v0, "com.google.android.gms.dynamic.IObjectWrapper"
 
     .line 1
-    invoke-direct {p0, v0}, Lg/f/a/e/i/f/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lg/f/a/e/i/g/a;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public static l0(Landroid/os/IBinder;)Lg/f/a/e/f/a;
+.method public static m0(Landroid/os/IBinder;)Lg/f/a/e/f/a;
     .locals 2
     .param p0    # Landroid/os/IBinder;
         .annotation build Landroidx/annotation/RecentlyNonNull;

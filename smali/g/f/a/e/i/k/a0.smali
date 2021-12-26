@@ -1,44 +1,62 @@
-.class public final Lg/f/a/e/i/k/a0;
-.super Lg/f/a/e/i/k/a;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.class final Lg/f/a/e/i/k/a0;
+.super Ljava/lang/Object;
+.source "com.google.mlkit:vision-common@@16.2.0"
+
+# interfaces
+.implements Lcom/google/firebase/m/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/firebase/m/d<",
+        "Lg/f/a/e/i/k/e;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field static final a:Lg/f/a/e/i/k/a0;
 
 
 # direct methods
-.method public static a(Ljava/lang/Object;Ljava/lang/Object;)Z
-    .locals 2
-    .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+.method static constructor <clinit>()V
+    .locals 1
 
-    const/4 v0, 0x0
+    new-instance v0, Lg/f/a/e/i/k/a0;
 
-    const/4 v1, 0x1
+    invoke-direct {v0}, Lg/f/a/e/i/k/a0;-><init>()V
 
-    if-eq p0, p1, :cond_1
+    sput-object v0, Lg/f/a/e/i/k/a0;->a:Lg/f/a/e/i/k/a0;
 
-    if-eqz p0, :cond_2
+    return-void
+.end method
 
-    .line 1
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+.method private constructor <init>()V
+    .locals 0
 
-    move-result p0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-eqz p0, :cond_0
+    return-void
+.end method
 
-    goto :goto_0
 
-    :cond_0
-    return v0
+# virtual methods
+.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
+    check-cast p1, Lg/f/a/e/i/k/e;
 
-    :cond_2
-    return v0
+    check-cast p2, Lcom/google/firebase/m/e;
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method

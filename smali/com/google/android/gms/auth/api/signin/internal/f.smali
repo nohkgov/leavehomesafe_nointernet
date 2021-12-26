@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-auth@@19.0.0"
 
 # interfaces
-.implements Lcom/google/android/gms/common/api/internal/l;
+.implements Lcom/google/android/gms/common/api/internal/m;
 
 
 # annotations
@@ -12,7 +12,7 @@
         "Ld/n/b/a<",
         "Ljava/lang/Void;",
         ">;",
-        "Lcom/google/android/gms/common/api/internal/l;"
+        "Lcom/google/android/gms/common/api/internal/m;"
     }
 .end annotation
 
@@ -125,7 +125,7 @@
     check-cast v0, Lcom/google/android/gms/common/api/f;
 
     .line 6
-    invoke-virtual {v0, p0}, Lcom/google/android/gms/common/api/f;->d(Lcom/google/android/gms/common/api/internal/l;)Z
+    invoke-virtual {v0, p0}, Lcom/google/android/gms/common/api/f;->d(Lcom/google/android/gms/common/api/internal/m;)Z
 
     throw v2
 .end method

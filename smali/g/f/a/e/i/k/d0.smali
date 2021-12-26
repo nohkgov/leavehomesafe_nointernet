@@ -1,139 +1,62 @@
 .class final Lg/f/a/e/i/k/d0;
-.super Lg/f/a/e/i/k/r;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.super Ljava/lang/Object;
+.source "com.google.mlkit:vision-common@@16.2.0"
+
+# interfaces
+.implements Lcom/google/firebase/m/d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<E:",
         "Ljava/lang/Object;",
-        ">",
-        "Lg/f/a/e/i/k/r<",
-        "TE;>;"
+        "Lcom/google/firebase/m/d<",
+        "Lg/f/a/e/i/k/g;",
+        ">;"
     }
 .end annotation
 
 
 # static fields
-.field static final g:Lg/f/a/e/i/k/r;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lg/f/a/e/i/k/r<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# instance fields
-.field final transient e:[Ljava/lang/Object;
-
-.field private final transient f:I
+.field static final a:Lg/f/a/e/i/k/d0;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 1
 
     new-instance v0, Lg/f/a/e/i/k/d0;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Lg/f/a/e/i/k/d0;-><init>()V
 
-    new-array v2, v1, [Ljava/lang/Object;
-
-    .line 1
-    invoke-direct {v0, v2, v1}, Lg/f/a/e/i/k/d0;-><init>([Ljava/lang/Object;I)V
-
-    sput-object v0, Lg/f/a/e/i/k/d0;->g:Lg/f/a/e/i/k/r;
+    sput-object v0, Lg/f/a/e/i/k/d0;->a:Lg/f/a/e/i/k/d0;
 
     return-void
 .end method
 
-.method constructor <init>([Ljava/lang/Object;I)V
+.method private constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lg/f/a/e/i/k/r;-><init>()V
-
-    iput-object p1, p0, Lg/f/a/e/i/k/d0;->e:[Ljava/lang/Object;
-
-    iput p2, p0, Lg/f/a/e/i/k/d0;->f:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method final d()[Ljava/lang/Object;
-    .locals 1
-
-    iget-object v0, p0, Lg/f/a/e/i/k/d0;->e:[Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public final get(I)Ljava/lang/Object;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
+.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(I)TE;"
+            Ljava/io/IOException;
         }
     .end annotation
 
-    iget v0, p0, Lg/f/a/e/i/k/d0;->f:I
+    check-cast p1, Lg/f/a/e/i/k/g;
 
-    const-string v1, "index"
+    check-cast p2, Lcom/google/firebase/m/e;
 
-    .line 1
-    invoke-static {p1, v0, v1}, Lg/f/a/e/i/k/c4;->b(IILjava/lang/String;)I
+    const/4 p1, 0x0
 
-    iget-object v0, p0, Lg/f/a/e/i/k/d0;->e:[Ljava/lang/Object;
-
-    .line 2
-    aget-object p1, v0, p1
-
-    return-object p1
-.end method
-
-.method final h()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method final i()I
-    .locals 1
-
-    iget v0, p0, Lg/f/a/e/i/k/d0;->f:I
-
-    return v0
-.end method
-
-.method final j([Ljava/lang/Object;I)I
-    .locals 2
-
-    iget-object p2, p0, Lg/f/a/e/i/k/d0;->e:[Ljava/lang/Object;
-
-    iget v0, p0, Lg/f/a/e/i/k/d0;->f:I
-
-    const/4 v1, 0x0
-
-    .line 1
-    invoke-static {p2, v1, p1, v1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    iget p1, p0, Lg/f/a/e/i/k/d0;->f:I
-
-    return p1
-.end method
-
-.method public final size()I
-    .locals 1
-
-    iget v0, p0, Lg/f/a/e/i/k/d0;->f:I
-
-    return v0
+    throw p1
 .end method

@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public static k0(Landroid/os/IBinder;)Lg/f/a/d/a/a;
+.method public static l0(Landroid/os/IBinder;)Lg/f/a/d/a/a;
     .locals 2
 
     if-eqz p0, :cond_1

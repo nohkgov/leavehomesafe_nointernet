@@ -3,11 +3,11 @@
 .source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
 
 # interfaces
-.implements Lg/f/a/e/i/k/n7;
+.implements Lg/f/a/e/i/l/n7;
 
 
 # static fields
-.field static final a:Lg/f/a/e/i/k/n7;
+.field static final a:Lg/f/a/e/i/l/n7;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lcom/google/mlkit/vision/text/internal/c;-><init>()V
 
-    sput-object v0, Lcom/google/mlkit/vision/text/internal/c;->a:Lg/f/a/e/i/k/n7;
+    sput-object v0, Lcom/google/mlkit/vision/text/internal/c;->a:Lg/f/a/e/i/l/n7;
 
     return-void
 .end method

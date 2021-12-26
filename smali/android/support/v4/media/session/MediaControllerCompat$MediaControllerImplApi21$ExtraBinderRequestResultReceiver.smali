@@ -63,7 +63,7 @@
     move-result-object v2
 
     .line 5
-    invoke-static {v2}, Landroid/support/v4/media/session/b$a;->k0(Landroid/os/IBinder;)Landroid/support/v4/media/session/b;
+    invoke-static {v2}, Landroid/support/v4/media/session/b$a;->l0(Landroid/os/IBinder;)Landroid/support/v4/media/session/b;
 
     move-result-object v2
 

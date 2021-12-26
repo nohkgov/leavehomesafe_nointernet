@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract F(Lg/f/a/e/k/b/h;)V
+.method public abstract G(Lg/f/a/e/k/b/h;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -39,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract j(Lcom/google/android/gms/common/api/Status;)V
+.method public abstract k(Lcom/google/android/gms/common/api/Status;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -47,7 +47,7 @@
     .end annotation
 .end method
 
-.method public abstract o(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
+.method public abstract p(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private final a:Ld/s/a/a/b;
+.field private final a:Ld/t/a/a/b;
 
 
 # direct methods
-.method constructor <init>(Ld/s/a/a/b;)V
+.method constructor <init>(Ld/t/a/a/b;)V
     .locals 1
 
     const/4 v0, 0x0
@@ -28,7 +28,7 @@
     invoke-direct {p0, v0}, Ld/a/l/a/a$g;-><init>(Ld/a/l/a/a$a;)V
 
     .line 2
-    iput-object p1, p0, Ld/a/l/a/a$d;->a:Ld/s/a/a/b;
+    iput-object p1, p0, Ld/a/l/a/a$d;->a:Ld/t/a/a/b;
 
     return-void
 .end method
@@ -39,9 +39,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ld/a/l/a/a$d;->a:Ld/s/a/a/b;
+    iget-object v0, p0, Ld/a/l/a/a$d;->a:Ld/t/a/a/b;
 
-    invoke-virtual {v0}, Ld/s/a/a/b;->start()V
+    invoke-virtual {v0}, Ld/t/a/a/b;->start()V
 
     return-void
 .end method
@@ -50,9 +50,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ld/a/l/a/a$d;->a:Ld/s/a/a/b;
+    iget-object v0, p0, Ld/a/l/a/a$d;->a:Ld/t/a/a/b;
 
-    invoke-virtual {v0}, Ld/s/a/a/b;->stop()V
+    invoke-virtual {v0}, Ld/t/a/a/b;->stop()V
 
     return-void
 .end method

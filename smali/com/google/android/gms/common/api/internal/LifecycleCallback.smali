@@ -69,7 +69,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/google/android/gms/common/api/internal/a1;->J1(Landroidx/fragment/app/e;)Lcom/google/android/gms/common/api/internal/a1;
+    invoke-static {p0}, Lcom/google/android/gms/common/api/internal/g1;->J1(Landroidx/fragment/app/e;)Lcom/google/android/gms/common/api/internal/g1;
 
     move-result-object p0
 
@@ -88,7 +88,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/google/android/gms/common/api/internal/z0;->c(Landroid/app/Activity;)Lcom/google/android/gms/common/api/internal/z0;
+    invoke-static {p0}, Lcom/google/android/gms/common/api/internal/f1;->c(Landroid/app/Activity;)Lcom/google/android/gms/common/api/internal/f1;
 
     move-result-object p0
 

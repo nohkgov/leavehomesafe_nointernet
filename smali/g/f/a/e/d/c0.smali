@@ -1,5 +1,5 @@
 .class final Lg/f/a/e/d/c0;
-.super Lg/f/a/e/i/e/e;
+.super Lg/f/a/e/i/f/e;
 .source "com.google.android.gms:play-services-cloud-messaging@@16.0.0"
 
 
@@ -14,7 +14,7 @@
     .line 1
     iput-object p1, p0, Lg/f/a/e/d/c0;->a:Lg/f/a/e/d/d;
 
-    invoke-direct {p0, p2}, Lg/f/a/e/i/e/e;-><init>(Landroid/os/Looper;)V
+    invoke-direct {p0, p2}, Lg/f/a/e/i/f/e;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/vision/face/internal/client/j;
-.super Lg/f/a/e/i/n/s;
+.super Lg/f/a/e/i/o/s;
 .source "com.google.android.gms:play-services-vision@@20.1.3"
 
 # interfaces
@@ -13,14 +13,14 @@
     const-string v0, "com.google.android.gms.vision.face.internal.client.INativeFaceDetectorCreator"
 
     .line 1
-    invoke-direct {p0, p1, v0}, Lg/f/a/e/i/n/s;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    invoke-direct {p0, p1, v0}, Lg/f/a/e/i/o/s;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Lg/f/a/e/f/a;Lcom/google/android/gms/vision/face/internal/client/f;)Lcom/google/android/gms/vision/face/internal/client/g;
+.method public final D(Lg/f/a/e/f/a;Lcom/google/android/gms/vision/face/internal/client/f;)Lcom/google/android/gms/vision/face/internal/client/g;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,20 +29,20 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lg/f/a/e/i/n/s;->k0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lg/f/a/e/i/o/s;->l0()Landroid/os/Parcel;
 
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lg/f/a/e/i/n/t;->a(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, p1}, Lg/f/a/e/i/o/t;->a(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     .line 3
-    invoke-static {v0, p2}, Lg/f/a/e/i/n/t;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p2}, Lg/f/a/e/i/o/t;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/4 p1, 0x1
 
     .line 4
-    invoke-virtual {p0, p1, v0}, Lg/f/a/e/i/n/s;->l0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, p1, v0}, Lg/f/a/e/i/o/s;->m0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object p1
 

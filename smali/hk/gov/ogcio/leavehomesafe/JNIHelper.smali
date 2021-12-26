@@ -26,5 +26,8 @@
 
 
 # virtual methods
+.method public native getHcsParam()[Ljava/lang/String;
+.end method
+
 .method public native getPbk()[Ljava/lang/String;
 .end method

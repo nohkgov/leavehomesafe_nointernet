@@ -192,13 +192,13 @@
     move-result p3
 
     .line 8
-    invoke-virtual {p1, p2, p3}, Lcom/google/android/gms/common/api/internal/f;->k(Lg/f/a/e/e/a;I)V
+    invoke-virtual {p1, p2, p3}, Lcom/google/android/gms/common/api/internal/f;->m(Lg/f/a/e/e/a;I)V
 
     goto :goto_0
 
     .line 9
     :cond_1
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/f;->n()V
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/f;->q()V
 
     goto :goto_0
 
@@ -407,7 +407,7 @@
     move-result v2
 
     .line 19
-    invoke-virtual {p1, v1, v2}, Lcom/google/android/gms/common/api/internal/f;->k(Lg/f/a/e/e/a;I)V
+    invoke-virtual {p1, v1, v2}, Lcom/google/android/gms/common/api/internal/f;->m(Lg/f/a/e/e/a;I)V
 
     goto :goto_0
 

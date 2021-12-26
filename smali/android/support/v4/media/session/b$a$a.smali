@@ -45,7 +45,7 @@
     return-object v0
 .end method
 
-.method public p(Landroid/support/v4/media/session/a;)V
+.method public q(Landroid/support/v4/media/session/a;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {

@@ -91,4 +91,4 @@
 
 .field public static final select_dialog_singlechoice_material:I = 0x7f0d0063
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0064
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0066

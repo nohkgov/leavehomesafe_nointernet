@@ -15,6 +15,7 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/google/android/gms/common/api/a$d$c;,
         Lcom/google/android/gms/common/api/a$d$b;,
         Lcom/google/android/gms/common/api/a$d$a;
     }

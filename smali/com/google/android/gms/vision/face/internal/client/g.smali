@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract i(Lg/f/a/e/f/a;Lg/f/a/e/i/n/u6;)[Lcom/google/android/gms/vision/face/internal/client/FaceParcel;
+.method public abstract i(Lg/f/a/e/f/a;Lg/f/a/e/i/o/u6;)[Lcom/google/android/gms/vision/face/internal/client/FaceParcel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract s(Lg/f/a/e/f/a;Lg/f/a/e/f/a;Lg/f/a/e/f/a;IIIIIILg/f/a/e/i/n/u6;)[Lcom/google/android/gms/vision/face/internal/client/FaceParcel;
+.method public abstract t(Lg/f/a/e/f/a;Lg/f/a/e/f/a;Lg/f/a/e/f/a;IIIIIILg/f/a/e/i/o/u6;)[Lcom/google/android/gms/vision/face/internal/client/FaceParcel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

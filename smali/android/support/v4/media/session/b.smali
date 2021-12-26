@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract p(Landroid/support/v4/media/session/a;)V
+.method public abstract q(Landroid/support/v4/media/session/a;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

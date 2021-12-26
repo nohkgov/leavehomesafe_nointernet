@@ -1,119 +1,62 @@
-.class abstract Lg/f/a/e/i/k/y;
-.super Ljava/util/AbstractMap;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.class final Lg/f/a/e/i/k/y;
+.super Ljava/lang/Object;
+.source "com.google.mlkit:vision-common@@16.2.0"
+
+# interfaces
+.implements Lcom/google/firebase/m/d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<K:",
         "Ljava/lang/Object;",
-        "V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/util/AbstractMap<",
-        "TK;TV;>;"
+        "Lcom/google/firebase/m/d<",
+        "Lg/f/a/e/i/k/c;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field private transient c:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/util/Map$Entry<",
-            "TK;TV;>;>;"
-        }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
-
-.field private transient d:Ljava/util/Collection;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Collection<",
-            "TV;>;"
-        }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
+# static fields
+.field static final a:Lg/f/a/e/i/k/y;
 
 
 # direct methods
-.method constructor <init>()V
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lg/f/a/e/i/k/y;
+
+    invoke-direct {v0}, Lg/f/a/e/i/k/y;-><init>()V
+
+    sput-object v0, Lg/f/a/e/i/k/y;->a:Lg/f/a/e/i/k/y;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method abstract a()Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
+.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "()",
-            "Ljava/util/Set<",
-            "Ljava/util/Map$Entry<",
-            "TK;TV;>;>;"
-        }
-    .end annotation
-.end method
-
-.method public final entrySet()Ljava/util/Set;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Set<",
-            "Ljava/util/Map$Entry<",
-            "TK;TV;>;>;"
+            Ljava/io/IOException;
         }
     .end annotation
 
-    iget-object v0, p0, Lg/f/a/e/i/k/y;->c:Ljava/util/Set;
+    check-cast p1, Lg/f/a/e/i/k/c;
 
-    if-nez v0, :cond_0
+    check-cast p2, Lcom/google/firebase/m/e;
 
-    .line 1
-    invoke-virtual {p0}, Lg/f/a/e/i/k/y;->a()Ljava/util/Set;
+    const/4 p1, 0x0
 
-    move-result-object v0
-
-    iput-object v0, p0, Lg/f/a/e/i/k/y;->c:Ljava/util/Set;
-
-    :cond_0
-    return-object v0
-.end method
-
-.method public final values()Ljava/util/Collection;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Collection<",
-            "TV;>;"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lg/f/a/e/i/k/y;->d:Ljava/util/Collection;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lg/f/a/e/i/k/x;
-
-    .line 1
-    invoke-direct {v0, p0}, Lg/f/a/e/i/k/x;-><init>(Ljava/util/Map;)V
-
-    iput-object v0, p0, Lg/f/a/e/i/k/y;->d:Ljava/util/Collection;
-
-    :cond_0
-    return-object v0
+    throw p1
 .end method

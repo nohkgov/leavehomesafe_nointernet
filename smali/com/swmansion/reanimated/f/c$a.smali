@@ -84,12 +84,12 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lcom/swmansion/reanimated/f/d;->c(Lcom/facebook/react/bridge/ReadableMap;)Ld/r/x;
+    invoke-static {v4}, Lcom/swmansion/reanimated/f/d;->c(Lcom/facebook/react/bridge/ReadableMap;)Ld/s/x;
 
     move-result-object v4
 
     .line 7
-    invoke-static {v3, v4}, Ld/r/z;->a(Landroid/view/ViewGroup;Ld/r/x;)V
+    invoke-static {v3, v4}, Ld/s/z;->a(Landroid/view/ViewGroup;Ld/s/x;)V
     :try_end_0
     .catch Lcom/facebook/react/uimanager/g; {:try_start_0 .. :try_end_0} :catch_0
 

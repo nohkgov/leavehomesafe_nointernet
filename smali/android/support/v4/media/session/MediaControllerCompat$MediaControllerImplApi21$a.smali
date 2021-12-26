@@ -58,7 +58,7 @@
     throw v0
 .end method
 
-.method public j0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
+.method public k0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -74,7 +74,7 @@
     throw p1
 .end method
 
-.method public k(Landroid/os/Bundle;)V
+.method public l(Landroid/os/Bundle;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -90,7 +90,7 @@
     throw p1
 .end method
 
-.method public l(Ljava/util/List;)V
+.method public m(Ljava/util/List;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -115,7 +115,7 @@
     throw p1
 .end method
 
-.method public q(Landroid/support/v4/media/MediaMetadataCompat;)V
+.method public r(Landroid/support/v4/media/MediaMetadataCompat;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

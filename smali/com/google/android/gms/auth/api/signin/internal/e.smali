@@ -47,7 +47,7 @@
     throw p1
 .end method
 
-.method public t(Lcom/google/android/gms/common/api/Status;)V
+.method public u(Lcom/google/android/gms/common/api/Status;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

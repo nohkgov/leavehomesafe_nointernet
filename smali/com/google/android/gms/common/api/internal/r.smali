@@ -1,37 +1,42 @@
 .class public abstract Lcom/google/android/gms/common/api/internal/r;
-.super Lcom/google/android/gms/common/api/internal/e0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.4.0"
 
 
-# direct methods
-.method public constructor <init>(I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/internal/e0;-><init>(I)V
-
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<A::",
+        "Lcom/google/android/gms/common/api/a$b;",
+        "L:Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public abstract g(Lcom/google/android/gms/common/api/internal/f$a;)[Lg/f/a/e/e/c;
+.method protected abstract a(Lcom/google/android/gms/common/api/a$b;Lg/f/a/e/m/m;)V
+    .param p1    # Lcom/google/android/gms/common/api/a$b;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Lg/f/a/e/m/m;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lcom/google/android/gms/common/api/internal/f$a<",
-            "*>;)[",
-            "Lg/f/a/e/e/c;"
+            "(TA;",
+            "Lg/f/a/e/m/m<",
+            "Ljava/lang/Boolean;",
+            ">;)V"
         }
     .end annotation
-.end method
 
-.method public abstract h(Lcom/google/android/gms/common/api/internal/f$a;)Z
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Lcom/google/android/gms/common/api/internal/f$a<",
-            "*>;)Z"
+            Landroid/os/RemoteException;
         }
     .end annotation
 .end method

@@ -670,7 +670,7 @@
     .locals 1
 
     .line 1
-    instance-of v0, p0, Ld/s/a/a/h;
+    instance-of v0, p0, Ld/t/a/a/h;
 
     if-nez v0, :cond_1
 

@@ -1,5 +1,5 @@
 .class public final Lg/f/a/e/f/a$a$a;
-.super Lg/f/a/e/i/f/b;
+.super Lg/f/a/e/i/g/b;
 .source "com.google.android.gms:play-services-basement@@17.4.0"
 
 # interfaces
@@ -24,7 +24,7 @@
     const-string v0, "com.google.android.gms.dynamic.IObjectWrapper"
 
     .line 1
-    invoke-direct {p0, p1, v0}, Lg/f/a/e/i/f/b;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    invoke-direct {p0, p1, v0}, Lg/f/a/e/i/g/b;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
 .end method

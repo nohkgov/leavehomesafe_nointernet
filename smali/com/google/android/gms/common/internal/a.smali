@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static m0(Lcom/google/android/gms/common/internal/j;)Landroid/accounts/Account;
+.method public static n0(Lcom/google/android/gms/common/internal/j;)Landroid/accounts/Account;
     .locals 3
     .param p0    # Lcom/google/android/gms/common/internal/j;
         .annotation build Landroidx/annotation/RecentlyNonNull;

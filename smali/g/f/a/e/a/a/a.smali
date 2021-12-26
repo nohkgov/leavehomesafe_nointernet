@@ -16,7 +16,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/a$g<",
-            "Lg/f/a/e/i/a/f;",
+            "Lg/f/a/e/i/b/f;",
             ">;"
         }
     .end annotation
@@ -36,7 +36,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/a$a<",
-            "Lg/f/a/e/i/a/f;",
+            "Lg/f/a/e/i/b/f;",
             "Lg/f/a/e/a/a/a$a;",
             ">;"
         }
@@ -84,16 +84,16 @@
     sput-object v0, Lg/f/a/e/a/a/a;->b:Lcom/google/android/gms/common/api/a$g;
 
     .line 3
-    new-instance v0, Lg/f/a/e/a/a/f;
+    new-instance v0, Lg/f/a/e/a/a/g;
 
-    invoke-direct {v0}, Lg/f/a/e/a/a/f;-><init>()V
+    invoke-direct {v0}, Lg/f/a/e/a/a/g;-><init>()V
 
     sput-object v0, Lg/f/a/e/a/a/a;->c:Lcom/google/android/gms/common/api/a$a;
 
     .line 4
-    new-instance v0, Lg/f/a/e/a/a/g;
+    new-instance v0, Lg/f/a/e/a/a/h;
 
-    invoke-direct {v0}, Lg/f/a/e/a/a/g;-><init>()V
+    invoke-direct {v0}, Lg/f/a/e/a/a/h;-><init>()V
 
     sput-object v0, Lg/f/a/e/a/a/a;->d:Lcom/google/android/gms/common/api/a$a;
 
@@ -125,7 +125,7 @@
     sput-object v0, Lg/f/a/e/a/a/a;->e:Lcom/google/android/gms/common/api/a;
 
     .line 8
-    sget-object v0, Lg/f/a/e/a/a/b;->d:Lg/f/a/e/a/a/d/a;
+    sget-object v0, Lg/f/a/e/a/a/b;->d:Lg/f/a/e/a/a/e/a;
 
     return-void
 .end method

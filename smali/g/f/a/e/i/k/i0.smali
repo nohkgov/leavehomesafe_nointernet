@@ -1,70 +1,62 @@
-.class public abstract Lg/f/a/e/i/k/i0;
-.super Lg/f/a/e/i/k/h0;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.class final Lg/f/a/e/i/k/i0;
+.super Ljava/lang/Object;
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 # interfaces
-.implements Ljava/util/ListIterator;
+.implements Lcom/google/firebase/m/d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<E:",
         "Ljava/lang/Object;",
-        ">",
-        "Lg/f/a/e/i/k/h0<",
-        "TE;>;",
-        "Ljava/util/ListIterator<",
-        "TE;>;"
+        "Lcom/google/firebase/m/d<",
+        "Lg/f/a/e/i/k/n;",
+        ">;"
     }
 .end annotation
 
 
+# static fields
+.field static final a:Lg/f/a/e/i/k/i0;
+
+
 # direct methods
-.method protected constructor <init>()V
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lg/f/a/e/i/k/i0;
+
+    invoke-direct {v0}, Lg/f/a/e/i/k/i0;-><init>()V
+
+    sput-object v0, Lg/f/a/e/i/k/i0;->a:Lg/f/a/e/i/k/i0;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lg/f/a/e/i/k/h0;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final add(Ljava/lang/Object;)V
+.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(TE;)V"
+            Ljava/io/IOException;
         }
     .end annotation
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    check-cast p1, Lg/f/a/e/i/k/n;
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    check-cast p2, Lcom/google/firebase/m/e;
 
-    .line 1
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final set(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    .line 1
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    const/4 p1, 0x0
 
     throw p1
 .end method

@@ -1,14 +1,13 @@
 .class final Lg/f/a/e/a/a/f;
 .super Lcom/google/android/gms/common/api/a$a;
-.source "com.google.android.gms:play-services-auth@@19.0.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/android/gms/common/api/a$a<",
-        "Lg/f/a/e/i/a/f;",
-        "Lg/f/a/e/a/a/a$a;",
+        "Lg/f/a/e/i/c/b;",
+        "Lg/f/a/e/a/a/c;",
         ">;"
     }
 .end annotation
@@ -32,10 +31,10 @@
     .line 1
     move-object v4, p4
 
-    check-cast v4, Lg/f/a/e/a/a/a$a;
+    check-cast v4, Lg/f/a/e/a/a/c;
 
     .line 2
-    new-instance p4, Lg/f/a/e/i/a/f;
+    new-instance p4, Lg/f/a/e/i/c/b;
 
     move-object v0, p4
 
@@ -49,7 +48,7 @@
 
     move-object v6, p6
 
-    invoke-direct/range {v0 .. v6}, Lg/f/a/e/i/a/f;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Lg/f/a/e/a/a/a$a;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
+    invoke-direct/range {v0 .. v6}, Lg/f/a/e/i/c/b;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Lg/f/a/e/a/a/c;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
 
     return-object p4
 .end method

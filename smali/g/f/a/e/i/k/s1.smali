@@ -1,6 +1,6 @@
 .class final Lg/f/a/e/i/k/s1;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 # interfaces
 .implements Lcom/google/firebase/m/d;
@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/k/t0;",
+        "Lg/f/a/e/i/k/f4;",
         ">;"
     }
 .end annotation
@@ -52,7 +52,7 @@
         }
     .end annotation
 
-    check-cast p1, Lg/f/a/e/i/k/t0;
+    check-cast p1, Lg/f/a/e/i/k/f4;
 
     check-cast p2, Lcom/google/firebase/m/e;
 

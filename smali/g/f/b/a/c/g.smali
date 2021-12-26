@@ -31,10 +31,10 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Lg/f/a/e/i/i/a;
+    new-instance v0, Lg/f/a/e/i/j/a;
 
     .line 1
-    invoke-direct {v0, p1}, Lg/f/a/e/i/i/a;-><init>(Landroid/os/Looper;)V
+    invoke-direct {v0, p1}, Lg/f/a/e/i/j/a;-><init>(Landroid/os/Looper;)V
 
     iput-object v0, p0, Lg/f/b/a/c/g;->a:Landroid/os/Handler;
 

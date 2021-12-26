@@ -75,7 +75,7 @@
     iget-object p1, p0, Lg/b/a/a/b$b;->b:Lg/b/a/a/b;
 
     .line 2
-    invoke-static {p2}, Lg/f/a/d/a/a$a;->k0(Landroid/os/IBinder;)Lg/f/a/d/a/a;
+    invoke-static {p2}, Lg/f/a/d/a/a$a;->l0(Landroid/os/IBinder;)Lg/f/a/d/a/a;
 
     move-result-object p2
 

@@ -1,103 +1,172 @@
-.class public Lg/f/a/e/i/c/b;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.4.0"
+.class public final Lg/f/a/e/i/c/b;
+.super Lcom/google/android/gms/common/internal/g;
 
-# interfaces
-.implements Landroid/os/IInterface;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/android/gms/common/internal/g<",
+        "Lg/f/a/e/i/c/c;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field private final a:Landroid/os/IBinder;
-
-.field private final b:Ljava/lang/String;
+.field private final z:Landroid/os/Bundle;
 
 
 # direct methods
-.method protected constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Lg/f/a/e/a/a/c;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
+    .locals 7
+
+    const/16 v3, 0x10
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v4, p3
+
+    move-object v5, p5
+
+    move-object v6, p6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/g;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/d;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
+
+    if-nez p4, :cond_0
 
     .line 2
-    iput-object p1, p0, Lg/f/a/e/i/c/b;->a:Landroid/os/IBinder;
+    new-instance p1, Landroid/os/Bundle;
+
+    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
 
     .line 3
-    iput-object p2, p0, Lg/f/a/e/i/c/b;->b:Ljava/lang/String;
+    iput-object p1, p0, Lg/f/a/e/i/c/b;->z:Landroid/os/Bundle;
 
     return-void
+
+    .line 4
+    :cond_0
+    new-instance p1, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public asBinder()Landroid/os/IBinder;
+.method protected final B()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lg/f/a/e/i/c/b;->a:Landroid/os/IBinder;
+    const-string v0, "com.google.android.gms.auth.api.internal.IAuthService"
 
     return-object v0
 .end method
 
-.method protected final k0()Landroid/os/Parcel;
+.method protected final C()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "com.google.android.gms.auth.service.START"
+
+    return-object v0
+.end method
+
+.method public final h()I
+    .locals 1
+
+    const v0, 0xbdfcb8
+
+    return v0
+.end method
+
+.method public final o()Z
     .locals 2
 
     .line 1
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/g;->h0()Lcom/google/android/gms/common/internal/d;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lg/f/a/e/i/c/b;->b:Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/google/android/gms/common/internal/d;->b()Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+    move-result-object v1
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    sget-object v1, Lg/f/a/e/a/a/b;->c:Lcom/google/android/gms/common/api/a;
+
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/common/internal/d;->e(Lcom/google/android/gms/common/api/a;)Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method protected final synthetic r(Landroid/os/IBinder;)Landroid/os/IInterface;
+    .locals 2
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :cond_0
+    const-string v0, "com.google.android.gms.auth.api.internal.IAuthService"
+
+    .line 1
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v0
+
+    .line 2
+    instance-of v1, v0, Lg/f/a/e/i/c/c;
+
+    if-eqz v1, :cond_1
+
+    .line 3
+    check-cast v0, Lg/f/a/e/i/c/c;
+
+    return-object v0
+
+    .line 4
+    :cond_1
+    new-instance v0, Lg/f/a/e/i/c/d;
+
+    invoke-direct {v0, p1}, Lg/f/a/e/i/c/d;-><init>(Landroid/os/IBinder;)V
 
     return-object v0
 .end method
 
-.method protected final l0(ILandroid/os/Parcel;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method protected final x()Landroid/os/Bundle;
+    .locals 1
 
     .line 1
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+    iget-object v0, p0, Lg/f/a/e/i/c/b;->z:Landroid/os/Bundle;
 
-    move-result-object v0
-
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lg/f/a/e/i/c/b;->a:Landroid/os/IBinder;
-
-    const/4 v2, 0x0
-
-    invoke-interface {v1, p1, p2, v0, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-
-    .line 3
-    invoke-virtual {v0}, Landroid/os/Parcel;->readException()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 4
-    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
-
-    .line 5
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 6
-    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
-
-    .line 7
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    .line 8
-    throw p1
+    return-object v0
 .end method

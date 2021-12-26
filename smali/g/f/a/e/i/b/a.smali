@@ -1,34 +1,33 @@
-.class public Lg/f/a/e/i/b/a;
+.class public final Lg/f/a/e/i/b/a;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Landroid/os/IInterface;
-
-
-# instance fields
-.field private final a:Landroid/os/IBinder;
+.source "com.google.android.gms:play-services-auth@@19.0.0"
 
 
 # direct methods
-.method protected constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
+.method public static a(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p0    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;)TT;"
+        }
+    .end annotation
+
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+    .end annotation
+
+    if-eqz p0, :cond_0
+
+    return-object p0
+
+    :cond_0
+    const/4 p0, 0x0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lg/f/a/e/i/b/a;->a:Landroid/os/IBinder;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public asBinder()Landroid/os/IBinder;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lg/f/a/e/i/b/a;->a:Landroid/os/IBinder;
-
-    return-object v0
+    throw p0
 .end method

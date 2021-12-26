@@ -20,7 +20,7 @@
 
 
 # static fields
-.field private static i:I
+.field private static j:I
 
 
 # direct methods
@@ -30,7 +30,7 @@
     .line 1
     sget v0, Lcom/google/android/gms/auth/api/signin/b$a;->a:I
 
-    sput v0, Lcom/google/android/gms/auth/api/signin/b;->i:I
+    sput v0, Lcom/google/android/gms/auth/api/signin/b;->j:I
 
     return-void
 .end method
@@ -45,26 +45,26 @@
 
     invoke-direct {v1}, Lcom/google/android/gms/common/api/internal/a;-><init>()V
 
-    invoke-direct {p0, p1, v0, p2, v1}, Lcom/google/android/gms/common/api/e;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/api/a;Lcom/google/android/gms/common/api/a$d;Lcom/google/android/gms/common/api/internal/m;)V
+    invoke-direct {p0, p1, v0, p2, v1}, Lcom/google/android/gms/common/api/e;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/api/a;Lcom/google/android/gms/common/api/a$d;Lcom/google/android/gms/common/api/internal/n;)V
 
     return-void
 .end method
 
-.method private final declared-synchronized p()I
+.method private final declared-synchronized r()I
     .locals 4
 
     monitor-enter p0
 
     .line 1
     :try_start_0
-    sget v0, Lcom/google/android/gms/auth/api/signin/b;->i:I
+    sget v0, Lcom/google/android/gms/auth/api/signin/b;->j:I
 
     sget v1, Lcom/google/android/gms/auth/api/signin/b$a;->a:I
 
     if-ne v0, v1, :cond_2
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/e;->g()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/e;->h()Landroid/content/Context;
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
     .line 5
     sget v0, Lcom/google/android/gms/auth/api/signin/b$a;->d:I
 
-    sput v0, Lcom/google/android/gms/auth/api/signin/b;->i:I
+    sput v0, Lcom/google/android/gms/auth/api/signin/b;->j:I
 
     goto :goto_0
 
@@ -111,7 +111,7 @@
     .line 8
     sget v0, Lcom/google/android/gms/auth/api/signin/b$a;->c:I
 
-    sput v0, Lcom/google/android/gms/auth/api/signin/b;->i:I
+    sput v0, Lcom/google/android/gms/auth/api/signin/b;->j:I
 
     goto :goto_0
 
@@ -119,12 +119,12 @@
     :cond_1
     sget v0, Lcom/google/android/gms/auth/api/signin/b$a;->b:I
 
-    sput v0, Lcom/google/android/gms/auth/api/signin/b;->i:I
+    sput v0, Lcom/google/android/gms/auth/api/signin/b;->j:I
 
     .line 10
     :cond_2
     :goto_0
-    sget v0, Lcom/google/android/gms/auth/api/signin/b;->i:I
+    sget v0, Lcom/google/android/gms/auth/api/signin/b;->j:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -142,7 +142,7 @@
 
 
 # virtual methods
-.method public n()Lg/f/a/e/m/l;
+.method public p()Lg/f/a/e/m/l;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -159,12 +159,12 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/e;->g()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/e;->h()Landroid/content/Context;
 
     move-result-object v1
 
     .line 3
-    invoke-direct {p0}, Lcom/google/android/gms/auth/api/signin/b;->p()I
+    invoke-direct {p0}, Lcom/google/android/gms/auth/api/signin/b;->r()I
 
     move-result v2
 
@@ -193,7 +193,7 @@
     return-object v0
 .end method
 
-.method public o()Lg/f/a/e/m/l;
+.method public q()Lg/f/a/e/m/l;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -210,12 +210,12 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/e;->g()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/e;->h()Landroid/content/Context;
 
     move-result-object v1
 
     .line 3
-    invoke-direct {p0}, Lcom/google/android/gms/auth/api/signin/b;->p()I
+    invoke-direct {p0}, Lcom/google/android/gms/auth/api/signin/b;->r()I
 
     move-result v2
 

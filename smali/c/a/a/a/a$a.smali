@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method public static k0(Landroid/os/IBinder;)Lc/a/a/a/a;
+.method public static l0(Landroid/os/IBinder;)Lc/a/a/a/a;
     .locals 2
 
     if-nez p0, :cond_0
@@ -76,7 +76,7 @@
     return-object v0
 .end method
 
-.method public static l0()Lc/a/a/a/a;
+.method public static m0()Lc/a/a/a/a;
     .locals 1
 
     .line 1
@@ -156,7 +156,7 @@
 
     .line 7
     :goto_0
-    invoke-interface {p0, p1, p2}, Lc/a/a/a/a;->h0(ILandroid/os/Bundle;)V
+    invoke-interface {p0, p1, p2}, Lc/a/a/a/a;->i0(ILandroid/os/Bundle;)V
 
     return v0
 .end method

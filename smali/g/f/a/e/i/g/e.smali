@@ -1,58 +1,8 @@
-.class final Lg/f/a/e/i/g/e;
-.super Ljava/io/OutputStream;
-.source "com.google.firebase:firebase-messaging@@21.1.0"
-
-
-# direct methods
-.method constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
-
-    return-void
-.end method
+.class public interface abstract Lg/f/a/e/i/g/e;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@17.4.0"
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "ByteStreams.nullOutputStream()"
-
-    return-object v0
-.end method
-
-.method public final write(I)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final write([B)V
-    .locals 0
-
-    if-eqz p1, :cond_0
-
-    return-void
-
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 1
-    throw p1
-.end method
-
-.method public final write([BII)V
-    .locals 0
-
-    if-eqz p1, :cond_0
-
-    return-void
-
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 2
-    throw p1
+.method public abstract c(II)Ljava/util/concurrent/ScheduledExecutorService;
 .end method

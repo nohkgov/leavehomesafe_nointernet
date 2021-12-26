@@ -3,7 +3,7 @@
 .source "ReactViewPager.java"
 
 # interfaces
-.implements Ld/t/a/b$j;
+.implements Ld/u/a/b$j;
 
 
 # annotations

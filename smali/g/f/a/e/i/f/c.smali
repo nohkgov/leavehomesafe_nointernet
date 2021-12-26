@@ -1,20 +1,12 @@
-.class public Lg/f/a/e/i/f/c;
+.class final Lg/f/a/e/i/f/c;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.4.0"
+.source "com.google.android.gms:play-services-cloud-messaging@@16.0.0"
+
+# interfaces
+.implements Lg/f/a/e/i/f/b;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    const-class v0, Lg/f/a/e/i/f/c;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    return-void
-.end method
-
 .method private constructor <init>()V
     .locals 0
 
@@ -24,69 +16,68 @@
     return-void
 .end method
 
-.method public static a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T::",
-            "Landroid/os/Parcelable;",
-            ">(",
-            "Landroid/os/Parcel;",
-            "Landroid/os/Parcelable$Creator<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/os/Parcelable;
-
-    return-object p0
-.end method
-
-.method public static b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+.method synthetic constructor <init>(Lg/f/a/e/i/f/d;)V
     .locals 0
 
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+    .line 2
+    invoke-direct {p0}, Lg/f/a/e/i/f/c;-><init>()V
 
     return-void
+.end method
 
-    .line 2
-    :cond_0
-    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
+
+# virtual methods
+.method public final a(ILjava/util/concurrent/ThreadFactory;I)Ljava/util/concurrent/ScheduledExecutorService;
+    .locals 0
+
+    const/4 p1, 0x1
+
+    .line 1
+    invoke-static {p1, p2}, Ljava/util/concurrent/Executors;->newScheduledThreadPool(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ScheduledExecutorService;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+    .line 2
+    invoke-static {p1}, Ljava/util/concurrent/Executors;->unconfigurableScheduledExecutorService(Ljava/util/concurrent/ScheduledExecutorService;)Ljava/util/concurrent/ScheduledExecutorService;
 
-    return-void
+    move-result-object p1
+
+    return-object p1
 .end method
 
-.method public static c(Landroid/os/Parcel;Z)V
-    .locals 0
+.method public final b(Ljava/util/concurrent/ThreadFactory;I)Ljava/util/concurrent/ExecutorService;
+    .locals 8
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+    new-instance p2, Ljava/util/concurrent/ThreadPoolExecutor;
 
-    return-void
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    new-instance v6, Ljava/util/concurrent/LinkedBlockingQueue;
+
+    invoke-direct {v6}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x1
+
+    const-wide/16 v3, 0x3c
+
+    move-object v0, p2
+
+    move-object v7, p1
+
+    invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
+
+    const/4 p1, 0x1
+
+    .line 2
+    invoke-virtual {p2, p1}, Ljava/util/concurrent/ThreadPoolExecutor;->allowCoreThreadTimeOut(Z)V
+
+    .line 3
+    invoke-static {p2}, Ljava/util/concurrent/Executors;->unconfigurableExecutorService(Ljava/util/concurrent/ExecutorService;)Ljava/util/concurrent/ExecutorService;
+
+    move-result-object p1
+
+    return-object p1
 .end method

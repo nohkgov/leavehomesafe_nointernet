@@ -89,6 +89,8 @@
     <item type="id" name="design_menu_item_text" />
     <item type="id" name="design_navigation_view" />
     <item type="id" name="dialog_button" />
+    <item type="id" name="dropdown_background" />
+    <item type="id" name="dropdown_icon" />
     <item type="id" name="edit_query" />
     <item type="id" name="empty_end" />
     <item type="id" name="empty_start" />

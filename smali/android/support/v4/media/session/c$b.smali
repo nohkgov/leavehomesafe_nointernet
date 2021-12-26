@@ -223,7 +223,7 @@
     return-void
 .end method
 
-.method public k(Landroid/os/Bundle;)V
+.method public l(Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
@@ -244,7 +244,7 @@
     return-void
 .end method
 
-.method public l(Ljava/util/List;)V
+.method public m(Ljava/util/List;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {

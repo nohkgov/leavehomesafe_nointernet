@@ -1,18 +1,40 @@
-.class public final Lg/f/a/e/i/k/c1;
+.class final Lg/f/a/e/i/k/c1;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.source "com.google.mlkit:vision-common@@16.2.0"
+
+# interfaces
+.implements Lcom/google/firebase/m/d;
 
 
-# instance fields
-.field private a:Lg/f/a/e/i/k/e1;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/firebase/m/d<",
+        "Lg/f/a/e/i/k/i3;",
+        ">;"
+    }
+.end annotation
 
-.field private b:Ljava/lang/Integer;
 
-.field private c:Lg/f/a/e/i/k/f5;
+# static fields
+.field static final a:Lg/f/a/e/i/k/c1;
 
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lg/f/a/e/i/k/c1;
+
+    invoke-direct {v0}, Lg/f/a/e/i/k/c1;-><init>()V
+
+    sput-object v0, Lg/f/a/e/i/k/c1;->a:Lg/f/a/e/i/k/c1;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -20,65 +42,21 @@
     return-void
 .end method
 
-.method static synthetic e(Lg/f/a/e/i/k/c1;)Lg/f/a/e/i/k/e1;
-    .locals 0
-
-    iget-object p0, p0, Lg/f/a/e/i/k/c1;->a:Lg/f/a/e/i/k/e1;
-
-    return-object p0
-.end method
-
-.method static synthetic f(Lg/f/a/e/i/k/c1;)Ljava/lang/Integer;
-    .locals 0
-
-    iget-object p0, p0, Lg/f/a/e/i/k/c1;->b:Ljava/lang/Integer;
-
-    return-object p0
-.end method
-
-.method static synthetic g(Lg/f/a/e/i/k/c1;)Lg/f/a/e/i/k/f5;
-    .locals 0
-
-    iget-object p0, p0, Lg/f/a/e/i/k/c1;->c:Lg/f/a/e/i/k/f5;
-
-    return-object p0
-.end method
-
 
 # virtual methods
-.method public final a(Lg/f/a/e/i/k/e1;)Lg/f/a/e/i/k/c1;
+.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    iput-object p1, p0, Lg/f/a/e/i/k/c1;->a:Lg/f/a/e/i/k/e1;
+    check-cast p1, Lg/f/a/e/i/k/i3;
 
-    return-object p0
-.end method
+    check-cast p2, Lcom/google/firebase/m/e;
 
-.method public final b(Ljava/lang/Integer;)Lg/f/a/e/i/k/c1;
-    .locals 0
+    const/4 p1, 0x0
 
-    iput-object p1, p0, Lg/f/a/e/i/k/c1;->b:Ljava/lang/Integer;
-
-    return-object p0
-.end method
-
-.method public final c(Lg/f/a/e/i/k/f5;)Lg/f/a/e/i/k/c1;
-    .locals 0
-
-    iput-object p1, p0, Lg/f/a/e/i/k/c1;->c:Lg/f/a/e/i/k/f5;
-
-    return-object p0
-.end method
-
-.method public final d()Lg/f/a/e/i/k/f1;
-    .locals 2
-
-    new-instance v0, Lg/f/a/e/i/k/f1;
-
-    const/4 v1, 0x0
-
-    .line 1
-    invoke-direct {v0, p0, v1}, Lg/f/a/e/i/k/f1;-><init>(Lg/f/a/e/i/k/c1;Lg/f/a/e/i/k/b1;)V
-
-    return-object v0
+    throw p1
 .end method

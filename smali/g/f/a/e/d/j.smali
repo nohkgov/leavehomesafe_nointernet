@@ -53,7 +53,7 @@
     .line 3
     new-instance p1, Landroid/os/Messenger;
 
-    new-instance v0, Lg/f/a/e/i/e/e;
+    new-instance v0, Lg/f/a/e/i/f/e;
 
     .line 4
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -64,7 +64,7 @@
 
     invoke-direct {v2, p0}, Lg/f/a/e/d/m;-><init>(Lg/f/a/e/d/j;)V
 
-    invoke-direct {v0, v1, v2}, Lg/f/a/e/i/e/e;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+    invoke-direct {v0, v1, v2}, Lg/f/a/e/i/f/e;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
     invoke-direct {p1, v0}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 

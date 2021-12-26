@@ -603,14 +603,14 @@
     invoke-direct {v0}, Landroidx/recyclerview/widget/RecyclerView$o$d;-><init>()V
 
     .line 2
-    sget-object v1, Ld/o/c;->RecyclerView:[I
+    sget-object v1, Ld/p/c;->RecyclerView:[I
 
     invoke-virtual {p0, p1, v1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p0
 
     .line 3
-    sget p1, Ld/o/c;->RecyclerView_android_orientation:I
+    sget p1, Ld/p/c;->RecyclerView_android_orientation:I
 
     const/4 p2, 0x1
 
@@ -621,7 +621,7 @@
     iput p1, v0, Landroidx/recyclerview/widget/RecyclerView$o$d;->a:I
 
     .line 4
-    sget p1, Ld/o/c;->RecyclerView_spanCount:I
+    sget p1, Ld/p/c;->RecyclerView_spanCount:I
 
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -630,7 +630,7 @@
     iput p1, v0, Landroidx/recyclerview/widget/RecyclerView$o$d;->b:I
 
     .line 5
-    sget p1, Ld/o/c;->RecyclerView_reverseLayout:I
+    sget p1, Ld/p/c;->RecyclerView_reverseLayout:I
 
     const/4 p2, 0x0
 
@@ -641,7 +641,7 @@
     iput-boolean p1, v0, Landroidx/recyclerview/widget/RecyclerView$o$d;->c:Z
 
     .line 6
-    sget p1, Ld/o/c;->RecyclerView_stackFromEnd:I
+    sget p1, Ld/p/c;->RecyclerView_stackFromEnd:I
 
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 

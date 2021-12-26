@@ -570,7 +570,7 @@
 
     float-to-int p2, p2
 
-    invoke-virtual {p1, p2}, Ld/t/a/b;->setPageMargin(I)V
+    invoke-virtual {p1, p2}, Ld/u/a/b;->setPageMargin(I)V
 
     return-void
 .end method

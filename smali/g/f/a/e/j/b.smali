@@ -7,7 +7,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/a$g<",
-            "Lg/f/a/e/i/l/e;",
+            "Lg/f/a/e/i/m/e;",
             ">;"
         }
     .end annotation
@@ -17,8 +17,8 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/a$a<",
-            "Lg/f/a/e/i/l/e;",
-            "Ljava/lang/Object;",
+            "Lg/f/a/e/i/m/e;",
+            "Lcom/google/android/gms/common/api/a$d$c;",
             ">;"
         }
     .end annotation
@@ -49,7 +49,7 @@
 
     invoke-direct {v1, v3, v0, v2}, Lcom/google/android/gms/common/api/a;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/api/a$a;Lcom/google/android/gms/common/api/a$g;)V
 
-    new-instance v0, Lg/f/a/e/i/l/d;
+    new-instance v0, Lg/f/a/e/i/m/d;
 
     return-void
 .end method

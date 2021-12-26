@@ -29,13 +29,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Lg/f/a/e/i/m/a;
+    new-instance v0, Lg/f/a/e/i/n/a;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lg/f/a/e/i/m/a;-><init>(Landroid/os/Looper;)V
+    invoke-direct {v0, v1}, Lg/f/a/e/i/n/a;-><init>(Landroid/os/Looper;)V
 
     iput-object v0, p0, Lg/f/a/e/m/n$a;->c:Landroid/os/Handler;
 

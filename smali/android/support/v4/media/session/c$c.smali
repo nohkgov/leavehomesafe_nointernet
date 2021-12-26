@@ -110,7 +110,7 @@
     return-void
 .end method
 
-.method public a0(Z)V
+.method public b0(Z)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -175,36 +175,6 @@
     return-void
 .end method
 
-.method public f0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/support/v4/media/session/c;
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x2
-
-    const/4 v2, 0x0
-
-    .line 2
-    invoke-virtual {v0, v1, p1, v2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
-
-    :cond_0
-    return-void
-.end method
-
 .method public g()V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
@@ -235,7 +205,37 @@
     return-void
 .end method
 
-.method public g0(Ljava/lang/String;Landroid/os/Bundle;)V
+.method public g0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/support/v4/media/session/c;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x0
+
+    .line 2
+    invoke-virtual {v0, v1, p1, v2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public h0(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -263,7 +263,7 @@
     return-void
 .end method
 
-.method public j0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
+.method public k0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
     .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -318,7 +318,7 @@
     return-void
 .end method
 
-.method public k(Landroid/os/Bundle;)V
+.method public l(Landroid/os/Bundle;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -348,7 +348,7 @@
     return-void
 .end method
 
-.method public l(Ljava/util/List;)V
+.method public m(Ljava/util/List;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -387,7 +387,7 @@
     return-void
 .end method
 
-.method public n(Z)V
+.method public o(Z)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -398,7 +398,7 @@
     return-void
 .end method
 
-.method public q(Landroid/support/v4/media/MediaMetadataCompat;)V
+.method public r(Landroid/support/v4/media/MediaMetadataCompat;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -428,7 +428,7 @@
     return-void
 .end method
 
-.method public w(I)V
+.method public x(I)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {

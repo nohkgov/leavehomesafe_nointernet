@@ -48,7 +48,7 @@
     iput-object v0, p0, Lcom/google/android/gms/common/internal/n0;->e:Landroid/content/Context;
 
     .line 4
-    new-instance v0, Lg/f/a/e/i/f/h;
+    new-instance v0, Lg/f/a/e/i/g/h;
 
     invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v1, p0, v2}, Lcom/google/android/gms/common/internal/o0;-><init>(Lcom/google/android/gms/common/internal/n0;Lcom/google/android/gms/common/internal/m0;)V
 
-    invoke-direct {v0, p1, v1}, Lg/f/a/e/i/f/h;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+    invoke-direct {v0, p1, v1}, Lg/f/a/e/i/g/h;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
     iput-object v0, p0, Lcom/google/android/gms/common/internal/n0;->f:Landroid/os/Handler;
 

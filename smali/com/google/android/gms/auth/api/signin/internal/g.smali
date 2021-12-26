@@ -13,7 +13,7 @@
 # instance fields
 .field private final c:Ljava/lang/String;
 
-.field private final d:Lcom/google/android/gms/common/api/internal/n;
+.field private final d:Lcom/google/android/gms/common/api/internal/o;
 
 
 # direct methods
@@ -48,13 +48,13 @@
     iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/g;->c:Ljava/lang/String;
 
     .line 3
-    new-instance p1, Lcom/google/android/gms/common/api/internal/n;
+    new-instance p1, Lcom/google/android/gms/common/api/internal/o;
 
     const/4 v0, 0x0
 
-    invoke-direct {p1, v0}, Lcom/google/android/gms/common/api/internal/n;-><init>(Lcom/google/android/gms/common/api/f;)V
+    invoke-direct {p1, v0}, Lcom/google/android/gms/common/api/internal/o;-><init>(Lcom/google/android/gms/common/api/f;)V
 
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/g;->d:Lcom/google/android/gms/common/api/internal/n;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/g;->d:Lcom/google/android/gms/common/api/internal/o;
 
     return-void
 .end method
@@ -103,7 +103,7 @@
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
     .line 4
-    iget-object p0, v0, Lcom/google/android/gms/auth/api/signin/internal/g;->d:Lcom/google/android/gms/common/api/internal/n;
+    iget-object p0, v0, Lcom/google/android/gms/auth/api/signin/internal/g;->d:Lcom/google/android/gms/common/api/internal/o;
 
     return-object p0
 .end method
@@ -299,7 +299,7 @@
 
     .line 11
     :goto_4
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/g;->d:Lcom/google/android/gms/common/api/internal/n;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/g;->d:Lcom/google/android/gms/common/api/internal/o;
 
     invoke-virtual {v1, v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->f(Lcom/google/android/gms/common/api/k;)V
 

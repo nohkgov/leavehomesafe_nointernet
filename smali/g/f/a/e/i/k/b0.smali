@@ -1,56 +1,44 @@
-.class public interface abstract Lg/f/a/e/i/k/b0;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.class public final Lg/f/a/e/i/k/b0;
+.super Lg/f/a/e/i/k/a;
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<K:",
-        "Ljava/lang/Object;",
-        "V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
-
-# virtual methods
-.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;)Z
+# direct methods
+.method public static a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 2
+    .param p0    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
     .param p1    # Ljava/lang/Object;
         .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
         .end annotation
     .end param
-    .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TK;TV;)Z"
-        }
-    .end annotation
-.end method
 
-.method public abstract b()Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Set<",
-            "TK;>;"
-        }
-    .end annotation
-.end method
+    const/4 v0, 0x0
 
-.method public abstract e()Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "TK;",
-            "Ljava/util/Collection<",
-            "TV;>;>;"
-        }
-    .end annotation
+    const/4 v1, 0x1
+
+    if-eq p0, p1, :cond_1
+
+    if-eqz p0, :cond_2
+
+    .line 1
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    return v0
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :cond_2
+    return v0
 .end method

@@ -1,702 +1,435 @@
 .class public final Lcom/google/android/gms/common/api/internal/a1;
-.super Landroidx/fragment/app/Fragment;
-.source "com.google.android.gms:play-services-basement@@17.4.0"
-
-# interfaces
-.implements Lcom/google/android/gms/common/api/internal/h;
-
-
-# static fields
-.field private static e0:Ljava/util/WeakHashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/WeakHashMap<",
-            "Landroidx/fragment/app/e;",
-            "Ljava/lang/ref/WeakReference<",
-            "Lcom/google/android/gms/common/api/internal/a1;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@17.4.0"
 
 
 # instance fields
-.field private b0:Ljava/util/Map;
+.field private final a:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lcom/google/android/gms/common/api/internal/LifecycleCallback;",
+            "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
+            "*>;",
+            "Ljava/lang/Boolean;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private c0:I
-
-.field private d0:Landroid/os/Bundle;
+.field private final b:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Lg/f/a/e/m/m<",
+            "*>;",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/util/WeakHashMap;
-
-    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/common/api/internal/a1;->e0:Ljava/util/WeakHashMap;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ld/d/a;
+    new-instance v0, Ljava/util/WeakHashMap;
 
-    invoke-direct {v0}, Ld/d/a;-><init>()V
+    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
     .line 3
     invoke-static {v0}, Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    const/4 v0, 0x0
+    iput-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->a:Ljava/util/Map;
 
     .line 4
-    iput v0, p0, Lcom/google/android/gms/common/api/internal/a1;->c0:I
+    new-instance v0, Ljava/util/WeakHashMap;
+
+    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
+
+    .line 5
+    invoke-static {v0}, Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b:Ljava/util/Map;
 
     return-void
 .end method
 
-.method static synthetic I1(Lcom/google/android/gms/common/api/internal/a1;)I
+.method static synthetic a(Lcom/google/android/gms/common/api/internal/a1;)Ljava/util/Map;
     .locals 0
 
     .line 1
-    iget p0, p0, Lcom/google/android/gms/common/api/internal/a1;->c0:I
+    iget-object p0, p0, Lcom/google/android/gms/common/api/internal/a1;->a:Ljava/util/Map;
 
-    return p0
+    return-object p0
 .end method
 
-.method public static J1(Landroidx/fragment/app/e;)Lcom/google/android/gms/common/api/internal/a1;
-    .locals 3
-
-    const-string v0, "SupportLifecycleFragmentImpl"
+.method private final e(ZLcom/google/android/gms/common/api/Status;)V
+    .locals 4
 
     .line 1
-    sget-object v1, Lcom/google/android/gms/common/api/internal/a1;->e0:Ljava/util/WeakHashMap;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->a:Ljava/util/Map;
 
-    invoke-virtual {v1, p0}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/ref/WeakReference;
-
-    if-eqz v1, :cond_0
+    monitor-enter v0
 
     .line 2
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    :try_start_0
+    new-instance v1, Ljava/util/HashMap;
 
-    move-result-object v1
+    iget-object v2, p0, Lcom/google/android/gms/common/api/internal/a1;->a:Ljava/util/Map;
 
-    check-cast v1, Lcom/google/android/gms/common/api/internal/a1;
-
-    if-eqz v1, :cond_0
-
-    return-object v1
+    invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
     .line 3
-    :cond_0
-    :try_start_0
-    invoke-virtual {p0}, Landroidx/fragment/app/e;->u()Landroidx/fragment/app/n;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroidx/fragment/app/n;->j0(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/common/api/internal/a1;
+    monitor-exit v0
     :try_end_0
-    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz v1, :cond_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 4
-    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->f0()Z
+    iget-object v2, p0, Lcom/google/android/gms/common/api/internal/a1;->b:Ljava/util/Map;
+
+    monitor-enter v2
+
+    .line 5
+    :try_start_1
+    new-instance v0, Ljava/util/HashMap;
+
+    iget-object v3, p0, Lcom/google/android/gms/common/api/internal/a1;->b:Ljava/util/Map;
+
+    invoke-direct {v0, v3}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+
+    .line 6
+    monitor-exit v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 7
+    invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 5
-    :cond_1
-    new-instance v1, Lcom/google/android/gms/common/api/internal/a1;
-
-    invoke-direct {v1}, Lcom/google/android/gms/common/api/internal/a1;-><init>()V
-
-    .line 6
-    invoke-virtual {p0}, Landroidx/fragment/app/e;->u()Landroidx/fragment/app/n;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroidx/fragment/app/n;->m()Landroidx/fragment/app/w;
+    check-cast v2, Ljava/util/Map$Entry;
 
-    move-result-object v2
-
-    invoke-virtual {v2, v1, v0}, Landroidx/fragment/app/w;->e(Landroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/w;
-
-    invoke-virtual {v2}, Landroidx/fragment/app/w;->i()I
-
-    .line 7
-    :cond_2
-    sget-object v0, Lcom/google/android/gms/common/api/internal/a1;->e0:Ljava/util/WeakHashMap;
-
-    new-instance v2, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {v2, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    invoke-virtual {v0, p0, v2}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-object v1
-
-    :catch_0
-    move-exception p0
+    if-nez p1, :cond_1
 
     .line 8
-    new-instance v0, Ljava/lang/IllegalStateException;
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    const-string v1, "Fragment with tag SupportLifecycleFragmentImpl is not a SupportLifecycleFragmentImpl"
+    move-result-object v3
 
-    invoke-direct {v0, v1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    check-cast v3, Ljava/lang/Boolean;
 
-    throw v0
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 9
+    :cond_1
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/gms/common/api/internal/BasePendingResult;
+
+    invoke-virtual {v2, p2}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->d(Lcom/google/android/gms/common/api/Status;)V
+
+    goto :goto_0
+
+    .line 10
+    :cond_2
+    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_3
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map$Entry;
+
+    if-nez p1, :cond_4
+
+    .line 11
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    .line 12
+    :cond_4
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lg/f/a/e/m/m;
+
+    new-instance v2, Lcom/google/android/gms/common/api/b;
+
+    invoke-direct {v2, p2}, Lcom/google/android/gms/common/api/b;-><init>(Lcom/google/android/gms/common/api/Status;)V
+
+    invoke-virtual {v1, v2}, Lg/f/a/e/m/m;->d(Ljava/lang/Exception;)Z
+
+    goto :goto_1
+
+    :cond_5
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 13
+    :try_start_2
+    monitor-exit v2
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw p1
+
+    :catchall_1
+    move-exception p1
+
+    .line 14
+    :try_start_3
+    monitor-exit v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    goto :goto_3
+
+    :goto_2
+    throw p1
+
+    :goto_3
+    goto :goto_2
 .end method
 
-.method static synthetic K1(Lcom/google/android/gms/common/api/internal/a1;)Landroid/os/Bundle;
+.method static synthetic g(Lcom/google/android/gms/common/api/internal/a1;)Ljava/util/Map;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/google/android/gms/common/api/internal/a1;->d0:Landroid/os/Bundle;
+    iget-object p0, p0, Lcom/google/android/gms/common/api/internal/a1;->b:Ljava/util/Map;
 
     return-object p0
 .end method
 
 
 # virtual methods
-.method public final L0()V
-    .locals 2
+.method final b(ILjava/lang/String;)V
+    .locals 3
 
     .line 1
-    invoke-super {p0}, Landroidx/fragment/app/Fragment;->L0()V
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const/4 v0, 0x3
+    const-string v1, "The connection to Google Play services was lost"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const/4 v1, 0x1
+
+    if-ne p1, v1, :cond_0
+
+    const-string p1, " due to service disconnection."
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/common/api/internal/a1;->c0:I
-
-    .line 3
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    .line 4
-    invoke-virtual {v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->h()V
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
     :cond_0
-    return-void
-.end method
+    const/4 v2, 0x3
 
-.method public final M0(Landroid/os/Bundle;)V
-    .locals 4
+    if-ne p1, v2, :cond_1
 
-    .line 1
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->M0(Landroid/os/Bundle;)V
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/Map$Entry;
+    const-string p1, " due to dead object exception."
 
     .line 3
-    new-instance v2, Landroid/os/Bundle;
-
-    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
-
-    .line 4
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    invoke-virtual {v3, v2}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->i(Landroid/os/Bundle;)V
-
-    .line 5
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-virtual {p1, v1, v2}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
-
-    goto :goto_0
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_1
-    return-void
-.end method
-
-.method public final N0()V
-    .locals 2
-
-    .line 1
-    invoke-super {p0}, Landroidx/fragment/app/Fragment;->N0()V
-
-    const/4 v0, 0x2
-
-    .line 2
-    iput v0, p0, Lcom/google/android/gms/common/api/internal/a1;->c0:I
-
-    .line 3
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    if-eqz p2, :cond_2
 
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    const-string p1, " Last reason for disconnect: "
 
     .line 4
-    invoke-virtual {v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->j()V
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_0
-
-    :cond_0
-    return-void
-.end method
-
-.method public final O0()V
-    .locals 2
-
-    .line 1
-    invoke-super {p0}, Landroidx/fragment/app/Fragment;->O0()V
-
-    const/4 v0, 0x4
-
-    .line 2
-    iput v0, p0, Lcom/google/android/gms/common/api/internal/a1;->c0:I
-
-    .line 3
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    .line 4
-    invoke-virtual {v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->k()V
-
-    goto :goto_0
-
-    :cond_0
-    return-void
-.end method
-
-.method public final b(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 3
-    iget v0, p0, Lcom/google/android/gms/common/api/internal/a1;->c0:I
-
-    if-lez v0, :cond_0
-
-    .line 4
-    new-instance v0, Lg/f/a/e/i/f/h;
-
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Lg/f/a/e/i/f/h;-><init>(Landroid/os/Looper;)V
-
-    new-instance v1, Lcom/google/android/gms/common/api/internal/b1;
-
-    invoke-direct {v1, p0, p2, p1}, Lcom/google/android/gms/common/api/internal/b1;-><init>(Lcom/google/android/gms/common/api/internal/a1;Lcom/google/android/gms/common/api/internal/LifecycleCallback;Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 5
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    :cond_2
+    new-instance p1, Lcom/google/android/gms/common/api/Status;
 
-    :cond_0
-    return-void
+    const/16 p2, 0x14
 
     .line 6
-    :cond_1
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-direct {p1, p2, v0}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
-    move-result v0
+    .line 7
+    invoke-direct {p0, v1, p1}, Lcom/google/android/gms/common/api/internal/a1;->e(ZLcom/google/android/gms/common/api/Status;)V
 
-    add-int/lit8 v0, v0, 0x3b
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "LifecycleCallback with tag "
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, " already added to this fragment."
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p2
+    return-void
 .end method
 
-.method public final e(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+.method final c(Lcom/google/android/gms/common/api/internal/BasePendingResult;Z)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<T:",
-            "Lcom/google/android/gms/common/api/internal/LifecycleCallback;",
-            ">(",
-            "Ljava/lang/String;",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
+            "(",
+            "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
+            "+",
+            "Lcom/google/android/gms/common/api/k;",
+            ">;Z)V"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->a:Ljava/util/Map;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object p1
+    move-result-object p2
 
-    invoke-virtual {p2, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p1
+    .line 2
+    new-instance p2, Lcom/google/android/gms/common/api/internal/z0;
 
-    check-cast p1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    invoke-direct {p2, p0, p1}, Lcom/google/android/gms/common/api/internal/z0;-><init>(Lcom/google/android/gms/common/api/internal/a1;Lcom/google/android/gms/common/api/internal/BasePendingResult;)V
 
-    return-object p1
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->a(Lcom/google/android/gms/common/api/g$a;)V
+
+    return-void
 .end method
 
-.method public final synthetic f()Landroid/app/Activity;
+.method final d(Lg/f/a/e/m/m;Z)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<TResult:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lg/f/a/e/m/m<",
+            "TTResult;>;Z)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b:Ljava/util/Map;
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    invoke-virtual {p1}, Lg/f/a/e/m/m;->a()Lg/f/a/e/m/l;
+
+    move-result-object p2
+
+    new-instance v0, Lcom/google/android/gms/common/api/internal/c1;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/common/api/internal/c1;-><init>(Lcom/google/android/gms/common/api/internal/a1;Lg/f/a/e/m/m;)V
+
+    .line 3
+    invoke-virtual {p2, v0}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+
+    return-void
+.end method
+
+.method final f()Z
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->n()Landroidx/fragment/app/e;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->a:Ljava/util/Map;
 
-    move-result-object v0
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
-    return-object v0
-.end method
+    move-result v0
 
-.method public final j(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
-    .locals 2
+    if-eqz v0, :cond_1
 
-    .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroidx/fragment/app/Fragment;->j(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b:Ljava/util/Map;
 
-    .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
-    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
+    move-result v0
 
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    .line 3
-    invoke-virtual {v1, p1, p2, p3, p4}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    if-nez v0, :cond_0
 
     goto :goto_0
 
     :cond_0
-    return-void
-.end method
+    const/4 v0, 0x0
 
-.method public final l0(IILandroid/content/Intent;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->l0(IILandroid/content/Intent;)V
-
-    .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    .line 3
-    invoke-virtual {v1, p1, p2, p3}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->e(IILandroid/content/Intent;)V
-
-    goto :goto_0
-
-    :cond_0
-    return-void
-.end method
-
-.method public final q0(Landroid/os/Bundle;)V
-    .locals 3
-
-    .line 1
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->q0(Landroid/os/Bundle;)V
-
-    const/4 v0, 0x1
-
-    .line 2
-    iput v0, p0, Lcom/google/android/gms/common/api/internal/a1;->c0:I
-
-    .line 3
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/a1;->d0:Landroid/os/Bundle;
-
-    .line 4
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/Map$Entry;
-
-    .line 5
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    if-eqz p1, :cond_0
-
-    .line 6
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
-
-    move-result-object v1
-
-    goto :goto_1
-
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 7
-    :goto_1
-    invoke-virtual {v2, v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->f(Landroid/os/Bundle;)V
-
-    goto :goto_0
+    return v0
 
     :cond_1
-    return-void
+    :goto_0
+    const/4 v0, 0x1
+
+    return v0
 .end method
 
-.method public final v0()V
+.method public final h()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Landroidx/fragment/app/Fragment;->v0()V
+    sget-object v0, Lcom/google/android/gms/common/api/internal/f;->o:Lcom/google/android/gms/common/api/Status;
 
-    const/4 v0, 0x5
+    const/4 v1, 0x0
 
-    .line 2
-    iput v0, p0, Lcom/google/android/gms/common/api/internal/a1;->c0:I
+    invoke-direct {p0, v1, v0}, Lcom/google/android/gms/common/api/internal/a1;->e(ZLcom/google/android/gms/common/api/Status;)V
 
-    .line 3
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/a1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    .line 4
-    invoke-virtual {v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g()V
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method

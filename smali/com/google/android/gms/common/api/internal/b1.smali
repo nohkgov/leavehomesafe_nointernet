@@ -1,150 +1,211 @@
-.class final Lcom/google/android/gms/common/api/internal/b1;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.4.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.class public Lcom/google/android/gms/common/api/internal/b1;
+.super Lcom/google/android/gms/common/api/internal/u0;
+.source "com.google.android.gms:play-services-base@@17.4.0"
 
 
 # instance fields
-.field private final synthetic c:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+.field private final h:Ld/d/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ld/d/b<",
+            "Lcom/google/android/gms/common/api/internal/b<",
+            "*>;>;"
+        }
+    .end annotation
+.end field
 
-.field private final synthetic d:Ljava/lang/String;
-
-.field private final synthetic e:Lcom/google/android/gms/common/api/internal/a1;
+.field private final i:Lcom/google/android/gms/common/api/internal/f;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/a1;Lcom/google/android/gms/common/api/internal/LifecycleCallback;Ljava/lang/String;)V
-    .locals 0
+.method private constructor <init>(Lcom/google/android/gms/common/api/internal/h;Lcom/google/android/gms/common/api/internal/f;)V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/b1;->e:Lcom/google/android/gms/common/api/internal/a1;
+    invoke-static {}, Lg/f/a/e/e/d;->m()Lg/f/a/e/e/d;
 
-    iput-object p2, p0, Lcom/google/android/gms/common/api/internal/b1;->c:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    move-result-object v0
 
-    iput-object p3, p0, Lcom/google/android/gms/common/api/internal/b1;->d:Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v0}, Lcom/google/android/gms/common/api/internal/b1;-><init>(Lcom/google/android/gms/common/api/internal/h;Lcom/google/android/gms/common/api/internal/f;Lg/f/a/e/e/d;)V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    return-void
+.end method
 
+.method private constructor <init>(Lcom/google/android/gms/common/api/internal/h;Lcom/google/android/gms/common/api/internal/f;Lg/f/a/e/e/d;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1, p3}, Lcom/google/android/gms/common/api/internal/u0;-><init>(Lcom/google/android/gms/common/api/internal/h;Lg/f/a/e/e/d;)V
+
+    .line 3
+    new-instance p1, Ld/d/b;
+
+    invoke-direct {p1}, Ld/d/b;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/b1;->h:Ld/d/b;
+
+    .line 4
+    iput-object p2, p0, Lcom/google/android/gms/common/api/internal/b1;->i:Lcom/google/android/gms/common/api/internal/f;
+
+    .line 5
+    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->c:Lcom/google/android/gms/common/api/internal/h;
+
+    const-string p2, "ConnectionlessLifecycleHelper"
+
+    invoke-interface {p1, p2, p0}, Lcom/google/android/gms/common/api/internal/h;->b(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
+
+    return-void
+.end method
+
+.method public static q(Landroid/app/Activity;Lcom/google/android/gms/common/api/internal/f;Lcom/google/android/gms/common/api/internal/b;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/app/Activity;",
+            "Lcom/google/android/gms/common/api/internal/f;",
+            "Lcom/google/android/gms/common/api/internal/b<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->c(Landroid/app/Activity;)Lcom/google/android/gms/common/api/internal/h;
+
+    move-result-object p0
+
+    .line 2
+    const-class v0, Lcom/google/android/gms/common/api/internal/b1;
+
+    const-string v1, "ConnectionlessLifecycleHelper"
+
+    .line 3
+    invoke-interface {p0, v1, v0}, Lcom/google/android/gms/common/api/internal/h;->e(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/common/api/internal/b1;
+
+    if-nez v0, :cond_0
+
+    .line 4
+    new-instance v0, Lcom/google/android/gms/common/api/internal/b1;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/common/api/internal/b1;-><init>(Lcom/google/android/gms/common/api/internal/h;Lcom/google/android/gms/common/api/internal/f;)V
+
+    :cond_0
+    const-string p0, "ApiKey cannot be null"
+
+    .line 5
+    invoke-static {p2, p0}, Lcom/google/android/gms/common/internal/q;->k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    iget-object p0, v0, Lcom/google/android/gms/common/api/internal/b1;->h:Ld/d/b;
+
+    invoke-virtual {p0, p2}, Ld/d/b;->add(Ljava/lang/Object;)Z
+
+    .line 7
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/f;->h(Lcom/google/android/gms/common/api/internal/b1;)V
+
+    return-void
+.end method
+
+.method private final s()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->h:Ld/d/b;
+
+    invoke-virtual {v0}, Ld/d/b;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->i:Lcom/google/android/gms/common/api/internal/f;
+
+    invoke-virtual {v0, p0}, Lcom/google/android/gms/common/api/internal/f;->h(Lcom/google/android/gms/common/api/internal/b1;)V
+
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public h()V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->e:Lcom/google/android/gms/common/api/internal/a1;
-
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/a1;->I1(Lcom/google/android/gms/common/api/internal/a1;)I
-
-    move-result v0
-
-    if-lez v0, :cond_1
+    invoke-super {p0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->h()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->c:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    invoke-direct {p0}, Lcom/google/android/gms/common/api/internal/b1;->s()V
 
-    .line 3
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/b1;->e:Lcom/google/android/gms/common/api/internal/a1;
-
-    invoke-static {v1}, Lcom/google/android/gms/common/api/internal/a1;->K1(Lcom/google/android/gms/common/api/internal/a1;)Landroid/os/Bundle;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/b1;->e:Lcom/google/android/gms/common/api/internal/a1;
-
-    invoke-static {v1}, Lcom/google/android/gms/common/api/internal/a1;->K1(Lcom/google/android/gms/common/api/internal/a1;)Landroid/os/Bundle;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/google/android/gms/common/api/internal/b1;->d:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 4
-    :goto_0
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->f(Landroid/os/Bundle;)V
-
-    .line 5
-    :cond_1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->e:Lcom/google/android/gms/common/api/internal/a1;
-
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/a1;->I1(Lcom/google/android/gms/common/api/internal/a1;)I
-
-    move-result v0
-
-    const/4 v1, 0x2
-
-    if-lt v0, v1, :cond_2
-
-    .line 6
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->c:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->j()V
-
-    .line 7
-    :cond_2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->e:Lcom/google/android/gms/common/api/internal/a1;
-
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/a1;->I1(Lcom/google/android/gms/common/api/internal/a1;)I
-
-    move-result v0
-
-    const/4 v1, 0x3
-
-    if-lt v0, v1, :cond_3
-
-    .line 8
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->c:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->h()V
-
-    .line 9
-    :cond_3
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->e:Lcom/google/android/gms/common/api/internal/a1;
-
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/a1;->I1(Lcom/google/android/gms/common/api/internal/a1;)I
-
-    move-result v0
-
-    const/4 v1, 0x4
-
-    if-lt v0, v1, :cond_4
-
-    .line 10
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->c:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->k()V
-
-    .line 11
-    :cond_4
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->e:Lcom/google/android/gms/common/api/internal/a1;
-
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/a1;->I1(Lcom/google/android/gms/common/api/internal/a1;)I
-
-    move-result v0
-
-    const/4 v1, 0x5
-
-    if-lt v0, v1, :cond_5
-
-    .line 12
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->c:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g()V
-
-    :cond_5
     return-void
+.end method
+
+.method public j()V
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Lcom/google/android/gms/common/api/internal/u0;->j()V
+
+    .line 2
+    invoke-direct {p0}, Lcom/google/android/gms/common/api/internal/b1;->s()V
+
+    return-void
+.end method
+
+.method public k()V
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Lcom/google/android/gms/common/api/internal/u0;->k()V
+
+    .line 2
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->i:Lcom/google/android/gms/common/api/internal/f;
+
+    invoke-virtual {v0, p0}, Lcom/google/android/gms/common/api/internal/f;->n(Lcom/google/android/gms/common/api/internal/b1;)V
+
+    return-void
+.end method
+
+.method protected final m()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->i:Lcom/google/android/gms/common/api/internal/f;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/f;->q()V
+
+    return-void
+.end method
+
+.method protected final n(Lg/f/a/e/e/a;I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->i:Lcom/google/android/gms/common/api/internal/f;
+
+    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/common/api/internal/f;->m(Lg/f/a/e/e/a;I)V
+
+    return-void
+.end method
+
+.method final r()Ld/d/b;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ld/d/b<",
+            "Lcom/google/android/gms/common/api/internal/b<",
+            "*>;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/b1;->h:Ld/d/b;
+
+    return-object v0
 .end method

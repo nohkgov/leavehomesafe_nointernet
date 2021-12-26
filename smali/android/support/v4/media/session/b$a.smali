@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public static k0(Landroid/os/IBinder;)Landroid/support/v4/media/session/b;
+.method public static l0(Landroid/os/IBinder;)Landroid/support/v4/media/session/b;
     .locals 2
 
     if-nez p0, :cond_0

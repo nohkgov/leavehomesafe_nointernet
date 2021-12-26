@@ -75,7 +75,7 @@
     return-object p0
 .end method
 
-.method static b(Lg/f/a/e/i/n/c;)[Landroid/graphics/Point;
+.method static b(Lg/f/a/e/i/o/c;)[Landroid/graphics/Point;
     .locals 12
 
     const/4 v0, 0x4
@@ -83,7 +83,7 @@
     new-array v0, v0, [Landroid/graphics/Point;
 
     .line 1
-    iget v1, p0, Lg/f/a/e/i/n/c;->g:F
+    iget v1, p0, Lg/f/a/e/i/o/c;->g:F
 
     float-to-double v1, v1
 
@@ -96,7 +96,7 @@
     move-result-wide v1
 
     .line 2
-    iget v3, p0, Lg/f/a/e/i/n/c;->g:F
+    iget v3, p0, Lg/f/a/e/i/o/c;->g:F
 
     float-to-double v3, v3
 
@@ -111,9 +111,9 @@
     .line 3
     new-instance v5, Landroid/graphics/Point;
 
-    iget v6, p0, Lg/f/a/e/i/n/c;->c:I
+    iget v6, p0, Lg/f/a/e/i/o/c;->c:I
 
-    iget v7, p0, Lg/f/a/e/i/n/c;->d:I
+    iget v7, p0, Lg/f/a/e/i/o/c;->d:I
 
     invoke-direct {v5, v6, v7}, Landroid/graphics/Point;-><init>(II)V
 
@@ -124,11 +124,11 @@
     .line 4
     new-instance v5, Landroid/graphics/Point;
 
-    iget v7, p0, Lg/f/a/e/i/n/c;->c:I
+    iget v7, p0, Lg/f/a/e/i/o/c;->c:I
 
     int-to-double v7, v7
 
-    iget v9, p0, Lg/f/a/e/i/n/c;->e:I
+    iget v9, p0, Lg/f/a/e/i/o/c;->e:I
 
     int-to-double v10, v9
 
@@ -142,7 +142,7 @@
 
     double-to-int v7, v7
 
-    iget v8, p0, Lg/f/a/e/i/n/c;->d:I
+    iget v8, p0, Lg/f/a/e/i/o/c;->d:I
 
     int-to-double v10, v8
 
@@ -173,7 +173,7 @@
 
     int-to-double v8, v8
 
-    iget p0, p0, Lg/f/a/e/i/n/c;->f:I
+    iget p0, p0, Lg/f/a/e/i/o/c;->f:I
 
     int-to-double v10, p0
 

@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: LeaveHomeSafe_2.1.5.apk
+apkFileName: LeaveHomeSafe_3.0.1.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -173,5 +173,5 @@ usesFramework:
   tag: null
 version: 2.5.0
 versionInfo:
-  versionCode: '134'
-  versionName: 2.1.5
+  versionCode: '143'
+  versionName: 3.0.1

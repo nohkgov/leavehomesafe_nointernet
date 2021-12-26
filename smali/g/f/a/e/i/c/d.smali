@@ -1,29 +1,18 @@
-.class public Lg/f/a/e/i/c/d;
-.super Landroid/os/Handler;
-.source "com.google.android.gms:play-services-base@@17.4.0"
+.class public final Lg/f/a/e/i/c/d;
+.super Lg/f/a/e/i/c/a;
+
+# interfaces
+.implements Lg/f/a/e/i/c/c;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
+.method constructor <init>(Landroid/os/IBinder;)V
+    .locals 1
 
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Looper;)V
-    .locals 0
+    const-string v0, "com.google.android.gms.auth.api.internal.IAuthService"
 
     .line 1
-    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
-    .locals 0
-
-    .line 2
-    invoke-direct {p0, p1, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+    invoke-direct {p0, p1, v0}, Lg/f/a/e/i/c/a;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
 .end method

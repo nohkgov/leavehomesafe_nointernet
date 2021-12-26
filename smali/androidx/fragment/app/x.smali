@@ -3001,7 +3001,7 @@
     .locals 3
 
     :try_start_0
-    const-string v0, "d.r.h"
+    const-string v0, "d.s.h"
 
     .line 1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;

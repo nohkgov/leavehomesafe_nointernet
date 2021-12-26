@@ -1,6 +1,6 @@
 .class final Lg/f/a/e/i/k/n1;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-mlkit-text-recognition@@16.1.2"
+.source "com.google.mlkit:vision-common@@16.2.0"
 
 # interfaces
 .implements Lcom/google/firebase/m/d;
@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/google/firebase/m/d<",
-        "Lg/f/a/e/i/k/q0;",
+        "Lg/f/a/e/i/k/w3;",
         ">;"
     }
 .end annotation
@@ -45,18 +45,72 @@
 
 # virtual methods
 .method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    check-cast p1, Lg/f/a/e/i/k/q0;
+    check-cast p1, Lg/f/a/e/i/k/w3;
 
     check-cast p2, Lcom/google/firebase/m/e;
 
-    const/4 p1, 0x0
+    invoke-virtual {p1}, Lg/f/a/e/i/k/w3;->a()Ljava/lang/Long;
 
-    throw p1
+    move-result-object v0
+
+    const-string v1, "durationMs"
+
+    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
+
+    invoke-virtual {p1}, Lg/f/a/e/i/k/w3;->b()Lg/f/a/e/i/k/v3;
+
+    move-result-object v0
+
+    const-string v1, "imageSource"
+
+    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
+
+    invoke-virtual {p1}, Lg/f/a/e/i/k/w3;->c()Lg/f/a/e/i/k/q3;
+
+    move-result-object v0
+
+    const-string v1, "imageFormat"
+
+    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
+
+    invoke-virtual {p1}, Lg/f/a/e/i/k/w3;->d()Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "imageByteSize"
+
+    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
+
+    invoke-virtual {p1}, Lg/f/a/e/i/k/w3;->e()Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "imageWidth"
+
+    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
+
+    invoke-virtual {p1}, Lg/f/a/e/i/k/w3;->f()Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "imageHeight"
+
+    invoke-interface {p2, v1, v0}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
+
+    invoke-virtual {p1}, Lg/f/a/e/i/k/w3;->g()Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "rotationDegrees"
+
+    invoke-interface {p2, v0, p1}, Lcom/google/firebase/m/e;->e(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/firebase/m/e;
+
+    return-void
 .end method

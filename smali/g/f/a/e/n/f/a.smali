@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field private a:Lg/f/a/e/i/n/p;
+.field private a:Lg/f/a/e/i/o/p;
 
 
 # direct methods
-.method constructor <init>(Lg/f/a/e/i/n/p;)V
+.method constructor <init>(Lg/f/a/e/i/o/p;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lg/f/a/e/n/f/a;->a:Lg/f/a/e/i/n/p;
+    iput-object p1, p0, Lg/f/a/e/n/f/a;->a:Lg/f/a/e/i/o/p;
 
     return-void
 .end method
@@ -44,11 +44,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lg/f/a/e/n/f/a;->a:Lg/f/a/e/i/n/p;
+    iget-object v0, p0, Lg/f/a/e/n/f/a;->a:Lg/f/a/e/i/o/p;
 
-    iget-object v0, v0, Lg/f/a/e/i/n/p;->d:Lg/f/a/e/i/n/c;
+    iget-object v0, v0, Lg/f/a/e/i/o/p;->d:Lg/f/a/e/i/o/c;
 
-    invoke-static {v0}, Lg/f/a/e/n/f/h;->b(Lg/f/a/e/i/n/c;)[Landroid/graphics/Point;
+    invoke-static {v0}, Lg/f/a/e/n/f/h;->b(Lg/f/a/e/i/o/c;)[Landroid/graphics/Point;
 
     move-result-object v0
 
@@ -61,9 +61,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lg/f/a/e/n/f/a;->a:Lg/f/a/e/i/n/p;
+    iget-object v0, p0, Lg/f/a/e/n/f/a;->a:Lg/f/a/e/i/o/p;
 
-    iget-object v0, v0, Lg/f/a/e/i/n/p;->h:Ljava/lang/String;
+    iget-object v0, v0, Lg/f/a/e/i/o/p;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -97,9 +97,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lg/f/a/e/n/f/a;->a:Lg/f/a/e/i/n/p;
+    iget-object v0, p0, Lg/f/a/e/n/f/a;->a:Lg/f/a/e/i/o/p;
 
-    iget-object v0, v0, Lg/f/a/e/i/n/p;->f:Ljava/lang/String;
+    iget-object v0, v0, Lg/f/a/e/i/o/p;->f:Ljava/lang/String;
 
     return-object v0
 .end method

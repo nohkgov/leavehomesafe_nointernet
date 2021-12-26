@@ -96,7 +96,7 @@
 
     move-result-object v3
 
-    invoke-interface {v3, v2}, Landroid/support/v4/media/session/b;->p(Landroid/support/v4/media/session/a;)V
+    invoke-interface {v3, v2}, Landroid/support/v4/media/session/b;->q(Landroid/support/v4/media/session/a;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
