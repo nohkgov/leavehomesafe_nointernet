@@ -7,5 +7,5 @@
 4. 再recompile apk即可
 
 update log :   
-  
+26/12/2021 更新至3.0.1  
 24/11/2021 因appupdate 更新了2.1.5
