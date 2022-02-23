@@ -72,7 +72,7 @@
 
     move-result-object p2
 
-    invoke-static {p0, p2}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p0, p2}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     .line 6
     sget p2, Ld/a/j;->ActionMode_titleTextStyle:I
@@ -511,7 +511,7 @@
     const/4 v1, 0x0
 
     .line 17
-    invoke-static {p1, v1}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p1, v1}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     .line 18
     iget-object p1, p0, Landroidx/appcompat/widget/a;->e:Landroidx/appcompat/widget/ActionMenuView;

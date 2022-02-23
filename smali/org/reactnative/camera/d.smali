@@ -1,5 +1,5 @@
 .class public Lorg/reactnative/camera/d;
-.super Lg/f/a/b/e;
+.super Lg/f/a/a/e;
 .source "RNCameraView.java"
 
 # interfaces
@@ -142,7 +142,7 @@
     const/4 v0, 0x1
 
     .line 1
-    invoke-direct {p0, p1, v0}, Lg/f/a/b/e;-><init>(Landroid/content/Context;Z)V
+    invoke-direct {p0, p1, v0}, Lg/f/a/a/e;-><init>(Landroid/content/Context;Z)V
 
     .line 2
     new-instance v1, Ljava/util/concurrent/ConcurrentLinkedQueue;
@@ -298,7 +298,7 @@
 
     invoke-direct {p1, p0}, Lorg/reactnative/camera/d$a;-><init>(Lorg/reactnative/camera/d;)V
 
-    invoke-virtual {p0, p1}, Lg/f/a/b/e;->l(Lg/f/a/b/e$b;)V
+    invoke-virtual {p0, p1}, Lg/f/a/a/e;->l(Lg/f/a/a/e$b;)V
 
     return-void
 .end method
@@ -478,7 +478,7 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lg/f/a/b/e;->z(Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-super {p0, p1}, Lg/f/a/a/e;->z(Lcom/facebook/react/bridge/ReadableMap;)V
 
     return-void
 .end method
@@ -487,7 +487,7 @@
     .locals 0
 
     .line 1
-    invoke-super/range {p0 .. p7}, Lg/f/a/b/e;->s(Ljava/lang/String;IIZLandroid/media/CamcorderProfile;II)Z
+    invoke-super/range {p0 .. p7}, Lg/f/a/a/e;->s(Ljava/lang/String;IIZLandroid/media/CamcorderProfile;II)Z
 
     move-result p0
 
@@ -752,7 +752,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lg/f/a/b/e;->getZoom()F
+    invoke-virtual {p0}, Lg/f/a/a/e;->getZoom()F
 
     move-result v0
 
@@ -771,7 +771,7 @@
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Lg/f/a/b/e;->setZoom(F)V
+    invoke-virtual {p0, p1}, Lg/f/a/a/e;->setZoom(F)V
 
     goto :goto_0
 
@@ -783,7 +783,7 @@
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Lg/f/a/b/e;->setZoom(F)V
+    invoke-virtual {p0, p1}, Lg/f/a/a/e;->setZoom(F)V
 
     :goto_0
     return-void
@@ -1225,7 +1225,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lg/f/a/b/e;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lg/f/a/a/e;->i:Landroid/os/Handler;
 
     new-instance v1, Lorg/reactnative/camera/d$c;
 
@@ -1268,7 +1268,7 @@
     invoke-virtual {v0, p0}, Lcom/facebook/react/uimanager/k0;->removeLifecycleEventListener(Lcom/facebook/react/bridge/LifecycleEventListener;)V
 
     .line 7
-    iget-object v0, p0, Lg/f/a/b/e;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lg/f/a/a/e;->i:Landroid/os/Handler;
 
     new-instance v1, Lorg/reactnative/camera/d$e;
 
@@ -1302,7 +1302,7 @@
 
     if-nez v0, :cond_1
 
-    invoke-virtual {p0}, Lg/f/a/b/e;->p()Z
+    invoke-virtual {p0}, Lg/f/a/a/e;->p()Z
 
     move-result v0
 
@@ -1314,7 +1314,7 @@
     iput-boolean v0, p0, Lorg/reactnative/camera/d;->s:Z
 
     .line 5
-    invoke-virtual {p0}, Lg/f/a/b/e;->x()V
+    invoke-virtual {p0}, Lg/f/a/a/e;->x()V
 
     :cond_1
     return-void
@@ -1331,7 +1331,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lg/f/a/b/e;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lg/f/a/a/e;->i:Landroid/os/Handler;
 
     new-instance v1, Lorg/reactnative/camera/d$d;
 
@@ -1355,7 +1355,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lg/f/a/b/e;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lg/f/a/a/e;->getView()Landroid/view/View;
 
     move-result-object p1
 
@@ -1373,11 +1373,11 @@
     int-to-float p3, p5
 
     .line 2
-    invoke-virtual {p0}, Lg/f/a/b/e;->getAspectRatio()Lg/f/a/b/a;
+    invoke-virtual {p0}, Lg/f/a/a/e;->getAspectRatio()Lg/f/a/a/a;
 
     move-result-object p4
 
-    invoke-virtual {p4}, Lg/f/a/b/a;->v()F
+    invoke-virtual {p4}, Lg/f/a/a/a;->v()F
 
     move-result p4
 
@@ -1705,7 +1705,7 @@
     const/4 p1, 0x1
 
     :goto_1
-    invoke-virtual {p0, p1}, Lg/f/a/b/e;->setScanning(Z)V
+    invoke-virtual {p0, p1}, Lg/f/a/a/e;->setScanning(Z)V
 
     return-void
 .end method
@@ -1790,7 +1790,7 @@
     const/4 p1, 0x1
 
     :goto_1
-    invoke-virtual {p0, p1}, Lg/f/a/b/e;->setScanning(Z)V
+    invoke-virtual {p0, p1}, Lg/f/a/a/e;->setScanning(Z)V
 
     return-void
 .end method
@@ -1828,7 +1828,7 @@
     const/4 p1, 0x1
 
     :goto_1
-    invoke-virtual {p0, p1}, Lg/f/a/b/e;->setScanning(Z)V
+    invoke-virtual {p0, p1}, Lg/f/a/a/e;->setScanning(Z)V
 
     return-void
 .end method
@@ -1877,7 +1877,7 @@
     const/4 p1, 0x1
 
     :goto_1
-    invoke-virtual {p0, p1}, Lg/f/a/b/e;->setScanning(Z)V
+    invoke-virtual {p0, p1}, Lg/f/a/a/e;->setScanning(Z)V
 
     return-void
 .end method
@@ -1940,7 +1940,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lg/f/a/b/e;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lg/f/a/a/e;->i:Landroid/os/Handler;
 
     new-instance v1, Lorg/reactnative/camera/d$b;
 

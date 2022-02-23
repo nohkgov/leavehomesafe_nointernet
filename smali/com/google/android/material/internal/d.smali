@@ -65,7 +65,7 @@
     iput-boolean v1, p0, Lcom/google/android/material/internal/d;->w:Z
 
     .line 8
-    sget-object v4, Lg/f/a/f/k;->ForegroundLinearLayout:[I
+    sget-object v4, Lg/f/a/d/k;->ForegroundLinearLayout:[I
 
     new-array v7, v1, [I
 
@@ -83,7 +83,7 @@
     move-result-object p1
 
     .line 10
-    sget p2, Lg/f/a/f/k;->ForegroundLinearLayout_android_foregroundGravity:I
+    sget p2, Lg/f/a/d/k;->ForegroundLinearLayout_android_foregroundGravity:I
 
     iget p3, p0, Lcom/google/android/material/internal/d;->u:I
 
@@ -95,7 +95,7 @@
     iput p2, p0, Lcom/google/android/material/internal/d;->u:I
 
     .line 12
-    sget p2, Lg/f/a/f/k;->ForegroundLinearLayout_android_foreground:I
+    sget p2, Lg/f/a/d/k;->ForegroundLinearLayout_android_foreground:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -108,7 +108,7 @@
 
     .line 14
     :cond_0
-    sget p2, Lg/f/a/f/k;->ForegroundLinearLayout_foregroundInsidePadding:I
+    sget p2, Lg/f/a/d/k;->ForegroundLinearLayout_foregroundInsidePadding:I
 
     .line 15
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z

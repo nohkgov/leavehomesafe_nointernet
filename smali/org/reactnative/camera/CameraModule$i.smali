@@ -61,7 +61,7 @@
 
     .line 2
     :try_start_0
-    invoke-virtual {p1}, Lg/f/a/b/e;->p()Z
+    invoke-virtual {p1}, Lg/f/a/a/e;->p()Z
 
     move-result v0
 

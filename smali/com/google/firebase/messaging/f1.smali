@@ -316,7 +316,7 @@
 
     .line 3
     :try_start_0
-    invoke-static {}, Lg/f/a/e/e/m/a;->b()Lg/f/a/e/e/m/a;
+    invoke-static {}, Lg/f/a/c/e/m/a;->b()Lg/f/a/c/e/m/a;
 
     move-result-object v1
 
@@ -327,7 +327,7 @@
     const/16 v4, 0x41
 
     .line 4
-    invoke-virtual {v1, v2, v3, p0, v4}, Lg/f/a/e/e/m/a;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+    invoke-virtual {v1, v2, v3, p0, v4}, Lg/f/a/c/e/m/a;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
     move-result v1
 
@@ -367,14 +367,14 @@
 
 
 # virtual methods
-.method declared-synchronized c(Landroid/content/Intent;)Lg/f/a/e/m/l;
+.method declared-synchronized c(Landroid/content/Intent;)Lg/f/a/c/m/l;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Intent;",
             ")",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Ljava/lang/Void;",
             ">;"
         }
@@ -421,7 +421,7 @@
     invoke-direct {p0}, Lcom/google/firebase/messaging/f1;->b()V
 
     .line 7
-    invoke-virtual {v0}, Lcom/google/firebase/messaging/f1$a;->c()Lg/f/a/e/m/l;
+    invoke-virtual {v0}, Lcom/google/firebase/messaging/f1$a;->c()Lg/f/a/c/m/l;
 
     move-result-object p1
     :try_end_0

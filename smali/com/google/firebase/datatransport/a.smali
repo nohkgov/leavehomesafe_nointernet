@@ -44,7 +44,7 @@
 .method public a(Lcom/google/firebase/components/e;)Ljava/lang/Object;
     .locals 0
 
-    invoke-static {p1}, Lcom/google/firebase/datatransport/TransportRegistrar;->lambda$getComponents$0(Lcom/google/firebase/components/e;)Lg/f/a/c/g;
+    invoke-static {p1}, Lcom/google/firebase/datatransport/TransportRegistrar;->lambda$getComponents$0(Lcom/google/firebase/components/e;)Lg/f/a/b/g;
 
     move-result-object p1
 

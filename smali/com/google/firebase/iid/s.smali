@@ -22,7 +22,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Lcom/google/firebase/iid/l;",
             ">;>;"
         }
@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method declared-synchronized a(Ljava/lang/String;Ljava/lang/String;Lcom/google/firebase/iid/s$a;)Lg/f/a/e/m/l;
+.method declared-synchronized a(Ljava/lang/String;Ljava/lang/String;Lcom/google/firebase/iid/s$a;)Lg/f/a/c/m/l;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -59,7 +59,7 @@
             "Ljava/lang/String;",
             "Lcom/google/firebase/iid/s$a;",
             ")",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Lcom/google/firebase/iid/l;",
             ">;"
         }
@@ -80,7 +80,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lg/f/a/e/m/l;
+    check-cast p1, Lg/f/a/c/m/l;
 
     const/4 p2, 0x3
 
@@ -181,7 +181,7 @@
 
     .line 7
     :cond_2
-    invoke-interface {p3}, Lcom/google/firebase/iid/s$a;->start()Lg/f/a/e/m/l;
+    invoke-interface {p3}, Lcom/google/firebase/iid/s$a;->start()Lg/f/a/c/m/l;
 
     move-result-object p1
 
@@ -192,7 +192,7 @@
     invoke-direct {p3, p0, v0}, Lcom/google/firebase/iid/r;-><init>(Lcom/google/firebase/iid/s;Landroid/util/Pair;)V
 
     .line 8
-    invoke-virtual {p1, p2, p3}, Lg/f/a/e/m/l;->j(Ljava/util/concurrent/Executor;Lg/f/a/e/m/c;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, p2, p3}, Lg/f/a/c/m/l;->j(Ljava/util/concurrent/Executor;Lg/f/a/c/m/c;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
@@ -215,7 +215,7 @@
     throw p1
 .end method
 
-.method final synthetic b(Landroid/util/Pair;Lg/f/a/e/m/l;)Lg/f/a/e/m/l;
+.method final synthetic b(Landroid/util/Pair;Lg/f/a/c/m/l;)Lg/f/a/c/m/l;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {

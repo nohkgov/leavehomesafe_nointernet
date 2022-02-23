@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public abstract g(Lcom/google/android/gms/common/api/internal/f$a;)[Lg/f/a/e/e/c;
+.method public abstract g(Lcom/google/android/gms/common/api/internal/f$a;)[Lg/f/a/c/e/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/android/gms/common/api/internal/f$a<",
             "*>;)[",
-            "Lg/f/a/e/e/c;"
+            "Lg/f/a/c/e/c;"
         }
     .end annotation
 .end method

@@ -50,7 +50,7 @@
 
     move-object v5, v0
 
-    invoke-static/range {v1 .. v7}, Ld/g/l/s;->j0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v1 .. v7}, Ld/g/l/s;->k0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 6
     sget p1, Ld/a/j;->ButtonBarLayout_allowStacking:I
@@ -430,7 +430,7 @@
     .line 22
     :cond_8
     :goto_2
-    invoke-static {p0}, Ld/g/l/s;->z(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->A(Landroid/view/View;)I
 
     move-result p1
 

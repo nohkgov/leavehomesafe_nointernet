@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method protected final f(Lg/f/a/e/e/a;)V
+.method protected final f(Lg/f/a/c/e/a;)V
     .locals 1
 
     .line 1
@@ -63,13 +63,13 @@
 
     move-result-object v0
 
-    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/c$b;->onConnectionFailed(Lg/f/a/e/e/a;)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/c$b;->onConnectionFailed(Lg/f/a/c/e/a;)V
 
     .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/gms/common/internal/c$k;->h:Lcom/google/android/gms/common/internal/c;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/internal/c;->G(Lg/f/a/e/e/a;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/internal/c;->G(Lg/f/a/c/e/a;)V
 
     return-void
 .end method
@@ -201,7 +201,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/c;->M(Lcom/google/android/gms/common/internal/c;Lg/f/a/e/e/a;)Lg/f/a/e/e/a;
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/c;->M(Lcom/google/android/gms/common/internal/c;Lg/f/a/c/e/a;)Lg/f/a/c/e/a;
 
     .line 8
     iget-object v0, p0, Lcom/google/android/gms/common/internal/c$k;->h:Lcom/google/android/gms/common/internal/c;

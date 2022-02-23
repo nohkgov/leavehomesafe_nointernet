@@ -282,7 +282,7 @@
     if-eqz v0, :cond_1
 
     .line 4
-    invoke-static {p1}, Ld/g/l/s;->B(Landroid/view/View;)Ld/g/l/a;
+    invoke-static {p1}, Ld/g/l/s;->C(Landroid/view/View;)Ld/g/l/a;
 
     .line 5
     iget v0, p0, Ld/g/l/s$f;->a:I
@@ -292,7 +292,7 @@
     const/4 p2, 0x0
 
     .line 6
-    invoke-static {p1, p2}, Ld/g/l/s;->V(Landroid/view/View;I)V
+    invoke-static {p1, p2}, Ld/g/l/s;->W(Landroid/view/View;I)V
 
     :cond_1
     :goto_0

@@ -3,14 +3,14 @@
 .source "MetadataBackendRegistry_Factory.java"
 
 # interfaces
-.implements Lg/f/a/c/i/u/a/b;
+.implements Lg/f/a/b/i/u/a/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lg/f/a/c/i/u/a/b<",
+        "Lg/f/a/b/i/u/a/b<",
         "Lcom/google/android/datatransport/runtime/backends/k;",
         ">;"
     }

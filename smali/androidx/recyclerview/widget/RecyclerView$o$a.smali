@@ -3,7 +3,7 @@
 .source "RecyclerView.java"
 
 # interfaces
-.implements Landroidx/recyclerview/widget/o$b;
+.implements Landroidx/recyclerview/widget/p$b;
 
 
 # annotations

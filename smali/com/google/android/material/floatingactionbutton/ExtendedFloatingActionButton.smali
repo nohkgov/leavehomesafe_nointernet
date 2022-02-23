@@ -200,7 +200,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result v0
 
@@ -246,11 +246,11 @@
     .locals 2
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->D(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->E(Landroid/view/View;)I
 
     move-result v0
 
-    invoke-static {p0}, Ld/g/l/s;->C(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->D(Landroid/view/View;)I
 
     move-result v1
 
@@ -270,52 +270,52 @@
     return v0
 .end method
 
-.method public getExtendMotionSpec()Lg/f/a/f/l/h;
+.method public getExtendMotionSpec()Lg/f/a/d/l/h;
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->v:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-interface {v0}, Lcom/google/android/material/floatingactionbutton/d;->e()Lg/f/a/f/l/h;
+    invoke-interface {v0}, Lcom/google/android/material/floatingactionbutton/d;->e()Lg/f/a/d/l/h;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public getHideMotionSpec()Lg/f/a/f/l/h;
+.method public getHideMotionSpec()Lg/f/a/d/l/h;
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-interface {v0}, Lcom/google/android/material/floatingactionbutton/d;->e()Lg/f/a/f/l/h;
+    invoke-interface {v0}, Lcom/google/android/material/floatingactionbutton/d;->e()Lg/f/a/d/l/h;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public getShowMotionSpec()Lg/f/a/f/l/h;
+.method public getShowMotionSpec()Lg/f/a/d/l/h;
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->w:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-interface {v0}, Lcom/google/android/material/floatingactionbutton/d;->e()Lg/f/a/f/l/h;
+    invoke-interface {v0}, Lcom/google/android/material/floatingactionbutton/d;->e()Lg/f/a/d/l/h;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public getShrinkMotionSpec()Lg/f/a/f/l/h;
+.method public getShrinkMotionSpec()Lg/f/a/d/l/h;
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->u:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-interface {v0}, Lcom/google/android/material/floatingactionbutton/d;->e()Lg/f/a/f/l/h;
+    invoke-interface {v0}, Lcom/google/android/material/floatingactionbutton/d;->e()Lg/f/a/d/l/h;
 
     move-result-object v0
 
@@ -363,13 +363,13 @@
     return-void
 .end method
 
-.method public setExtendMotionSpec(Lg/f/a/f/l/h;)V
+.method public setExtendMotionSpec(Lg/f/a/d/l/h;)V
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->v:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-interface {v0, p1}, Lcom/google/android/material/floatingactionbutton/d;->c(Lg/f/a/f/l/h;)V
+    invoke-interface {v0, p1}, Lcom/google/android/material/floatingactionbutton/d;->c(Lg/f/a/d/l/h;)V
 
     return-void
 .end method
@@ -382,11 +382,11 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lg/f/a/f/l/h;->c(Landroid/content/Context;I)Lg/f/a/f/l/h;
+    invoke-static {v0, p1}, Lg/f/a/d/l/h;->c(Landroid/content/Context;I)Lg/f/a/d/l/h;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setExtendMotionSpec(Lg/f/a/f/l/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setExtendMotionSpec(Lg/f/a/d/l/h;)V
 
     return-void
 .end method
@@ -429,13 +429,13 @@
     return-void
 .end method
 
-.method public setHideMotionSpec(Lg/f/a/f/l/h;)V
+.method public setHideMotionSpec(Lg/f/a/d/l/h;)V
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-interface {v0, p1}, Lcom/google/android/material/floatingactionbutton/d;->c(Lg/f/a/f/l/h;)V
+    invoke-interface {v0, p1}, Lcom/google/android/material/floatingactionbutton/d;->c(Lg/f/a/d/l/h;)V
 
     return-void
 .end method
@@ -448,22 +448,22 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lg/f/a/f/l/h;->c(Landroid/content/Context;I)Lg/f/a/f/l/h;
+    invoke-static {v0, p1}, Lg/f/a/d/l/h;->c(Landroid/content/Context;I)Lg/f/a/d/l/h;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setHideMotionSpec(Lg/f/a/f/l/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setHideMotionSpec(Lg/f/a/d/l/h;)V
 
     return-void
 .end method
 
-.method public setShowMotionSpec(Lg/f/a/f/l/h;)V
+.method public setShowMotionSpec(Lg/f/a/d/l/h;)V
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->w:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-interface {v0, p1}, Lcom/google/android/material/floatingactionbutton/d;->c(Lg/f/a/f/l/h;)V
+    invoke-interface {v0, p1}, Lcom/google/android/material/floatingactionbutton/d;->c(Lg/f/a/d/l/h;)V
 
     return-void
 .end method
@@ -476,22 +476,22 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lg/f/a/f/l/h;->c(Landroid/content/Context;I)Lg/f/a/f/l/h;
+    invoke-static {v0, p1}, Lg/f/a/d/l/h;->c(Landroid/content/Context;I)Lg/f/a/d/l/h;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setShowMotionSpec(Lg/f/a/f/l/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setShowMotionSpec(Lg/f/a/d/l/h;)V
 
     return-void
 .end method
 
-.method public setShrinkMotionSpec(Lg/f/a/f/l/h;)V
+.method public setShrinkMotionSpec(Lg/f/a/d/l/h;)V
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->u:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-interface {v0, p1}, Lcom/google/android/material/floatingactionbutton/d;->c(Lg/f/a/f/l/h;)V
+    invoke-interface {v0, p1}, Lcom/google/android/material/floatingactionbutton/d;->c(Lg/f/a/d/l/h;)V
 
     return-void
 .end method
@@ -504,11 +504,11 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lg/f/a/f/l/h;->c(Landroid/content/Context;I)Lg/f/a/f/l/h;
+    invoke-static {v0, p1}, Lg/f/a/d/l/h;->c(Landroid/content/Context;I)Lg/f/a/d/l/h;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setShrinkMotionSpec(Lg/f/a/f/l/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setShrinkMotionSpec(Lg/f/a/d/l/h;)V
 
     return-void
 .end method

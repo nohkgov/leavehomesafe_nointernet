@@ -79,7 +79,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    invoke-static {v1, v2}, Ld/g/l/s;->A0(Landroid/view/View;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ld/g/l/s;->B0(Landroid/view/View;Ljava/lang/String;)V
 
     .line 3
     iget-object v1, p0, Landroidx/fragment/app/z$a;->f:Ljava/util/ArrayList;
@@ -98,7 +98,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    invoke-static {v1, v2}, Ld/g/l/s;->A0(Landroid/view/View;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ld/g/l/s;->B0(Landroid/view/View;Ljava/lang/String;)V
 
     add-int/lit8 v0, v0, 0x1
 

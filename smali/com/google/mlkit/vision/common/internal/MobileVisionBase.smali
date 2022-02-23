@@ -40,7 +40,7 @@
     .end annotation
 .end field
 
-.field private final e:Lg/f/a/e/m/b;
+.field private final e:Lg/f/a/c/m/b;
 
 .field private final f:Ljava/util/concurrent/Executor;
 
@@ -99,11 +99,11 @@
     iput-object p1, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->d:Lg/f/b/a/c/f;
 
     .line 2
-    new-instance v0, Lg/f/a/e/m/b;
+    new-instance v0, Lg/f/a/c/m/b;
 
-    invoke-direct {v0}, Lg/f/a/e/m/b;-><init>()V
+    invoke-direct {v0}, Lg/f/a/c/m/b;-><init>()V
 
-    iput-object v0, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->e:Lg/f/a/e/m/b;
+    iput-object v0, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->e:Lg/f/a/c/m/b;
 
     iput-object p2, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->f:Ljava/util/concurrent/Executor;
 
@@ -114,21 +114,21 @@
 
     sget-object v0, Lcom/google/mlkit/vision/common/internal/e;->a:Ljava/util/concurrent/Callable;
 
-    iget-object v1, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->e:Lg/f/a/e/m/b;
+    iget-object v1, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->e:Lg/f/a/c/m/b;
 
     .line 4
-    invoke-virtual {v1}, Lg/f/a/e/m/b;->b()Lg/f/a/e/m/a;
+    invoke-virtual {v1}, Lg/f/a/c/m/b;->b()Lg/f/a/c/m/a;
 
     move-result-object v1
 
-    invoke-virtual {p1, p2, v0, v1}, Lg/f/b/a/c/k;->a(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;Lg/f/a/e/m/a;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, p2, v0, v1}, Lg/f/b/a/c/k;->a(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;Lg/f/a/c/m/a;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
-    sget-object p2, Lcom/google/mlkit/vision/common/internal/f;->a:Lg/f/a/e/m/g;
+    sget-object p2, Lcom/google/mlkit/vision/common/internal/f;->a:Lg/f/a/c/m/g;
 
     .line 5
-    invoke-virtual {p1, p2}, Lg/f/a/e/m/l;->d(Lg/f/a/e/m/g;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, p2}, Lg/f/a/c/m/l;->d(Lg/f/a/c/m/g;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -169,10 +169,10 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->e:Lg/f/a/e/m/b;
+    iget-object v0, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->e:Lg/f/a/c/m/b;
 
     .line 2
-    invoke-virtual {v0}, Lg/f/a/e/m/b;->a()V
+    invoke-virtual {v0}, Lg/f/a/c/m/b;->a()V
 
     iget-object v0, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->d:Lg/f/b/a/c/f;
 
@@ -200,7 +200,7 @@
     throw v0
 .end method
 
-.method public declared-synchronized u(Lg/f/b/b/a/a;)Lg/f/a/e/m/l;
+.method public declared-synchronized u(Lg/f/b/b/a/a;)Lg/f/a/c/m/l;
     .locals 3
     .param p1    # Lg/f/b/b/a/a;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -214,7 +214,7 @@
             "(",
             "Lg/f/b/b/a/a;",
             ")",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "TDetectionResultT;>;"
         }
     .end annotation
@@ -245,7 +245,7 @@
 
     invoke-direct {p1, v0, v1}, Lg/f/b/a/a;-><init>(Ljava/lang/String;I)V
 
-    invoke-static {p1}, Lg/f/a/e/m/o;->e(Ljava/lang/Exception;)Lg/f/a/e/m/l;
+    invoke-static {p1}, Lg/f/a/c/m/o;->e(Ljava/lang/Exception;)Lg/f/a/c/m/l;
 
     move-result-object p1
     :try_end_0
@@ -281,15 +281,15 @@
     .line 5
     invoke-direct {v2, p0, p1}, Lcom/google/mlkit/vision/common/internal/g;-><init>(Lcom/google/mlkit/vision/common/internal/MobileVisionBase;Lg/f/b/b/a/a;)V
 
-    iget-object p1, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->e:Lg/f/a/e/m/b;
+    iget-object p1, p0, Lcom/google/mlkit/vision/common/internal/MobileVisionBase;->e:Lg/f/a/c/m/b;
 
     .line 6
-    invoke-virtual {p1}, Lg/f/a/e/m/b;->b()Lg/f/a/e/m/a;
+    invoke-virtual {p1}, Lg/f/a/c/m/b;->b()Lg/f/a/c/m/a;
 
     move-result-object p1
 
     .line 7
-    invoke-virtual {v0, v1, v2, p1}, Lg/f/b/a/c/k;->a(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;Lg/f/a/e/m/a;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, v1, v2, p1}, Lg/f/b/a/c/k;->a(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;Lg/f/a/c/m/a;)Lg/f/a/c/m/l;
 
     move-result-object p1
     :try_end_1
@@ -310,7 +310,7 @@
 
     invoke-direct {p1, v0, v1}, Lg/f/b/a/a;-><init>(Ljava/lang/String;I)V
 
-    invoke-static {p1}, Lg/f/a/e/m/o;->e(Ljava/lang/Exception;)Lg/f/a/e/m/l;
+    invoke-static {p1}, Lg/f/a/c/m/o;->e(Ljava/lang/Exception;)Lg/f/a/c/m/l;
 
     move-result-object p1
     :try_end_2

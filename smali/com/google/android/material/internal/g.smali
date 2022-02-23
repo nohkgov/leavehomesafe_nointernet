@@ -22,7 +22,7 @@
     new-array v1, v0, [I
 
     .line 1
-    sget v2, Lg/f/a/f/b;->colorPrimary:I
+    sget v2, Lg/f/a/d/b;->colorPrimary:I
 
     const/4 v3, 0x0
 
@@ -33,7 +33,7 @@
     new-array v1, v0, [I
 
     .line 2
-    sget v2, Lg/f/a/f/b;->colorPrimaryVariant:I
+    sget v2, Lg/f/a/d/b;->colorPrimaryVariant:I
 
     aput v2, v1, v3
 
@@ -48,7 +48,7 @@
     aput v2, v1, v3
 
     .line 3
-    sget v2, Lg/f/a/f/b;->theme:I
+    sget v2, Lg/f/a/d/b;->theme:I
 
     aput v2, v1, v0
 
@@ -57,7 +57,7 @@
     new-array v0, v0, [I
 
     .line 4
-    sget v1, Lg/f/a/f/b;->materialThemeOverlay:I
+    sget v1, Lg/f/a/d/b;->materialThemeOverlay:I
 
     aput v1, v0, v3
 
@@ -83,7 +83,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lg/f/a/f/k;->ThemeEnforcement:[I
+    sget-object v0, Lg/f/a/d/k;->ThemeEnforcement:[I
 
     .line 2
     invoke-virtual {p0, p1, v0, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
@@ -91,7 +91,7 @@
     move-result-object p1
 
     .line 3
-    sget p2, Lg/f/a/f/k;->ThemeEnforcement_enforceMaterialTheme:I
+    sget p2, Lg/f/a/d/k;->ThemeEnforcement_enforceMaterialTheme:I
 
     const/4 p3, 0x0
 
@@ -115,7 +115,7 @@
 
     move-result-object p2
 
-    sget p3, Lg/f/a/f/b;->isMaterialTheme:I
+    sget p3, Lg/f/a/d/b;->isMaterialTheme:I
 
     const/4 v0, 0x1
 
@@ -164,7 +164,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lg/f/a/f/k;->ThemeEnforcement:[I
+    sget-object v0, Lg/f/a/d/k;->ThemeEnforcement:[I
 
     .line 2
     invoke-virtual {p0, p1, v0, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
@@ -172,7 +172,7 @@
     move-result-object v0
 
     .line 3
-    sget v1, Lg/f/a/f/k;->ThemeEnforcement_enforceTextAppearance:I
+    sget v1, Lg/f/a/d/k;->ThemeEnforcement_enforceTextAppearance:I
 
     const/4 v2, 0x0
 
@@ -209,7 +209,7 @@
     .line 8
     :cond_2
     :goto_0
-    sget p0, Lg/f/a/f/k;->ThemeEnforcement_android_textAppearance:I
+    sget p0, Lg/f/a/d/k;->ThemeEnforcement_android_textAppearance:I
 
     const/4 p1, -0x1
 

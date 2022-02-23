@@ -126,7 +126,7 @@
     const/4 p1, 0x1
 
     .line 13
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$g;->s(Z)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$g;->x(Z)V
 
     return-void
 
@@ -151,7 +151,7 @@
     throw p1
 .end method
 
-.method static synthetic u(Lcom/google/android/material/datepicker/n;)Lcom/google/android/material/datepicker/h$l;
+.method static synthetic z(Lcom/google/android/material/datepicker/n;)Lcom/google/android/material/datepicker/h$l;
     .locals 0
 
     .line 1
@@ -162,63 +162,7 @@
 
 
 # virtual methods
-.method public c()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/n;->c:Lcom/google/android/material/datepicker/a;
-
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->g()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public d(I)J
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/n;->c:Lcom/google/android/material/datepicker/a;
-
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->i()Lcom/google/android/material/datepicker/l;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/google/android/material/datepicker/l;->t(I)Lcom/google/android/material/datepicker/l;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lcom/google/android/material/datepicker/l;->r()J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method public bridge synthetic j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Lcom/google/android/material/datepicker/n$b;
-
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/datepicker/n;->y(Lcom/google/android/material/datepicker/n$b;I)V
-
-    return-void
-.end method
-
-.method public bridge synthetic l(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/datepicker/n;->z(Landroid/view/ViewGroup;I)Lcom/google/android/material/datepicker/n$b;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method v(I)Lcom/google/android/material/datepicker/l;
+.method A(I)Lcom/google/android/material/datepicker/l;
     .locals 1
 
     .line 1
@@ -235,11 +179,11 @@
     return-object p1
 .end method
 
-.method w(I)Ljava/lang/CharSequence;
+.method B(I)Ljava/lang/CharSequence;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/n;->v(I)Lcom/google/android/material/datepicker/l;
+    invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/n;->A(I)Lcom/google/android/material/datepicker/l;
 
     move-result-object p1
 
@@ -250,7 +194,7 @@
     return-object p1
 .end method
 
-.method x(Lcom/google/android/material/datepicker/l;)I
+.method C(Lcom/google/android/material/datepicker/l;)I
     .locals 1
 
     .line 1
@@ -267,7 +211,7 @@
     return p1
 .end method
 
-.method public y(Lcom/google/android/material/datepicker/n$b;I)V
+.method public D(Lcom/google/android/material/datepicker/n$b;I)V
     .locals 3
 
     .line 1
@@ -293,7 +237,7 @@
     .line 3
     iget-object p1, p1, Lcom/google/android/material/datepicker/n$b;->u:Lcom/google/android/material/datepicker/MaterialCalendarGridView;
 
-    sget v0, Lg/f/a/f/f;->month_grid:I
+    sget v0, Lg/f/a/d/f;->month_grid:I
 
     invoke-virtual {p1, v0}, Landroid/widget/GridView;->findViewById(I)Landroid/view/View;
 
@@ -358,7 +302,7 @@
     return-void
 .end method
 
-.method public z(Landroid/view/ViewGroup;I)Lcom/google/android/material/datepicker/n$b;
+.method public E(Landroid/view/ViewGroup;I)Lcom/google/android/material/datepicker/n$b;
     .locals 2
 
     .line 1
@@ -370,7 +314,7 @@
 
     move-result-object p2
 
-    sget v0, Lg/f/a/f/h;->mtrl_calendar_month_labeled:I
+    sget v0, Lg/f/a/d/h;->mtrl_calendar_month_labeled:I
 
     const/4 v1, 0x0
 
@@ -417,6 +361,62 @@
     new-instance p1, Lcom/google/android/material/datepicker/n$b;
 
     invoke-direct {p1, p2, v1}, Lcom/google/android/material/datepicker/n$b;-><init>(Landroid/widget/LinearLayout;Z)V
+
+    return-object p1
+.end method
+
+.method public e()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/datepicker/n;->c:Lcom/google/android/material/datepicker/a;
+
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->g()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public f(I)J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/datepicker/n;->c:Lcom/google/android/material/datepicker/a;
+
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->i()Lcom/google/android/material/datepicker/l;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/google/android/material/datepicker/l;->t(I)Lcom/google/android/material/datepicker/l;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/material/datepicker/l;->r()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public bridge synthetic o(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/google/android/material/datepicker/n$b;
+
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/datepicker/n;->D(Lcom/google/android/material/datepicker/n$b;I)V
+
+    return-void
+.end method
+
+.method public bridge synthetic q(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/datepicker/n;->E(Landroid/view/ViewGroup;I)Lcom/google/android/material/datepicker/n$b;
+
+    move-result-object p1
 
     return-object p1
 .end method

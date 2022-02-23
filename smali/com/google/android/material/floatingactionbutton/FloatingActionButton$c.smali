@@ -3,7 +3,7 @@
 .source "FloatingActionButton.java"
 
 # interfaces
-.implements Lg/f/a/f/z/b;
+.implements Lg/f/a/d/z/b;
 
 
 # annotations

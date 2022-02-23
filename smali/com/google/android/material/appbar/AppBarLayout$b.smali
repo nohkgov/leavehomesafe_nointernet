@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/appbar/AppBarLayout;->u(Lg/f/a/f/a0/g;Z)V
+    value = Lcom/google/android/material/appbar/AppBarLayout;->u(Lg/f/a/d/a0/g;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,19 @@
 
 
 # instance fields
-.field final synthetic a:Lg/f/a/f/a0/g;
+.field final synthetic a:Lg/f/a/d/a0/g;
 
 .field final synthetic b:Lcom/google/android/material/appbar/AppBarLayout;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/appbar/AppBarLayout;Lg/f/a/f/a0/g;)V
+.method constructor <init>(Lcom/google/android/material/appbar/AppBarLayout;Lg/f/a/d/a0/g;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->b:Lcom/google/android/material/appbar/AppBarLayout;
 
-    iput-object p2, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lg/f/a/f/a0/g;
+    iput-object p2, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lg/f/a/d/a0/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lg/f/a/f/a0/g;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lg/f/a/d/a0/g;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -55,7 +55,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lg/f/a/f/a0/g;->S(F)V
+    invoke-virtual {v0, p1}, Lg/f/a/d/a0/g;->S(F)V
 
     return-void
 .end method

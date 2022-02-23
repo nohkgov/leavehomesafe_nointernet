@@ -53,7 +53,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
+.method public final c(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -65,14 +65,14 @@
     iput p2, p1, Landroidx/recyclerview/widget/RecyclerView$d0;->c:I
 
     .line 2
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->g()Z
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->i()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->d(I)J
+    invoke-virtual {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->f(I)J
 
     move-result-wide v0
 
@@ -96,7 +96,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, p1, p2, v0}, Landroidx/recyclerview/widget/RecyclerView$g;->k(Landroidx/recyclerview/widget/RecyclerView$d0;ILjava/util/List;)V
+    invoke-virtual {p0, p1, p2, v0}, Landroidx/recyclerview/widget/RecyclerView$g;->p(Landroidx/recyclerview/widget/RecyclerView$d0;ILjava/util/List;)V
 
     .line 7
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$d0;->d()V
@@ -125,7 +125,7 @@
     return-void
 .end method
 
-.method public final b(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
+.method public final d(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -142,7 +142,7 @@
     invoke-static {v0}, Ld/g/i/j;->a(Ljava/lang/String;)V
 
     .line 2
-    invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->l(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
+    invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->q(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
 
     move-result-object p1
 
@@ -188,10 +188,10 @@
     throw p1
 .end method
 
-.method public abstract c()I
+.method public abstract e()I
 .end method
 
-.method public d(I)J
+.method public f(I)J
     .locals 2
 
     const-wide/16 v0, -0x1
@@ -199,7 +199,7 @@
     return-wide v0
 .end method
 
-.method public e(I)I
+.method public g(I)I
     .locals 0
 
     const/4 p1, 0x0
@@ -207,7 +207,7 @@
     return p1
 .end method
 
-.method public final f()Z
+.method public final h()Z
     .locals 1
 
     .line 1
@@ -220,7 +220,7 @@
     return v0
 .end method
 
-.method public final g()Z
+.method public final i()Z
     .locals 1
 
     .line 1
@@ -229,7 +229,7 @@
     return v0
 .end method
 
-.method public final h()V
+.method public final j()V
     .locals 1
 
     .line 1
@@ -240,13 +240,50 @@
     return-void
 .end method
 
-.method public i(Landroidx/recyclerview/widget/RecyclerView;)V
+.method public final k(I)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$g;->a:Landroidx/recyclerview/widget/RecyclerView$h;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p1, v1}, Landroidx/recyclerview/widget/RecyclerView$h;->c(II)V
+
+    return-void
+.end method
+
+.method public final l(II)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$g;->a:Landroidx/recyclerview/widget/RecyclerView$h;
+
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$h;->d(II)V
+
+    return-void
+.end method
+
+.method public final m(I)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$g;->a:Landroidx/recyclerview/widget/RecyclerView$h;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p1, v1}, Landroidx/recyclerview/widget/RecyclerView$h;->d(II)V
+
+    return-void
+.end method
+
+.method public n(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
     return-void
 .end method
 
-.method public abstract j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
+.method public abstract o(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TVH;I)V"
@@ -254,7 +291,7 @@
     .end annotation
 .end method
 
-.method public k(Landroidx/recyclerview/widget/RecyclerView$d0;ILjava/util/List;)V
+.method public p(Landroidx/recyclerview/widget/RecyclerView$d0;ILjava/util/List;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -266,12 +303,12 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->o(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
 
     return-void
 .end method
 
-.method public abstract l(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
+.method public abstract q(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -281,13 +318,13 @@
     .end annotation
 .end method
 
-.method public m(Landroidx/recyclerview/widget/RecyclerView;)V
+.method public r(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
     return-void
 .end method
 
-.method public n(Landroidx/recyclerview/widget/RecyclerView$d0;)Z
+.method public s(Landroidx/recyclerview/widget/RecyclerView$d0;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -300,7 +337,7 @@
     return p1
 .end method
 
-.method public o(Landroidx/recyclerview/widget/RecyclerView$d0;)V
+.method public t(Landroidx/recyclerview/widget/RecyclerView$d0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -311,7 +348,7 @@
     return-void
 .end method
 
-.method public p(Landroidx/recyclerview/widget/RecyclerView$d0;)V
+.method public u(Landroidx/recyclerview/widget/RecyclerView$d0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -322,7 +359,7 @@
     return-void
 .end method
 
-.method public q(Landroidx/recyclerview/widget/RecyclerView$d0;)V
+.method public v(Landroidx/recyclerview/widget/RecyclerView$d0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -333,7 +370,7 @@
     return-void
 .end method
 
-.method public r(Landroidx/recyclerview/widget/RecyclerView$i;)V
+.method public w(Landroidx/recyclerview/widget/RecyclerView$i;)V
     .locals 1
 
     .line 1
@@ -344,11 +381,11 @@
     return-void
 .end method
 
-.method public s(Z)V
+.method public x(Z)V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->f()Z
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->h()Z
 
     move-result v0
 
@@ -370,7 +407,7 @@
     throw p1
 .end method
 
-.method public t(Landroidx/recyclerview/widget/RecyclerView$i;)V
+.method public y(Landroidx/recyclerview/widget/RecyclerView$i;)V
     .locals 1
 
     .line 1

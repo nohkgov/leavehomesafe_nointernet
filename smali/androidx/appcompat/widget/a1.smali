@@ -354,7 +354,7 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/a1;->c:Landroid/view/View;
 
-    invoke-static {v0}, Ld/g/l/s;->P(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->Q(Landroid/view/View;)Z
 
     move-result v0
 
@@ -427,7 +427,7 @@
     :cond_2
     iget-object p1, p0, Landroidx/appcompat/widget/a1;->c:Landroid/view/View;
 
-    invoke-static {p1}, Ld/g/l/s;->I(Landroid/view/View;)I
+    invoke-static {p1}, Ld/g/l/s;->J(Landroid/view/View;)I
 
     move-result p1
 

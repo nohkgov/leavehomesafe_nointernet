@@ -216,7 +216,7 @@
     move v8, p2
 
     .line 5
-    invoke-static/range {v3 .. v9}, Ld/g/l/s;->j0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v3 .. v9}, Ld/g/l/s;->k0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 6
     :try_start_0

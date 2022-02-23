@@ -62,7 +62,7 @@
     move-result-object v2
 
     .line 3
-    invoke-virtual {p1}, Lg/f/a/b/e;->getCameraIds()Ljava/util/List;
+    invoke-virtual {p1}, Lg/f/a/a/e;->getCameraIds()Ljava/util/List;
 
     move-result-object p1
 

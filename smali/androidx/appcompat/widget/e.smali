@@ -67,7 +67,7 @@
     .line 5
     iget-object v1, p0, Landroidx/appcompat/widget/e;->a:Landroid/view/View;
 
-    invoke-static {v1}, Ld/g/l/s;->p(Landroid/view/View;)Landroid/content/res/ColorStateList;
+    invoke-static {v1}, Ld/g/l/s;->q(Landroid/view/View;)Landroid/content/res/ColorStateList;
 
     move-result-object v1
 
@@ -85,7 +85,7 @@
     :cond_1
     iget-object v1, p0, Landroidx/appcompat/widget/e;->a:Landroid/view/View;
 
-    invoke-static {v1}, Ld/g/l/s;->q(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {v1}, Ld/g/l/s;->r(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v1
 
@@ -312,7 +312,7 @@
     move v6, p2
 
     .line 4
-    invoke-static/range {v1 .. v7}, Ld/g/l/s;->j0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v1 .. v7}, Ld/g/l/s;->k0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 5
     :try_start_0
@@ -377,7 +377,7 @@
     move-result-object v1
 
     .line 13
-    invoke-static {p1, v1}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/content/res/ColorStateList;)V
+    invoke-static {p1, v1}, Ld/g/l/s;->q0(Landroid/view/View;Landroid/content/res/ColorStateList;)V
 
     .line 14
     :cond_1
@@ -407,7 +407,7 @@
     move-result-object p2
 
     .line 18
-    invoke-static {p1, p2}, Ld/g/l/s;->q0(Landroid/view/View;Landroid/graphics/PorterDuff$Mode;)V
+    invoke-static {p1, p2}, Ld/g/l/s;->r0(Landroid/view/View;Landroid/graphics/PorterDuff$Mode;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

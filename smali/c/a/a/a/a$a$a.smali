@@ -49,7 +49,7 @@
     return-object v0
 .end method
 
-.method public i0(ILandroid/os/Bundle;)V
+.method public h0(ILandroid/os/Bundle;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -102,18 +102,18 @@
     if-nez v1, :cond_1
 
     .line 8
-    invoke-static {}, Lc/a/a/a/a$a;->m0()Lc/a/a/a/a;
+    invoke-static {}, Lc/a/a/a/a$a;->l0()Lc/a/a/a/a;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
     .line 9
-    invoke-static {}, Lc/a/a/a/a$a;->m0()Lc/a/a/a/a;
+    invoke-static {}, Lc/a/a/a/a$a;->l0()Lc/a/a/a/a;
 
     move-result-object v1
 
-    invoke-interface {v1, p1, p2}, Lc/a/a/a/a;->i0(ILandroid/os/Bundle;)V
+    invoke-interface {v1, p1, p2}, Lc/a/a/a/a;->h0(ILandroid/os/Bundle;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

@@ -217,13 +217,13 @@
     if-lez v0, :cond_0
 
     .line 4
-    new-instance v0, Lg/f/a/e/i/g/h;
+    new-instance v0, Lg/f/a/c/i/g/h;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lg/f/a/e/i/g/h;-><init>(Landroid/os/Looper;)V
+    invoke-direct {v0, v1}, Lg/f/a/c/i/g/h;-><init>(Landroid/os/Looper;)V
 
     new-instance v1, Lcom/google/android/gms/common/api/internal/e1;
 

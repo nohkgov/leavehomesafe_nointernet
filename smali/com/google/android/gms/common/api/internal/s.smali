@@ -13,10 +13,10 @@
     .end annotation
 .end field
 
-.field private final b:Lg/f/a/e/m/m;
+.field private final b:Lg/f/a/c/m/m;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg/f/a/e/m/m<",
+            "Lg/f/a/c/m/m<",
             "Ljava/lang/Boolean;",
             ">;"
         }
@@ -41,19 +41,19 @@
     return-object v0
 .end method
 
-.method public final b()Lg/f/a/e/m/m;
+.method public final b()Lg/f/a/c/m/m;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lg/f/a/e/m/m<",
+            "Lg/f/a/c/m/m<",
             "Ljava/lang/Boolean;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/s;->b:Lg/f/a/e/m/m;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/s;->b:Lg/f/a/c/m/m;
 
     return-object v0
 .end method

@@ -1,6 +1,6 @@
 .class interface abstract Landroidx/recyclerview/widget/p$b;
 .super Ljava/lang/Object;
-.source "ViewInfoStore.java"
+.source "ViewBoundsCheck.java"
 
 
 # annotations
@@ -15,14 +15,17 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/recyclerview/widget/RecyclerView$d0;)V
+.method public abstract a(I)Landroid/view/View;
 .end method
 
-.method public abstract b(Landroidx/recyclerview/widget/RecyclerView$d0;Landroidx/recyclerview/widget/RecyclerView$l$c;Landroidx/recyclerview/widget/RecyclerView$l$c;)V
+.method public abstract b()I
 .end method
 
-.method public abstract c(Landroidx/recyclerview/widget/RecyclerView$d0;Landroidx/recyclerview/widget/RecyclerView$l$c;Landroidx/recyclerview/widget/RecyclerView$l$c;)V
+.method public abstract c(Landroid/view/View;)I
 .end method
 
-.method public abstract d(Landroidx/recyclerview/widget/RecyclerView$d0;Landroidx/recyclerview/widget/RecyclerView$l$c;Landroidx/recyclerview/widget/RecyclerView$l$c;)V
+.method public abstract d()I
+.end method
+
+.method public abstract e(Landroid/view/View;)I
 .end method

@@ -86,7 +86,7 @@
 
     move-result-object p2
 
-    sget p3, Lg/f/a/f/h;->design_navigation_menu_item:I
+    sget p3, Lg/f/a/d/h;->design_navigation_menu_item:I
 
     const/4 v0, 0x1
 
@@ -97,7 +97,7 @@
 
     move-result-object p1
 
-    sget p2, Lg/f/a/f/d;->design_navigation_icon_size:I
+    sget p2, Lg/f/a/d/d;->design_navigation_icon_size:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -106,7 +106,7 @@
     invoke-virtual {p0, p1}, Lcom/google/android/material/internal/NavigationMenuItemView;->setIconSize(I)V
 
     .line 7
-    sget p1, Lg/f/a/f/f;->design_menu_item_text:I
+    sget p1, Lg/f/a/d/f;->design_menu_item_text:I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -124,7 +124,7 @@
 
     iget-object p2, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Ld/g/l/a;
 
-    invoke-static {p1, p2}, Ld/g/l/s;->l0(Landroid/view/View;Ld/g/l/a;)V
+    invoke-static {p1, p2}, Ld/g/l/s;->m0(Landroid/view/View;Ld/g/l/a;)V
 
     return-void
 .end method
@@ -321,7 +321,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget v0, Lg/f/a/f/f;->design_menu_item_action_area_stub:I
+    sget v0, Lg/f/a/d/f;->design_menu_item_action_area_stub:I
 
     .line 3
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -398,7 +398,7 @@
 
     move-result-object p2
 
-    invoke-static {p0, p2}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p0, p2}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     .line 5
     :cond_1
@@ -627,7 +627,7 @@
 
     move-result-object p1
 
-    sget v1, Lg/f/a/f/e;->navigation_empty_icon:I
+    sget v1, Lg/f/a/d/e;->navigation_empty_icon:I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 

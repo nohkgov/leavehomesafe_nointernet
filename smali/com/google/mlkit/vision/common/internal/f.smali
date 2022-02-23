@@ -3,11 +3,11 @@
 .source "com.google.mlkit:vision-common@@16.2.0"
 
 # interfaces
-.implements Lg/f/a/e/m/g;
+.implements Lg/f/a/c/m/g;
 
 
 # static fields
-.field static final a:Lg/f/a/e/m/g;
+.field static final a:Lg/f/a/c/m/g;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lcom/google/mlkit/vision/common/internal/f;-><init>()V
 
-    sput-object v0, Lcom/google/mlkit/vision/common/internal/f;->a:Lg/f/a/e/m/g;
+    sput-object v0, Lcom/google/mlkit/vision/common/internal/f;->a:Lg/f/a/c/m/g;
 
     return-void
 .end method

@@ -49,7 +49,7 @@
 
     iget-object v0, p0, Lorg/reactnative/camera/d$d;->c:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v0}, Lg/f/a/b/e;->p()Z
+    invoke-virtual {v0}, Lg/f/a/a/e;->p()Z
 
     move-result v0
 
@@ -80,7 +80,7 @@
     .line 4
     iget-object v0, p0, Lorg/reactnative/camera/d$d;->c:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v0}, Lg/f/a/b/e;->w()V
+    invoke-virtual {v0}, Lg/f/a/a/e;->w()V
 
     :cond_2
     return-void

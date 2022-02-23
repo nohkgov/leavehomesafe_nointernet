@@ -413,7 +413,7 @@
     move-result-object p3
 
     .line 33
-    invoke-static {p1, p3}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p1, p3}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     .line 34
     iget-object p1, p0, Landroidx/appcompat/widget/SearchView;->u:Landroid/view/View;
@@ -426,7 +426,7 @@
     move-result-object p3
 
     .line 36
-    invoke-static {p1, p3}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p1, p3}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     .line 37
     iget-object p1, p0, Landroidx/appcompat/widget/SearchView;->v:Landroid/widget/ImageView;

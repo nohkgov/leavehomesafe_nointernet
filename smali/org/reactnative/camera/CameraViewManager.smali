@@ -156,7 +156,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setAutoFocus(Z)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setAutoFocus(Z)V
 
     return-void
 .end method
@@ -188,7 +188,7 @@
     double-to-float p2, v1
 
     .line 3
-    invoke-virtual {p1, v0, p2}, Lg/f/a/b/e;->v(FF)V
+    invoke-virtual {p1, v0, p2}, Lg/f/a/a/e;->v(FF)V
 
     :cond_0
     return-void
@@ -261,7 +261,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setCameraId(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setCameraId(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -318,7 +318,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setExposureCompensation(F)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setExposureCompensation(F)V
 
     return-void
 .end method
@@ -378,7 +378,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setFlash(I)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setFlash(I)V
 
     return-void
 .end method
@@ -390,7 +390,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setFocusDepth(F)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setFocusDepth(F)V
 
     return-void
 .end method
@@ -451,12 +451,12 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {p2}, Lg/f/a/b/j;->l(Ljava/lang/String;)Lg/f/a/b/j;
+    invoke-static {p2}, Lg/f/a/a/j;->l(Ljava/lang/String;)Lg/f/a/a/j;
 
     move-result-object p2
 
     :goto_0
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setPictureSize(Lg/f/a/b/j;)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setPictureSize(Lg/f/a/a/j;)V
 
     return-void
 .end method
@@ -468,7 +468,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setPlaySoundOnCapture(Z)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setPlaySoundOnCapture(Z)V
 
     return-void
 .end method
@@ -480,11 +480,11 @@
     .end annotation
 
     .line 1
-    invoke-static {p2}, Lg/f/a/b/a;->t(Ljava/lang/String;)Lg/f/a/b/a;
+    invoke-static {p2}, Lg/f/a/a/a;->t(Ljava/lang/String;)Lg/f/a/a/a;
 
     move-result-object p2
 
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setAspectRatio(Lg/f/a/b/a;)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setAspectRatio(Lg/f/a/a/a;)V
 
     return-void
 .end method
@@ -583,7 +583,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setFacing(I)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setFacing(I)V
 
     return-void
 .end method
@@ -595,7 +595,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setUsingCamera2Api(Z)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setUsingCamera2Api(Z)V
 
     return-void
 .end method
@@ -619,7 +619,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setWhiteBalance(I)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setWhiteBalance(I)V
 
     return-void
 .end method
@@ -631,7 +631,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1, p2}, Lg/f/a/b/e;->setZoom(F)V
+    invoke-virtual {p1, p2}, Lg/f/a/a/e;->setZoom(F)V
 
     return-void
 .end method

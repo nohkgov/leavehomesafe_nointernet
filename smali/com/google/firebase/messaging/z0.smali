@@ -8,7 +8,7 @@
 
 .field private static final b:Ljava/lang/Object;
 
-.field private static c:Lg/f/a/e/l/a;
+.field private static c:Lg/f/a/c/l/a;
 
 
 # direct methods
@@ -38,23 +38,23 @@
 .method private static a(Landroid/content/Context;)V
     .locals 3
 
-    sget-object v0, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/e/l/a;
+    sget-object v0, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/c/l/a;
 
     if-nez v0, :cond_0
 
     .line 1
-    new-instance v0, Lg/f/a/e/l/a;
+    new-instance v0, Lg/f/a/c/l/a;
 
     const/4 v1, 0x1
 
     const-string v2, "wake:com.google.firebase.iid.WakeLockHolder"
 
-    invoke-direct {v0, p0, v1, v2}, Lg/f/a/e/l/a;-><init>(Landroid/content/Context;ILjava/lang/String;)V
+    invoke-direct {v0, p0, v1, v2}, Lg/f/a/c/l/a;-><init>(Landroid/content/Context;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/e/l/a;
+    sput-object v0, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/c/l/a;
 
     .line 2
-    invoke-virtual {v0, v1}, Lg/f/a/e/l/a;->c(Z)V
+    invoke-virtual {v0, v1}, Lg/f/a/c/l/a;->c(Z)V
 
     :cond_0
     return-void
@@ -69,7 +69,7 @@
     monitor-enter v0
 
     :try_start_0
-    sget-object v1, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/e/l/a;
+    sget-object v1, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/c/l/a;
 
     if-eqz v1, :cond_0
 
@@ -85,10 +85,10 @@
     .line 3
     invoke-static {p0, v1}, Lcom/google/firebase/messaging/z0;->d(Landroid/content/Intent;Z)V
 
-    sget-object p0, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/e/l/a;
+    sget-object p0, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/c/l/a;
 
     .line 4
-    invoke-virtual {p0}, Lg/f/a/e/l/a;->b()V
+    invoke-virtual {p0}, Lg/f/a/c/l/a;->b()V
 
     .line 5
     :cond_0
@@ -171,12 +171,12 @@
     :cond_0
     if-nez v1, :cond_1
 
-    sget-object p1, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/e/l/a;
+    sget-object p1, Lcom/google/firebase/messaging/z0;->c:Lg/f/a/c/l/a;
 
     sget-wide v1, Lcom/google/firebase/messaging/z0;->a:J
 
     .line 7
-    invoke-virtual {p1, v1, v2}, Lg/f/a/e/l/a;->a(J)V
+    invoke-virtual {p1, v1, v2}, Lg/f/a/c/l/a;->a(J)V
 
     .line 8
     :cond_1

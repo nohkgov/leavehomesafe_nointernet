@@ -69,7 +69,7 @@
 
     move-result-object p1
 
-    sget v0, Lg/f/a/f/d;->design_textinput_caption_translate_y:I
+    sget v0, Lg/f/a/d/d;->design_textinput_caption_translate_y:I
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -114,7 +114,7 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/textfield/f;->b:Lcom/google/android/material/textfield/TextInputLayout;
 
-    invoke-static {v0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result v0
 
@@ -205,7 +205,7 @@
     invoke-direct/range {v0 .. v6}, Lcom/google/android/material/textfield/f;->h(Ljava/util/List;ZLandroid/widget/TextView;III)V
 
     .line 6
-    invoke-static {v7, v8}, Lg/f/a/f/l/b;->a(Landroid/animation/AnimatorSet;Ljava/util/List;)V
+    invoke-static {v7, v8}, Lg/f/a/d/l/b;->a(Landroid/animation/AnimatorSet;Ljava/util/List;)V
 
     .line 7
     invoke-direct {p0, p1}, Lcom/google/android/material/textfield/f;->l(I)Landroid/widget/TextView;
@@ -405,7 +405,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 3
-    sget-object p2, Lg/f/a/f/l/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object p2, Lg/f/a/d/l/a;->a:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p1, p2}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -447,7 +447,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 4
-    sget-object v0, Lg/f/a/f/l/a;->d:Landroid/animation/TimeInterpolator;
+    sget-object v0, Lg/f/a/d/l/a;->d:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p1, v0}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -658,7 +658,7 @@
     iput-object v1, p0, Lcom/google/android/material/textfield/f;->r:Landroid/widget/TextView;
 
     .line 4
-    sget v2, Lg/f/a/f/f;->textinput_helper_text:I
+    sget v2, Lg/f/a/d/f;->textinput_helper_text:I
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setId(I)V
 
@@ -683,7 +683,7 @@
     .line 8
     iget-object v1, p0, Lcom/google/android/material/textfield/f;->r:Landroid/widget/TextView;
 
-    invoke-static {v1, v0}, Ld/g/l/s;->n0(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Ld/g/l/s;->o0(Landroid/view/View;I)V
 
     .line 9
     iget v1, p0, Lcom/google/android/material/textfield/f;->s:I
@@ -1019,7 +1019,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Ld/g/l/s;->D(Landroid/view/View;)I
+    invoke-static {v1}, Ld/g/l/s;->E(Landroid/view/View;)I
 
     move-result v1
 
@@ -1030,14 +1030,14 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Ld/g/l/s;->C(Landroid/view/View;)I
+    invoke-static {v2}, Ld/g/l/s;->D(Landroid/view/View;)I
 
     move-result v2
 
     const/4 v3, 0x0
 
     .line 5
-    invoke-static {v0, v1, v3, v2, v3}, Ld/g/l/s;->y0(Landroid/view/View;IIII)V
+    invoke-static {v0, v1, v3, v2, v3}, Ld/g/l/s;->z0(Landroid/view/View;IIII)V
 
     :cond_0
     return-void
@@ -1381,7 +1381,7 @@
     iput-object v1, p0, Lcom/google/android/material/textfield/f;->m:Landroid/widget/TextView;
 
     .line 4
-    sget v2, Lg/f/a/f/f;->textinput_error:I
+    sget v2, Lg/f/a/d/f;->textinput_error:I
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setId(I)V
 
@@ -1418,7 +1418,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {v1, v2}, Ld/g/l/s;->n0(Landroid/view/View;I)V
+    invoke-static {v1, v2}, Ld/g/l/s;->o0(Landroid/view/View;I)V
 
     .line 11
     iget-object v1, p0, Lcom/google/android/material/textfield/f;->m:Landroid/widget/TextView;

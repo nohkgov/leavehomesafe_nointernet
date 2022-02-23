@@ -6,11 +6,11 @@
 # instance fields
 .field private final a:Landroid/util/SparseIntArray;
 
-.field private b:Lg/f/a/e/e/e;
+.field private b:Lg/f/a/c/e/e;
 
 
 # direct methods
-.method public constructor <init>(Lg/f/a/e/e/e;)V
+.method public constructor <init>(Lg/f/a/c/e/e;)V
     .locals 1
 
     .line 1
@@ -27,7 +27,7 @@
     invoke-static {p1}, Lcom/google/android/gms/common/internal/q;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/a0;->b:Lg/f/a/e/e/e;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/a0;->b:Lg/f/a/c/e/e;
 
     return-void
 .end method
@@ -118,9 +118,9 @@
     if-ne v1, v2, :cond_4
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/a0;->b:Lg/f/a/e/e/e;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/a0;->b:Lg/f/a/c/e/e;
 
-    invoke-virtual {v0, p1, p2}, Lg/f/a/e/e/e;->f(Landroid/content/Context;I)I
+    invoke-virtual {v0, p1, p2}, Lg/f/a/c/e/e;->f(Landroid/content/Context;I)I
 
     move-result v1
 

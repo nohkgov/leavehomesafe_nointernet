@@ -95,7 +95,7 @@
     if-eqz p1, :cond_1
 
     .line 9
-    invoke-static {p1}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p1}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     :cond_1
     return-void

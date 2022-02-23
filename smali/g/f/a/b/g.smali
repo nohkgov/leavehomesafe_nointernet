@@ -1,26 +1,23 @@
 .class public interface abstract Lg/f/a/b/g;
 .super Ljava/lang/Object;
-.source "Constants.java"
+.source "TransportFactory.java"
 
 
-# static fields
-.field public static final a:Lg/f/a/b/a;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    const/4 v0, 0x4
-
-    const/4 v1, 0x3
-
-    .line 1
-    invoke-static {v0, v1}, Lg/f/a/b/a;->r(II)Lg/f/a/b/a;
-
-    move-result-object v0
-
-    sput-object v0, Lg/f/a/b/g;->a:Lg/f/a/b/a;
-
-    return-void
+# virtual methods
+.method public abstract a(Ljava/lang/String;Ljava/lang/Class;Lg/f/a/b/b;Lg/f/a/b/e;)Lg/f/a/b/f;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/String;",
+            "Ljava/lang/Class<",
+            "TT;>;",
+            "Lg/f/a/b/b;",
+            "Lg/f/a/b/e<",
+            "TT;[B>;)",
+            "Lg/f/a/b/f<",
+            "TT;>;"
+        }
+    .end annotation
 .end method

@@ -106,7 +106,7 @@
 
     check-cast p1, Landroid/view/View;
 
-    invoke-static {p1}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p1}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     :cond_0
     return-void

@@ -646,7 +646,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/google/firebase/iid/FirebaseInstanceId;->l()Lg/f/a/e/m/l;
+    invoke-virtual {v1}, Lcom/google/firebase/iid/FirebaseInstanceId;->l()Lg/f/a/c/m/l;
 
     move-result-object v1
 
@@ -655,7 +655,7 @@
     invoke-direct {v2, p0, v0}, Lcom/dieam/reactnativepushnotification/modules/RNPushNotification$a;-><init>(Lcom/dieam/reactnativepushnotification/modules/RNPushNotification;Lcom/dieam/reactnativepushnotification/modules/d;)V
 
     .line 3
-    invoke-virtual {v1, v2}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {v1, v2}, Lg/f/a/c/m/l;->b(Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -728,7 +728,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->y(Ljava/lang/String;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->y(Ljava/lang/String;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -743,7 +743,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->B(Ljava/lang/String;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->B(Ljava/lang/String;)Lg/f/a/c/m/l;
 
     return-void
 .end method

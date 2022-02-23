@@ -48,7 +48,7 @@
 
     iget-object v0, v0, Landroidx/appcompat/app/f;->x:Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {v0}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     .line 2
     iget-object v0, p0, Landroidx/appcompat/app/f$i;->a:Ld/a/o/b$a;
@@ -149,7 +149,7 @@
     .line 11
     iget-object p1, p1, Landroidx/appcompat/app/f;->x:Landroid/view/ViewGroup;
 
-    invoke-static {p1}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p1}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     return-void
 .end method

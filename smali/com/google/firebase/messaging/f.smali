@@ -3,7 +3,7 @@
 .source "com.google.firebase:firebase-messaging@@21.1.0"
 
 # interfaces
-.implements Lg/f/a/e/m/f;
+.implements Lg/f/a/c/m/f;
 
 
 # instance fields
@@ -27,14 +27,14 @@
 
 
 # virtual methods
-.method public a(Lg/f/a/e/m/l;)V
+.method public a(Lg/f/a/c/m/l;)V
     .locals 2
 
     iget-object v0, p0, Lcom/google/firebase/messaging/f;->a:Lcom/google/firebase/messaging/g;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/f;->b:Landroid/content/Intent;
 
-    invoke-virtual {v0, v1, p1}, Lcom/google/firebase/messaging/g;->f(Landroid/content/Intent;Lg/f/a/e/m/l;)V
+    invoke-virtual {v0, v1, p1}, Lcom/google/firebase/messaging/g;->f(Landroid/content/Intent;Lg/f/a/c/m/l;)V
 
     return-void
 .end method

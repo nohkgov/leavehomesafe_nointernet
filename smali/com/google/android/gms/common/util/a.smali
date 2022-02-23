@@ -33,13 +33,13 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lg/f/a/e/e/n/b;->a(Landroid/content/Context;)Lg/f/a/e/e/n/a;
+    invoke-static {p0}, Lg/f/a/c/e/n/b;->a(Landroid/content/Context;)Lg/f/a/c/e/n/a;
 
     move-result-object p0
 
     const/16 v0, 0x40
 
-    invoke-virtual {p0, p1, v0}, Lg/f/a/e/e/n/a;->e(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-virtual {p0, p1, v0}, Lg/f/a/c/e/n/a;->e(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 

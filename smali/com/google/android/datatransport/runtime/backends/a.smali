@@ -16,7 +16,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Iterable<",
-            "Lg/f/a/c/i/h;",
+            "Lg/f/a/b/i/h;",
             ">;"
         }
     .end annotation
@@ -32,7 +32,7 @@
         value = {
             "(",
             "Ljava/lang/Iterable<",
-            "Lg/f/a/c/i/h;",
+            "Lg/f/a/b/i/h;",
             ">;[B)V"
         }
     .end annotation
@@ -66,7 +66,7 @@
         value = {
             "()",
             "Ljava/lang/Iterable<",
-            "Lg/f/a/c/i/h;",
+            "Lg/f/a/b/i/h;",
             ">;"
         }
     .end annotation

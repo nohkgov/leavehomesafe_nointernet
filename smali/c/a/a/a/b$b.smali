@@ -32,7 +32,7 @@
 
 
 # virtual methods
-.method public i0(ILandroid/os/Bundle;)V
+.method public h0(ILandroid/os/Bundle;)V
     .locals 3
 
     .line 1

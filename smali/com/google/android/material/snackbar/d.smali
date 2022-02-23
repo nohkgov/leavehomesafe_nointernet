@@ -51,14 +51,14 @@
     move-result-object p1
 
     .line 3
-    sget-object v1, Lg/f/a/f/k;->SnackbarLayout:[I
+    sget-object v1, Lg/f/a/d/k;->SnackbarLayout:[I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
     .line 4
-    sget p2, Lg/f/a/f/k;->SnackbarLayout_elevation:I
+    sget p2, Lg/f/a/d/k;->SnackbarLayout_elevation:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
@@ -67,7 +67,7 @@
     if-eqz p2, :cond_0
 
     .line 5
-    sget p2, Lg/f/a/f/k;->SnackbarLayout_elevation:I
+    sget p2, Lg/f/a/d/k;->SnackbarLayout_elevation:I
 
     .line 6
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -77,11 +77,11 @@
     int-to-float p2, p2
 
     .line 7
-    invoke-static {p0, p2}, Ld/g/l/s;->s0(Landroid/view/View;F)V
+    invoke-static {p0, p2}, Ld/g/l/s;->t0(Landroid/view/View;F)V
 
     .line 8
     :cond_0
-    sget p2, Lg/f/a/f/k;->SnackbarLayout_animationMode:I
+    sget p2, Lg/f/a/d/k;->SnackbarLayout_animationMode:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -90,7 +90,7 @@
     iput p2, p0, Lcom/google/android/material/snackbar/d;->e:I
 
     .line 9
-    sget p2, Lg/f/a/f/k;->SnackbarLayout_backgroundOverlayColorAlpha:I
+    sget p2, Lg/f/a/d/k;->SnackbarLayout_backgroundOverlayColorAlpha:I
 
     const/high16 v0, 0x3f800000    # 1.0f
 
@@ -102,7 +102,7 @@
     iput p2, p0, Lcom/google/android/material/snackbar/d;->f:F
 
     .line 11
-    sget p2, Lg/f/a/f/k;->SnackbarLayout_actionTextColorAlpha:I
+    sget p2, Lg/f/a/d/k;->SnackbarLayout_actionTextColorAlpha:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -171,7 +171,7 @@
 
     .line 4
     :cond_0
-    invoke-static {p0}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     return-void
 .end method

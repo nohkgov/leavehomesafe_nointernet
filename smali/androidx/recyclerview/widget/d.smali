@@ -751,7 +751,7 @@
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/d;->s:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {v0}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {v0}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result v0
 

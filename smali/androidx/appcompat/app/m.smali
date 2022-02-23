@@ -668,7 +668,7 @@
     if-eqz v0, :cond_3
 
     .line 10
-    invoke-static {v0}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {v0}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     goto :goto_2
 
@@ -725,7 +725,7 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/m;->e:Landroidx/appcompat/widget/ActionBarContainer;
 
-    invoke-static {v0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result v0
 
@@ -1182,7 +1182,7 @@
     if-eqz p1, :cond_6
 
     .line 29
-    invoke-static {p1}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p1}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     :cond_6
     return-void
@@ -1251,7 +1251,7 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/m;->e:Landroidx/appcompat/widget/ActionBarContainer;
 
-    invoke-static {v0, p1}, Ld/g/l/s;->s0(Landroid/view/View;F)V
+    invoke-static {v0, p1}, Ld/g/l/s;->t0(Landroid/view/View;F)V
 
     return-void
 .end method

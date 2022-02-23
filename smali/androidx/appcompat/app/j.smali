@@ -391,7 +391,7 @@
 
     iget-object v1, p0, Landroidx/appcompat/app/j;->g:Ljava/lang/Runnable;
 
-    invoke-static {v0, v1}, Ld/g/l/s;->d0(Landroid/view/View;Ljava/lang/Runnable;)V
+    invoke-static {v0, v1}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;)V
 
     const/4 v0, 0x1
 

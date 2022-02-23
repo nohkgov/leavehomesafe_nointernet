@@ -41,12 +41,12 @@
     .line 1
     iget-object v0, p0, Lorg/reactnative/camera/d$e;->c:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v0}, Lg/f/a/b/e;->x()V
+    invoke-virtual {v0}, Lg/f/a/a/e;->x()V
 
     .line 2
     iget-object v0, p0, Lorg/reactnative/camera/d$e;->c:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v0}, Lg/f/a/b/e;->m()V
+    invoke-virtual {v0}, Lg/f/a/a/e;->m()V
 
     return-void
 .end method

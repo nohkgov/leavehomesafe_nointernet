@@ -55,7 +55,7 @@
 
     .line 4
     :goto_0
-    invoke-static {}, Lg/f/a/e/i/b/b;->a()Ljava/lang/String;
+    invoke-static {}, Lg/f/a/c/i/b/b;->a()Ljava/lang/String;
 
     move-result-object p2
 

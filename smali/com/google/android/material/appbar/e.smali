@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    sget v1, Lg/f/a/f/g;->app_bar_elevation_anim_duration:I
+    sget v1, Lg/f/a/d/g;->app_bar_elevation_anim_duration:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -68,13 +68,13 @@
     aput v4, v2, v3
 
     .line 3
-    sget v5, Lg/f/a/f/b;->state_liftable:I
+    sget v5, Lg/f/a/d/b;->state_liftable:I
 
     const/4 v6, 0x1
 
     aput v5, v2, v6
 
-    sget v5, Lg/f/a/f/b;->state_lifted:I
+    sget v5, Lg/f/a/d/b;->state_lifted:I
 
     neg-int v5, v5
 

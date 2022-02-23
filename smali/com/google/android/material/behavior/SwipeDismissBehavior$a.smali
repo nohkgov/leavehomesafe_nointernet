@@ -53,7 +53,7 @@
     if-eqz v3, :cond_7
 
     .line 1
-    invoke-static {p1}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {p1}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result p1
 
@@ -168,7 +168,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {p1}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result p3
 
@@ -504,7 +504,7 @@
 
     invoke-direct {p3, v0, p1, p2}, Lcom/google/android/material/behavior/SwipeDismissBehavior$c;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;Landroid/view/View;Z)V
 
-    invoke-static {p1, p3}, Ld/g/l/s;->d0(Landroid/view/View;Ljava/lang/Runnable;)V
+    invoke-static {p1, p3}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;)V
 
     goto :goto_2
 

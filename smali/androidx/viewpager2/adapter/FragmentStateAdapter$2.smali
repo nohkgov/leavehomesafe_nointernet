@@ -19,7 +19,7 @@
     .line 1
     iget-object p2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter$2;->d:Landroidx/viewpager2/adapter/a;
 
-    invoke-virtual {p2}, Landroidx/viewpager2/adapter/a;->u()Z
+    invoke-virtual {p2}, Landroidx/viewpager2/adapter/a;->z()Z
 
     move-result p2
 

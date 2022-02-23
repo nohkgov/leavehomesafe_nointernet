@@ -3,11 +3,11 @@
 .source "com.google.firebase:firebase-iid@@21.1.0"
 
 # interfaces
-.implements Lg/f/a/e/m/c;
+.implements Lg/f/a/c/m/c;
 
 
 # static fields
-.field static final a:Lg/f/a/e/m/c;
+.field static final a:Lg/f/a/c/m/c;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lcom/google/firebase/iid/q;-><init>()V
 
-    sput-object v0, Lcom/google/firebase/iid/q;->a:Lg/f/a/e/m/c;
+    sput-object v0, Lcom/google/firebase/iid/q;->a:Lg/f/a/c/m/c;
 
     return-void
 .end method
@@ -33,10 +33,10 @@
 
 
 # virtual methods
-.method public a(Lg/f/a/e/m/l;)Ljava/lang/Object;
+.method public a(Lg/f/a/c/m/l;)Ljava/lang/Object;
     .locals 0
 
-    invoke-static {p1}, Lcom/google/firebase/iid/Registrar$a;->d(Lg/f/a/e/m/l;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/firebase/iid/Registrar$a;->d(Lg/f/a/c/m/l;)Ljava/lang/String;
 
     move-result-object p1
 

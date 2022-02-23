@@ -22,7 +22,7 @@
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/android/gms/flags/impl/e;-><init>(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/Integer;)V
 
-    invoke-static {v0}, Lg/f/a/e/i/i/d;->a(Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+    invoke-static {v0}, Lg/f/a/c/i/i/d;->a(Ljava/util/concurrent/Callable;)Ljava/lang/Object;
 
     move-result-object p0
 

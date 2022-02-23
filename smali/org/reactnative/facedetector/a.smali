@@ -398,7 +398,7 @@
     return-object p0
 .end method
 
-.method public static f(Lg/f/a/e/n/e/b;)Lcom/facebook/react/bridge/WritableMap;
+.method public static f(Lg/f/a/c/n/e/b;)Lcom/facebook/react/bridge/WritableMap;
     .locals 9
 
     const-wide/high16 v1, 0x3ff0000000000000L    # 1.0
@@ -416,14 +416,14 @@
     move-object v0, p0
 
     .line 1
-    invoke-static/range {v0 .. v8}, Lorg/reactnative/facedetector/a;->g(Lg/f/a/e/n/e/b;DDIIII)Lcom/facebook/react/bridge/WritableMap;
+    invoke-static/range {v0 .. v8}, Lorg/reactnative/facedetector/a;->g(Lg/f/a/c/n/e/b;DDIIII)Lcom/facebook/react/bridge/WritableMap;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static g(Lg/f/a/e/n/e/b;DDIIII)Lcom/facebook/react/bridge/WritableMap;
+.method public static g(Lg/f/a/c/n/e/b;DDIIII)Lcom/facebook/react/bridge/WritableMap;
     .locals 12
 
     .line 1
@@ -432,7 +432,7 @@
     move-result-object v9
 
     .line 2
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->d()I
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->d()I
 
     move-result v0
 
@@ -441,7 +441,7 @@
     invoke-interface {v9, v1, v0}, Lcom/facebook/react/bridge/WritableMap;->putInt(Ljava/lang/String;I)V
 
     .line 3
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->b()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->b()F
 
     move-result v0
 
@@ -452,7 +452,7 @@
     invoke-interface {v9, v2, v0, v1}, Lcom/facebook/react/bridge/WritableMap;->putDouble(Ljava/lang/String;D)V
 
     .line 4
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->a()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->a()F
 
     move-result v0
 
@@ -463,7 +463,7 @@
     invoke-interface {v9, v2, v0, v1}, Lcom/facebook/react/bridge/WritableMap;->putDouble(Ljava/lang/String;D)V
 
     .line 5
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->g()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->g()F
 
     move-result v0
 
@@ -474,7 +474,7 @@
     if-ltz v0, :cond_0
 
     .line 6
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->g()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->g()F
 
     move-result v0
 
@@ -486,7 +486,7 @@
 
     .line 7
     :cond_0
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->e()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->e()F
 
     move-result v0
 
@@ -495,7 +495,7 @@
     if-ltz v0, :cond_1
 
     .line 8
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->e()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->e()F
 
     move-result v0
 
@@ -507,7 +507,7 @@
 
     .line 9
     :cond_1
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->f()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->f()F
 
     move-result v0
 
@@ -516,7 +516,7 @@
     if-ltz v0, :cond_2
 
     .line 10
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->f()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->f()F
 
     move-result v0
 
@@ -528,7 +528,7 @@
 
     .line 11
     :cond_2
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->h()Ljava/util/List;
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->h()Ljava/util/List;
 
     move-result-object v0
 
@@ -547,18 +547,18 @@
 
     move-result-object v0
 
-    check-cast v0, Lg/f/a/e/n/e/d;
+    check-cast v0, Lg/f/a/c/n/e/d;
 
     .line 12
     sget-object v1, Lorg/reactnative/facedetector/a;->a:[Ljava/lang/String;
 
-    invoke-virtual {v0}, Lg/f/a/e/n/e/d;->b()I
+    invoke-virtual {v0}, Lg/f/a/c/n/e/d;->b()I
 
     move-result v2
 
     aget-object v11, v1, v2
 
-    invoke-virtual {v0}, Lg/f/a/e/n/e/d;->a()Landroid/graphics/PointF;
+    invoke-virtual {v0}, Lg/f/a/c/n/e/d;->a()Landroid/graphics/PointF;
 
     move-result-object v0
 
@@ -589,7 +589,7 @@
     move-result-object v0
 
     .line 14
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->i()Landroid/graphics/PointF;
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->i()Landroid/graphics/PointF;
 
     move-result-object v1
 
@@ -600,7 +600,7 @@
     move-result-object v1
 
     .line 15
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->i()Landroid/graphics/PointF;
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->i()Landroid/graphics/PointF;
 
     move-result-object v2
 
@@ -611,7 +611,7 @@
     move-result-object v2
 
     .line 16
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->i()Landroid/graphics/PointF;
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->i()Landroid/graphics/PointF;
 
     move-result-object v3
 
@@ -644,7 +644,7 @@
 
     .line 18
     :cond_4
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->i()Landroid/graphics/PointF;
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->i()Landroid/graphics/PointF;
 
     move-result-object v3
 
@@ -672,7 +672,7 @@
     .line 20
     :cond_5
     :goto_1
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->i()Landroid/graphics/PointF;
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->i()Landroid/graphics/PointF;
 
     move-result-object v3
 
@@ -705,7 +705,7 @@
 
     .line 22
     :cond_6
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->i()Landroid/graphics/PointF;
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->i()Landroid/graphics/PointF;
 
     move-result-object v3
 
@@ -768,7 +768,7 @@
     move-result-object v1
 
     .line 27
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->j()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->j()F
 
     move-result v2
 
@@ -783,7 +783,7 @@
     invoke-interface {v1, v4, v2, v3}, Lcom/facebook/react/bridge/WritableMap;->putDouble(Ljava/lang/String;D)V
 
     .line 28
-    invoke-virtual {p0}, Lg/f/a/e/n/e/b;->c()F
+    invoke-virtual {p0}, Lg/f/a/c/n/e/b;->c()F
 
     move-result v2
 

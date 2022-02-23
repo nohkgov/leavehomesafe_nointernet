@@ -75,7 +75,7 @@
 
     .line 5
     :goto_0
-    invoke-static {v0}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {v0}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     return-void
 .end method

@@ -88,7 +88,7 @@
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 2
-    invoke-static {p0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result p1
 

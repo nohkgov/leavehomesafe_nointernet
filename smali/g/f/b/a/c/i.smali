@@ -111,7 +111,7 @@
     .line 4
     new-instance v2, Lcom/google/firebase/components/o;
 
-    sget-object v3, Lg/f/a/e/m/n;->a:Ljava/util/concurrent/Executor;
+    sget-object v3, Lg/f/a/c/m/n;->a:Ljava/util/concurrent/Executor;
 
     const/4 v4, 0x2
 

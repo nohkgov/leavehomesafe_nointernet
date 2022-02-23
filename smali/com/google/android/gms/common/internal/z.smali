@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final onConnectionFailed(Lg/f/a/e/e/a;)V
+.method public final onConnectionFailed(Lg/f/a/c/e/a;)V
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/gms/common/internal/z;->a:Lcom/google/android/gms/common/api/internal/j;
 
-    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/internal/j;->onConnectionFailed(Lg/f/a/e/e/a;)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/internal/j;->onConnectionFailed(Lg/f/a/c/e/a;)V
 
     return-void
 .end method

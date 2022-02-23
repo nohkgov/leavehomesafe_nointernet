@@ -1,479 +1,248 @@
-.class public Lg/f/a/b/a;
-.super Ljava/lang/Object;
-.source "AspectRatio.java"
-
-# interfaces
-.implements Ljava/lang/Comparable;
-.implements Landroid/os/Parcelable;
+.class final Lg/f/a/b/a;
+.super Lg/f/a/b/c;
+.source "AutoValue_Event.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<T:",
         "Ljava/lang/Object;",
-        "Ljava/lang/Comparable<",
-        "Lg/f/a/b/a;",
-        ">;",
-        "Landroid/os/Parcelable;"
+        ">",
+        "Lg/f/a/b/c<",
+        "TT;>;"
     }
 .end annotation
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lg/f/a/b/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final e:Ld/d/h;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ld/d/h<",
-            "Ld/d/h<",
-            "Lg/f/a/b/a;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-
 # instance fields
-.field private final c:I
+.field private final a:Ljava/lang/Integer;
 
-.field private final d:I
+.field private final b:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+.field private final c:Lg/f/a/b/d;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Ld/d/h;
-
-    const/16 v1, 0x10
-
-    invoke-direct {v0, v1}, Ld/d/h;-><init>(I)V
-
-    sput-object v0, Lg/f/a/b/a;->e:Ld/d/h;
-
-    .line 2
-    new-instance v0, Lg/f/a/b/a$a;
-
-    invoke-direct {v0}, Lg/f/a/b/a$a;-><init>()V
-
-    sput-object v0, Lg/f/a/b/a;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method private constructor <init>(II)V
+.method constructor <init>(Ljava/lang/Integer;Ljava/lang/Object;Lg/f/a/b/d;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Integer;",
+            "TT;",
+            "Lg/f/a/b/d;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lg/f/a/b/c;-><init>()V
 
     .line 2
-    iput p1, p0, Lg/f/a/b/a;->c:I
+    iput-object p1, p0, Lg/f/a/b/a;->a:Ljava/lang/Integer;
+
+    if-eqz p2, :cond_1
 
     .line 3
-    iput p2, p0, Lg/f/a/b/a;->d:I
+    iput-object p2, p0, Lg/f/a/b/a;->b:Ljava/lang/Object;
+
+    if-eqz p3, :cond_0
+
+    .line 4
+    iput-object p3, p0, Lg/f/a/b/a;->c:Lg/f/a/b/d;
 
     return-void
-.end method
-
-.method private static e(II)I
-    .locals 1
-
-    :goto_0
-    move v0, p1
-
-    move p1, p0
-
-    move p0, v0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    rem-int/2addr p1, p0
-
-    goto :goto_0
-
-    :cond_0
-    return p1
-.end method
-
-.method public static r(II)Lg/f/a/b/a;
-    .locals 2
-
-    .line 1
-    invoke-static {p0, p1}, Lg/f/a/b/a;->e(II)I
-
-    move-result v0
-
-    .line 2
-    div-int/2addr p0, v0
-
-    .line 3
-    div-int/2addr p1, v0
-
-    .line 4
-    sget-object v0, Lg/f/a/b/a;->e:Ld/d/h;
-
-    invoke-virtual {v0, p0}, Ld/d/h;->g(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ld/d/h;
-
-    if-nez v0, :cond_0
 
     .line 5
-    new-instance v0, Lg/f/a/b/a;
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
 
-    invoke-direct {v0, p0, p1}, Lg/f/a/b/a;-><init>(II)V
+    const-string p2, "Null priority"
+
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 
     .line 6
-    new-instance v1, Ld/d/h;
-
-    invoke-direct {v1}, Ld/d/h;-><init>()V
-
-    .line 7
-    invoke-virtual {v1, p1, v0}, Ld/d/h;->k(ILjava/lang/Object;)V
-
-    .line 8
-    sget-object p1, Lg/f/a/b/a;->e:Ld/d/h;
-
-    invoke-virtual {p1, p0, v1}, Ld/d/h;->k(ILjava/lang/Object;)V
-
-    return-object v0
-
-    .line 9
-    :cond_0
-    invoke-virtual {v0, p1}, Ld/d/h;->g(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lg/f/a/b/a;
-
-    if-nez v1, :cond_1
-
-    .line 10
-    new-instance v1, Lg/f/a/b/a;
-
-    invoke-direct {v1, p0, p1}, Lg/f/a/b/a;-><init>(II)V
-
-    .line 11
-    invoke-virtual {v0, p1, v1}, Ld/d/h;->k(ILjava/lang/Object;)V
-
     :cond_1
-    return-object v1
-.end method
+    new-instance p1, Ljava/lang/NullPointerException;
 
-.method public static t(Ljava/lang/String;)Lg/f/a/b/a;
-    .locals 4
+    const-string p2, "Null payload"
 
-    const/16 v0, 0x3a
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    .line 1
-    invoke-virtual {p0, v0}, Ljava/lang/String;->indexOf(I)I
-
-    move-result v0
-
-    const-string v1, "Malformed aspect ratio: "
-
-    const/4 v2, -0x1
-
-    if-eq v0, v2, :cond_0
-
-    const/4 v2, 0x0
-
-    .line 2
-    :try_start_0
-    invoke-virtual {p0, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v2
-
-    add-int/lit8 v0, v0, 0x1
-
-    .line 3
-    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v0
-
-    .line 4
-    invoke-static {v2, v0}, Lg/f/a/b/a;->r(II)Lg/f/a/b/a;
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    :catch_0
-    move-exception v0
-
-    .line 5
-    new-instance v2, Ljava/lang/IllegalArgumentException;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v2, p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
-
-    .line 6
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method
 
 
 # virtual methods
-.method public b(Lg/f/a/b/a;)I
+.method public a()Ljava/lang/Integer;
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Lg/f/a/b/a;->equals(Ljava/lang/Object;)Z
+    iget-object v0, p0, Lg/f/a/b/a;->a:Ljava/lang/Integer;
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 p1, 0x0
-
-    return p1
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Lg/f/a/b/a;->v()F
-
-    move-result v0
-
-    invoke-virtual {p1}, Lg/f/a/b/a;->v()F
-
-    move-result p1
-
-    sub-float/2addr v0, p1
-
-    const/4 p1, 0x0
-
-    cmpl-float p1, v0, p1
-
-    if-lez p1, :cond_1
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_1
-    const/4 p1, -0x1
-
-    return p1
+    return-object v0
 .end method
 
-.method public bridge synthetic compareTo(Ljava/lang/Object;)I
-    .locals 0
+.method public b()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Lg/f/a/b/a;
+    iget-object v0, p0, Lg/f/a/b/a;->b:Ljava/lang/Object;
 
-    invoke-virtual {p0, p1}, Lg/f/a/b/a;->b(Lg/f/a/b/a;)I
-
-    move-result p1
-
-    return p1
+    return-object v0
 .end method
 
-.method public describeContents()I
+.method public c()Lg/f/a/b/d;
     .locals 1
 
-    const/4 v0, 0x0
+    .line 1
+    iget-object v0, p0, Lg/f/a/b/a;->c:Lg/f/a/b/d;
 
-    return v0
+    return-object v0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_0
-
-    return v0
-
-    :cond_0
-    const/4 v1, 0x1
-
-    if-ne p0, p1, :cond_1
-
-    return v1
-
-    .line 1
-    :cond_1
-    instance-of v2, p1, Lg/f/a/b/a;
-
-    if-eqz v2, :cond_2
-
-    .line 2
-    check-cast p1, Lg/f/a/b/a;
-
-    .line 3
-    iget v2, p0, Lg/f/a/b/a;->c:I
-
-    iget v3, p1, Lg/f/a/b/a;->c:I
-
-    if-ne v2, v3, :cond_2
-
-    iget v2, p0, Lg/f/a/b/a;->d:I
-
-    iget p1, p1, Lg/f/a/b/a;->d:I
-
-    if-ne v2, p1, :cond_2
-
     const/4 v0, 0x1
 
-    :cond_2
-    return v0
-.end method
+    if-ne p1, p0, :cond_0
 
-.method public h()I
-    .locals 1
+    return v0
 
     .line 1
-    iget v0, p0, Lg/f/a/b/a;->c:I
+    :cond_0
+    instance-of v1, p1, Lg/f/a/b/c;
 
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_3
+
+    .line 2
+    check-cast p1, Lg/f/a/b/c;
+
+    .line 3
+    iget-object v1, p0, Lg/f/a/b/a;->a:Ljava/lang/Integer;
+
+    if-nez v1, :cond_1
+
+    invoke-virtual {p1}, Lg/f/a/b/c;->a()Ljava/lang/Integer;
+
+    move-result-object v1
+
+    if-nez v1, :cond_2
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p1}, Lg/f/a/b/c;->a()Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/Integer;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    :goto_0
+    iget-object v1, p0, Lg/f/a/b/a;->b:Ljava/lang/Object;
+
+    .line 4
+    invoke-virtual {p1}, Lg/f/a/b/c;->b()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, p0, Lg/f/a/b/a;->c:Lg/f/a/b/d;
+
+    .line 5
+    invoke-virtual {p1}, Lg/f/a/b/c;->c()Lg/f/a/b/d;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    const/4 v0, 0x0
+
+    :goto_1
     return v0
+
+    :cond_3
+    return v2
 .end method
 
 .method public hashCode()I
     .locals 3
 
     .line 1
-    iget v0, p0, Lg/f/a/b/a;->d:I
+    iget-object v0, p0, Lg/f/a/b/a;->a:Ljava/lang/Integer;
 
-    iget v1, p0, Lg/f/a/b/a;->c:I
+    if-nez v0, :cond_0
 
-    shl-int/lit8 v2, v1, 0x10
-
-    ushr-int/lit8 v1, v1, 0x10
-
-    or-int/2addr v1, v2
-
-    xor-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public l()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lg/f/a/b/a;->d:I
-
-    return v0
-.end method
-
-.method public m()Lg/f/a/b/a;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lg/f/a/b/a;->d:I
-
-    iget v1, p0, Lg/f/a/b/a;->c:I
-
-    invoke-static {v0, v1}, Lg/f/a/b/a;->r(II)Lg/f/a/b/a;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public o(Lg/f/a/b/j;)Z
-    .locals 2
-
-    .line 1
-    invoke-virtual {p1}, Lg/f/a/b/j;->h()I
-
-    move-result v0
-
-    invoke-virtual {p1}, Lg/f/a/b/j;->e()I
-
-    move-result v1
-
-    invoke-static {v0, v1}, Lg/f/a/b/a;->e(II)I
-
-    move-result v0
-
-    .line 2
-    invoke-virtual {p1}, Lg/f/a/b/j;->h()I
-
-    move-result v1
-
-    div-int/2addr v1, v0
-
-    .line 3
-    invoke-virtual {p1}, Lg/f/a/b/j;->e()I
-
-    move-result p1
-
-    div-int/2addr p1, v0
-
-    .line 4
-    iget v0, p0, Lg/f/a/b/a;->c:I
-
-    if-ne v0, v1, :cond_0
-
-    iget v0, p0, Lg/f/a/b/a;->d:I
-
-    if-ne v0, p1, :cond_0
-
-    const/4 p1, 0x1
+    const/4 v0, 0x0
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    invoke-virtual {v0}, Ljava/lang/Integer;->hashCode()I
+
+    move-result v0
 
     :goto_0
-    return p1
+    const v1, 0xf4243
+
+    xor-int/2addr v0, v1
+
+    mul-int v0, v0, v1
+
+    .line 2
+    iget-object v2, p0, Lg/f/a/b/a;->b:Ljava/lang/Object;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v2
+
+    xor-int/2addr v0, v2
+
+    mul-int v0, v0, v1
+
+    .line 3
+    iget-object v1, p0, Lg/f/a/b/a;->c:Lg/f/a/b/d;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->hashCode()I
+
+    move-result v1
+
+    xor-int/2addr v0, v1
+
+    return v0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -484,54 +253,37 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget v1, p0, Lg/f/a/b/a;->c:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ":"
+    const-string v1, "Event{code="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lg/f/a/b/a;->d:I
+    iget-object v1, p0, Lg/f/a/b/a;->a:Ljava/lang/Integer;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", payload="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lg/f/a/b/a;->b:Ljava/lang/Object;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", priority="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lg/f/a/b/a;->c:Lg/f/a/b/d;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public v()F
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lg/f/a/b/a;->c:I
-
-    int-to-float v0, v0
-
-    iget v1, p0, Lg/f/a/b/a;->d:I
-
-    int-to-float v1, v1
-
-    div-float/2addr v0, v1
-
-    return v0
-.end method
-
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
-
-    .line 1
-    iget p2, p0, Lg/f/a/b/a;->c:I
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 2
-    iget p2, p0, Lg/f/a/b/a;->d:I
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    return-void
 .end method

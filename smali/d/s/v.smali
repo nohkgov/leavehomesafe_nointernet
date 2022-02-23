@@ -48,7 +48,7 @@
     if-ne v0, v5, :cond_3
 
     .line 2
-    invoke-static {p1}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {p1}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result p1
 
@@ -79,7 +79,7 @@
     if-ne v0, v5, :cond_5
 
     .line 3
-    invoke-static {p1}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {p1}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result p1
 

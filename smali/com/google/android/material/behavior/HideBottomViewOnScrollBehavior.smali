@@ -200,7 +200,7 @@
 
     const-wide/16 v5, 0xaf
 
-    sget-object v7, Lg/f/a/f/l/a;->c:Landroid/animation/TimeInterpolator;
+    sget-object v7, Lg/f/a/d/l/a;->c:Landroid/animation/TimeInterpolator;
 
     move-object v2, p0
 
@@ -249,7 +249,7 @@
     const-wide/16 v5, 0xe1
 
     .line 6
-    sget-object v7, Lg/f/a/f/l/a;->d:Landroid/animation/TimeInterpolator;
+    sget-object v7, Lg/f/a/d/l/a;->d:Landroid/animation/TimeInterpolator;
 
     move-object v2, p0
 

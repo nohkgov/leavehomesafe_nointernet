@@ -31,7 +31,7 @@
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/appbar/b;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    sget-object v0, Lg/f/a/f/k;->ScrollingViewBehavior_Layout:[I
+    sget-object v0, Lg/f/a/d/k;->ScrollingViewBehavior_Layout:[I
 
     .line 4
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -39,7 +39,7 @@
     move-result-object p1
 
     .line 5
-    sget p2, Lg/f/a/f/k;->ScrollingViewBehavior_Layout_behavior_overlapTop:I
+    sget p2, Lg/f/a/d/k;->ScrollingViewBehavior_Layout_behavior_overlapTop:I
 
     const/4 v0, 0x0
 
@@ -146,7 +146,7 @@
     sub-int/2addr v1, p2
 
     .line 8
-    invoke-static {p1, v1}, Ld/g/l/s;->X(Landroid/view/View;I)V
+    invoke-static {p1, v1}, Ld/g/l/s;->Y(Landroid/view/View;I)V
 
     :cond_0
     return-void

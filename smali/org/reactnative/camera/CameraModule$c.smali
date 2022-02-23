@@ -62,7 +62,7 @@
     move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Lg/f/a/b/e;->p()Z
+    invoke-virtual {p1}, Lg/f/a/a/e;->p()Z
 
     move-result v1
 
@@ -71,11 +71,11 @@
     .line 4
     iget-object v1, p0, Lorg/reactnative/camera/CameraModule$c;->b:Ljava/lang/String;
 
-    invoke-static {v1}, Lg/f/a/b/a;->t(Ljava/lang/String;)Lg/f/a/b/a;
+    invoke-static {v1}, Lg/f/a/a/a;->t(Ljava/lang/String;)Lg/f/a/a/a;
 
     move-result-object v1
 
-    invoke-virtual {p1, v1}, Lg/f/a/b/e;->o(Lg/f/a/b/a;)Ljava/util/SortedSet;
+    invoke-virtual {p1, v1}, Lg/f/a/a/e;->o(Lg/f/a/a/a;)Ljava/util/SortedSet;
 
     move-result-object p1
 
@@ -95,10 +95,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lg/f/a/b/j;
+    check-cast v1, Lg/f/a/a/j;
 
     .line 6
-    invoke-virtual {v1}, Lg/f/a/b/j;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Lg/f/a/a/j;->toString()Ljava/lang/String;
 
     move-result-object v1
 

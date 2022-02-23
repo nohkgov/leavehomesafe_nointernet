@@ -8,7 +8,7 @@
     .locals 1
 
     .line 1
-    sget v0, Lg/f/a/f/b;->editTextStyle:I
+    sget v0, Lg/f/a/d/b;->editTextStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/textfield/TextInputEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 

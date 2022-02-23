@@ -10,7 +10,7 @@
         "Ljava/lang/Void;",
         "Ljava/lang/Void;",
         "Landroid/util/SparseArray<",
-        "Lg/f/a/e/n/e/b;",
+        "Lg/f/a/c/n/e/b;",
         ">;>;"
     }
 .end annotation
@@ -152,7 +152,7 @@
             "Ljava/lang/Void;",
             ")",
             "Landroid/util/SparseArray<",
-            "Lg/f/a/e/n/e/b;",
+            "Lg/f/a/c/n/e/b;",
             ">;"
         }
     .end annotation
@@ -274,7 +274,7 @@
         value = {
             "(",
             "Landroid/util/SparseArray<",
-            "Lg/f/a/e/n/e/b;",
+            "Lg/f/a/c/n/e/b;",
             ">;)V"
         }
     .end annotation
@@ -307,10 +307,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lg/f/a/e/n/e/b;
+    check-cast v3, Lg/f/a/c/n/e/b;
 
     .line 6
-    invoke-static {v3}, Lorg/reactnative/facedetector/a;->f(Lg/f/a/e/n/e/b;)Lcom/facebook/react/bridge/WritableMap;
+    invoke-static {v3}, Lorg/reactnative/facedetector/a;->f(Lg/f/a/c/n/e/b;)Lcom/facebook/react/bridge/WritableMap;
 
     move-result-object v3
 

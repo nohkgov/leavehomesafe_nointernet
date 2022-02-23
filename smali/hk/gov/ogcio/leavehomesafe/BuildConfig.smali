@@ -36,11 +36,13 @@
 
 .field public static final HKEN_WEB_URL:Ljava/lang/String; = "https://localhost"
 
+.field public static final INSTALLATION_CHANNEL:Ljava/lang/String; = "APK"
+
 .field public static final VERIFICATION_PAYLOAD:Ljava/lang/String; = "PUBLIC_HEALTH_AUTHORITY"
 
-.field public static final VERSION_CODE:I = 0x8f
+.field public static final VERSION_CODE:I = 0xad
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "3.0.1"
+.field public static final VERSION_NAME:Ljava/lang/String; = "3.1.0"
 
 .field public static final flavor:Ljava/lang/String; = "google"
 

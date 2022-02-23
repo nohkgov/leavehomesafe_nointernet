@@ -104,7 +104,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/textfield/e;->b:Landroid/content/Context;
 
-    sget v2, Lg/f/a/f/e;->design_password_eye:I
+    sget v2, Lg/f/a/d/e;->design_password_eye:I
 
     .line 2
     invoke-static {v1, v2}, Ld/a/k/a/a;->d(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
@@ -122,7 +122,7 @@
 
     move-result-object v1
 
-    sget v2, Lg/f/a/f/i;->password_toggle_content_description:I
+    sget v2, Lg/f/a/d/i;->password_toggle_content_description:I
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

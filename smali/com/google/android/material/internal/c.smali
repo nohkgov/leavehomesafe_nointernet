@@ -73,7 +73,7 @@
 
     move-result-object p1
 
-    sget-object v0, Lg/f/a/f/k;->FlowLayout:[I
+    sget-object v0, Lg/f/a/d/k;->FlowLayout:[I
 
     const/4 v1, 0x0
 
@@ -82,7 +82,7 @@
     move-result-object p1
 
     .line 2
-    sget p2, Lg/f/a/f/k;->FlowLayout_lineSpacing:I
+    sget p2, Lg/f/a/d/k;->FlowLayout_lineSpacing:I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -91,7 +91,7 @@
     iput p2, p0, Lcom/google/android/material/internal/c;->c:I
 
     .line 3
-    sget p2, Lg/f/a/f/k;->FlowLayout_itemSpacing:I
+    sget p2, Lg/f/a/d/k;->FlowLayout_itemSpacing:I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -148,7 +148,7 @@
 
     .line 2
     :cond_0
-    invoke-static {p0}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result p1
 

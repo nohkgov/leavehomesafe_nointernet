@@ -79,7 +79,7 @@
 
     if-nez v0, :cond_1
 
-    invoke-static {p0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result v0
 

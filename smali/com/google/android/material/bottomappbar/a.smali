@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/bottomappbar/a;
-.super Lg/f/a/f/a0/f;
+.super Lg/f/a/d/a0/f;
 .source "BottomAppBarTopEdgeTreatment.java"
 
 # interfaces
@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public b(FFFLg/f/a/f/a0/m;)V
+.method public b(FFFLg/f/a/d/a0/m;)V
     .locals 20
 
     move-object/from16 v0, p0
@@ -38,7 +38,7 @@
     if-nez v3, :cond_0
 
     .line 2
-    invoke-virtual {v9, v1, v10}, Lg/f/a/f/a0/m;->l(FF)V
+    invoke-virtual {v9, v1, v10}, Lg/f/a/d/a0/m;->l(FF)V
 
     return-void
 
@@ -84,7 +84,7 @@
     if-ltz v2, :cond_1
 
     .line 7
-    invoke-virtual {v9, v1, v10}, Lg/f/a/f/a0/m;->l(FF)V
+    invoke-virtual {v9, v1, v10}, Lg/f/a/d/a0/m;->l(FF)V
 
     return-void
 
@@ -132,7 +132,7 @@
     sub-float v17, v2, v8
 
     .line 10
-    invoke-virtual {v9, v4, v10}, Lg/f/a/f/a0/m;->l(FF)V
+    invoke-virtual {v9, v4, v10}, Lg/f/a/d/a0/m;->l(FF)V
 
     sub-float v3, v4, v13
 
@@ -155,7 +155,7 @@
     move/from16 v19, v8
 
     .line 11
-    invoke-virtual/range {v2 .. v8}, Lg/f/a/f/a0/m;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lg/f/a/d/a0/m;->a(FFFFFF)V
 
     sub-float v3, v14, v12
 
@@ -178,7 +178,7 @@
     move-object/from16 v2, p4
 
     .line 12
-    invoke-virtual/range {v2 .. v8}, Lg/f/a/f/a0/m;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lg/f/a/d/a0/m;->a(FFFFFF)V
 
     sub-float v3, v16, v13
 
@@ -197,10 +197,10 @@
     move/from16 v8, v19
 
     .line 13
-    invoke-virtual/range {v2 .. v8}, Lg/f/a/f/a0/m;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lg/f/a/d/a0/m;->a(FFFFFF)V
 
     .line 14
-    invoke-virtual {v9, v1, v10}, Lg/f/a/f/a0/m;->l(FF)V
+    invoke-virtual {v9, v1, v10}, Lg/f/a/d/a0/m;->l(FF)V
 
     return-void
 .end method

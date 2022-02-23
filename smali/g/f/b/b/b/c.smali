@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public abstract V(Lg/f/b/b/a/a;)Lg/f/a/e/m/l;
+.method public abstract V(Lg/f/b/b/a/a;)Lg/f/a/c/m/l;
     .param p1    # Lg/f/b/b/a/a;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
@@ -29,7 +29,7 @@
             "(",
             "Lg/f/b/b/a/a;",
             ")",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Lg/f/b/b/b/a;",
             ">;"
         }

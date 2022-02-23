@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/aos_shortcut_scan" android:enabled="true" android:shortcutId="shortcutCheckIn" android:shortcutShortLabel="@string/shortcutCheckIn">
+        <intent android:targetPackage="hk.gov.ogcio.leavehomesafe" android:action="android.intent.action.VIEW" android:targetClass="hk.gov.ogcio.leavehomesafe.MainActivity">
+            <extra android:name="shortcutType" android:value="checkin" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/aos_shortcut_evt" android:enabled="true" android:shortcutId="shortcutVaccineRecord" android:shortcutShortLabel="@string/shortcutVaccineRecord">
+        <intent android:targetPackage="hk.gov.ogcio.leavehomesafe" android:action="android.intent.action.VIEW" android:targetClass="hk.gov.ogcio.leavehomesafe.MainActivity">
+            <extra android:name="shortcutType" android:value="vaccineRecord" />
+        </intent>
+    </shortcut>
+</shortcuts>

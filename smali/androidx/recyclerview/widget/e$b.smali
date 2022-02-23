@@ -210,7 +210,7 @@
     .line 8
     iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView;->mAdapter:Landroidx/recyclerview/widget/RecyclerView$g;
 
-    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$g;->c()I
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$g;->e()I
 
     move-result v1
 

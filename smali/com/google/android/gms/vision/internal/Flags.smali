@@ -9,10 +9,10 @@
 
 
 # static fields
-.field private static final zza:Lg/f/a/e/g/a;
+.field private static final zza:Lg/f/a/c/g/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg/f/a/e/g/a<",
+            "Lg/f/a/c/g/a<",
             "Ljava/lang/Boolean;",
             ">;"
         }
@@ -31,11 +31,11 @@
 
     const-string v2, "vision:product_barcode_value_logging_enabled"
 
-    invoke-static {v1, v2, v0}, Lg/f/a/e/g/a;->a(ILjava/lang/String;Ljava/lang/Boolean;)Lg/f/a/e/g/a$a;
+    invoke-static {v1, v2, v0}, Lg/f/a/c/g/a;->a(ILjava/lang/String;Ljava/lang/Boolean;)Lg/f/a/c/g/a$a;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/gms/vision/internal/Flags;->zza:Lg/f/a/e/g/a;
+    sput-object v0, Lcom/google/android/gms/vision/internal/Flags;->zza:Lg/f/a/c/g/a;
 
     return-void
 .end method

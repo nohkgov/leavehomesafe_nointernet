@@ -9,6 +9,7 @@
     <string name="HKEN_DEFAULT_BASE_URL">https://localhost</string>
     <string name="HKEN_JSON_BASE_URL">https://localhost</string>
     <string name="HKEN_WEB_URL">https://localhost</string>
+    <string name="INSTALLATION_CHANNEL">APK</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -177,6 +178,8 @@
     <string name="scrollbar_description">Scroll Bar</string>
     <string name="search_description">Search Field</string>
     <string name="search_menu_title">Search</string>
+    <string name="shortcutCheckIn">Scan Venue QR Code</string>
+    <string name="shortcutVaccineRecord">Vaccination Record</string>
     <string name="spinbutton_description">Spin Button</string>
     <string name="state_busy_description">busy</string>
     <string name="state_collapsed_description">collapsed</string>

@@ -72,18 +72,18 @@
     return-object p0
 .end method
 
-.method static synthetic b(Lcom/facebook/react/bridge/Promise;Lg/f/a/e/m/l;)V
+.method static synthetic b(Lcom/facebook/react/bridge/Promise;Lg/f/a/c/m/l;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->p()Z
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->l()Ljava/lang/Object;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->l()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -93,7 +93,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->k()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->k()Ljava/lang/Exception;
 
     move-result-object p1
 
@@ -123,18 +123,18 @@
     return-object p0
 .end method
 
-.method static synthetic d(Lcom/facebook/react/bridge/Promise;Lg/f/a/e/m/l;)V
+.method static synthetic d(Lcom/facebook/react/bridge/Promise;Lg/f/a/c/m/l;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->p()Z
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->l()Ljava/lang/Object;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->l()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -144,7 +144,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->k()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->k()Ljava/lang/Exception;
 
     move-result-object p1
 
@@ -154,18 +154,18 @@
     return-void
 .end method
 
-.method static synthetic f(Lcom/facebook/react/bridge/Promise;Lg/f/a/e/m/l;)V
+.method static synthetic f(Lcom/facebook/react/bridge/Promise;Lg/f/a/c/m/l;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->p()Z
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->l()Ljava/lang/Object;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->l()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -185,7 +185,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->k()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->k()Ljava/lang/Exception;
 
     move-result-object p1
 
@@ -219,18 +219,18 @@
     return-object p0
 .end method
 
-.method static synthetic h(Lcom/facebook/react/bridge/Promise;Lg/f/a/e/m/l;)V
+.method static synthetic h(Lcom/facebook/react/bridge/Promise;Lg/f/a/c/m/l;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->p()Z
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->l()Ljava/lang/Object;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->l()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -240,7 +240,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->k()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->k()Ljava/lang/Exception;
 
     move-result-object p1
 
@@ -274,11 +274,11 @@
     return-object p0
 .end method
 
-.method static synthetic j(Lcom/facebook/react/bridge/Promise;Lg/f/a/e/m/l;)V
+.method static synthetic j(Lcom/facebook/react/bridge/Promise;Lg/f/a/c/m/l;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->p()Z
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->p()Z
 
     move-result v0
 
@@ -303,7 +303,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->k()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->k()Ljava/lang/Exception;
 
     move-result-object p1
 
@@ -313,18 +313,18 @@
     return-void
 .end method
 
-.method static synthetic k(Lcom/facebook/react/bridge/Promise;Lg/f/a/e/m/l;)V
+.method static synthetic k(Lcom/facebook/react/bridge/Promise;Lg/f/a/c/m/l;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->p()Z
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->l()Ljava/lang/Object;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->l()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -334,7 +334,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->k()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->k()Ljava/lang/Exception;
 
     move-result-object p1
 
@@ -344,18 +344,18 @@
     return-void
 .end method
 
-.method static synthetic l(Lcom/facebook/react/bridge/Promise;Lg/f/a/e/m/l;)V
+.method static synthetic l(Lcom/facebook/react/bridge/Promise;Lg/f/a/c/m/l;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->p()Z
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->l()Ljava/lang/Object;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->l()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -365,7 +365,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->k()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->k()Ljava/lang/Exception;
 
     move-result-object p1
 
@@ -414,7 +414,7 @@
 
     invoke-direct {v1, p1, p2}, Lio/invertase/firebase/messaging/i;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0, v1}, Lg/f/a/e/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/e/m/l;
+    invoke-static {v0, v1}, Lg/f/a/c/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
@@ -423,7 +423,7 @@
     invoke-direct {p2, p3}, Lio/invertase/firebase/messaging/d;-><init>(Lcom/facebook/react/bridge/Promise;)V
 
     .line 2
-    invoke-virtual {p1, p2}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, p2}, Lg/f/a/c/m/l;->b(Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -640,7 +640,7 @@
 
     invoke-direct {v1, p1, p2}, Lio/invertase/firebase/messaging/e;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0, v1}, Lg/f/a/e/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/e/m/l;
+    invoke-static {v0, v1}, Lg/f/a/c/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
@@ -649,7 +649,7 @@
     invoke-direct {p2, p3}, Lio/invertase/firebase/messaging/b;-><init>(Lcom/facebook/react/bridge/Promise;)V
 
     .line 2
-    invoke-virtual {p1, p2}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, p2}, Lg/f/a/c/m/l;->b(Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -668,7 +668,7 @@
 
     invoke-direct {v1, p0}, Lio/invertase/firebase/messaging/c;-><init>(Lio/invertase/firebase/messaging/ReactNativeFirebaseMessagingModule;)V
 
-    invoke-static {v0, v1}, Lg/f/a/e/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/e/m/l;
+    invoke-static {v0, v1}, Lg/f/a/c/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/c/m/l;
 
     move-result-object v0
 
@@ -677,7 +677,7 @@
     invoke-direct {v1, p1}, Lio/invertase/firebase/messaging/f;-><init>(Lcom/facebook/react/bridge/Promise;)V
 
     .line 2
-    invoke-virtual {v0, v1}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, v1}, Lg/f/a/c/m/l;->b(Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -786,7 +786,7 @@
 
     invoke-direct {v1, p1}, Lio/invertase/firebase/messaging/g;-><init>(Lcom/facebook/react/bridge/ReadableMap;)V
 
-    invoke-static {v0, v1}, Lg/f/a/e/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/e/m/l;
+    invoke-static {v0, v1}, Lg/f/a/c/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
@@ -795,7 +795,7 @@
     invoke-direct {v0, p2}, Lio/invertase/firebase/messaging/h;-><init>(Lcom/facebook/react/bridge/Promise;)V
 
     .line 2
-    invoke-virtual {p1, v0}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, v0}, Lg/f/a/c/m/l;->b(Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -814,7 +814,7 @@
 
     invoke-direct {v1, p1}, Lio/invertase/firebase/messaging/l;-><init>(Ljava/lang/Boolean;)V
 
-    invoke-static {v0, v1}, Lg/f/a/e/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/e/m/l;
+    invoke-static {v0, v1}, Lg/f/a/c/m/o;->c(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
@@ -823,7 +823,7 @@
     invoke-direct {v0, p2}, Lio/invertase/firebase/messaging/k;-><init>(Lcom/facebook/react/bridge/Promise;)V
 
     .line 2
-    invoke-virtual {p1, v0}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, v0}, Lg/f/a/c/m/l;->b(Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -839,7 +839,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->y(Ljava/lang/String;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->y(Ljava/lang/String;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
@@ -848,7 +848,7 @@
     invoke-direct {v0, p2}, Lio/invertase/firebase/messaging/j;-><init>(Lcom/facebook/react/bridge/Promise;)V
 
     .line 3
-    invoke-virtual {p1, v0}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, v0}, Lg/f/a/c/m/l;->b(Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 .end method
@@ -864,7 +864,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->B(Ljava/lang/String;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->B(Ljava/lang/String;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
@@ -873,7 +873,7 @@
     invoke-direct {v0, p2}, Lio/invertase/firebase/messaging/a;-><init>(Lcom/facebook/react/bridge/Promise;)V
 
     .line 3
-    invoke-virtual {p1, v0}, Lg/f/a/e/m/l;->b(Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {p1, v0}, Lg/f/a/c/m/l;->b(Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 .end method

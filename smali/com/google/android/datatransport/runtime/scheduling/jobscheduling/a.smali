@@ -9,17 +9,17 @@
 # instance fields
 .field private final a:Landroid/content/Context;
 
-.field private final b:Lg/f/a/c/i/x/j/c;
+.field private final b:Lg/f/a/b/i/x/j/c;
 
 .field private c:Landroid/app/AlarmManager;
 
 .field private final d:Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;
 
-.field private final e:Lg/f/a/c/i/z/a;
+.field private final e:Lg/f/a/b/i/z/a;
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Lg/f/a/c/i/x/j/c;Landroid/app/AlarmManager;Lg/f/a/c/i/z/a;Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;)V
+.method constructor <init>(Landroid/content/Context;Lg/f/a/b/i/x/j/c;Landroid/app/AlarmManager;Lg/f/a/b/i/z/a;Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;)V
     .locals 0
 
     .line 3
@@ -29,13 +29,13 @@
     iput-object p1, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->a:Landroid/content/Context;
 
     .line 5
-    iput-object p2, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->b:Lg/f/a/c/i/x/j/c;
+    iput-object p2, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->b:Lg/f/a/b/i/x/j/c;
 
     .line 6
     iput-object p3, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->c:Landroid/app/AlarmManager;
 
     .line 7
-    iput-object p4, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->e:Lg/f/a/c/i/z/a;
+    iput-object p4, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->e:Lg/f/a/b/i/z/a;
 
     .line 8
     iput-object p5, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->d:Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;
@@ -43,7 +43,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lg/f/a/c/i/x/j/c;Lg/f/a/c/i/z/a;Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;)V
+.method public constructor <init>(Landroid/content/Context;Lg/f/a/b/i/x/j/c;Lg/f/a/b/i/z/a;Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;)V
     .locals 7
 
     const-string v0, "alarm"
@@ -68,14 +68,14 @@
     move-object v6, p4
 
     .line 2
-    invoke-direct/range {v1 .. v6}, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;-><init>(Landroid/content/Context;Lg/f/a/c/i/x/j/c;Landroid/app/AlarmManager;Lg/f/a/c/i/z/a;Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;)V
+    invoke-direct/range {v1 .. v6}, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;-><init>(Landroid/content/Context;Lg/f/a/b/i/x/j/c;Landroid/app/AlarmManager;Lg/f/a/b/i/z/a;Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lg/f/a/c/i/m;I)V
+.method public a(Lg/f/a/b/i/m;I)V
     .locals 9
 
     .line 1
@@ -84,7 +84,7 @@
     invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/c/i/m;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lg/f/a/b/i/m;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -93,11 +93,11 @@
     invoke-virtual {v0, v2, v1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 3
-    invoke-virtual {p1}, Lg/f/a/c/i/m;->d()Lg/f/a/c/d;
+    invoke-virtual {p1}, Lg/f/a/b/i/m;->d()Lg/f/a/b/d;
 
     move-result-object v1
 
-    invoke-static {v1}, Lg/f/a/c/i/a0/a;->a(Lg/f/a/c/d;)I
+    invoke-static {v1}, Lg/f/a/b/i/a0/a;->a(Lg/f/a/b/d;)I
 
     move-result v1
 
@@ -111,7 +111,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 5
-    invoke-virtual {p1}, Lg/f/a/c/i/m;->c()[B
+    invoke-virtual {p1}, Lg/f/a/b/i/m;->c()[B
 
     move-result-object v1
 
@@ -120,7 +120,7 @@
     if-eqz v1, :cond_0
 
     .line 6
-    invoke-virtual {p1}, Lg/f/a/c/i/m;->c()[B
+    invoke-virtual {p1}, Lg/f/a/b/i/m;->c()[B
 
     move-result-object v1
 
@@ -167,15 +167,15 @@
     const-string p2, "Upload for context %s is already scheduled. Returning..."
 
     .line 12
-    invoke-static {v3, p2, p1}, Lg/f/a/c/i/v/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v3, p2, p1}, Lg/f/a/b/i/v/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
 
     return-void
 
     .line 13
     :cond_1
-    iget-object v0, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->b:Lg/f/a/c/i/x/j/c;
+    iget-object v0, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->b:Lg/f/a/b/i/x/j/c;
 
-    invoke-interface {v0, p1}, Lg/f/a/c/i/x/j/c;->R(Lg/f/a/c/i/m;)J
+    invoke-interface {v0, p1}, Lg/f/a/b/i/x/j/c;->R(Lg/f/a/b/i/m;)J
 
     move-result-wide v4
 
@@ -183,11 +183,11 @@
     iget-object v0, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->d:Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;
 
     .line 15
-    invoke-virtual {p1}, Lg/f/a/c/i/m;->d()Lg/f/a/c/d;
+    invoke-virtual {p1}, Lg/f/a/b/i/m;->d()Lg/f/a/b/d;
 
     move-result-object v6
 
-    invoke-virtual {v0, v6, v4, v5, p2}, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;->g(Lg/f/a/c/d;JI)J
+    invoke-virtual {v0, v6, v4, v5, p2}, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/g;->g(Lg/f/a/b/d;JI)J
 
     move-result-wide v6
 
@@ -227,7 +227,7 @@
     const-string p1, "Scheduling upload for context %s in %dms(Backend next call timestamp %d). Attempt %d"
 
     .line 19
-    invoke-static {v3, p1, v0}, Lg/f/a/c/i/v/a;->b(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v3, p1, v0}, Lg/f/a/b/i/v/a;->b(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 20
     iget-object p1, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->a:Landroid/content/Context;
@@ -239,10 +239,10 @@
     .line 21
     iget-object v0, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->c:Landroid/app/AlarmManager;
 
-    iget-object v1, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->e:Lg/f/a/c/i/z/a;
+    iget-object v1, p0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/a;->e:Lg/f/a/b/i/z/a;
 
     .line 22
-    invoke-interface {v1}, Lg/f/a/c/i/z/a;->a()J
+    invoke-interface {v1}, Lg/f/a/b/i/z/a;->a()J
 
     move-result-wide v1
 

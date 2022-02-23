@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/gms/auth/api/signin/internal/t;
-.super Lg/f/a/e/i/b/c;
+.super Lg/f/a/c/i/b/c;
 .source "com.google.android.gms:play-services-auth@@19.0.0"
 
 # interfaces
@@ -13,14 +13,14 @@
     const-string v0, "com.google.android.gms.auth.api.signin.internal.ISignInCallbacks"
 
     .line 1
-    invoke-direct {p0, v0}, Lg/f/a/e/i/b/c;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lg/f/a/c/i/b/c;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final l0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method protected final k0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -38,14 +38,14 @@
     :pswitch_0
     sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lg/f/a/e/i/b/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lg/f/a/c/i/b/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Lcom/google/android/gms/common/api/Status;
 
     .line 2
-    invoke-interface {p0, p1}, Lcom/google/android/gms/auth/api/signin/internal/q;->J(Lcom/google/android/gms/common/api/Status;)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/auth/api/signin/internal/q;->I(Lcom/google/android/gms/common/api/Status;)V
 
     goto :goto_0
 
@@ -53,7 +53,7 @@
     :pswitch_1
     sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lg/f/a/e/i/b/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lg/f/a/c/i/b/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -74,7 +74,7 @@
     :pswitch_2
     sget-object p1, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lg/f/a/e/i/b/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lg/f/a/c/i/b/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -83,14 +83,14 @@
     .line 7
     sget-object p3, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p3}, Lg/f/a/e/i/b/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p3}, Lg/f/a/c/i/b/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p2
 
     check-cast p2, Lcom/google/android/gms/common/api/Status;
 
     .line 8
-    invoke-interface {p0, p1, p2}, Lcom/google/android/gms/auth/api/signin/internal/q;->Y(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
+    invoke-interface {p0, p1, p2}, Lcom/google/android/gms/auth/api/signin/internal/q;->X(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
 
     const/4 p1, 0x0
 

@@ -10,13 +10,13 @@
 .method public abstract b()V
 .end method
 
-.method public abstract c(Lg/f/a/f/l/h;)V
+.method public abstract c(Lg/f/a/d/l/h;)V
 .end method
 
 .method public abstract d()V
 .end method
 
-.method public abstract e()Lg/f/a/f/l/h;
+.method public abstract e()Lg/f/a/d/l/h;
 .end method
 
 .method public abstract f()Landroid/animation/AnimatorSet;

@@ -3,11 +3,11 @@
 .source "com.google.firebase:firebase-messaging@@21.1.0"
 
 # interfaces
-.implements Lg/f/a/c/e;
+.implements Lg/f/a/b/e;
 
 
 # static fields
-.field static final a:Lg/f/a/c/e;
+.field static final a:Lg/f/a/b/e;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/g0;-><init>()V
 
-    sput-object v0, Lcom/google/firebase/messaging/g0;->a:Lg/f/a/c/e;
+    sput-object v0, Lcom/google/firebase/messaging/g0;->a:Lg/f/a/b/e;
 
     return-void
 .end method

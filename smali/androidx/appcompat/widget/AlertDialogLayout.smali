@@ -30,7 +30,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->z(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->A(Landroid/view/View;)I
 
     move-result v0
 
@@ -709,7 +709,7 @@
 
     .line 18
     :cond_3
-    invoke-static/range {p0 .. p0}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static/range {p0 .. p0}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result v3
 

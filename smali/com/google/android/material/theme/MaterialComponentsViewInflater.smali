@@ -60,9 +60,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lg/f/a/f/o/a;
+    new-instance v0, Lg/f/a/d/o/a;
 
-    invoke-direct {v0, p1, p2}, Lg/f/a/f/o/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Lg/f/a/d/o/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
@@ -71,9 +71,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lg/f/a/f/w/a;
+    new-instance v0, Lg/f/a/d/w/a;
 
-    invoke-direct {v0, p1, p2}, Lg/f/a/f/w/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Lg/f/a/d/w/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method

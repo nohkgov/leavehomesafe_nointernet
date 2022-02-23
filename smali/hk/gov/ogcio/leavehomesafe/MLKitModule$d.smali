@@ -3,7 +3,7 @@
 .source "MLKitModule.java"
 
 # interfaces
-.implements Lg/f/a/e/m/h;
+.implements Lg/f/a/c/m/h;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lg/f/a/e/m/h<",
+        "Lg/f/a/c/m/h<",
         "Lg/f/b/b/b/a;",
         ">;"
     }

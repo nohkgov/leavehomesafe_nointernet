@@ -24,26 +24,26 @@
 
 .field final d:Ljava/net/URL;
 
-.field private final e:Lg/f/a/c/i/z/a;
+.field private final e:Lg/f/a/b/i/z/a;
 
-.field private final f:Lg/f/a/c/i/z/a;
+.field private final f:Lg/f/a/b/i/z/a;
 
 .field private final g:I
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Lg/f/a/c/i/z/a;Lg/f/a/c/i/z/a;)V
+.method constructor <init>(Landroid/content/Context;Lg/f/a/b/i/z/a;Lg/f/a/b/i/z/a;)V
     .locals 1
 
     const v0, 0x9c40
 
     .line 9
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/datatransport/cct/d;-><init>(Landroid/content/Context;Lg/f/a/c/i/z/a;Lg/f/a/c/i/z/a;I)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/datatransport/cct/d;-><init>(Landroid/content/Context;Lg/f/a/b/i/z/a;Lg/f/a/b/i/z/a;I)V
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/Context;Lg/f/a/c/i/z/a;Lg/f/a/c/i/z/a;I)V
+.method constructor <init>(Landroid/content/Context;Lg/f/a/b/i/z/a;Lg/f/a/b/i/z/a;I)V
     .locals 1
 
     .line 1
@@ -80,10 +80,10 @@
     iput-object p1, p0, Lcom/google/android/datatransport/cct/d;->d:Ljava/net/URL;
 
     .line 6
-    iput-object p3, p0, Lcom/google/android/datatransport/cct/d;->e:Lg/f/a/c/i/z/a;
+    iput-object p3, p0, Lcom/google/android/datatransport/cct/d;->e:Lg/f/a/b/i/z/a;
 
     .line 7
-    iput-object p2, p0, Lcom/google/android/datatransport/cct/d;->f:Lg/f/a/c/i/z/a;
+    iput-object p2, p0, Lcom/google/android/datatransport/cct/d;->f:Lg/f/a/b/i/z/a;
 
     .line 8
     iput p4, p0, Lcom/google/android/datatransport/cct/d;->g:I
@@ -116,7 +116,7 @@
 
     const-string v2, "Making request to: %s"
 
-    invoke-static {v1, v2, v0}, Lg/f/a/c/i/v/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v1, v2, v0}, Lg/f/a/b/i/v/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 2
     iget-object v0, p1, Lcom/google/android/datatransport/cct/d$a;->a:Ljava/net/URL;
@@ -278,7 +278,7 @@
 
     move-result-object v7
 
-    invoke-static {v1, v7}, Lg/f/a/c/i/v/a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Lg/f/a/b/i/v/a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 21
     new-instance v7, Ljava/lang/StringBuilder;
@@ -299,7 +299,7 @@
 
     move-result-object v4
 
-    invoke-static {v1, v4}, Lg/f/a/c/i/v/a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lg/f/a/b/i/v/a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 22
     new-instance v4, Ljava/lang/StringBuilder;
@@ -320,7 +320,7 @@
 
     move-result-object v4
 
-    invoke-static {v1, v4}, Lg/f/a/c/i/v/a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lg/f/a/b/i/v/a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v1, 0x12e
 
@@ -508,7 +508,7 @@
     const-string v0, "Couldn\'t encode request, returning with 400"
 
     .line 35
-    invoke-static {v1, v0, p1}, Lg/f/a/c/i/v/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p1}, Lg/f/a/b/i/v/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 36
     new-instance p1, Lcom/google/android/datatransport/cct/d$b;
@@ -531,7 +531,7 @@
     const-string v0, "Couldn\'t open connection, returning with 500"
 
     .line 37
-    invoke-static {v1, v0, p1}, Lg/f/a/c/i/v/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p1}, Lg/f/a/b/i/v/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 38
     new-instance p1, Lcom/google/android/datatransport/cct/d$b;
@@ -650,7 +650,7 @@
     const-string v1, "Unable to find version code for package"
 
     .line 3
-    invoke-static {v0, v1, p0}, Lg/f/a/c/i/v/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p0}, Lg/f/a/b/i/v/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     const/4 p0, -0x1
 
@@ -685,10 +685,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lg/f/a/c/i/h;
+    check-cast v1, Lg/f/a/b/i/h;
 
     .line 3
-    invoke-virtual {v1}, Lg/f/a/c/i/h;->j()Ljava/lang/String;
+    invoke-virtual {v1}, Lg/f/a/b/i/h;->j()Ljava/lang/String;
 
     move-result-object v2
 
@@ -765,7 +765,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lg/f/a/c/i/h;
+    check-cast v2, Lg/f/a/b/i/h;
 
     .line 12
     invoke-static {}, Lcom/google/android/datatransport/cct/f/m;->a()Lcom/google/android/datatransport/cct/f/m$a;
@@ -777,19 +777,19 @@
     .line 13
     invoke-virtual {v3, v4}, Lcom/google/android/datatransport/cct/f/m$a;->f(Lcom/google/android/datatransport/cct/f/p;)Lcom/google/android/datatransport/cct/f/m$a;
 
-    iget-object v4, p0, Lcom/google/android/datatransport/cct/d;->f:Lg/f/a/c/i/z/a;
+    iget-object v4, p0, Lcom/google/android/datatransport/cct/d;->f:Lg/f/a/b/i/z/a;
 
     .line 14
-    invoke-interface {v4}, Lg/f/a/c/i/z/a;->a()J
+    invoke-interface {v4}, Lg/f/a/b/i/z/a;->a()J
 
     move-result-wide v4
 
     invoke-virtual {v3, v4, v5}, Lcom/google/android/datatransport/cct/f/m$a;->g(J)Lcom/google/android/datatransport/cct/f/m$a;
 
-    iget-object v4, p0, Lcom/google/android/datatransport/cct/d;->e:Lg/f/a/c/i/z/a;
+    iget-object v4, p0, Lcom/google/android/datatransport/cct/d;->e:Lg/f/a/b/i/z/a;
 
     .line 15
-    invoke-interface {v4}, Lg/f/a/c/i/z/a;->a()J
+    invoke-interface {v4}, Lg/f/a/b/i/z/a;->a()J
 
     move-result-wide v4
 
@@ -813,7 +813,7 @@
     const-string v6, "sdk-version"
 
     .line 19
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->g(Ljava/lang/String;)I
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->g(Ljava/lang/String;)I
 
     move-result v6
 
@@ -826,7 +826,7 @@
     const-string v6, "model"
 
     .line 20
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -835,7 +835,7 @@
     const-string v6, "hardware"
 
     .line 21
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -844,7 +844,7 @@
     const-string v6, "device"
 
     .line 22
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -853,7 +853,7 @@
     const-string v6, "product"
 
     .line 23
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -862,7 +862,7 @@
     const-string v6, "os-uild"
 
     .line 24
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -871,7 +871,7 @@
     const-string v6, "manufacturer"
 
     .line 25
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -880,7 +880,7 @@
     const-string v6, "fingerprint"
 
     .line 26
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -889,7 +889,7 @@
     const-string v6, "country"
 
     .line 27
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -898,7 +898,7 @@
     const-string v6, "locale"
 
     .line 28
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -907,7 +907,7 @@
     const-string v6, "mcc_mnc"
 
     .line 29
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -916,7 +916,7 @@
     const-string v6, "application_build"
 
     .line 30
-    invoke-virtual {v2, v6}, Lg/f/a/c/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lg/f/a/b/i/h;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -994,33 +994,33 @@
 
     move-result-object v4
 
-    check-cast v4, Lg/f/a/c/i/h;
+    check-cast v4, Lg/f/a/b/i/h;
 
     .line 39
-    invoke-virtual {v4}, Lg/f/a/c/i/h;->e()Lg/f/a/c/i/g;
+    invoke-virtual {v4}, Lg/f/a/b/i/h;->e()Lg/f/a/b/i/g;
 
     move-result-object v5
 
     .line 40
-    invoke-virtual {v5}, Lg/f/a/c/i/g;->b()Lg/f/a/c/b;
+    invoke-virtual {v5}, Lg/f/a/b/i/g;->b()Lg/f/a/b/b;
 
     move-result-object v6
 
     const-string v7, "proto"
 
     .line 41
-    invoke-static {v7}, Lg/f/a/c/b;->b(Ljava/lang/String;)Lg/f/a/c/b;
+    invoke-static {v7}, Lg/f/a/b/b;->b(Ljava/lang/String;)Lg/f/a/b/b;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Lg/f/a/c/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v7}, Lg/f/a/b/b;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
     if-eqz v7, :cond_2
 
     .line 42
-    invoke-virtual {v5}, Lg/f/a/c/i/g;->a()[B
+    invoke-virtual {v5}, Lg/f/a/b/i/g;->a()[B
 
     move-result-object v5
 
@@ -1034,11 +1034,11 @@
     const-string v7, "json"
 
     .line 43
-    invoke-static {v7}, Lg/f/a/c/b;->b(Ljava/lang/String;)Lg/f/a/c/b;
+    invoke-static {v7}, Lg/f/a/b/b;->b(Ljava/lang/String;)Lg/f/a/b/b;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Lg/f/a/c/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v7}, Lg/f/a/b/b;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -1048,7 +1048,7 @@
     new-instance v6, Ljava/lang/String;
 
     .line 45
-    invoke-virtual {v5}, Lg/f/a/c/i/g;->a()[B
+    invoke-virtual {v5}, Lg/f/a/b/i/g;->a()[B
 
     move-result-object v5
 
@@ -1066,14 +1066,14 @@
 
     .line 46
     :goto_4
-    invoke-virtual {v4}, Lg/f/a/c/i/h;->f()J
+    invoke-virtual {v4}, Lg/f/a/b/i/h;->f()J
 
     move-result-wide v6
 
     invoke-virtual {v5, v6, v7}, Lcom/google/android/datatransport/cct/f/l$a;->c(J)Lcom/google/android/datatransport/cct/f/l$a;
 
     .line 47
-    invoke-virtual {v4}, Lg/f/a/c/i/h;->k()J
+    invoke-virtual {v4}, Lg/f/a/b/i/h;->k()J
 
     move-result-wide v6
 
@@ -1082,7 +1082,7 @@
     const-string v6, "tz-offset"
 
     .line 48
-    invoke-virtual {v4, v6}, Lg/f/a/c/i/h;->h(Ljava/lang/String;)J
+    invoke-virtual {v4, v6}, Lg/f/a/b/i/h;->h(Ljava/lang/String;)J
 
     move-result-wide v6
 
@@ -1096,7 +1096,7 @@
     const-string v7, "net-type"
 
     .line 50
-    invoke-virtual {v4, v7}, Lg/f/a/c/i/h;->g(Ljava/lang/String;)I
+    invoke-virtual {v4, v7}, Lg/f/a/b/i/h;->g(Ljava/lang/String;)I
 
     move-result v7
 
@@ -1111,7 +1111,7 @@
     const-string v7, "mobile-subtype"
 
     .line 53
-    invoke-virtual {v4, v7}, Lg/f/a/c/i/h;->g(Ljava/lang/String;)I
+    invoke-virtual {v4, v7}, Lg/f/a/b/i/h;->g(Ljava/lang/String;)I
 
     move-result v7
 
@@ -1132,14 +1132,14 @@
     invoke-virtual {v5, v6}, Lcom/google/android/datatransport/cct/f/l$a;->e(Lcom/google/android/datatransport/cct/f/o;)Lcom/google/android/datatransport/cct/f/l$a;
 
     .line 58
-    invoke-virtual {v4}, Lg/f/a/c/i/h;->d()Ljava/lang/Integer;
+    invoke-virtual {v4}, Lg/f/a/b/i/h;->d()Ljava/lang/Integer;
 
     move-result-object v6
 
     if-eqz v6, :cond_3
 
     .line 59
-    invoke-virtual {v4}, Lg/f/a/c/i/h;->d()Ljava/lang/Integer;
+    invoke-virtual {v4}, Lg/f/a/b/i/h;->d()Ljava/lang/Integer;
 
     move-result-object v4
 
@@ -1161,7 +1161,7 @@
     const-string v5, "Received event of unsupported encoding %s. Skipping..."
 
     .line 61
-    invoke-static {v4, v5, v6}, Lg/f/a/c/i/v/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v4, v5, v6}, Lg/f/a/b/i/v/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
 
     goto/16 :goto_3
 
@@ -1246,7 +1246,7 @@
     const-string v2, "Following redirect to: %s"
 
     .line 2
-    invoke-static {v1, v2, v0}, Lg/f/a/c/i/v/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v1, v2, v0}, Lg/f/a/b/i/v/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 3
     iget-object p1, p1, Lcom/google/android/datatransport/cct/d$b;->b:Ljava/net/URL;
@@ -1331,7 +1331,7 @@
 
 
 # virtual methods
-.method public a(Lg/f/a/c/i/h;)Lg/f/a/c/i/h;
+.method public a(Lg/f/a/b/i/h;)Lg/f/a/b/i/h;
     .locals 4
 
     .line 1
@@ -1342,7 +1342,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/c/i/h;->l()Lg/f/a/c/i/h$a;
+    invoke-virtual {p1}, Lg/f/a/b/i/h;->l()Lg/f/a/b/i/h$a;
 
     move-result-object p1
 
@@ -1351,56 +1351,56 @@
     const-string v2, "sdk-version"
 
     .line 3
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->a(Ljava/lang/String;I)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->a(Ljava/lang/String;I)Lg/f/a/b/i/h$a;
 
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     const-string v2, "model"
 
     .line 4
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     sget-object v1, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
 
     const-string v2, "hardware"
 
     .line 5
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     const-string v2, "device"
 
     .line 6
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     sget-object v1, Landroid/os/Build;->PRODUCT:Ljava/lang/String;
 
     const-string v2, "product"
 
     .line 7
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     sget-object v1, Landroid/os/Build;->ID:Ljava/lang/String;
 
     const-string v2, "os-uild"
 
     .line 8
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
     const-string v2, "manufacturer"
 
     .line 9
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     sget-object v1, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
 
     const-string v2, "fingerprint"
 
     .line 10
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     .line 11
     invoke-static {}, Lcom/google/android/datatransport/cct/d;->j()J
@@ -1409,7 +1409,7 @@
 
     const-string v3, "tz-offset"
 
-    invoke-virtual {p1, v3, v1, v2}, Lg/f/a/c/i/h$a;->b(Ljava/lang/String;J)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v3, v1, v2}, Lg/f/a/b/i/h$a;->b(Ljava/lang/String;J)Lg/f/a/b/i/h$a;
 
     .line 12
     invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->f(Landroid/net/NetworkInfo;)I
@@ -1418,7 +1418,7 @@
 
     const-string v2, "net-type"
 
-    invoke-virtual {p1, v2, v1}, Lg/f/a/c/i/h$a;->a(Ljava/lang/String;I)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v2, v1}, Lg/f/a/b/i/h$a;->a(Ljava/lang/String;I)Lg/f/a/b/i/h$a;
 
     .line 13
     invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->e(Landroid/net/NetworkInfo;)I
@@ -1427,7 +1427,7 @@
 
     const-string v1, "mobile-subtype"
 
-    invoke-virtual {p1, v1, v0}, Lg/f/a/c/i/h$a;->a(Ljava/lang/String;I)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v1, v0}, Lg/f/a/b/i/h$a;->a(Ljava/lang/String;I)Lg/f/a/b/i/h$a;
 
     .line 14
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -1440,7 +1440,7 @@
 
     const-string v1, "country"
 
-    invoke-virtual {p1, v1, v0}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v1, v0}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     .line 15
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -1453,7 +1453,7 @@
 
     const-string v1, "locale"
 
-    invoke-virtual {p1, v1, v0}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v1, v0}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     iget-object v0, p0, Lcom/google/android/datatransport/cct/d;->c:Landroid/content/Context;
 
@@ -1468,7 +1468,7 @@
 
     const-string v1, "mcc_mnc"
 
-    invoke-virtual {p1, v1, v0}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v1, v0}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     iget-object v0, p0, Lcom/google/android/datatransport/cct/d;->c:Landroid/content/Context;
 
@@ -1484,10 +1484,10 @@
     const-string v1, "application_build"
 
     .line 18
-    invoke-virtual {p1, v1, v0}, Lg/f/a/c/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/i/h$a;
+    invoke-virtual {p1, v1, v0}, Lg/f/a/b/i/h$a;->c(Ljava/lang/String;Ljava/lang/String;)Lg/f/a/b/i/h$a;
 
     .line 19
-    invoke-virtual {p1}, Lg/f/a/c/i/h$a;->d()Lg/f/a/c/i/h;
+    invoke-virtual {p1}, Lg/f/a/b/i/h$a;->d()Lg/f/a/b/i/h;
 
     move-result-object p1
 
@@ -1579,16 +1579,16 @@
 
     invoke-direct {v2, v1, v0, v3}, Lcom/google/android/datatransport/cct/d$a;-><init>(Ljava/net/URL;Lcom/google/android/datatransport/cct/f/j;Ljava/lang/String;)V
 
-    invoke-static {p0}, Lcom/google/android/datatransport/cct/b;->a(Lcom/google/android/datatransport/cct/d;)Lg/f/a/c/i/w/a;
+    invoke-static {p0}, Lcom/google/android/datatransport/cct/b;->a(Lcom/google/android/datatransport/cct/d;)Lg/f/a/b/i/w/a;
 
     move-result-object v0
 
-    invoke-static {}, Lcom/google/android/datatransport/cct/c;->b()Lg/f/a/c/i/w/c;
+    invoke-static {}, Lcom/google/android/datatransport/cct/c;->b()Lg/f/a/b/i/w/c;
 
     move-result-object v1
 
     .line 11
-    invoke-static {p1, v2, v0, v1}, Lg/f/a/c/i/w/b;->a(ILjava/lang/Object;Lg/f/a/c/i/w/a;Lg/f/a/c/i/w/c;)Ljava/lang/Object;
+    invoke-static {p1, v2, v0, v1}, Lg/f/a/b/i/w/b;->a(ILjava/lang/Object;Lg/f/a/b/i/w/a;Lg/f/a/b/i/w/c;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1653,7 +1653,7 @@
     const-string v1, "Could not make request to the backend"
 
     .line 17
-    invoke-static {v0, v1, p1}, Lg/f/a/c/i/v/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lg/f/a/b/i/v/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 18
     invoke-static {}, Lcom/google/android/datatransport/runtime/backends/g;->e()Lcom/google/android/datatransport/runtime/backends/g;

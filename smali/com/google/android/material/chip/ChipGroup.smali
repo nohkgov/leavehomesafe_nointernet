@@ -37,7 +37,7 @@
     .locals 1
 
     .line 1
-    sget v0, Lg/f/a/f/b;->chipGroupStyle:I
+    sget v0, Lg/f/a/d/b;->chipGroupStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/chip/ChipGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -77,9 +77,9 @@
     iput-boolean v1, p0, Lcom/google/android/material/chip/ChipGroup;->m:Z
 
     .line 7
-    sget-object v4, Lg/f/a/f/k;->ChipGroup:[I
+    sget-object v4, Lg/f/a/d/k;->ChipGroup:[I
 
-    sget v6, Lg/f/a/f/j;->Widget_MaterialComponents_ChipGroup:I
+    sget v6, Lg/f/a/d/j;->Widget_MaterialComponents_ChipGroup:I
 
     new-array v7, v1, [I
 
@@ -95,14 +95,14 @@
     move-result-object p1
 
     .line 9
-    sget p2, Lg/f/a/f/k;->ChipGroup_chipSpacing:I
+    sget p2, Lg/f/a/d/k;->ChipGroup_chipSpacing:I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 
     move-result p2
 
     .line 10
-    sget p3, Lg/f/a/f/k;->ChipGroup_chipSpacingHorizontal:I
+    sget p3, Lg/f/a/d/k;->ChipGroup_chipSpacingHorizontal:I
 
     .line 11
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
@@ -113,7 +113,7 @@
     invoke-virtual {p0, p3}, Lcom/google/android/material/chip/ChipGroup;->setChipSpacingHorizontal(I)V
 
     .line 13
-    sget p3, Lg/f/a/f/k;->ChipGroup_chipSpacingVertical:I
+    sget p3, Lg/f/a/d/k;->ChipGroup_chipSpacingVertical:I
 
     .line 14
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
@@ -124,7 +124,7 @@
     invoke-virtual {p0, p2}, Lcom/google/android/material/chip/ChipGroup;->setChipSpacingVertical(I)V
 
     .line 16
-    sget p2, Lg/f/a/f/k;->ChipGroup_singleLine:I
+    sget p2, Lg/f/a/d/k;->ChipGroup_singleLine:I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -133,7 +133,7 @@
     invoke-virtual {p0, p2}, Lcom/google/android/material/chip/ChipGroup;->setSingleLine(Z)V
 
     .line 17
-    sget p2, Lg/f/a/f/k;->ChipGroup_singleSelection:I
+    sget p2, Lg/f/a/d/k;->ChipGroup_singleSelection:I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -142,7 +142,7 @@
     invoke-virtual {p0, p2}, Lcom/google/android/material/chip/ChipGroup;->setSingleSelection(Z)V
 
     .line 18
-    sget p2, Lg/f/a/f/k;->ChipGroup_checkedChip:I
+    sget p2, Lg/f/a/d/k;->ChipGroup_checkedChip:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
 

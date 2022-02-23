@@ -15,11 +15,11 @@
 
 
 # direct methods
-.method constructor <init>(Lg/f/a/e/n/f/a;)V
+.method constructor <init>(Lg/f/a/c/n/f/a;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lg/f/b/b/b/a$c;-><init>(Lg/f/a/e/n/f/c;)V
+    invoke-direct {p0, p1}, Lg/f/b/b/b/a$c;-><init>(Lg/f/a/c/n/f/c;)V
 
     return-void
 .end method

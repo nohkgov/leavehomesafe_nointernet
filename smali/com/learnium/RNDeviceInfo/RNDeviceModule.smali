@@ -619,6 +619,14 @@
 
 
 # virtual methods
+.method public addListener(Ljava/lang/String;)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
+    .end annotation
+
+    return-void
+.end method
+
 .method public getAndroidId(Lcom/facebook/react/bridge/Promise;)V
     .locals 1
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
@@ -2436,22 +2444,15 @@
     if-lt v0, v1, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
-
-    move-result-object v0
-
-    const-string v1, "android.permission.READ_PHONE_STATE"
-
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->checkCallingOrSelfPermission(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 3
     invoke-static {}, Landroid/os/Build;->getSerial()Ljava/lang/String;
 
     move-result-object v0
+
+    return-object v0
+
+    .line 3
+    :cond_0
+    sget-object v0, Landroid/os/Build;->SERIAL:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2483,7 +2484,6 @@
 
     invoke-virtual {v1, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    :cond_0
     const-string v0, "unknown"
 
     return-object v0
@@ -3071,16 +3071,16 @@
 .end method
 
 .method public getUsedMemory(Lcom/facebook/react/bridge/Promise;)V
-    .locals 1
+    .locals 2
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/learnium/RNDeviceInfo/RNDeviceModule;->getUsedMemorySync()I
+    invoke-virtual {p0}, Lcom/learnium/RNDeviceInfo/RNDeviceModule;->getUsedMemorySync()D
 
-    move-result v0
+    move-result-wide v0
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object v0
 
@@ -3089,31 +3089,89 @@
     return-void
 .end method
 
-.method public getUsedMemorySync()I
-    .locals 5
+.method public getUsedMemorySync()D
+    .locals 7
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
         isBlockingSynchronousMethod = true
     .end annotation
 
     .line 1
-    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
 
     move-result-object v0
 
+    const-string v1, "activity"
+
+    invoke-virtual {v0, v1}, Lcom/facebook/react/bridge/ReactContext;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/ActivityManager;
+
+    const-wide/high16 v1, -0x4010000000000000L    # -1.0
+
+    if-eqz v0, :cond_1
+
     .line 2
-    invoke-virtual {v0}, Ljava/lang/Runtime;->totalMemory()J
+    invoke-static {}, Landroid/os/Process;->myPid()I
 
-    move-result-wide v1
+    move-result v3
 
-    invoke-virtual {v0}, Ljava/lang/Runtime;->freeMemory()J
+    const/4 v4, 0x1
 
-    move-result-wide v3
+    new-array v5, v4, [I
 
-    sub-long/2addr v1, v3
+    const/4 v6, 0x0
 
-    long-to-int v0, v1
+    aput v3, v5, v6
 
-    return v0
+    .line 3
+    invoke-virtual {v0, v5}, Landroid/app/ActivityManager;->getProcessMemoryInfo([I)[Landroid/os/Debug$MemoryInfo;
+
+    move-result-object v0
+
+    .line 4
+    array-length v3, v0
+
+    if-eq v3, v4, :cond_0
+
+    .line 5
+    sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
+
+    const-string v3, "Unable to getProcessMemoryInfo. getProcessMemoryInfo did not return any info for the PID"
+
+    invoke-virtual {v0, v3}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    return-wide v1
+
+    .line 6
+    :cond_0
+    aget-object v0, v0, v6
+
+    .line 7
+    invoke-virtual {v0}, Landroid/os/Debug$MemoryInfo;->getTotalPss()I
+
+    move-result v0
+
+    int-to-double v0, v0
+
+    const-wide/high16 v2, 0x4090000000000000L    # 1024.0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
+
+    mul-double v0, v0, v2
+
+    return-wide v0
+
+    .line 8
+    :cond_1
+    sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
+
+    const-string v3, "Unable to getProcessMemoryInfo. ActivityManager was null"
+
+    invoke-virtual {v0, v3}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    return-wide v1
 .end method
 
 .method public getUserAgent(Lcom/facebook/react/bridge/Promise;)V
@@ -3175,6 +3233,210 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public hasGms(Lcom/facebook/react/bridge/Promise;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/learnium/RNDeviceInfo/RNDeviceModule;->hasGmsSync()Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/Promise;->resolve(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public hasGmsSync()Z
+    .locals 7
+    .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
+        isBlockingSynchronousMethod = true
+    .end annotation
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    const-string v1, "g.f.a.c.e.d"
+
+    .line 1
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    const-string v2, "getInstance"
+
+    new-array v3, v0, [Ljava/lang/Class;
+
+    .line 2
+    invoke-virtual {v1, v2, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    new-array v3, v0, [Ljava/lang/Object;
+
+    .line 3
+    invoke-virtual {v1, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 4
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    const-string v3, "isGooglePlayServicesAvailable"
+
+    const/4 v4, 0x1
+
+    new-array v5, v4, [Ljava/lang/Class;
+
+    const-class v6, Landroid/content/Context;
+
+    aput-object v6, v5, v0
+
+    invoke-virtual {v2, v3, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v2
+
+    new-array v3, v4, [Ljava/lang/Object;
+
+    .line 5
+    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
+
+    move-result-object v5
+
+    aput-object v5, v3, v0
+
+    invoke-virtual {v2, v1, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :catch_0
+    :cond_0
+    return v0
+.end method
+
+.method public hasHms(Lcom/facebook/react/bridge/Promise;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/learnium/RNDeviceInfo/RNDeviceModule;->hasHmsSync()Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/Promise;->resolve(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public hasHmsSync()Z
+    .locals 7
+    .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
+        isBlockingSynchronousMethod = true
+    .end annotation
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    const-string v1, "com.huawei.hms.api.HuaweiApiAvailability"
+
+    .line 1
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    const-string v2, "getInstance"
+
+    new-array v3, v0, [Ljava/lang/Class;
+
+    .line 2
+    invoke-virtual {v1, v2, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    new-array v3, v0, [Ljava/lang/Object;
+
+    .line 3
+    invoke-virtual {v1, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 4
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    const-string v3, "isHuaweiMobileServicesAvailable"
+
+    const/4 v4, 0x1
+
+    new-array v5, v4, [Ljava/lang/Class;
+
+    const-class v6, Landroid/content/Context;
+
+    aput-object v6, v5, v0
+
+    invoke-virtual {v2, v3, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v2
+
+    new-array v3, v4, [Ljava/lang/Object;
+
+    .line 5
+    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
+
+    move-result-object v5
+
+    aput-object v5, v3, v0
+
+    invoke-virtual {v2, v1, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :catch_0
+    :cond_0
+    return v0
 .end method
 
 .method public hasSystemFeature(Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V
@@ -4139,6 +4401,14 @@
     iget-object v1, p0, Lcom/learnium/RNDeviceInfo/RNDeviceModule;->headphoneConnectionReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    return-void
+.end method
+
+.method public removeListeners(Ljava/lang/Integer;)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
+    .end annotation
 
     return-void
 .end method

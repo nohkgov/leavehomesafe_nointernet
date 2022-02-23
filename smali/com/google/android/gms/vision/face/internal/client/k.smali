@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/gms/vision/face/internal/client/k;
-.super Lg/f/a/e/i/o/a;
+.super Lg/f/a/c/i/o/a;
 .source "com.google.android.gms:play-services-vision@@20.1.3"
 
 # interfaces
@@ -7,7 +7,7 @@
 
 
 # direct methods
-.method public static l0(Landroid/os/IBinder;)Lcom/google/android/gms/vision/face/internal/client/h;
+.method public static k0(Landroid/os/IBinder;)Lcom/google/android/gms/vision/face/internal/client/h;
     .locals 2
 
     if-nez p0, :cond_0

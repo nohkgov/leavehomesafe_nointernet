@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lg/f/a/f/z/b;)V
+.method constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lg/f/a/d/z/b;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/google/android/material/floatingactionbutton/b;-><init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lg/f/a/f/z/b;)V
+    invoke-direct {p0, p1, p2}, Lcom/google/android/material/floatingactionbutton/b;-><init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lg/f/a/d/z/b;)V
 
     return-void
 .end method
@@ -429,7 +429,7 @@
     check-cast v0, Landroid/graphics/drawable/RippleDrawable;
 
     .line 3
-    invoke-static {p1}, Lg/f/a/f/y/b;->a(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
+    invoke-static {p1}, Lg/f/a/d/y/b;->a(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
@@ -449,9 +449,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/b;->z:Lg/f/a/f/z/b;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/b;->z:Lg/f/a/d/z/b;
 
-    invoke-interface {v0}, Lg/f/a/f/z/b;->c()Z
+    invoke-interface {v0}, Lg/f/a/d/z/b;->c()Z
 
     move-result v0
 
@@ -501,9 +501,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/b;->z:Lg/f/a/f/z/b;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/b;->z:Lg/f/a/d/z/b;
 
-    invoke-interface {v0}, Lg/f/a/f/z/b;->c()Z
+    invoke-interface {v0}, Lg/f/a/d/z/b;->c()Z
 
     move-result v0
 

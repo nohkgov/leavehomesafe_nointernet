@@ -82,7 +82,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p1, v0, v1}, Landroidx/recyclerview/widget/m;->C(Landroidx/recyclerview/widget/RecyclerView$d0;Z)V
+    invoke-virtual {p1, v0, v1}, Landroidx/recyclerview/widget/n;->C(Landroidx/recyclerview/widget/RecyclerView$d0;Z)V
 
     .line 6
     iget-object p1, p0, Landroidx/recyclerview/widget/c$g;->d:Landroidx/recyclerview/widget/c;
@@ -115,7 +115,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p1, v0, v1}, Landroidx/recyclerview/widget/m;->D(Landroidx/recyclerview/widget/RecyclerView$d0;Z)V
+    invoke-virtual {p1, v0, v1}, Landroidx/recyclerview/widget/n;->D(Landroidx/recyclerview/widget/RecyclerView$d0;Z)V
 
     return-void
 .end method

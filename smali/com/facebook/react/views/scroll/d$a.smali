@@ -66,7 +66,7 @@
     .line 3
     iget-object v0, p0, Lcom/facebook/react/views/scroll/d$a;->d:Lcom/facebook/react/views/scroll/d;
 
-    invoke-static {v0, p0, v1, v2}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;J)V
+    invoke-static {v0, p0, v1, v2}, Ld/g/l/s;->f0(Landroid/view/View;Ljava/lang/Runnable;J)V
 
     goto :goto_0
 
@@ -112,7 +112,7 @@
     .line 8
     iget-object v0, p0, Lcom/facebook/react/views/scroll/d$a;->d:Lcom/facebook/react/views/scroll/d;
 
-    invoke-static {v0, p0, v1, v2}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;J)V
+    invoke-static {v0, p0, v1, v2}, Ld/g/l/s;->f0(Landroid/view/View;Ljava/lang/Runnable;J)V
 
     goto :goto_0
 

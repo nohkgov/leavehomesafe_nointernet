@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field final synthetic a:Lg/f/a/f/p/d;
+.field final synthetic a:Lg/f/a/d/p/d;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/transformation/FabTransformationBehavior;Lg/f/a/f/p/d;)V
+.method constructor <init>(Lcom/google/android/material/transformation/FabTransformationBehavior;Lg/f/a/d/p/d;)V
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lg/f/a/f/p/d;
+    iput-object p2, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lg/f/a/d/p/d;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -36,21 +36,21 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lg/f/a/f/p/d;
+    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lg/f/a/d/p/d;
 
-    invoke-interface {p1}, Lg/f/a/f/p/d;->getRevealInfo()Lg/f/a/f/p/d$e;
+    invoke-interface {p1}, Lg/f/a/d/p/d;->getRevealInfo()Lg/f/a/d/p/d$e;
 
     move-result-object p1
 
     const v0, 0x7f7fffff    # Float.MAX_VALUE
 
     .line 2
-    iput v0, p1, Lg/f/a/f/p/d$e;->c:F
+    iput v0, p1, Lg/f/a/d/p/d$e;->c:F
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lg/f/a/f/p/d;
+    iget-object v0, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lg/f/a/d/p/d;
 
-    invoke-interface {v0, p1}, Lg/f/a/f/p/d;->setRevealInfo(Lg/f/a/f/p/d$e;)V
+    invoke-interface {v0, p1}, Lg/f/a/d/p/d;->setRevealInfo(Lg/f/a/d/p/d$e;)V
 
     return-void
 .end method

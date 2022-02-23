@@ -3,7 +3,7 @@
 .source "CCTDestination.java"
 
 # interfaces
-.implements Lg/f/a/c/i/f;
+.implements Lg/f/a/b/i/f;
 
 
 # static fields
@@ -17,7 +17,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
-            "Lg/f/a/c/b;",
+            "Lg/f/a/b/b;",
             ">;"
         }
     .end annotation
@@ -76,12 +76,12 @@
 
     const/4 v1, 0x2
 
-    new-array v1, v1, [Lg/f/a/c/b;
+    new-array v1, v1, [Lg/f/a/b/b;
 
     const-string v2, "proto"
 
     .line 5
-    invoke-static {v2}, Lg/f/a/c/b;->b(Ljava/lang/String;)Lg/f/a/c/b;
+    invoke-static {v2}, Lg/f/a/b/b;->b(Ljava/lang/String;)Lg/f/a/b/b;
 
     move-result-object v2
 
@@ -91,7 +91,7 @@
 
     const-string v2, "json"
 
-    invoke-static {v2}, Lg/f/a/c/b;->b(Ljava/lang/String;)Lg/f/a/c/b;
+    invoke-static {v2}, Lg/f/a/b/b;->b(Ljava/lang/String;)Lg/f/a/b/b;
 
     move-result-object v2
 
@@ -270,7 +270,7 @@
         value = {
             "()",
             "Ljava/util/Set<",
-            "Lg/f/a/c/b;",
+            "Lg/f/a/b/b;",
             ">;"
         }
     .end annotation

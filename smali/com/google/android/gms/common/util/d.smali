@@ -26,11 +26,11 @@
 
     .line 2
     :try_start_0
-    invoke-static {p0}, Lg/f/a/e/e/n/b;->a(Landroid/content/Context;)Lg/f/a/e/e/n/a;
+    invoke-static {p0}, Lg/f/a/c/e/n/b;->a(Landroid/content/Context;)Lg/f/a/c/e/n/a;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1, v0}, Lg/f/a/e/e/n/a;->c(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {p0, p1, v0}, Lg/f/a/c/e/n/a;->c(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
     move-result-object p0
 

@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field private a:Lg/f/a/e/n/e/c;
+.field private a:Lg/f/a/c/n/e/c;
 
 .field private b:Lorg/reactnative/camera/h/a;
 
-.field private c:Lg/f/a/e/n/e/c$a;
+.field private c:Lg/f/a/c/n/e/c$a;
 
 .field private d:I
 
@@ -49,10 +49,10 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/e/n/e/c;
+    iput-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/c/n/e/c;
 
     .line 3
-    iput-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iput-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
     .line 4
     sget v0, Lorg/reactnative/facedetector/b;->i:I
@@ -75,37 +75,37 @@
     iput v0, p0, Lorg/reactnative/facedetector/b;->g:I
 
     .line 8
-    new-instance v0, Lg/f/a/e/n/e/c$a;
+    new-instance v0, Lg/f/a/c/n/e/c$a;
 
-    invoke-direct {v0, p1}, Lg/f/a/e/n/e/c$a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lg/f/a/c/n/e/c$a;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iput-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
     .line 9
     iget p1, p0, Lorg/reactnative/facedetector/b;->f:F
 
-    invoke-virtual {v0, p1}, Lg/f/a/e/n/e/c$a;->d(F)Lg/f/a/e/n/e/c$a;
+    invoke-virtual {v0, p1}, Lg/f/a/c/n/e/c$a;->d(F)Lg/f/a/c/n/e/c$a;
 
     .line 10
-    iget-object p1, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iget-object p1, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
     iget v0, p0, Lorg/reactnative/facedetector/b;->g:I
 
-    invoke-virtual {p1, v0}, Lg/f/a/e/n/e/c$a;->e(I)Lg/f/a/e/n/e/c$a;
+    invoke-virtual {p1, v0}, Lg/f/a/c/n/e/c$a;->e(I)Lg/f/a/c/n/e/c$a;
 
     .line 11
-    iget-object p1, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iget-object p1, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
     iget v0, p0, Lorg/reactnative/facedetector/b;->e:I
 
-    invoke-virtual {p1, v0}, Lg/f/a/e/n/e/c$a;->c(I)Lg/f/a/e/n/e/c$a;
+    invoke-virtual {p1, v0}, Lg/f/a/c/n/e/c$a;->c(I)Lg/f/a/c/n/e/c$a;
 
     .line 12
-    iget-object p1, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iget-object p1, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
     iget v0, p0, Lorg/reactnative/facedetector/b;->d:I
 
-    invoke-virtual {p1, v0}, Lg/f/a/e/n/e/c$a;->b(I)Lg/f/a/e/n/e/c$a;
+    invoke-virtual {p1, v0}, Lg/f/a/c/n/e/c$a;->b(I)Lg/f/a/c/n/e/c$a;
 
     return-void
 .end method
@@ -114,13 +114,13 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
-    invoke-virtual {v0}, Lg/f/a/e/n/e/c$a;->a()Lg/f/a/e/n/e/c;
+    invoke-virtual {v0}, Lg/f/a/c/n/e/c$a;->a()Lg/f/a/c/n/e/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/e/n/e/c;
+    iput-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/c/n/e/c;
 
     return-void
 .end method
@@ -129,17 +129,17 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/e/n/e/c;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/c/n/e/c;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Lg/f/a/e/n/e/c;->a()V
+    invoke-virtual {v0}, Lg/f/a/c/n/e/c;->a()V
 
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/e/n/e/c;
+    iput-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/c/n/e/c;
 
     :cond_0
     return-void
@@ -155,7 +155,7 @@
             "Lm/b/b/a;",
             ")",
             "Landroid/util/SparseArray<",
-            "Lg/f/a/e/n/e/b;",
+            "Lg/f/a/c/n/e/b;",
             ">;"
         }
     .end annotation
@@ -178,7 +178,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/e/n/e/c;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/c/n/e/c;
 
     if-nez v0, :cond_1
 
@@ -194,13 +194,13 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/e/n/e/c;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/c/n/e/c;
 
-    invoke-virtual {p1}, Lm/b/b/a;->b()Lg/f/a/e/n/b;
+    invoke-virtual {p1}, Lm/b/b/a;->b()Lg/f/a/c/n/b;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lg/f/a/e/n/e/c;->b(Lg/f/a/e/n/b;)Landroid/util/SparseArray;
+    invoke-virtual {v0, p1}, Lg/f/a/c/n/e/c;->b(Lg/f/a/c/n/b;)Landroid/util/SparseArray;
 
     move-result-object p1
 
@@ -211,7 +211,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/e/n/e/c;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/c/n/e/c;
 
     if-nez v0, :cond_0
 
@@ -220,9 +220,9 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/e/n/e/c;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->a:Lg/f/a/c/n/e/c;
 
-    invoke-virtual {v0}, Lg/f/a/e/n/e/c;->c()Z
+    invoke-virtual {v0}, Lg/f/a/c/n/e/c;->c()Z
 
     move-result v0
 
@@ -255,9 +255,9 @@
     invoke-virtual {p0}, Lorg/reactnative/facedetector/b;->d()V
 
     .line 3
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
-    invoke-virtual {v0, p1}, Lg/f/a/e/n/e/c$a;->b(I)Lg/f/a/e/n/e/c$a;
+    invoke-virtual {v0, p1}, Lg/f/a/c/n/e/c$a;->b(I)Lg/f/a/c/n/e/c$a;
 
     .line 4
     iput p1, p0, Lorg/reactnative/facedetector/b;->d:I
@@ -278,9 +278,9 @@
     invoke-virtual {p0}, Lorg/reactnative/facedetector/b;->d()V
 
     .line 3
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
-    invoke-virtual {v0, p1}, Lg/f/a/e/n/e/c$a;->c(I)Lg/f/a/e/n/e/c$a;
+    invoke-virtual {v0, p1}, Lg/f/a/c/n/e/c$a;->c(I)Lg/f/a/c/n/e/c$a;
 
     .line 4
     iput p1, p0, Lorg/reactnative/facedetector/b;->e:I
@@ -301,9 +301,9 @@
     invoke-virtual {p0}, Lorg/reactnative/facedetector/b;->d()V
 
     .line 3
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
-    invoke-virtual {v0, p1}, Lg/f/a/e/n/e/c$a;->e(I)Lg/f/a/e/n/e/c$a;
+    invoke-virtual {v0, p1}, Lg/f/a/c/n/e/c$a;->e(I)Lg/f/a/c/n/e/c$a;
 
     .line 4
     iput p1, p0, Lorg/reactnative/facedetector/b;->g:I
@@ -319,9 +319,9 @@
     invoke-virtual {p0}, Lorg/reactnative/facedetector/b;->d()V
 
     .line 2
-    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/e/n/e/c$a;
+    iget-object v0, p0, Lorg/reactnative/facedetector/b;->c:Lg/f/a/c/n/e/c$a;
 
-    invoke-virtual {v0, p1}, Lg/f/a/e/n/e/c$a;->f(Z)Lg/f/a/e/n/e/c$a;
+    invoke-virtual {v0, p1}, Lg/f/a/c/n/e/c$a;->f(Z)Lg/f/a/c/n/e/c$a;
 
     return-void
 .end method

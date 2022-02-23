@@ -49,14 +49,14 @@
     check-cast p1, Lorg/reactnative/camera/d;
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/b/e;->p()Z
+    invoke-virtual {p1}, Lg/f/a/a/e;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {p1}, Lg/f/a/b/e;->u()V
+    invoke-virtual {p1}, Lg/f/a/a/e;->u()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

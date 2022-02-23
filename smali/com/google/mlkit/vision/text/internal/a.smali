@@ -61,11 +61,11 @@
     const-string v2, "play-services-mlkit-text-recognition"
 
     .line 3
-    invoke-static {v2}, Lg/f/a/e/i/l/v7;->a(Ljava/lang/String;)Lg/f/a/e/i/l/p7;
+    invoke-static {v2}, Lg/f/a/c/i/l/v7;->a(Ljava/lang/String;)Lg/f/a/c/i/l/p7;
 
     move-result-object v2
 
-    invoke-direct {v0, v1, p1, v2}, Lcom/google/mlkit/vision/text/internal/TextRecognizerImpl;-><init>(Lcom/google/mlkit/vision/text/internal/d;Ljava/util/concurrent/Executor;Lg/f/a/e/i/l/p7;)V
+    invoke-direct {v0, v1, p1, v2}, Lcom/google/mlkit/vision/text/internal/TextRecognizerImpl;-><init>(Lcom/google/mlkit/vision/text/internal/d;Ljava/util/concurrent/Executor;Lg/f/a/c/i/l/p7;)V
 
     return-object v0
 .end method

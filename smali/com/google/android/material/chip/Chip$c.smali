@@ -294,7 +294,7 @@
 
     move-result-object v2
 
-    sget v3, Lg/f/a/f/i;->mtrl_chip_close_icon_content_description:I
+    sget v3, Lg/f/a/d/i;->mtrl_chip_close_icon_content_description:I
 
     new-array v1, v1, [Ljava/lang/Object;
 

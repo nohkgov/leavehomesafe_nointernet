@@ -66,7 +66,7 @@
     :catchall_1
     move-exception v1
 
-    invoke-static {v0, v1}, Lg/f/a/e/i/j/s;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1}, Lg/f/a/c/i/j/s;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     :goto_0
     throw v0

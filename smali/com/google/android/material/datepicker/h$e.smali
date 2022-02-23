@@ -164,7 +164,7 @@
 
     move-result v4
 
-    invoke-virtual {v1, v4}, Lcom/google/android/material/datepicker/s;->w(I)I
+    invoke-virtual {v1, v4}, Lcom/google/android/material/datepicker/s;->B(I)I
 
     move-result v4
 
@@ -175,7 +175,7 @@
 
     move-result v5
 
-    invoke-virtual {v1, v5}, Lcom/google/android/material/datepicker/s;->w(I)I
+    invoke-virtual {v1, v5}, Lcom/google/android/material/datepicker/s;->B(I)I
 
     move-result v5
 

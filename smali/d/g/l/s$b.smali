@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ld/g/l/s;->k0()Ld/g/l/s$f;
+    value = Ld/g/l/s;->l0()Ld/g/l/s$f;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

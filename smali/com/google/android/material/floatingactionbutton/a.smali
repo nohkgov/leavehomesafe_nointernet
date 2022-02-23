@@ -12,7 +12,7 @@
     throw p0
 .end method
 
-.method public b(Lg/f/a/f/a0/k;)V
+.method public b(Lg/f/a/d/a0/k;)V
     .locals 0
 
     const p0, 0x0

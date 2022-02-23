@@ -3,7 +3,7 @@
 .source "com.google.firebase:firebase-iid@@21.1.0"
 
 # interfaces
-.implements Lg/f/a/e/m/k;
+.implements Lg/f/a/c/m/k;
 
 
 # instance fields
@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)Lg/f/a/e/m/l;
+.method public a(Ljava/lang/Object;)Lg/f/a/c/m/l;
     .locals 4
 
     iget-object v0, p0, Lcom/google/firebase/iid/g;->a:Lcom/google/firebase/iid/FirebaseInstanceId;
@@ -48,7 +48,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2, v3, p1}, Lcom/google/firebase/iid/FirebaseInstanceId;->y(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, v1, v2, v3, p1}, Lcom/google/firebase/iid/FirebaseInstanceId;->y(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lg/f/a/c/m/l;
 
     move-result-object p1
 

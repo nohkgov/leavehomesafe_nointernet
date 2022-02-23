@@ -33,18 +33,12 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 1
 
     .line 1
-    new-instance v0, Li/a;
+    invoke-static {}, Li/b;->a()Li/a;
 
-    const/4 v1, 0x1
-
-    const/4 v2, 0x3
-
-    const/16 v3, 0x32
-
-    invoke-direct {v0, v1, v2, v3}, Li/a;-><init>(III)V
+    move-result-object v0
 
     sput-object v0, Li/a;->g:Li/a;
 
@@ -165,7 +159,7 @@
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Li/c/a/a;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Li/e/a/c;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget v0, p0, Li/a;->c:I

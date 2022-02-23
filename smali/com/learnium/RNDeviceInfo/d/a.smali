@@ -96,7 +96,7 @@
         }
     .end annotation
 
-    const-string v0, "g.f.a.e.h.a"
+    const-string v0, "g.f.a.c.h.a"
 
     .line 1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;

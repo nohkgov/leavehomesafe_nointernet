@@ -2,6 +2,9 @@
 .super Landroidx/recyclerview/widget/RecyclerView$g;
 .source "FragmentStateAdapter.java"
 
+# interfaces
+.implements Landroidx/viewpager2/adapter/c;
+
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
@@ -15,11 +18,11 @@
         "Landroidx/recyclerview/widget/RecyclerView$g<",
         "Landroidx/viewpager2/adapter/b;",
         ">;",
-        "Ljava/lang/Object;"
+        "Landroidx/viewpager2/adapter/c;"
     }
 .end annotation
 
 
 # virtual methods
-.method abstract u()Z
+.method abstract z()Z
 .end method

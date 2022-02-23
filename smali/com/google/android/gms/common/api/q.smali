@@ -104,7 +104,7 @@
 
     .line 7
     :cond_1
-    sget-object v2, Lg/f/a/e/e/a;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v2, Lg/f/a/c/e/a;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 8
     invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/t/b;->e(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
@@ -113,7 +113,7 @@
 
     move-object v8, v1
 
-    check-cast v8, Lg/f/a/e/e/a;
+    check-cast v8, Lg/f/a/c/e/a;
 
     goto :goto_0
 
@@ -157,7 +157,7 @@
 
     move-object v3, p1
 
-    invoke-direct/range {v3 .. v8}, Lcom/google/android/gms/common/api/Status;-><init>(IILjava/lang/String;Landroid/app/PendingIntent;Lg/f/a/e/e/a;)V
+    invoke-direct/range {v3 .. v8}, Lcom/google/android/gms/common/api/Status;-><init>(IILjava/lang/String;Landroid/app/PendingIntent;Lg/f/a/c/e/a;)V
 
     return-object p1
 .end method

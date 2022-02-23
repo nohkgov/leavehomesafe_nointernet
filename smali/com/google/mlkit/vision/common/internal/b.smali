@@ -372,7 +372,7 @@
     move-exception p0
 
     :try_start_4
-    invoke-static {p1, p0}, Lg/f/a/e/i/k/u6;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Lg/f/a/c/i/k/u6;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     :goto_0
     throw p1

@@ -58,7 +58,7 @@
     move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Lg/f/a/b/e;->getSupportedPreviewFpsRange()Ljava/util/ArrayList;
+    invoke-virtual {p1}, Lg/f/a/a/e;->getSupportedPreviewFpsRange()Ljava/util/ArrayList;
 
     move-result-object p1
 

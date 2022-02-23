@@ -16,5 +16,5 @@
     .end annotation
 .end method
 
-.method public abstract c(Lg/f/a/e/e/a;)V
+.method public abstract c(Lg/f/a/c/e/a;)V
 .end method

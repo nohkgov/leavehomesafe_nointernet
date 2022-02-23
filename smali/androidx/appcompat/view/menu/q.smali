@@ -541,7 +541,7 @@
     iget-object v5, p0, Landroidx/appcompat/view/menu/q;->o:Landroid/view/View;
 
     .line 11
-    invoke-static {v5}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {v5}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result v5
 

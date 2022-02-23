@@ -301,7 +301,7 @@
     move-exception p1
 
     :try_start_4
-    invoke-static {v1, p1}, Lg/f/a/e/i/k/u6;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {v1, p1}, Lg/f/a/c/i/k/u6;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     :goto_0
     throw v1

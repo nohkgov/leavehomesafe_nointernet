@@ -66,7 +66,7 @@
     .line 2
     iget-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior$c;->c:Landroid/view/View;
 
-    invoke-static {v0, p0}, Ld/g/l/s;->d0(Landroid/view/View;Ljava/lang/Runnable;)V
+    invoke-static {v0, p0}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;)V
 
     goto :goto_0
 

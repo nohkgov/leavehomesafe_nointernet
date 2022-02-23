@@ -3,7 +3,7 @@
 .source "CctTransportBackend.java"
 
 # interfaces
-.implements Lg/f/a/c/i/w/c;
+.implements Lg/f/a/b/i/w/c;
 
 
 # static fields
@@ -31,7 +31,7 @@
     return-void
 .end method
 
-.method public static b()Lg/f/a/c/i/w/c;
+.method public static b()Lg/f/a/b/i/w/c;
     .locals 1
 
     sget-object v0, Lcom/google/android/datatransport/cct/c;->a:Lcom/google/android/datatransport/cct/c;

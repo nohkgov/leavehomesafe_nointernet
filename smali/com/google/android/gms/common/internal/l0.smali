@@ -121,7 +121,7 @@
 
     .line 9
     :pswitch_4
-    sget-object v3, Lg/f/a/e/e/c;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v3, Lg/f/a/c/e/c;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 10
     invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/t/b;->i(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
@@ -130,13 +130,13 @@
 
     move-object v14, v2
 
-    check-cast v14, [Lg/f/a/e/e/c;
+    check-cast v14, [Lg/f/a/c/e/c;
 
     goto :goto_0
 
     .line 11
     :pswitch_5
-    sget-object v3, Lg/f/a/e/e/c;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v3, Lg/f/a/c/e/c;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 12
     invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/t/b;->i(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
@@ -145,7 +145,7 @@
 
     move-object v13, v2
 
-    check-cast v13, [Lg/f/a/e/e/c;
+    check-cast v13, [Lg/f/a/c/e/c;
 
     goto :goto_0
 
@@ -236,7 +236,7 @@
 
     move-object v4, v0
 
-    invoke-direct/range {v4 .. v17}, Lcom/google/android/gms/common/internal/f;-><init>(IIILjava/lang/String;Landroid/os/IBinder;[Lcom/google/android/gms/common/api/Scope;Landroid/os/Bundle;Landroid/accounts/Account;[Lg/f/a/e/e/c;[Lg/f/a/e/e/c;ZIZ)V
+    invoke-direct/range {v4 .. v17}, Lcom/google/android/gms/common/internal/f;-><init>(IIILjava/lang/String;Landroid/os/IBinder;[Lcom/google/android/gms/common/api/Scope;Landroid/os/Bundle;Landroid/accounts/Account;[Lg/f/a/c/e/c;[Lg/f/a/c/e/c;ZIZ)V
 
     return-object v0
 

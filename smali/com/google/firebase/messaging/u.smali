@@ -3,7 +3,7 @@
 .source "com.google.firebase:firebase-messaging@@21.1.0"
 
 # interfaces
-.implements Lg/f/a/e/m/k;
+.implements Lg/f/a/c/m/k;
 
 
 # instance fields
@@ -23,14 +23,14 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)Lg/f/a/e/m/l;
+.method public a(Ljava/lang/Object;)Lg/f/a/c/m/l;
     .locals 1
 
     iget-object v0, p0, Lcom/google/firebase/messaging/u;->a:Ljava/lang/String;
 
     check-cast p1, Lcom/google/firebase/messaging/x0;
 
-    invoke-static {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->s(Ljava/lang/String;Lcom/google/firebase/messaging/x0;)Lg/f/a/e/m/l;
+    invoke-static {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->s(Ljava/lang/String;Lcom/google/firebase/messaging/x0;)Lg/f/a/c/m/l;
 
     move-result-object p1
 

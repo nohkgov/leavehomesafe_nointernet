@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Lg/f/a/e/e/k/a;
+.field private static a:Lg/f/a/c/e/k/a;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lg/f/a/e/e/k/a;
+    new-instance v0, Lg/f/a/c/e/k/a;
 
     const/4 v1, 0x0
 
@@ -20,9 +20,9 @@
 
     const-string v2, "GoogleSignInCommon"
 
-    invoke-direct {v0, v2, v1}, Lg/f/a/e/e/k/a;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct {v0, v2, v1}, Lg/f/a/c/e/k/a;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/android/gms/auth/api/signin/internal/i;->a:Lg/f/a/e/e/k/a;
+    sput-object v0, Lcom/google/android/gms/auth/api/signin/internal/i;->a:Lg/f/a/c/e/k/a;
 
     return-void
 .end method
@@ -42,7 +42,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/auth/api/signin/internal/i;->a:Lg/f/a/e/e/k/a;
+    sget-object v0, Lcom/google/android/gms/auth/api/signin/internal/i;->a:Lg/f/a/c/e/k/a;
 
     const/4 v1, 0x0
 
@@ -50,7 +50,7 @@
 
     const-string v2, "Signing out"
 
-    invoke-virtual {v0, v2, v1}, Lg/f/a/e/e/k/a;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v0, v2, v1}, Lg/f/a/c/e/k/a;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 2
     invoke-static {p1}, Lcom/google/android/gms/auth/api/signin/internal/i;->b(Landroid/content/Context;)V
@@ -140,7 +140,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/auth/api/signin/internal/i;->a:Lg/f/a/e/e/k/a;
+    sget-object v0, Lcom/google/android/gms/auth/api/signin/internal/i;->a:Lg/f/a/c/e/k/a;
 
     const/4 v1, 0x0
 
@@ -148,7 +148,7 @@
 
     const-string v2, "Revoking access"
 
-    invoke-virtual {v0, v2, v1}, Lg/f/a/e/e/k/a;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v0, v2, v1}, Lg/f/a/c/e/k/a;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 2
     invoke-static {p1}, Lcom/google/android/gms/auth/api/signin/internal/c;->b(Landroid/content/Context;)Lcom/google/android/gms/auth/api/signin/internal/c;

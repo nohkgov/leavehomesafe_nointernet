@@ -111,7 +111,7 @@
 
     iget-object p3, p0, Lcom/google/android/material/datepicker/h$g;->a:Lcom/google/android/material/datepicker/n;
 
-    invoke-virtual {p3, p1}, Lcom/google/android/material/datepicker/n;->v(I)Lcom/google/android/material/datepicker/l;
+    invoke-virtual {p3, p1}, Lcom/google/android/material/datepicker/n;->A(I)Lcom/google/android/material/datepicker/l;
 
     move-result-object p3
 
@@ -122,7 +122,7 @@
 
     iget-object p3, p0, Lcom/google/android/material/datepicker/h$g;->a:Lcom/google/android/material/datepicker/n;
 
-    invoke-virtual {p3, p1}, Lcom/google/android/material/datepicker/n;->w(I)Ljava/lang/CharSequence;
+    invoke-virtual {p3, p1}, Lcom/google/android/material/datepicker/n;->B(I)Ljava/lang/CharSequence;
 
     move-result-object p1
 

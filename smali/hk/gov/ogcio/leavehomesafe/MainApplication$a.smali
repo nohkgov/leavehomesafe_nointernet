@@ -82,6 +82,13 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    .line 6
+    new-instance v1, Lhk/gov/ogcio/leavehomesafe/shortcut/a;
+
+    invoke-direct {v1}, Lhk/gov/ogcio/leavehomesafe/shortcut/a;-><init>()V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
     return-object v0
 .end method
 

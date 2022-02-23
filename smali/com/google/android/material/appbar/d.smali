@@ -60,7 +60,7 @@
 
     sub-int/2addr v1, v2
 
-    invoke-static {v0, v1}, Ld/g/l/s;->X(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Ld/g/l/s;->Y(Landroid/view/View;I)V
 
     .line 2
     iget-object v0, p0, Lcom/google/android/material/appbar/d;->a:Landroid/view/View;
@@ -77,7 +77,7 @@
 
     sub-int/2addr v1, v2
 
-    invoke-static {v0, v1}, Ld/g/l/s;->W(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Ld/g/l/s;->X(Landroid/view/View;I)V
 
     return-void
 .end method

@@ -10,7 +10,7 @@
             "Ld/d/a<",
             "Lcom/google/android/gms/common/api/internal/b<",
             "*>;",
-            "Lg/f/a/e/e/a;",
+            "Lg/f/a/c/e/a;",
             ">;"
         }
     .end annotation
@@ -30,7 +30,7 @@
             "Ld/d/a<",
             "Lcom/google/android/gms/common/api/internal/b<",
             "*>;",
-            "Lg/f/a/e/e/a;",
+            "Lg/f/a/c/e/a;",
             ">;)V"
         }
     .end annotation
@@ -87,14 +87,14 @@
 
     move-result-object v4
 
-    check-cast v4, Lg/f/a/e/e/a;
+    check-cast v4, Lg/f/a/c/e/a;
 
     invoke-static {v4}, Lcom/google/android/gms/common/internal/q;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
-    check-cast v4, Lg/f/a/e/e/a;
+    check-cast v4, Lg/f/a/c/e/a;
 
     .line 4
-    invoke-virtual {v4}, Lg/f/a/e/e/a;->X()Z
+    invoke-virtual {v4}, Lg/f/a/c/e/a;->X()Z
 
     move-result v5
 

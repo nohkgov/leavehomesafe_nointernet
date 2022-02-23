@@ -212,13 +212,13 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lg/f/a/e/a/a/d/a;->a(Landroid/app/Activity;)Lg/f/a/e/a/a/d/b;
+    invoke-static {v0}, Lg/f/a/c/a/a/d/a;->a(Landroid/app/Activity;)Lg/f/a/c/a/a/d/b;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lg/f/a/e/a/a/d/b;->p(Ljava/lang/String;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, v1}, Lg/f/a/c/a/a/d/b;->p(Ljava/lang/String;)Lg/f/a/c/m/l;
 
     .line 3
     new-instance v0, Lhk/gov/ogcio/leavehomesafe/sms/SmsBroadcastReceiver;
@@ -250,6 +250,7 @@
     .end annotation
 
     .line 1
+    :try_start_0
     iget-object v0, p0, Lhk/gov/ogcio/leavehomesafe/sms/SmsModule;->TAG:Ljava/lang/String;
 
     const-string v1, "************* stopSmsListener ***********"
@@ -275,6 +276,9 @@
     iget-object v1, p0, Lhk/gov/ogcio/leavehomesafe/sms/SmsModule;->broadcastReceiver:Lhk/gov/ogcio/leavehomesafe/sms/SmsBroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    :catch_0
     return-void
 .end method

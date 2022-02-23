@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final e:Lg/f/a/e/e/k/a;
+.field private static final e:Lg/f/a/c/e/k/a;
 
 
 # instance fields
@@ -21,7 +21,7 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lg/f/a/e/e/k/a;
+    new-instance v0, Lg/f/a/c/e/k/a;
 
     const/4 v1, 0x0
 
@@ -29,9 +29,9 @@
 
     const-string v2, "RevokeAccessOperation"
 
-    invoke-direct {v0, v2, v1}, Lg/f/a/e/e/k/a;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct {v0, v2, v1}, Lg/f/a/c/e/k/a;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/e/e/k/a;
+    sput-object v0, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/c/e/k/a;
 
     return-void
 .end method
@@ -182,17 +182,17 @@
 
     .line 7
     :cond_1
-    sget-object v3, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/e/e/k/a;
+    sget-object v3, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/c/e/k/a;
 
     const-string v4, "Unable to revoke access!"
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v3, v4, v5}, Lg/f/a/e/e/k/a;->b(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v3, v4, v5}, Lg/f/a/c/e/k/a;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 8
     :goto_1
-    sget-object v3, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/e/e/k/a;
+    sget-object v3, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/c/e/k/a;
 
     const/16 v4, 0x1a
 
@@ -212,7 +212,7 @@
 
     new-array v4, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v3, v2, v4}, Lg/f/a/e/e/k/a;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v3, v2, v4}, Lg/f/a/c/e/k/a;->a(Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -223,7 +223,7 @@
     move-exception v2
 
     .line 9
-    sget-object v3, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/e/e/k/a;
+    sget-object v3, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/c/e/k/a;
 
     const-string v4, "Exception when revoking access: "
 
@@ -255,7 +255,7 @@
     :goto_2
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v3, v2, v1}, Lg/f/a/e/e/k/a;->b(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v3, v2, v1}, Lg/f/a/c/e/k/a;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_4
 
@@ -263,7 +263,7 @@
     move-exception v2
 
     .line 10
-    sget-object v3, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/e/e/k/a;
+    sget-object v3, Lcom/google/android/gms/auth/api/signin/internal/g;->e:Lg/f/a/c/e/k/a;
 
     const-string v4, "IOException when revoking access: "
 
@@ -295,7 +295,7 @@
     :goto_3
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v3, v2, v1}, Lg/f/a/e/e/k/a;->b(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v3, v2, v1}, Lg/f/a/c/e/k/a;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 11
     :goto_4

@@ -3,7 +3,7 @@
 .source "com.google.firebase:firebase-messaging@@21.1.0"
 
 # interfaces
-.implements Lg/f/a/c/f;
+.implements Lg/f/a/b/f;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lg/f/a/c/f<",
+        "Lg/f/a/b/f<",
         "TT;>;"
     }
 .end annotation
@@ -47,12 +47,12 @@
 
 
 # virtual methods
-.method public a(Lg/f/a/c/c;)V
+.method public a(Lg/f/a/b/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg/f/a/c/c<",
+            "Lg/f/a/b/c<",
             "TT;>;)V"
         }
     .end annotation

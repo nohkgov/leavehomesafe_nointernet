@@ -21,7 +21,7 @@
     const-string p1, "common"
 
     .line 1
-    invoke-static {p1}, Lg/f/a/e/i/j/z;->a(Ljava/lang/String;)Lg/f/a/e/i/j/v;
+    invoke-static {p1}, Lg/f/a/c/i/j/z;->a(Ljava/lang/String;)Lg/f/a/c/i/j/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

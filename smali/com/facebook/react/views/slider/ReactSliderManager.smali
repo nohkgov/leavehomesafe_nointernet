@@ -168,7 +168,7 @@
     .line 3
     sget-object p1, Lcom/facebook/react/views/slider/ReactSliderManager;->sAccessibilityDelegate:Lcom/facebook/react/views/slider/ReactSliderManager$b;
 
-    invoke-static {v0, p1}, Ld/g/l/s;->l0(Landroid/view/View;Ld/g/l/a;)V
+    invoke-static {v0, p1}, Ld/g/l/s;->m0(Landroid/view/View;Ld/g/l/a;)V
 
     return-object v0
 .end method

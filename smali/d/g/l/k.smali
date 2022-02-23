@@ -584,7 +584,7 @@
     .line 2
     iget-object v0, p0, Ld/g/l/k;->c:Landroid/view/View;
 
-    invoke-static {v0}, Ld/g/l/s;->C0(Landroid/view/View;)V
+    invoke-static {v0}, Ld/g/l/s;->D0(Landroid/view/View;)V
 
     .line 3
     :cond_0

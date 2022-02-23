@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ld/g/l/s;->x0(Landroid/view/View;Ld/g/l/p;)V
+    value = Ld/g/l/s;->y0(Landroid/view/View;Ld/g/l/p;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

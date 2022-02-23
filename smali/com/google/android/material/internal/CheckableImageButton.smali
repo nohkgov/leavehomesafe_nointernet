@@ -76,7 +76,7 @@
 
     invoke-direct {p1, p0}, Lcom/google/android/material/internal/CheckableImageButton$a;-><init>(Lcom/google/android/material/internal/CheckableImageButton;)V
 
-    invoke-static {p0, p1}, Ld/g/l/s;->l0(Landroid/view/View;Ld/g/l/a;)V
+    invoke-static {p0, p1}, Ld/g/l/s;->m0(Landroid/view/View;Ld/g/l/a;)V
 
     return-void
 .end method

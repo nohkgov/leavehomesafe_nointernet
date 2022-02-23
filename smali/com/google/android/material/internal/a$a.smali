@@ -3,7 +3,7 @@
 .source "CollapsingTextHelper.java"
 
 # interfaces
-.implements Lg/f/a/f/x/a$a;
+.implements Lg/f/a/d/x/a$a;
 
 
 # annotations

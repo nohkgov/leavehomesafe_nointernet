@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public a:Lg/f/a/f/l/h;
+.field public a:Lg/f/a/d/l/h;
 
-.field public b:Lg/f/a/f/l/j;
+.field public b:Lg/f/a/d/l/j;
 
 
 # direct methods

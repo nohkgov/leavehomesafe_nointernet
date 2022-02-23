@@ -1,5 +1,5 @@
 .class public Landroidx/recyclerview/widget/h;
-.super Landroidx/recyclerview/widget/n;
+.super Landroidx/recyclerview/widget/o;
 .source "LinearSnapHelper.java"
 
 
@@ -14,7 +14,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/recyclerview/widget/n;-><init>()V
+    invoke-direct {p0}, Landroidx/recyclerview/widget/o;-><init>()V
 
     return-void
 .end method
@@ -190,7 +190,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0, p3, p4}, Landroidx/recyclerview/widget/n;->d(II)[I
+    invoke-virtual {p0, p3, p4}, Landroidx/recyclerview/widget/o;->d(II)[I
 
     move-result-object p3
 

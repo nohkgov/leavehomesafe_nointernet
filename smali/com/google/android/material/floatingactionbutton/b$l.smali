@@ -86,7 +86,7 @@
     .line 2
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/b$l;->d:Lcom/google/android/material/floatingactionbutton/b;
 
-    iget-object v0, v0, Lcom/google/android/material/floatingactionbutton/b;->b:Lg/f/a/f/a0/g;
+    iget-object v0, v0, Lcom/google/android/material/floatingactionbutton/b;->b:Lg/f/a/d/a0/g;
 
     if-nez v0, :cond_0
 
@@ -95,7 +95,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v0}, Lg/f/a/f/a0/g;->v()F
+    invoke-virtual {v0}, Lg/f/a/d/a0/g;->v()F
 
     move-result v0
 

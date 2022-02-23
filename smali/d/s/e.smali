@@ -722,7 +722,7 @@
     invoke-virtual {p0, p2}, Landroid/view/View;->setTranslationY(F)V
 
     .line 3
-    invoke-static {p0, p3}, Ld/g/l/s;->B0(Landroid/view/View;F)V
+    invoke-static {p0, p3}, Ld/g/l/s;->C0(Landroid/view/View;F)V
 
     .line 4
     invoke-virtual {p0, p4}, Landroid/view/View;->setScaleX(F)V

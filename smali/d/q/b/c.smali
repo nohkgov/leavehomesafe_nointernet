@@ -2761,7 +2761,7 @@
     if-eqz v0, :cond_3
 
     .line 2
-    invoke-static {v0}, Ld/g/l/s;->S(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->T(Landroid/view/View;)Z
 
     move-result v0
 
@@ -3162,7 +3162,7 @@
     .line 2
     iget-object v0, p0, Ld/q/b/c;->x:Ld/q/b/a;
 
-    invoke-static {v0, p1}, Ld/g/l/s;->X(Landroid/view/View;I)V
+    invoke-static {v0, p1}, Ld/g/l/s;->Y(Landroid/view/View;I)V
 
     .line 3
     iget-object p1, p0, Ld/q/b/c;->x:Ld/q/b/a;

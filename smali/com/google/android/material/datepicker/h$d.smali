@@ -113,7 +113,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->h()V
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->j()V
 
     .line 6
     iget-object p1, p0, Lcom/google/android/material/datepicker/h$d;->a:Lcom/google/android/material/datepicker/h;
@@ -135,7 +135,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->h()V
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->j()V
 
     :cond_1
     return-void

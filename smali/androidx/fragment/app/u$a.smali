@@ -46,7 +46,7 @@
     .line 2
     iget-object p1, p0, Landroidx/fragment/app/u$a;->c:Landroid/view/View;
 
-    invoke-static {p1}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p1}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     return-void
 .end method

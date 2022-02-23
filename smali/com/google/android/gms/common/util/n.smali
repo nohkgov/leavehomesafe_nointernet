@@ -47,12 +47,12 @@
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4
-    invoke-static {p0}, Lg/f/a/e/e/h;->a(Landroid/content/Context;)Lg/f/a/e/e/h;
+    invoke-static {p0}, Lg/f/a/c/e/h;->a(Landroid/content/Context;)Lg/f/a/c/e/h;
 
     move-result-object p0
 
     .line 5
-    invoke-virtual {p0, p1}, Lg/f/a/e/e/h;->b(Landroid/content/pm/PackageInfo;)Z
+    invoke-virtual {p0, p1}, Lg/f/a/c/e/h;->b(Landroid/content/pm/PackageInfo;)Z
 
     move-result p0
 
@@ -101,11 +101,11 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lg/f/a/e/e/n/b;->a(Landroid/content/Context;)Lg/f/a/e/e/n/a;
+    invoke-static {p0}, Lg/f/a/c/e/n/b;->a(Landroid/content/Context;)Lg/f/a/c/e/n/a;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1, p2}, Lg/f/a/e/e/n/a;->f(ILjava/lang/String;)Z
+    invoke-virtual {p0, p1, p2}, Lg/f/a/c/e/n/a;->f(ILjava/lang/String;)Z
 
     move-result p0
 

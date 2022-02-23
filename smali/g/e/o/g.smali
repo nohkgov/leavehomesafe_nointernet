@@ -47,7 +47,7 @@
     .line 1
     new-instance v0, Ljava/util/ArrayList;
 
-    const/16 v1, 0x24
+    const/16 v1, 0x27
 
     new-array v1, v1, [Lg/e/o/v;
 
@@ -197,11 +197,19 @@
 
     aput-object v2, v1, v3
 
+    new-instance v2, Lcom/reactlibrary/a;
+
+    invoke-direct {v2}, Lcom/reactlibrary/a;-><init>()V
+
+    const/16 v3, 0x12
+
+    aput-object v2, v1, v3
+
     new-instance v2, Lcom/oblador/keychain/d;
 
     invoke-direct {v2}, Lcom/oblador/keychain/d;-><init>()V
 
-    const/16 v3, 0x12
+    const/16 v3, 0x13
 
     aput-object v2, v1, v3
 
@@ -209,7 +217,7 @@
 
     invoke-direct {v2}, Lcom/BV/LinearGradient/a;-><init>()V
 
-    const/16 v3, 0x13
+    const/16 v3, 0x14
 
     aput-object v2, v1, v3
 
@@ -217,7 +225,7 @@
 
     invoke-direct {v2}, Lio/tradle/reactlocalauth/a;-><init>()V
 
-    const/16 v3, 0x14
+    const/16 v3, 0x15
 
     aput-object v2, v1, v3
 
@@ -225,7 +233,15 @@
 
     invoke-direct {v2}, Lcom/reactcommunity/rnlocalize/a;-><init>()V
 
-    const/16 v3, 0x15
+    const/16 v3, 0x16
+
+    aput-object v2, v1, v3
+
+    new-instance v2, Lcom/reactnativepagerview/f;
+
+    invoke-direct {v2}, Lcom/reactnativepagerview/f;-><init>()V
+
+    const/16 v3, 0x17
 
     aput-object v2, v1, v3
 
@@ -233,7 +249,7 @@
 
     invoke-direct {v2}, Lcom/reactnativecommunity/rnpermissions/a;-><init>()V
 
-    const/16 v3, 0x16
+    const/16 v3, 0x18
 
     aput-object v2, v1, v3
 
@@ -241,7 +257,7 @@
 
     invoke-direct {v2}, Lg/c/a/a;-><init>()V
 
-    const/16 v3, 0x17
+    const/16 v3, 0x19
 
     aput-object v2, v1, v3
 
@@ -249,7 +265,7 @@
 
     invoke-direct {v2}, Lcom/bitgo/randombytes/a;-><init>()V
 
-    const/16 v3, 0x18
+    const/16 v3, 0x1a
 
     aput-object v2, v1, v3
 
@@ -257,7 +273,7 @@
 
     invoke-direct {v2}, Lcom/swmansion/reanimated/c;-><init>()V
 
-    const/16 v3, 0x19
+    const/16 v3, 0x1b
 
     aput-object v2, v1, v3
 
@@ -265,7 +281,7 @@
 
     invoke-direct {v2}, Lcom/th3rdwave/safeareacontext/d;-><init>()V
 
-    const/16 v3, 0x1a
+    const/16 v3, 0x1c
 
     aput-object v2, v1, v3
 
@@ -273,7 +289,15 @@
 
     invoke-direct {v2}, Lcom/swmansion/rnscreens/a;-><init>()V
 
-    const/16 v3, 0x1b
+    const/16 v3, 0x1d
+
+    aput-object v2, v1, v3
+
+    new-instance v2, Lcom/zmxv/RNSound/a;
+
+    invoke-direct {v2}, Lcom/zmxv/RNSound/a;-><init>()V
+
+    const/16 v3, 0x1e
 
     aput-object v2, v1, v3
 
@@ -281,7 +305,7 @@
 
     invoke-direct {v2}, Lorg/devio/rn/splashscreen/d;-><init>()V
 
-    const/16 v3, 0x1c
+    const/16 v3, 0x1f
 
     aput-object v2, v1, v3
 
@@ -289,7 +313,7 @@
 
     invoke-direct {v2}, Lcom/horcrux/svg/e0;-><init>()V
 
-    const/16 v3, 0x1d
+    const/16 v3, 0x20
 
     aput-object v2, v1, v3
 
@@ -297,7 +321,7 @@
 
     invoke-direct {v2}, Lcom/peel/react/c;-><init>()V
 
-    const/16 v3, 0x1e
+    const/16 v3, 0x21
 
     aput-object v2, v1, v3
 
@@ -305,7 +329,7 @@
 
     invoke-direct {v2}, Lcom/rnfingerprint/b;-><init>()V
 
-    const/16 v3, 0x1f
+    const/16 v3, 0x22
 
     aput-object v2, v1, v3
 
@@ -313,7 +337,7 @@
 
     invoke-direct {v2}, Lcom/reactnativecommunity/webview/a;-><init>()V
 
-    const/16 v3, 0x20
+    const/16 v3, 0x23
 
     aput-object v2, v1, v3
 
@@ -321,7 +345,7 @@
 
     invoke-direct {v2}, Lcom/rnziparchive/a;-><init>()V
 
-    const/16 v3, 0x21
+    const/16 v3, 0x24
 
     aput-object v2, v1, v3
 
@@ -329,7 +353,7 @@
 
     invoke-direct {v2}, Lcom/RNFetchBlob/e;-><init>()V
 
-    const/16 v3, 0x22
+    const/16 v3, 0x25
 
     aput-object v2, v1, v3
 
@@ -337,7 +361,7 @@
 
     invoke-direct {v2}, Lcom/gevorg/reactlibrary/a;-><init>()V
 
-    const/16 v3, 0x23
+    const/16 v3, 0x26
 
     aput-object v2, v1, v3
 

@@ -1416,7 +1416,7 @@
 
     iget-object v0, v0, Landroidx/fragment/app/Fragment;->J:Landroid/view/View;
 
-    invoke-static {v0}, Ld/g/l/s;->P(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->Q(Landroid/view/View;)Z
 
     move-result v0
 
@@ -1427,7 +1427,7 @@
 
     iget-object v0, v0, Landroidx/fragment/app/Fragment;->J:Landroid/view/View;
 
-    invoke-static {v0}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {v0}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     goto :goto_2
 

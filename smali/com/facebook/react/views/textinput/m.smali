@@ -225,7 +225,7 @@
     move-result-object p1
 
     .line 3
-    invoke-static {p1}, Ld/g/l/s;->D(Landroid/view/View;)I
+    invoke-static {p1}, Ld/g/l/s;->E(Landroid/view/View;)I
 
     move-result v0
 
@@ -247,7 +247,7 @@
     invoke-virtual {p0, v1, v0}, Lcom/facebook/react/uimanager/b0;->F0(IF)V
 
     .line 5
-    invoke-static {p1}, Ld/g/l/s;->C(Landroid/view/View;)I
+    invoke-static {p1}, Ld/g/l/s;->D(Landroid/view/View;)I
 
     move-result v0
 

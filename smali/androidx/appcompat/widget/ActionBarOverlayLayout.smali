@@ -1251,7 +1251,7 @@
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/ActionBarOverlayLayout;->v(Landroid/content/Context;)V
 
     .line 3
-    invoke-static {p0}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     return-void
 .end method
@@ -1434,7 +1434,7 @@
     move-result v9
 
     .line 11
-    invoke-static {p0}, Ld/g/l/s;->I(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->J(Landroid/view/View;)I
 
     move-result v0
 
@@ -2140,7 +2140,7 @@
     if-eqz p1, :cond_6
 
     .line 11
-    invoke-static {p0}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     :cond_6
     return-void
@@ -2260,7 +2260,7 @@
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActionBarOverlayLayout;->onWindowSystemUiVisibilityChanged(I)V
 
     .line 6
-    invoke-static {p0}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     :cond_0
     return-void

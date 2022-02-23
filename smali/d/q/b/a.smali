@@ -108,7 +108,7 @@
     mul-float p1, p1, v1
 
     .line 9
-    invoke-static {p0, p1}, Ld/g/l/s;->s0(Landroid/view/View;F)V
+    invoke-static {p0, p1}, Ld/g/l/s;->t0(Landroid/view/View;F)V
 
     goto :goto_0
 
@@ -169,7 +169,7 @@
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 16
-    invoke-static {p0, v0}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p0, v0}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method

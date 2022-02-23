@@ -58,7 +58,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Lg/f/a/e/i/k/k6;->m(Ljava/lang/Object;)Lg/f/a/e/i/k/k6;
+    invoke-static {v0}, Lg/f/a/c/i/k/k6;->m(Ljava/lang/Object;)Lg/f/a/c/i/k/k6;
 
     move-result-object v0
 

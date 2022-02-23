@@ -1,82 +1,125 @@
-.class Lg/f/a/b/d;
-.super Lg/f/a/b/c;
-.source "Camera2Api23.java"
+.class public final enum Lg/f/a/b/d;
+.super Ljava/lang/Enum;
+.source "Priority.java"
 
 
 # annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x17
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lg/f/a/b/d;",
+        ">;"
+    }
 .end annotation
 
 
+# static fields
+.field public static final enum c:Lg/f/a/b/d;
+
+.field public static final enum d:Lg/f/a/b/d;
+
+.field public static final enum e:Lg/f/a/b/d;
+
+.field private static final synthetic f:[Lg/f/a/b/d;
+
+
 # direct methods
-.method constructor <init>(Lg/f/a/b/f$a;Lg/f/a/b/i;Landroid/content/Context;Landroid/os/Handler;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lg/f/a/b/c;-><init>(Lg/f/a/b/f$a;Lg/f/a/b/i;Landroid/content/Context;Landroid/os/Handler;)V
+    new-instance v0, Lg/f/a/b/d;
+
+    const-string v1, "DEFAULT"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lg/f/a/b/d;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lg/f/a/b/d;->c:Lg/f/a/b/d;
+
+    .line 2
+    new-instance v0, Lg/f/a/b/d;
+
+    const-string v1, "VERY_LOW"
+
+    const/4 v3, 0x1
+
+    invoke-direct {v0, v1, v3}, Lg/f/a/b/d;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lg/f/a/b/d;->d:Lg/f/a/b/d;
+
+    .line 3
+    new-instance v0, Lg/f/a/b/d;
+
+    const-string v1, "HIGHEST"
+
+    const/4 v4, 0x2
+
+    invoke-direct {v0, v1, v4}, Lg/f/a/b/d;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lg/f/a/b/d;->e:Lg/f/a/b/d;
+
+    const/4 v1, 0x3
+
+    new-array v1, v1, [Lg/f/a/b/d;
+
+    .line 4
+    sget-object v5, Lg/f/a/b/d;->c:Lg/f/a/b/d;
+
+    aput-object v5, v1, v2
+
+    sget-object v2, Lg/f/a/b/d;->d:Lg/f/a/b/d;
+
+    aput-object v2, v1, v3
+
+    aput-object v0, v1, v4
+
+    sput-object v1, Lg/f/a/b/d;->f:[Lg/f/a/b/d;
 
     return-void
 .end method
 
-
-# virtual methods
-.method protected b0(Lg/f/a/b/k;Landroid/hardware/camera2/params/StreamConfigurationMap;)V
-    .locals 6
-
-    const/16 v0, 0x100
+.method private constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
-    invoke-virtual {p2, v0}, Landroid/hardware/camera2/params/StreamConfigurationMap;->getHighResolutionOutputSizes(I)[Landroid/util/Size;
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    move-result-object v1
+    return-void
+.end method
 
-    if-eqz v1, :cond_0
+.method public static valueOf(Ljava/lang/String;)Lg/f/a/b/d;
+    .locals 1
 
-    .line 2
-    invoke-virtual {p2, v0}, Landroid/hardware/camera2/params/StreamConfigurationMap;->getHighResolutionOutputSizes(I)[Landroid/util/Size;
+    .line 1
+    const-class v0, Lg/f/a/b/d;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lg/f/a/b/d;
+
+    return-object p0
+.end method
+
+.method public static values()[Lg/f/a/b/d;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lg/f/a/b/d;->f:[Lg/f/a/b/d;
+
+    invoke-virtual {v0}, [Lg/f/a/b/d;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    array-length v1, v0
+    check-cast v0, [Lg/f/a/b/d;
 
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v1, :cond_0
-
-    aget-object v3, v0, v2
-
-    .line 3
-    new-instance v4, Lg/f/a/b/j;
-
-    invoke-virtual {v3}, Landroid/util/Size;->getWidth()I
-
-    move-result v5
-
-    invoke-virtual {v3}, Landroid/util/Size;->getHeight()I
-
-    move-result v3
-
-    invoke-direct {v4, v5, v3}, Lg/f/a/b/j;-><init>(II)V
-
-    invoke-virtual {p1, v4}, Lg/f/a/b/k;->a(Lg/f/a/b/j;)Z
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    invoke-virtual {p1}, Lg/f/a/b/k;->c()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 5
-    invoke-super {p0, p1, p2}, Lg/f/a/b/c;->b0(Lg/f/a/b/k;Landroid/hardware/camera2/params/StreamConfigurationMap;)V
-
-    :cond_1
-    return-void
+    return-object v0
 .end method

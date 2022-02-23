@@ -55,7 +55,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {v1, v2}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     if-nez v0, :cond_0
 
@@ -64,7 +64,7 @@
 
     iget-object v1, p0, Lcom/facebook/react/views/view/e;->a:Lcom/facebook/react/views/view/d;
 
-    invoke-static {v0, v1}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {v0, v1}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
 
@@ -91,7 +91,7 @@
     .line 7
     iget-object v0, p0, Lcom/facebook/react/views/view/e;->b:Landroid/view/View;
 
-    invoke-static {v0, v1}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {v0, v1}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     .line 8
     :cond_1

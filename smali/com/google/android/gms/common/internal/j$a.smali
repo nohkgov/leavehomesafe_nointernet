@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/gms/common/internal/j$a;
-.super Lg/f/a/e/i/g/a;
+.super Lg/f/a/c/i/g/a;
 .source "com.google.android.gms:play-services-basement@@17.4.0"
 
 # interfaces
@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public static m0(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/j;
+.method public static l0(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/j;
     .locals 2
     .param p0    # Landroid/os/IBinder;
         .annotation build Landroidx/annotation/RecentlyNonNull;

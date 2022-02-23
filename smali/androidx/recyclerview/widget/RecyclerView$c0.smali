@@ -259,7 +259,7 @@
     .line 2
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$c0;->i:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {v0, p0}, Ld/g/l/s;->d0(Landroid/view/View;Ljava/lang/Runnable;)V
+    invoke-static {v0, p0}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;)V
 
     return-void
 .end method

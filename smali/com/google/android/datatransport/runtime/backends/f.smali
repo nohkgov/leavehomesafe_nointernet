@@ -42,7 +42,7 @@
         value = {
             "()",
             "Ljava/lang/Iterable<",
-            "Lg/f/a/c/i/h;",
+            "Lg/f/a/b/i/h;",
             ">;"
         }
     .end annotation

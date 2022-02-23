@@ -54,7 +54,7 @@
     iput v0, p0, Ld/s/e$f;->b:F
 
     .line 4
-    invoke-static {p1}, Ld/g/l/s;->H(Landroid/view/View;)F
+    invoke-static {p1}, Ld/g/l/s;->I(Landroid/view/View;)F
 
     move-result v0
 

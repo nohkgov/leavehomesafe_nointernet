@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: LeaveHomeSafe_3.0.1.apk
+apkFileName: LeaveHomeSafe_3.1.0.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -123,6 +123,7 @@ doNotCompress:
 - assets/net/time4j/i18n/units/upattern_en_GB.properties
 - png
 - jpg
+- mp3
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -173,5 +174,5 @@ usesFramework:
   tag: null
 version: 2.5.0
 versionInfo:
-  versionCode: '143'
-  versionName: 3.0.1
+  versionCode: '173'
+  versionName: 3.1.0

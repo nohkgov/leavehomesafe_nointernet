@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method static determineFactory(Lg/f/a/c/g;)Lg/f/a/c/g;
+.method static determineFactory(Lg/f/a/b/g;)Lg/f/a/b/g;
     .locals 4
 
     if-nez p0, :cond_0
@@ -48,13 +48,13 @@
     const-string v2, "json"
 
     .line 2
-    invoke-static {v2}, Lg/f/a/c/b;->b(Ljava/lang/String;)Lg/f/a/c/b;
+    invoke-static {v2}, Lg/f/a/b/b;->b(Ljava/lang/String;)Lg/f/a/b/b;
 
     move-result-object v2
 
-    sget-object v3, Lcom/google/firebase/messaging/z;->a:Lg/f/a/c/e;
+    sget-object v3, Lcom/google/firebase/messaging/z;->a:Lg/f/a/b/e;
 
-    invoke-interface {p0, v0, v1, v2, v3}, Lg/f/a/c/g;->a(Ljava/lang/String;Ljava/lang/Class;Lg/f/a/c/b;Lg/f/a/c/e;)Lg/f/a/c/f;
+    invoke-interface {p0, v0, v1, v2, v3}, Lg/f/a/b/g;->a(Ljava/lang/String;Ljava/lang/Class;Lg/f/a/b/b;Lg/f/a/b/e;)Lg/f/a/b/f;
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -122,16 +122,16 @@
 
     check-cast v5, Lcom/google/firebase/installations/h;
 
-    const-class v0, Lg/f/a/c/g;
+    const-class v0, Lg/f/a/b/g;
 
     .line 7
     invoke-interface {p0, v0}, Lcom/google/firebase/components/e;->a(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lg/f/a/c/g;
+    check-cast v0, Lg/f/a/b/g;
 
-    invoke-static {v0}, Lcom/google/firebase/messaging/FirebaseMessagingRegistrar;->determineFactory(Lg/f/a/c/g;)Lg/f/a/c/g;
+    invoke-static {v0}, Lcom/google/firebase/messaging/FirebaseMessagingRegistrar;->determineFactory(Lg/f/a/b/g;)Lg/f/a/b/g;
 
     move-result-object v6
 
@@ -148,7 +148,7 @@
 
     move-object v0, v8
 
-    invoke-direct/range {v0 .. v7}, Lcom/google/firebase/messaging/FirebaseMessaging;-><init>(Lcom/google/firebase/c;Lcom/google/firebase/iid/w/a;Lcom/google/firebase/p/b;Lcom/google/firebase/p/b;Lcom/google/firebase/installations/h;Lg/f/a/c/g;Lcom/google/firebase/n/d;)V
+    invoke-direct/range {v0 .. v7}, Lcom/google/firebase/messaging/FirebaseMessaging;-><init>(Lcom/google/firebase/c;Lcom/google/firebase/iid/w/a;Lcom/google/firebase/p/b;Lcom/google/firebase/p/b;Lcom/google/firebase/installations/h;Lg/f/a/b/g;Lcom/google/firebase/n/d;)V
 
     return-object v8
 .end method
@@ -216,7 +216,7 @@
 
     invoke-virtual {v1, v2}, Lcom/google/firebase/components/d$b;->b(Lcom/google/firebase/components/r;)Lcom/google/firebase/components/d$b;
 
-    const-class v2, Lg/f/a/c/g;
+    const-class v2, Lg/f/a/b/g;
 
     .line 6
     invoke-static {v2}, Lcom/google/firebase/components/r;->g(Ljava/lang/Class;)Lcom/google/firebase/components/r;

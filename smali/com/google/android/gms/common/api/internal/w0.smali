@@ -6,11 +6,11 @@
 # instance fields
 .field private final a:I
 
-.field private final b:Lg/f/a/e/e/a;
+.field private final b:Lg/f/a/c/e/a;
 
 
 # direct methods
-.method constructor <init>(Lg/f/a/e/e/a;I)V
+.method constructor <init>(Lg/f/a/c/e/a;I)V
     .locals 0
 
     .line 1
@@ -20,7 +20,7 @@
     invoke-static {p1}, Lcom/google/android/gms/common/internal/q;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/w0;->b:Lg/f/a/e/e/a;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/w0;->b:Lg/f/a/c/e/a;
 
     .line 4
     iput p2, p0, Lcom/google/android/gms/common/api/internal/w0;->a:I
@@ -39,11 +39,11 @@
     return v0
 .end method
 
-.method final b()Lg/f/a/e/e/a;
+.method final b()Lg/f/a/c/e/a;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/w0;->b:Lg/f/a/e/e/a;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/w0;->b:Lg/f/a/c/e/a;
 
     return-object v0
 .end method

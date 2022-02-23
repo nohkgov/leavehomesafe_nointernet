@@ -21,7 +21,7 @@
     return-void
 .end method
 
-.method static synthetic lambda$getComponents$0(Lcom/google/firebase/components/e;)Lg/f/a/c/g;
+.method static synthetic lambda$getComponents$0(Lcom/google/firebase/components/e;)Lg/f/a/b/g;
     .locals 1
 
     .line 1
@@ -33,16 +33,16 @@
 
     check-cast p0, Landroid/content/Context;
 
-    invoke-static {p0}, Lg/f/a/c/i/r;->f(Landroid/content/Context;)V
+    invoke-static {p0}, Lg/f/a/b/i/r;->f(Landroid/content/Context;)V
 
     .line 2
-    invoke-static {}, Lg/f/a/c/i/r;->c()Lg/f/a/c/i/r;
+    invoke-static {}, Lg/f/a/b/i/r;->c()Lg/f/a/b/i/r;
 
     move-result-object p0
 
     sget-object v0, Lcom/google/android/datatransport/cct/a;->h:Lcom/google/android/datatransport/cct/a;
 
-    invoke-virtual {p0, v0}, Lg/f/a/c/i/r;->g(Lg/f/a/c/i/e;)Lg/f/a/c/g;
+    invoke-virtual {p0, v0}, Lg/f/a/b/i/r;->g(Lg/f/a/b/i/e;)Lg/f/a/b/g;
 
     move-result-object p0
 
@@ -63,7 +63,7 @@
     .end annotation
 
     .line 1
-    const-class v0, Lg/f/a/c/g;
+    const-class v0, Lg/f/a/b/g;
 
     .line 2
     invoke-static {v0}, Lcom/google/firebase/components/d;->a(Ljava/lang/Class;)Lcom/google/firebase/components/d$b;

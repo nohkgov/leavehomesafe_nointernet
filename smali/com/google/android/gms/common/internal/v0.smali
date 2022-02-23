@@ -68,7 +68,7 @@
     move-result-object v1
 
     .line 6
-    invoke-static {p0}, Lg/f/a/e/e/n/b;->a(Landroid/content/Context;)Lg/f/a/e/e/n/a;
+    invoke-static {p0}, Lg/f/a/c/e/n/b;->a(Landroid/content/Context;)Lg/f/a/c/e/n/a;
 
     move-result-object p0
     :try_end_0
@@ -78,7 +78,7 @@
 
     .line 7
     :try_start_1
-    invoke-virtual {p0, v1, v2}, Lg/f/a/e/e/n/a;->c(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {p0, v1, v2}, Lg/f/a/c/e/n/a;->c(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
     move-result-object p0
 

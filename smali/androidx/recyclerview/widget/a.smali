@@ -123,7 +123,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/a;->r(Landroidx/recyclerview/widget/a$b;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/a;->t(Landroidx/recyclerview/widget/a$b;)V
 
     return-void
 .end method
@@ -132,7 +132,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/a;->r(Landroidx/recyclerview/widget/a$b;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/a;->t(Landroidx/recyclerview/widget/a$b;)V
 
     return-void
 .end method
@@ -192,7 +192,7 @@
     move-result-object v3
 
     .line 6
-    invoke-direct {p0, v3}, Landroidx/recyclerview/widget/a;->r(Landroidx/recyclerview/widget/a$b;)V
+    invoke-direct {p0, v3}, Landroidx/recyclerview/widget/a;->t(Landroidx/recyclerview/widget/a$b;)V
 
     const/4 v3, 0x1
 
@@ -273,7 +273,7 @@
 
     .line 13
     :cond_7
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/a;->r(Landroidx/recyclerview/widget/a$b;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/a;->t(Landroidx/recyclerview/widget/a$b;)V
 
     :goto_6
     return-void
@@ -336,7 +336,7 @@
     move-result-object v3
 
     .line 6
-    invoke-direct {p0, v3}, Landroidx/recyclerview/widget/a;->r(Landroidx/recyclerview/widget/a$b;)V
+    invoke-direct {p0, v3}, Landroidx/recyclerview/widget/a;->t(Landroidx/recyclerview/widget/a$b;)V
 
     move v3, v0
 
@@ -402,7 +402,7 @@
 
     .line 14
     :cond_6
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/a;->r(Landroidx/recyclerview/widget/a$b;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/a;->t(Landroidx/recyclerview/widget/a$b;)V
 
     :goto_3
     return-void
@@ -511,7 +511,7 @@
     .line 2
     iget v2, p1, Landroidx/recyclerview/widget/a$b;->b:I
 
-    invoke-direct {p0, v2, v0}, Landroidx/recyclerview/widget/a;->v(II)I
+    invoke-direct {p0, v2, v0}, Landroidx/recyclerview/widget/a;->x(II)I
 
     move-result v0
 
@@ -581,7 +581,7 @@
     .line 8
     iget v10, p1, Landroidx/recyclerview/widget/a$b;->a:I
 
-    invoke-direct {p0, v9, v10}, Landroidx/recyclerview/widget/a;->v(II)I
+    invoke-direct {p0, v9, v10}, Landroidx/recyclerview/widget/a;->x(II)I
 
     move-result v9
 
@@ -694,7 +694,7 @@
     goto :goto_5
 .end method
 
-.method private r(Landroidx/recyclerview/widget/a$b;)V
+.method private t(Landroidx/recyclerview/widget/a$b;)V
     .locals 3
 
     .line 1
@@ -794,7 +794,7 @@
     return-void
 .end method
 
-.method private v(II)I
+.method private x(II)I
     .locals 7
 
     .line 1
@@ -1275,7 +1275,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/recyclerview/widget/a;->c:Ljava/util/ArrayList;
 
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/a;->t(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/a;->v(Ljava/util/List;)V
 
     .line 4
     iput v1, p0, Landroidx/recyclerview/widget/a;->h:I
@@ -1419,7 +1419,7 @@
     :cond_5
     iget-object v0, p0, Landroidx/recyclerview/widget/a;->b:Ljava/util/ArrayList;
 
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/a;->t(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/a;->v(Ljava/util/List;)V
 
     .line 16
     iput v1, p0, Landroidx/recyclerview/widget/a;->h:I
@@ -1667,7 +1667,99 @@
     return v0
 .end method
 
-.method s()V
+.method r(II)Z
+    .locals 4
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    if-ge p2, v1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    iget-object v2, p0, Landroidx/recyclerview/widget/a;->b:Ljava/util/ArrayList;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p0, v1, p1, p2, v3}, Landroidx/recyclerview/widget/a;->b(IIILjava/lang/Object;)Landroidx/recyclerview/widget/a$b;
+
+    move-result-object p1
+
+    invoke-virtual {v2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 2
+    iget p1, p0, Landroidx/recyclerview/widget/a;->h:I
+
+    or-int/2addr p1, v1
+
+    iput p1, p0, Landroidx/recyclerview/widget/a;->h:I
+
+    .line 3
+    iget-object p1, p0, Landroidx/recyclerview/widget/a;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    if-ne p1, v1, :cond_1
+
+    const/4 v0, 0x1
+
+    :cond_1
+    return v0
+.end method
+
+.method s(II)Z
+    .locals 5
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    if-ge p2, v1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    iget-object v2, p0, Landroidx/recyclerview/widget/a;->b:Ljava/util/ArrayList;
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x2
+
+    invoke-virtual {p0, v4, p1, p2, v3}, Landroidx/recyclerview/widget/a;->b(IIILjava/lang/Object;)Landroidx/recyclerview/widget/a$b;
+
+    move-result-object p1
+
+    invoke-virtual {v2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 2
+    iget p1, p0, Landroidx/recyclerview/widget/a;->h:I
+
+    or-int/2addr p1, v4
+
+    iput p1, p0, Landroidx/recyclerview/widget/a;->h:I
+
+    .line 3
+    iget-object p1, p0, Landroidx/recyclerview/widget/a;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    if-ne p1, v1, :cond_1
+
+    const/4 v0, 0x1
+
+    :cond_1
+    return v0
+.end method
+
+.method u()V
     .locals 5
 
     .line 1
@@ -1764,7 +1856,7 @@
     return-void
 .end method
 
-.method t(Ljava/util/List;)V
+.method v(Ljava/util/List;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1805,18 +1897,18 @@
     return-void
 .end method
 
-.method u()V
+.method w()V
     .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/a;->b:Ljava/util/ArrayList;
 
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/a;->t(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/a;->v(Ljava/util/List;)V
 
     .line 2
     iget-object v0, p0, Landroidx/recyclerview/widget/a;->c:Ljava/util/ArrayList;
 
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/a;->t(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/a;->v(Ljava/util/List;)V
 
     const/4 v0, 0x0
 

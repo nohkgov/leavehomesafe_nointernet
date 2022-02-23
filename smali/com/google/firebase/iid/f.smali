@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public start()Lg/f/a/e/m/l;
+.method public start()Lg/f/a/c/m/l;
     .locals 5
 
     iget-object v0, p0, Lcom/google/firebase/iid/f;->a:Lcom/google/firebase/iid/FirebaseInstanceId;
@@ -52,7 +52,7 @@
 
     iget-object v4, p0, Lcom/google/firebase/iid/f;->e:Lcom/google/firebase/iid/u$a;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/firebase/iid/FirebaseInstanceId;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/firebase/iid/u$a;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/firebase/iid/FirebaseInstanceId;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/firebase/iid/u$a;)Lg/f/a/c/m/l;
 
     move-result-object v0
 

@@ -3,7 +3,7 @@
 .source "lambda"
 
 # interfaces
-.implements Lg/f/a/e/m/f;
+.implements Lg/f/a/c/m/f;
 
 
 # instance fields
@@ -23,12 +23,12 @@
 
 
 # virtual methods
-.method public final a(Lg/f/a/e/m/l;)V
+.method public final a(Lg/f/a/c/m/l;)V
     .locals 1
 
     iget-object v0, p0, Lio/invertase/firebase/messaging/f;->a:Lcom/facebook/react/bridge/Promise;
 
-    invoke-static {v0, p1}, Lio/invertase/firebase/messaging/ReactNativeFirebaseMessagingModule;->f(Lcom/facebook/react/bridge/Promise;Lg/f/a/e/m/l;)V
+    invoke-static {v0, p1}, Lio/invertase/firebase/messaging/ReactNativeFirebaseMessagingModule;->f(Lcom/facebook/react/bridge/Promise;Lg/f/a/c/m/l;)V
 
     return-void
 .end method

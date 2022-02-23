@@ -294,7 +294,7 @@
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$d0;->a:Landroid/view/View;
 
     .line 4
-    invoke-static {v0}, Ld/g/l/s;->w(Landroid/view/View;)I
+    invoke-static {v0}, Ld/g/l/s;->x(Landroid/view/View;)I
 
     move-result v0
 
@@ -701,7 +701,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$d0;->a:Landroid/view/View;
 
-    invoke-static {v0}, Ld/g/l/s;->N(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->O(Landroid/view/View;)Z
 
     move-result v0
 
@@ -1249,7 +1249,7 @@
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$d0;->a:Landroid/view/View;
 
     .line 2
-    invoke-static {v0}, Ld/g/l/s;->N(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->O(Landroid/view/View;)Z
 
     move-result v0
 

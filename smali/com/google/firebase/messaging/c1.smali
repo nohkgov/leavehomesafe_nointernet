@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method static final synthetic a(Lcom/google/firebase/messaging/f1$a;Lg/f/a/e/m/l;)V
+.method static final synthetic a(Lcom/google/firebase/messaging/f1$a;Lg/f/a/c/m/l;)V
     .locals 0
 
     .line 1
@@ -75,7 +75,7 @@
     iget-object v1, p1, Lcom/google/firebase/messaging/f1$a;->a:Landroid/content/Intent;
 
     .line 5
-    invoke-interface {v0, v1}, Lcom/google/firebase/messaging/c1$a;->a(Landroid/content/Intent;)Lg/f/a/e/m/l;
+    invoke-interface {v0, v1}, Lcom/google/firebase/messaging/c1$a;->a(Landroid/content/Intent;)Lg/f/a/c/m/l;
 
     move-result-object v0
 
@@ -86,7 +86,7 @@
     invoke-direct {v2, p1}, Lcom/google/firebase/messaging/b1;-><init>(Lcom/google/firebase/messaging/f1$a;)V
 
     .line 6
-    invoke-virtual {v0, v1, v2}, Lg/f/a/e/m/l;->c(Ljava/util/concurrent/Executor;Lg/f/a/e/m/f;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, v1, v2}, Lg/f/a/c/m/l;->c(Ljava/util/concurrent/Executor;Lg/f/a/c/m/f;)Lg/f/a/c/m/l;
 
     return-void
 

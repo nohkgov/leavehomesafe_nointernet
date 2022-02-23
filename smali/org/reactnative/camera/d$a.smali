@@ -1,5 +1,5 @@
 .class Lorg/reactnative/camera/d$a;
-.super Lg/f/a/b/e$b;
+.super Lg/f/a/a/e$b;
 .source "RNCameraView.java"
 
 
@@ -25,14 +25,14 @@
     .line 1
     iput-object p1, p0, Lorg/reactnative/camera/d$a;->a:Lorg/reactnative/camera/d;
 
-    invoke-direct {p0}, Lg/f/a/b/e$b;-><init>()V
+    invoke-direct {p0}, Lg/f/a/a/e$b;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Lg/f/a/b/e;)V
+.method public b(Lg/f/a/a/e;)V
     .locals 0
 
     .line 1
@@ -41,7 +41,7 @@
     return-void
 .end method
 
-.method public c(Lg/f/a/b/e;[BIII)V
+.method public c(Lg/f/a/a/e;[BIII)V
     .locals 26
 
     move-object/from16 v0, p0
@@ -53,13 +53,13 @@
     .line 1
     iget-object v2, v0, Lorg/reactnative/camera/d$a;->a:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v2}, Lg/f/a/b/e;->getFacing()I
+    invoke-virtual {v2}, Lg/f/a/a/e;->getFacing()I
 
     move-result v2
 
     iget-object v3, v0, Lorg/reactnative/camera/d$a;->a:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v3}, Lg/f/a/b/e;->getCameraOrientation()I
+    invoke-virtual {v3}, Lg/f/a/a/e;->getCameraOrientation()I
 
     move-result v3
 
@@ -287,11 +287,11 @@
 
     iget-object v2, v0, Lorg/reactnative/camera/d$a;->a:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v2}, Lg/f/a/b/e;->getAspectRatio()Lg/f/a/b/a;
+    invoke-virtual {v2}, Lg/f/a/a/e;->getAspectRatio()Lg/f/a/a/a;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lg/f/a/b/a;->v()F
+    invoke-virtual {v2}, Lg/f/a/a/a;->v()F
 
     move-result v25
 
@@ -372,7 +372,7 @@
 
     iget-object v2, v0, Lorg/reactnative/camera/d$a;->a:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v2}, Lg/f/a/b/e;->getFacing()I
+    invoke-virtual {v2}, Lg/f/a/a/e;->getFacing()I
 
     move-result v10
 
@@ -552,7 +552,7 @@
 
     iget-object v2, v0, Lorg/reactnative/camera/d$a;->a:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v2}, Lg/f/a/b/e;->getFacing()I
+    invoke-virtual {v2}, Lg/f/a/a/e;->getFacing()I
 
     move-result v10
 
@@ -639,7 +639,7 @@
 
     iget-object v1, v0, Lorg/reactnative/camera/d$a;->a:Lorg/reactnative/camera/d;
 
-    invoke-virtual {v1}, Lg/f/a/b/e;->getFacing()I
+    invoke-virtual {v1}, Lg/f/a/a/e;->getFacing()I
 
     move-result v9
 
@@ -687,7 +687,7 @@
     return-void
 .end method
 
-.method public d(Lg/f/a/b/e;)V
+.method public d(Lg/f/a/a/e;)V
     .locals 1
 
     const-string v0, "Camera view threw an error - component could not be rendered."
@@ -698,7 +698,7 @@
     return-void
 .end method
 
-.method public e(Lg/f/a/b/e;[BI)V
+.method public e(Lg/f/a/a/e;[BI)V
     .locals 9
 
     .line 1
@@ -824,7 +824,7 @@
     return-void
 .end method
 
-.method public f(Lg/f/a/b/e;)V
+.method public f(Lg/f/a/a/e;)V
     .locals 0
 
     .line 1
@@ -833,7 +833,7 @@
     return-void
 .end method
 
-.method public g(Lg/f/a/b/e;Ljava/lang/String;II)V
+.method public g(Lg/f/a/a/e;Ljava/lang/String;II)V
     .locals 2
 
     .line 1
@@ -874,7 +874,7 @@
     return-void
 .end method
 
-.method public h(Lg/f/a/b/e;Ljava/lang/String;II)V
+.method public h(Lg/f/a/a/e;Ljava/lang/String;II)V
     .locals 2
 
     .line 1

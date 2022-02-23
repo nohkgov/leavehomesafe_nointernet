@@ -213,7 +213,7 @@
     .line 1
     :cond_0
     :try_start_0
-    invoke-virtual {p2}, Lcom/google/firebase/messaging/f0;->n()Lg/f/a/e/m/l;
+    invoke-virtual {p2}, Lcom/google/firebase/messaging/f0;->n()Lg/f/a/c/m/l;
 
     move-result-object v1
 
@@ -221,7 +221,7 @@
 
     const-wide/16 v3, 0x5
 
-    invoke-static {v1, v3, v4, v2}, Lg/f/a/e/m/o;->b(Lg/f/a/e/m/l;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    invoke-static {v1, v3, v4, v2}, Lg/f/a/c/m/o;->b(Lg/f/a/c/m/l;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
     move-result-object v1
 

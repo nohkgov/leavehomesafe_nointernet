@@ -71,7 +71,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lg/f/a/f/k;->MaterialTextAppearance:[I
+    sget-object v0, Lg/f/a/d/k;->MaterialTextAppearance:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(I[I)Landroid/content/res/TypedArray;
 
@@ -86,13 +86,13 @@
 
     new-array v0, v0, [I
 
-    sget v1, Lg/f/a/f/k;->MaterialTextAppearance_android_lineHeight:I
+    sget v1, Lg/f/a/d/k;->MaterialTextAppearance_android_lineHeight:I
 
     const/4 v2, 0x0
 
     aput v1, v0, v2
 
-    sget v1, Lg/f/a/f/k;->MaterialTextAppearance_lineHeight:I
+    sget v1, Lg/f/a/d/k;->MaterialTextAppearance_lineHeight:I
 
     const/4 v2, 0x1
 
@@ -119,11 +119,11 @@
     .locals 2
 
     .line 1
-    sget v0, Lg/f/a/f/b;->textAppearanceLineHeightEnabled:I
+    sget v0, Lg/f/a/d/b;->textAppearanceLineHeightEnabled:I
 
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, v1}, Lg/f/a/f/x/b;->b(Landroid/content/Context;IZ)Z
+    invoke-static {p0, v0, v1}, Lg/f/a/d/x/b;->b(Landroid/content/Context;IZ)Z
 
     move-result p0
 
@@ -134,7 +134,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lg/f/a/f/k;->MaterialTextView:[I
+    sget-object v0, Lg/f/a/d/k;->MaterialTextView:[I
 
     .line 2
     invoke-virtual {p0, p1, v0, p2, p3}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
@@ -142,7 +142,7 @@
     move-result-object p0
 
     .line 3
-    sget p1, Lg/f/a/f/k;->MaterialTextView_android_textAppearance:I
+    sget p1, Lg/f/a/d/k;->MaterialTextView_android_textAppearance:I
 
     const/4 p2, -0x1
 
@@ -177,7 +177,7 @@
     .line 2
     aget v2, p2, v1
 
-    invoke-static {p0, p1, v2, v0}, Lg/f/a/f/x/c;->c(Landroid/content/Context;Landroid/content/res/TypedArray;II)I
+    invoke-static {p0, p1, v2, v0}, Lg/f/a/d/x/c;->c(Landroid/content/Context;Landroid/content/res/TypedArray;II)I
 
     move-result v2
 
@@ -193,7 +193,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lg/f/a/f/k;->MaterialTextView:[I
+    sget-object v0, Lg/f/a/d/k;->MaterialTextView:[I
 
     .line 2
     invoke-virtual {p1, p2, v0, p3, p4}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
@@ -205,13 +205,13 @@
     new-array p2, p2, [I
 
     .line 3
-    sget p3, Lg/f/a/f/k;->MaterialTextView_android_lineHeight:I
+    sget p3, Lg/f/a/d/k;->MaterialTextView_android_lineHeight:I
 
     const/4 p4, 0x0
 
     aput p3, p2, p4
 
-    sget p3, Lg/f/a/f/k;->MaterialTextView_lineHeight:I
+    sget p3, Lg/f/a/d/k;->MaterialTextView_lineHeight:I
 
     const/4 v0, 0x1
 

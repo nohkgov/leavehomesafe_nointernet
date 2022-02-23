@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic a:Lg/f/a/f/p/d;
+.field final synthetic a:Lg/f/a/d/p/d;
 
 .field final synthetic b:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/transformation/FabTransformationBehavior;Lg/f/a/f/p/d;Landroid/graphics/drawable/Drawable;)V
+.method constructor <init>(Lcom/google/android/material/transformation/FabTransformationBehavior;Lg/f/a/d/p/d;Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$c;->a:Lg/f/a/f/p/d;
+    iput-object p2, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$c;->a:Lg/f/a/d/p/d;
 
     iput-object p3, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$c;->b:Landroid/graphics/drawable/Drawable;
 
@@ -40,11 +40,11 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$c;->a:Lg/f/a/f/p/d;
+    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$c;->a:Lg/f/a/d/p/d;
 
     const/4 v0, 0x0
 
-    invoke-interface {p1, v0}, Lg/f/a/f/p/d;->setCircularRevealOverlayDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-interface {p1, v0}, Lg/f/a/d/p/d;->setCircularRevealOverlayDrawable(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
@@ -53,11 +53,11 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$c;->a:Lg/f/a/f/p/d;
+    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$c;->a:Lg/f/a/d/p/d;
 
     iget-object v0, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$c;->b:Landroid/graphics/drawable/Drawable;
 
-    invoke-interface {p1, v0}, Lg/f/a/f/p/d;->setCircularRevealOverlayDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-interface {p1, v0}, Lg/f/a/d/p/d;->setCircularRevealOverlayDrawable(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method

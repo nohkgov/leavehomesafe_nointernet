@@ -18,15 +18,17 @@
 
 
 # static fields
-.field private static a:Ljava/lang/reflect/Field;
+.field private static final a:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field private static b:Z
+.field private static b:Ljava/lang/reflect/Field;
 
-.field private static c:Ljava/lang/reflect/Field;
+.field private static c:Z
 
-.field private static d:Z
+.field private static d:Ljava/lang/reflect/Field;
 
-.field private static e:Ljava/util/WeakHashMap;
+.field private static e:Z
+
+.field private static f:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap<",
@@ -37,7 +39,7 @@
     .end annotation
 .end field
 
-.field private static f:Ljava/util/WeakHashMap;
+.field private static g:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap<",
@@ -48,11 +50,11 @@
     .end annotation
 .end field
 
-.field private static g:Ljava/lang/reflect/Field;
+.field private static h:Ljava/lang/reflect/Field;
 
-.field private static h:Z
+.field private static i:Z
 
-.field private static i:Ljava/lang/ThreadLocal;
+.field private static j:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ThreadLocal<",
@@ -74,15 +76,17 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
+    sput-object v0, Ld/g/l/s;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
     const/4 v0, 0x0
 
     .line 2
-    sput-object v0, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
+    sput-object v0, Ld/g/l/s;->g:Ljava/util/WeakHashMap;
 
     const/4 v0, 0x0
 
     .line 3
-    sput-boolean v0, Ld/g/l/s;->h:Z
+    sput-boolean v0, Ld/g/l/s;->i:Z
 
     .line 4
     new-instance v0, Ld/g/l/s$e;
@@ -103,7 +107,7 @@
     if-lt v0, v1, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Landroid/view/View;->getMinimumWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMinimumHeight()I
 
     move-result p0
 
@@ -111,7 +115,7 @@
 
     .line 3
     :cond_0
-    sget-boolean v0, Ld/g/l/s;->b:Z
+    sget-boolean v0, Ld/g/l/s;->e:Z
 
     if-nez v0, :cond_1
 
@@ -121,13 +125,13 @@
     :try_start_0
     const-class v1, Landroid/view/View;
 
-    const-string v2, "mMinWidth"
+    const-string v2, "mMinHeight"
 
     invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v1
 
-    sput-object v1, Ld/g/l/s;->a:Ljava/lang/reflect/Field;
+    sput-object v1, Ld/g/l/s;->d:Ljava/lang/reflect/Field;
 
     .line 5
     invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
@@ -136,11 +140,11 @@
 
     .line 6
     :catch_0
-    sput-boolean v0, Ld/g/l/s;->b:Z
+    sput-boolean v0, Ld/g/l/s;->e:Z
 
     .line 7
     :cond_1
-    sget-object v0, Ld/g/l/s;->a:Ljava/lang/reflect/Field;
+    sget-object v0, Ld/g/l/s;->d:Ljava/lang/reflect/Field;
 
     if-eqz v0, :cond_2
 
@@ -167,7 +171,99 @@
     return p0
 .end method
 
-.method public static A0(Landroid/view/View;Ljava/lang/String;)V
+.method public static A0(Landroid/view/View;II)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x17
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setScrollIndicators(II)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public static B(Landroid/view/View;)I
+    .locals 3
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x10
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/View;->getMinimumWidth()I
+
+    move-result p0
+
+    return p0
+
+    .line 3
+    :cond_0
+    sget-boolean v0, Ld/g/l/s;->c:Z
+
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x1
+
+    .line 4
+    :try_start_0
+    const-class v1, Landroid/view/View;
+
+    const-string v2, "mMinWidth"
+
+    invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v1
+
+    sput-object v1, Ld/g/l/s;->b:Ljava/lang/reflect/Field;
+
+    .line 5
+    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 6
+    :catch_0
+    sput-boolean v0, Ld/g/l/s;->c:Z
+
+    .line 7
+    :cond_1
+    sget-object v0, Ld/g/l/s;->b:Ljava/lang/reflect/Field;
+
+    if-eqz v0, :cond_2
+
+    .line 8
+    :try_start_1
+    invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Integer;
+
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    return p0
+
+    :catch_1
+    :cond_2
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public static B0(Landroid/view/View;Ljava/lang/String;)V
     .locals 2
 
     .line 1
@@ -184,7 +280,7 @@
 
     .line 3
     :cond_0
-    sget-object v0, Ld/g/l/s;->e:Ljava/util/WeakHashMap;
+    sget-object v0, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
 
     if-nez v0, :cond_1
 
@@ -193,11 +289,11 @@
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    sput-object v0, Ld/g/l/s;->e:Ljava/util/WeakHashMap;
+    sput-object v0, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
 
     .line 5
     :cond_1
-    sget-object v0, Ld/g/l/s;->e:Ljava/util/WeakHashMap;
+    sget-object v0, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, p0, p1}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -205,11 +301,11 @@
     return-void
 .end method
 
-.method static B(Landroid/view/View;)Ld/g/l/a;
+.method static C(Landroid/view/View;)Ld/g/l/a;
     .locals 1
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->j(Landroid/view/View;)Ld/g/l/a;
+    invoke-static {p0}, Ld/g/l/s;->k(Landroid/view/View;)Ld/g/l/a;
 
     move-result-object v0
 
@@ -222,12 +318,12 @@
 
     .line 3
     :cond_0
-    invoke-static {p0, v0}, Ld/g/l/s;->l0(Landroid/view/View;Ld/g/l/a;)V
+    invoke-static {p0, v0}, Ld/g/l/s;->m0(Landroid/view/View;Ld/g/l/a;)V
 
     return-object v0
 .end method
 
-.method public static B0(Landroid/view/View;F)V
+.method public static C0(Landroid/view/View;F)V
     .locals 2
 
     .line 1
@@ -244,7 +340,7 @@
     return-void
 .end method
 
-.method public static C(Landroid/view/View;)I
+.method public static D(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -270,7 +366,7 @@
     return p0
 .end method
 
-.method public static C0(Landroid/view/View;)V
+.method public static D0(Landroid/view/View;)V
     .locals 2
 
     .line 1
@@ -301,7 +397,7 @@
     return-void
 .end method
 
-.method public static D(Landroid/view/View;)I
+.method public static E(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -327,7 +423,7 @@
     return p0
 .end method
 
-.method private static D0(Landroid/view/View;)V
+.method private static E0(Landroid/view/View;)V
     .locals 2
 
     .line 1
@@ -348,7 +444,7 @@
     return-void
 .end method
 
-.method public static E(Landroid/view/View;)Landroid/view/ViewParent;
+.method public static F(Landroid/view/View;)Landroid/view/ViewParent;
     .locals 2
 
     .line 1
@@ -374,7 +470,7 @@
     return-object p0
 .end method
 
-.method public static F(Landroid/view/View;)Ld/g/l/a0;
+.method public static G(Landroid/view/View;)Ld/g/l/a0;
     .locals 2
 
     .line 1
@@ -401,7 +497,7 @@
     return-object p0
 .end method
 
-.method public static G(Landroid/view/View;)Ljava/lang/String;
+.method public static H(Landroid/view/View;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -420,7 +516,7 @@
 
     .line 3
     :cond_0
-    sget-object v0, Ld/g/l/s;->e:Ljava/util/WeakHashMap;
+    sget-object v0, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
 
     if-nez v0, :cond_1
 
@@ -439,7 +535,7 @@
     return-object p0
 .end method
 
-.method public static H(Landroid/view/View;)F
+.method public static I(Landroid/view/View;)F
     .locals 2
 
     .line 1
@@ -462,7 +558,7 @@
     return p0
 .end method
 
-.method public static I(Landroid/view/View;)I
+.method public static J(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -485,7 +581,7 @@
     return p0
 .end method
 
-.method public static J(Landroid/view/View;)F
+.method public static K(Landroid/view/View;)F
     .locals 2
 
     .line 1
@@ -508,11 +604,11 @@
     return p0
 .end method
 
-.method public static K(Landroid/view/View;)Z
+.method public static L(Landroid/view/View;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->k(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+    invoke-static {p0}, Ld/g/l/s;->l(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
 
     move-result-object p0
 
@@ -529,7 +625,7 @@
     return p0
 .end method
 
-.method public static L(Landroid/view/View;)Z
+.method public static M(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -552,7 +648,7 @@
     return p0
 .end method
 
-.method public static M(Landroid/view/View;)Z
+.method public static N(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -575,7 +671,7 @@
     return p0
 .end method
 
-.method public static N(Landroid/view/View;)Z
+.method public static O(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -598,7 +694,7 @@
     return p0
 .end method
 
-.method public static O(Landroid/view/View;)Z
+.method public static P(Landroid/view/View;)Z
     .locals 1
 
     .line 1
@@ -628,7 +724,7 @@
     return p0
 .end method
 
-.method public static P(Landroid/view/View;)Z
+.method public static Q(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -664,7 +760,7 @@
     return p0
 .end method
 
-.method public static Q(Landroid/view/View;)Z
+.method public static R(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -687,7 +783,7 @@
     return p0
 .end method
 
-.method public static R(Landroid/view/View;)Z
+.method public static S(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -729,7 +825,7 @@
     return p0
 .end method
 
-.method public static S(Landroid/view/View;)Z
+.method public static T(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -767,7 +863,7 @@
     return p0
 .end method
 
-.method public static T(Landroid/view/View;)Z
+.method public static U(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -790,11 +886,11 @@
     return p0
 .end method
 
-.method public static U(Landroid/view/View;)Z
+.method public static V(Landroid/view/View;)Z
     .locals 1
 
     .line 1
-    invoke-static {}, Ld/g/l/s;->k0()Ld/g/l/s$f;
+    invoke-static {}, Ld/g/l/s;->l0()Ld/g/l/s$f;
 
     move-result-object v0
 
@@ -820,7 +916,7 @@
     return p0
 .end method
 
-.method static V(Landroid/view/View;I)V
+.method static W(Landroid/view/View;I)V
     .locals 2
 
     .line 1
@@ -847,7 +943,7 @@
 
     .line 3
     :cond_0
-    invoke-static {p0}, Ld/g/l/s;->n(Landroid/view/View;)Ljava/lang/CharSequence;
+    invoke-static {p0}, Ld/g/l/s;->o(Landroid/view/View;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -862,7 +958,7 @@
 
     .line 4
     :goto_0
-    invoke-static {p0}, Ld/g/l/s;->m(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->n(Landroid/view/View;)I
 
     move-result v1
 
@@ -966,7 +1062,7 @@
     return-void
 .end method
 
-.method public static W(Landroid/view/View;I)V
+.method public static X(Landroid/view/View;I)V
     .locals 6
 
     .line 1
@@ -987,7 +1083,7 @@
     if-lt v0, v1, :cond_2
 
     .line 3
-    invoke-static {}, Ld/g/l/s;->u()Landroid/graphics/Rect;
+    invoke-static {}, Ld/g/l/s;->v()Landroid/graphics/Rect;
 
     move-result-object v0
 
@@ -1099,7 +1195,7 @@
     return-void
 .end method
 
-.method public static X(Landroid/view/View;I)V
+.method public static Y(Landroid/view/View;I)V
     .locals 6
 
     .line 1
@@ -1120,7 +1216,7 @@
     if-lt v0, v1, :cond_2
 
     .line 3
-    invoke-static {}, Ld/g/l/s;->u()Landroid/graphics/Rect;
+    invoke-static {}, Ld/g/l/s;->v()Landroid/graphics/Rect;
 
     move-result-object v0
 
@@ -1232,7 +1328,7 @@
     return-void
 .end method
 
-.method public static Y(Landroid/view/View;Ld/g/l/a0;)Ld/g/l/a0;
+.method public static Z(Landroid/view/View;Ld/g/l/a0;)Ld/g/l/a0;
     .locals 2
 
     .line 1
@@ -1272,19 +1368,6 @@
     return-object p1
 .end method
 
-.method public static Z(Landroid/view/View;Ld/g/l/b0/c;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ld/g/l/b0/c;->B0()Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
-
-    return-void
-.end method
-
 .method private static a()Ld/g/l/s$f;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
@@ -1310,7 +1393,56 @@
     return-object v0
 .end method
 
-.method private static a0()Ld/g/l/s$f;
+.method public static a0(Landroid/view/View;Ld/g/l/b0/c;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ld/g/l/b0/c;->B0()Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
+
+    return-void
+.end method
+
+.method private static b(Landroid/view/View;Ld/g/l/b0/c$a;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-static {p0}, Ld/g/l/s;->C(Landroid/view/View;)Ld/g/l/a;
+
+    .line 3
+    invoke-virtual {p1}, Ld/g/l/b0/c$a;->b()I
+
+    move-result v0
+
+    invoke-static {v0, p0}, Ld/g/l/s;->h0(ILandroid/view/View;)V
+
+    .line 4
+    invoke-static {p0}, Ld/g/l/s;->p(Landroid/view/View;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    const/4 p1, 0x0
+
+    .line 5
+    invoke-static {p0, p1}, Ld/g/l/s;->W(Landroid/view/View;I)V
+
+    :cond_0
+    return-void
+.end method
+
+.method private static b0()Ld/g/l/s$f;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1337,43 +1469,48 @@
     return-object v0
 .end method
 
-.method private static b(Landroid/view/View;Ld/g/l/b0/c$a;)V
+.method public static c(Landroid/view/View;)Ld/g/l/w;
     .locals 2
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget-object v0, Ld/g/l/s;->g:Ljava/util/WeakHashMap;
 
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 2
-    invoke-static {p0}, Ld/g/l/s;->B(Landroid/view/View;)Ld/g/l/a;
+    new-instance v0, Ljava/util/WeakHashMap;
+
+    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
+
+    sput-object v0, Ld/g/l/s;->g:Ljava/util/WeakHashMap;
 
     .line 3
-    invoke-virtual {p1}, Ld/g/l/b0/c$a;->b()I
+    :cond_0
+    sget-object v0, Ld/g/l/s;->g:Ljava/util/WeakHashMap;
 
-    move-result v0
-
-    invoke-static {v0, p0}, Ld/g/l/s;->g0(ILandroid/view/View;)V
-
-    .line 4
-    invoke-static {p0}, Ld/g/l/s;->o(Landroid/view/View;)Ljava/util/List;
+    invoke-virtual {v0, p0}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    check-cast v0, Ld/g/l/w;
 
-    const/4 p1, 0x0
+    if-nez v0, :cond_1
+
+    .line 4
+    new-instance v0, Ld/g/l/w;
+
+    invoke-direct {v0, p0}, Ld/g/l/w;-><init>(Landroid/view/View;)V
 
     .line 5
-    invoke-static {p0, p1}, Ld/g/l/s;->V(Landroid/view/View;I)V
+    sget-object v1, Ld/g/l/s;->g:Ljava/util/WeakHashMap;
 
-    :cond_0
-    return-void
+    invoke-virtual {v1, p0, v0}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_1
+    return-object v0
 .end method
 
-.method public static b0(Landroid/view/View;ILandroid/os/Bundle;)Z
+.method public static c0(Landroid/view/View;ILandroid/os/Bundle;)Z
     .locals 2
 
     .line 1
@@ -1396,48 +1533,42 @@
     return p0
 .end method
 
-.method public static c(Landroid/view/View;)Ld/g/l/w;
-    .locals 2
+.method private static d(Landroid/view/View;I)V
+    .locals 0
 
     .line 1
-    sget-object v0, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
-
-    if-nez v0, :cond_0
+    invoke-virtual {p0, p1}, Landroid/view/View;->offsetLeftAndRight(I)V
 
     .line 2
-    new-instance v0, Ljava/util/WeakHashMap;
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
-    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
+    move-result p1
 
-    sput-object v0, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
+    if-nez p1, :cond_0
 
     .line 3
-    :cond_0
-    sget-object v0, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
-
-    invoke-virtual {v0, p0}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ld/g/l/w;
-
-    if-nez v0, :cond_1
+    invoke-static {p0}, Ld/g/l/s;->E0(Landroid/view/View;)V
 
     .line 4
-    new-instance v0, Ld/g/l/w;
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
-    invoke-direct {v0, p0}, Ld/g/l/w;-><init>(Landroid/view/View;)V
+    move-result-object p0
 
     .line 5
-    sget-object v1, Ld/g/l/s;->f:Ljava/util/WeakHashMap;
+    instance-of p1, p0, Landroid/view/View;
 
-    invoke-virtual {v1, p0, v0}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz p1, :cond_0
 
-    :cond_1
-    return-object v0
+    .line 6
+    check-cast p0, Landroid/view/View;
+
+    invoke-static {p0}, Ld/g/l/s;->E0(Landroid/view/View;)V
+
+    :cond_0
+    return-void
 .end method
 
-.method public static c0(Landroid/view/View;)V
+.method public static d0(Landroid/view/View;)V
     .locals 2
 
     .line 1
@@ -1460,11 +1591,11 @@
     return-void
 .end method
 
-.method private static d(Landroid/view/View;I)V
+.method private static e(Landroid/view/View;I)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->offsetLeftAndRight(I)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->offsetTopAndBottom(I)V
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
@@ -1474,7 +1605,7 @@
     if-nez p1, :cond_0
 
     .line 3
-    invoke-static {p0}, Ld/g/l/s;->D0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->E0(Landroid/view/View;)V
 
     .line 4
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -1489,13 +1620,13 @@
     .line 6
     check-cast p0, Landroid/view/View;
 
-    invoke-static {p0}, Ld/g/l/s;->D0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->E0(Landroid/view/View;)V
 
     :cond_0
     return-void
 .end method
 
-.method public static d0(Landroid/view/View;Ljava/lang/Runnable;)V
+.method public static e0(Landroid/view/View;Ljava/lang/Runnable;)V
     .locals 2
 
     .line 1
@@ -1515,70 +1646,6 @@
     invoke-static {}, Landroid/animation/ValueAnimator;->getFrameDelay()J
 
     move-result-wide v0
-
-    invoke-virtual {p0, p1, v0, v1}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    :goto_0
-    return-void
-.end method
-
-.method private static e(Landroid/view/View;I)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->offsetTopAndBottom(I)V
-
-    .line 2
-    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    .line 3
-    invoke-static {p0}, Ld/g/l/s;->D0(Landroid/view/View;)V
-
-    .line 4
-    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object p0
-
-    .line 5
-    instance-of p1, p0, Landroid/view/View;
-
-    if-eqz p1, :cond_0
-
-    .line 6
-    check-cast p0, Landroid/view/View;
-
-    invoke-static {p0}, Ld/g/l/s;->D0(Landroid/view/View;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public static e0(Landroid/view/View;Ljava/lang/Runnable;J)V
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x10
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    invoke-virtual {p0, p1, p2, p3}, Landroid/view/View;->postOnAnimationDelayed(Ljava/lang/Runnable;J)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    invoke-static {}, Landroid/animation/ValueAnimator;->getFrameDelay()J
-
-    move-result-wide v0
-
-    add-long/2addr v0, p2
 
     invoke-virtual {p0, p1, v0, v1}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -1607,25 +1674,32 @@
     return-object p1
 .end method
 
-.method public static f0(Landroid/view/View;I)V
+.method public static f0(Landroid/view/View;Ljava/lang/Runnable;J)V
     .locals 2
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x15
+    const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
     .line 2
-    invoke-static {p1, p0}, Ld/g/l/s;->g0(ILandroid/view/View;)V
+    invoke-virtual {p0, p1, p2, p3}, Landroid/view/View;->postOnAnimationDelayed(Ljava/lang/Runnable;J)V
 
-    const/4 p1, 0x0
+    goto :goto_0
 
     .line 3
-    invoke-static {p0, p1}, Ld/g/l/s;->V(Landroid/view/View;I)V
-
     :cond_0
+    invoke-static {}, Landroid/animation/ValueAnimator;->getFrameDelay()J
+
+    move-result-wide v0
+
+    add-long/2addr v0, p2
+
+    invoke-virtual {p0, p1, v0, v1}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    :goto_0
     return-void
 .end method
 
@@ -1669,11 +1743,60 @@
     return-object p1
 .end method
 
-.method private static g0(ILandroid/view/View;)V
+.method public static g0(Landroid/view/View;I)V
     .locals 2
 
     .line 1
-    invoke-static {p1}, Ld/g/l/s;->o(Landroid/view/View;)Ljava/util/List;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-static {p1, p0}, Ld/g/l/s;->h0(ILandroid/view/View;)V
+
+    const/4 p1, 0x0
+
+    .line 3
+    invoke-static {p0, p1}, Ld/g/l/s;->W(Landroid/view/View;I)V
+
+    :cond_0
+    return-void
+.end method
+
+.method static h(Landroid/view/View;Landroid/view/KeyEvent;)Z
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1c
+
+    if-lt v0, v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    .line 2
+    :cond_0
+    invoke-static {p0}, Ld/g/l/s$k;->a(Landroid/view/View;)Ld/g/l/s$k;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0, p1}, Ld/g/l/s$k;->b(Landroid/view/View;Landroid/view/KeyEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private static h0(ILandroid/view/View;)V
+    .locals 2
+
+    .line 1
+    invoke-static {p1}, Ld/g/l/s;->p(Landroid/view/View;)Ljava/util/List;
 
     move-result-object p1
 
@@ -1715,61 +1838,6 @@
     return-void
 .end method
 
-.method static h(Landroid/view/View;Landroid/view/KeyEvent;)Z
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x1c
-
-    if-lt v0, v1, :cond_0
-
-    const/4 p0, 0x0
-
-    return p0
-
-    .line 2
-    :cond_0
-    invoke-static {p0}, Ld/g/l/s$k;->a(Landroid/view/View;)Ld/g/l/s$k;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0, p1}, Ld/g/l/s$k;->b(Landroid/view/View;Landroid/view/KeyEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static h0(Landroid/view/View;Ld/g/l/b0/c$a;Ljava/lang/CharSequence;Ld/g/l/b0/f;)V
-    .locals 0
-
-    if-nez p3, :cond_0
-
-    if-nez p2, :cond_0
-
-    .line 1
-    invoke-virtual {p1}, Ld/g/l/b0/c$a;->b()I
-
-    move-result p1
-
-    invoke-static {p0, p1}, Ld/g/l/s;->f0(Landroid/view/View;I)V
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    invoke-virtual {p1, p2, p3}, Ld/g/l/b0/c$a;->a(Ljava/lang/CharSequence;Ld/g/l/b0/f;)Ld/g/l/b0/c$a;
-
-    move-result-object p1
-
-    invoke-static {p0, p1}, Ld/g/l/s;->b(Landroid/view/View;Ld/g/l/b0/c$a;)V
-
-    :goto_0
-    return-void
-.end method
-
 .method static i(Landroid/view/View;Landroid/view/KeyEvent;)Z
     .locals 2
 
@@ -1797,7 +1865,81 @@
     return p0
 .end method
 
-.method public static i0(Landroid/view/View;)V
+.method public static i0(Landroid/view/View;Ld/g/l/b0/c$a;Ljava/lang/CharSequence;Ld/g/l/b0/f;)V
+    .locals 0
+
+    if-nez p3, :cond_0
+
+    if-nez p2, :cond_0
+
+    .line 1
+    invoke-virtual {p1}, Ld/g/l/b0/c$a;->b()I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ld/g/l/s;->g0(Landroid/view/View;I)V
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    invoke-virtual {p1, p2, p3}, Ld/g/l/b0/c$a;->a(Ljava/lang/CharSequence;Ld/g/l/b0/f;)Ld/g/l/b0/c$a;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Ld/g/l/s;->b(Landroid/view/View;Ld/g/l/b0/c$a;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public static j()I
+    .locals 3
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x11
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-static {}, Landroid/view/View;->generateViewId()I
+
+    move-result v0
+
+    return v0
+
+    .line 3
+    :cond_0
+    sget-object v0, Ld/g/l/s;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v0
+
+    add-int/lit8 v1, v0, 0x1
+
+    const v2, 0xffffff
+
+    if-le v1, v2, :cond_1
+
+    const/4 v1, 0x1
+
+    .line 4
+    :cond_1
+    sget-object v2, Ld/g/l/s;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    return v0
+.end method
+
+.method public static j0(Landroid/view/View;)V
     .locals 2
 
     .line 1
@@ -1825,11 +1967,11 @@
     return-void
 .end method
 
-.method public static j(Landroid/view/View;)Ld/g/l/a;
+.method public static k(Landroid/view/View;)Ld/g/l/a;
     .locals 1
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->k(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+    invoke-static {p0}, Ld/g/l/s;->l(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
 
     move-result-object p0
 
@@ -1861,7 +2003,7 @@
     return-object v0
 .end method
 
-.method public static j0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+.method public static k0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
     .locals 2
     .param p1    # Landroid/content/Context;
         .annotation build Landroid/annotation/SuppressLint;
@@ -1885,7 +2027,7 @@
     return-void
 .end method
 
-.method private static k(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+.method private static l(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
     .locals 2
 
     .line 1
@@ -1904,14 +2046,14 @@
 
     .line 3
     :cond_0
-    invoke-static {p0}, Ld/g/l/s;->l(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+    invoke-static {p0}, Ld/g/l/s;->m(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static k0()Ld/g/l/s$f;
+.method private static l0()Ld/g/l/s$f;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1936,11 +2078,11 @@
     return-object v0
 .end method
 
-.method private static l(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+.method private static m(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
     .locals 4
 
     .line 1
-    sget-boolean v0, Ld/g/l/s;->h:Z
+    sget-boolean v0, Ld/g/l/s;->i:Z
 
     const/4 v1, 0x0
 
@@ -1950,7 +2092,7 @@
 
     .line 2
     :cond_0
-    sget-object v0, Ld/g/l/s;->g:Ljava/lang/reflect/Field;
+    sget-object v0, Ld/g/l/s;->h:Ljava/lang/reflect/Field;
 
     const/4 v2, 0x1
 
@@ -1967,7 +2109,7 @@
 
     move-result-object v0
 
-    sput-object v0, Ld/g/l/s;->g:Ljava/lang/reflect/Field;
+    sput-object v0, Ld/g/l/s;->h:Ljava/lang/reflect/Field;
 
     .line 5
     invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
@@ -1978,7 +2120,7 @@
 
     .line 6
     :catchall_0
-    sput-boolean v2, Ld/g/l/s;->h:Z
+    sput-boolean v2, Ld/g/l/s;->i:Z
 
     return-object v1
 
@@ -1986,7 +2128,7 @@
     :cond_1
     :goto_0
     :try_start_1
-    sget-object v0, Ld/g/l/s;->g:Ljava/lang/reflect/Field;
+    sget-object v0, Ld/g/l/s;->h:Ljava/lang/reflect/Field;
 
     invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2009,18 +2151,18 @@
 
     .line 10
     :catchall_1
-    sput-boolean v2, Ld/g/l/s;->h:Z
+    sput-boolean v2, Ld/g/l/s;->i:Z
 
     return-object v1
 .end method
 
-.method public static l0(Landroid/view/View;Ld/g/l/a;)V
+.method public static m0(Landroid/view/View;Ld/g/l/a;)V
     .locals 1
 
     if-nez p1, :cond_0
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->k(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+    invoke-static {p0}, Ld/g/l/s;->l(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
 
     move-result-object v0
 
@@ -2052,7 +2194,7 @@
     return-void
 .end method
 
-.method public static m(Landroid/view/View;)I
+.method public static n(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -2075,7 +2217,7 @@
     return p0
 .end method
 
-.method public static m0(Landroid/view/View;Z)V
+.method public static n0(Landroid/view/View;Z)V
     .locals 1
 
     .line 1
@@ -2092,11 +2234,11 @@
     return-void
 .end method
 
-.method public static n(Landroid/view/View;)Ljava/lang/CharSequence;
+.method public static o(Landroid/view/View;)Ljava/lang/CharSequence;
     .locals 1
 
     .line 1
-    invoke-static {}, Ld/g/l/s;->a0()Ld/g/l/s$f;
+    invoke-static {}, Ld/g/l/s;->b0()Ld/g/l/s$f;
 
     move-result-object v0
 
@@ -2109,7 +2251,7 @@
     return-object p0
 .end method
 
-.method public static n0(Landroid/view/View;I)V
+.method public static o0(Landroid/view/View;I)V
     .locals 2
 
     .line 1
@@ -2126,7 +2268,7 @@
     return-void
 .end method
 
-.method private static o(Landroid/view/View;)Ljava/util/List;
+.method private static p(Landroid/view/View;)Ljava/util/List;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2165,7 +2307,7 @@
     return-object v0
 .end method
 
-.method public static o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+.method public static p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
     .locals 2
 
     .line 1
@@ -2188,7 +2330,7 @@
     return-void
 .end method
 
-.method public static p(Landroid/view/View;)Landroid/content/res/ColorStateList;
+.method public static q(Landroid/view/View;)Landroid/content/res/ColorStateList;
     .locals 2
 
     .line 1
@@ -2227,7 +2369,7 @@
     return-object p0
 .end method
 
-.method public static p0(Landroid/view/View;Landroid/content/res/ColorStateList;)V
+.method public static q0(Landroid/view/View;Landroid/content/res/ColorStateList;)V
     .locals 2
 
     .line 1
@@ -2316,7 +2458,7 @@
     return-void
 .end method
 
-.method public static q(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
+.method public static r(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
     .locals 2
 
     .line 1
@@ -2355,7 +2497,7 @@
     return-object p0
 .end method
 
-.method public static q0(Landroid/view/View;Landroid/graphics/PorterDuff$Mode;)V
+.method public static r0(Landroid/view/View;Landroid/graphics/PorterDuff$Mode;)V
     .locals 2
 
     .line 1
@@ -2444,7 +2586,7 @@
     return-void
 .end method
 
-.method public static r(Landroid/view/View;)Landroid/graphics/Rect;
+.method public static s(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 2
 
     .line 1
@@ -2467,7 +2609,7 @@
     return-object p0
 .end method
 
-.method public static r0(Landroid/view/View;Landroid/graphics/Rect;)V
+.method public static s0(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 2
 
     .line 1
@@ -2484,7 +2626,7 @@
     return-void
 .end method
 
-.method public static s(Landroid/view/View;)Landroid/view/Display;
+.method public static t(Landroid/view/View;)Landroid/view/Display;
     .locals 2
 
     .line 1
@@ -2503,7 +2645,7 @@
 
     .line 3
     :cond_0
-    invoke-static {p0}, Ld/g/l/s;->P(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->Q(Landroid/view/View;)Z
 
     move-result v0
 
@@ -2535,7 +2677,7 @@
     return-object p0
 .end method
 
-.method public static s0(Landroid/view/View;F)V
+.method public static t0(Landroid/view/View;F)V
     .locals 2
 
     .line 1
@@ -2552,7 +2694,7 @@
     return-void
 .end method
 
-.method public static t(Landroid/view/View;)F
+.method public static u(Landroid/view/View;)F
     .locals 2
 
     .line 1
@@ -2575,7 +2717,7 @@
     return p0
 .end method
 
-.method public static t0(Landroid/view/View;Z)V
+.method public static u0(Landroid/view/View;Z)V
     .locals 2
 
     .line 1
@@ -2592,11 +2734,11 @@
     return-void
 .end method
 
-.method private static u()Landroid/graphics/Rect;
+.method private static v()Landroid/graphics/Rect;
     .locals 2
 
     .line 1
-    sget-object v0, Ld/g/l/s;->i:Ljava/lang/ThreadLocal;
+    sget-object v0, Ld/g/l/s;->j:Ljava/lang/ThreadLocal;
 
     if-nez v0, :cond_0
 
@@ -2605,11 +2747,11 @@
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
-    sput-object v0, Ld/g/l/s;->i:Ljava/lang/ThreadLocal;
+    sput-object v0, Ld/g/l/s;->j:Ljava/lang/ThreadLocal;
 
     .line 3
     :cond_0
-    sget-object v0, Ld/g/l/s;->i:Ljava/lang/ThreadLocal;
+    sget-object v0, Ld/g/l/s;->j:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -2625,7 +2767,7 @@
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     .line 5
-    sget-object v1, Ld/g/l/s;->i:Ljava/lang/ThreadLocal;
+    sget-object v1, Ld/g/l/s;->j:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
@@ -2636,7 +2778,7 @@
     return-object v0
 .end method
 
-.method public static u0(Landroid/view/View;I)V
+.method public static v0(Landroid/view/View;I)V
     .locals 2
 
     .line 1
@@ -2671,7 +2813,7 @@
     return-void
 .end method
 
-.method public static v(Landroid/view/View;)Z
+.method public static w(Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -2694,7 +2836,7 @@
     return p0
 .end method
 
-.method public static v0(Landroid/view/View;I)V
+.method public static w0(Landroid/view/View;I)V
     .locals 2
 
     .line 1
@@ -2711,7 +2853,7 @@
     return-void
 .end method
 
-.method public static w(Landroid/view/View;)I
+.method public static x(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -2734,7 +2876,7 @@
     return p0
 .end method
 
-.method public static w0(Landroid/view/View;Z)V
+.method public static x0(Landroid/view/View;Z)V
     .locals 2
 
     .line 1
@@ -2765,7 +2907,7 @@
     return-void
 .end method
 
-.method public static x(Landroid/view/View;)I
+.method public static y(Landroid/view/View;)I
     .locals 2
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -2793,7 +2935,7 @@
     return p0
 .end method
 
-.method public static x0(Landroid/view/View;Ld/g/l/p;)V
+.method public static y0(Landroid/view/View;Ld/g/l/p;)V
     .locals 2
 
     .line 1
@@ -2824,7 +2966,7 @@
     return-void
 .end method
 
-.method public static y(Landroid/view/View;)I
+.method public static z(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -2847,7 +2989,7 @@
     return p0
 .end method
 
-.method public static y0(Landroid/view/View;IIII)V
+.method public static z0(Landroid/view/View;IIII)V
     .locals 2
 
     .line 1
@@ -2867,97 +3009,5 @@
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/view/View;->setPadding(IIII)V
 
     :goto_0
-    return-void
-.end method
-
-.method public static z(Landroid/view/View;)I
-    .locals 3
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x10
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    invoke-virtual {p0}, Landroid/view/View;->getMinimumHeight()I
-
-    move-result p0
-
-    return p0
-
-    .line 3
-    :cond_0
-    sget-boolean v0, Ld/g/l/s;->d:Z
-
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x1
-
-    .line 4
-    :try_start_0
-    const-class v1, Landroid/view/View;
-
-    const-string v2, "mMinHeight"
-
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    move-result-object v1
-
-    sput-object v1, Ld/g/l/s;->c:Ljava/lang/reflect/Field;
-
-    .line 5
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 6
-    :catch_0
-    sput-boolean v0, Ld/g/l/s;->d:Z
-
-    .line 7
-    :cond_1
-    sget-object v0, Ld/g/l/s;->c:Ljava/lang/reflect/Field;
-
-    if-eqz v0, :cond_2
-
-    .line 8
-    :try_start_1
-    invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Integer;
-
-    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
-
-    move-result p0
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
-    return p0
-
-    :catch_1
-    :cond_2
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
-.method public static z0(Landroid/view/View;II)V
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x17
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setScrollIndicators(II)V
-
-    :cond_0
     return-void
 .end method

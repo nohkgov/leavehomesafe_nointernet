@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract a(Lg/f/a/c/i/h;)Lg/f/a/c/i/h;
+.method public abstract a(Lg/f/a/b/i/h;)Lg/f/a/b/i/h;
 .end method
 
 .method public abstract b(Lcom/google/android/datatransport/runtime/backends/f;)Lcom/google/android/datatransport/runtime/backends/g;

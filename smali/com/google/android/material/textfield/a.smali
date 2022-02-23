@@ -84,7 +84,7 @@
     move-result-object p1
 
     .line 2
-    sget-object v0, Lg/f/a/f/l/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object v0, Lg/f/a/d/l/a;->a:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p1, v0}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -118,7 +118,7 @@
     move-result-object v0
 
     .line 2
-    sget-object v1, Lg/f/a/f/l/a;->d:Landroid/animation/TimeInterpolator;
+    sget-object v1, Lg/f/a/d/l/a;->d:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -257,7 +257,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/textfield/e;->b:Landroid/content/Context;
 
-    sget v2, Lg/f/a/f/e;->mtrl_ic_cancel:I
+    sget v2, Lg/f/a/d/e;->mtrl_ic_cancel:I
 
     .line 2
     invoke-static {v1, v2}, Ld/a/k/a/a;->d(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
@@ -275,7 +275,7 @@
 
     move-result-object v1
 
-    sget v2, Lg/f/a/f/i;->clear_text_end_icon_content_description:I
+    sget v2, Lg/f/a/d/i;->clear_text_end_icon_content_description:I
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

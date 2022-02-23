@@ -33,7 +33,7 @@
 
     const-string v0, "reactContext"
 
-    invoke-static {p1, v0}, Li/c/a/a;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Li/e/a/c;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/reactnativecommunity/webview/RNCWebViewModule;
@@ -41,7 +41,7 @@
     invoke-direct {v0, p1}, Lcom/reactnativecommunity/webview/RNCWebViewModule;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     .line 2
-    invoke-static {v0}, Li/b/a;->a(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Li/d/a;->a(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -63,7 +63,7 @@
 
     const-string v0, "reactContext"
 
-    invoke-static {p1, v0}, Li/c/a/a;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Li/e/a/c;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance p1, Lcom/reactnativecommunity/webview/RNCWebViewManager;
@@ -71,7 +71,7 @@
     invoke-direct {p1}, Lcom/reactnativecommunity/webview/RNCWebViewManager;-><init>()V
 
     .line 2
-    invoke-static {p1}, Li/b/a;->a(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Li/d/a;->a(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 

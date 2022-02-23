@@ -233,7 +233,7 @@
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$a0;->e:I
 
     .line 2
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->c()I
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->e()I
 
     move-result p1
 

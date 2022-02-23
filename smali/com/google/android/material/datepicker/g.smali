@@ -174,7 +174,7 @@
     move-result-object p2
 
     .line 3
-    sget v0, Lg/f/a/f/h;->mtrl_calendar_day_of_week:I
+    sget v0, Lg/f/a/d/h;->mtrl_calendar_day_of_week:I
 
     .line 4
     invoke-virtual {p2, v0, p3, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -219,7 +219,7 @@
 
     move-result-object p1
 
-    sget p2, Lg/f/a/f/i;->mtrl_picker_day_of_week_column_header:I
+    sget p2, Lg/f/a/d/i;->mtrl_picker_day_of_week_column_header:I
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

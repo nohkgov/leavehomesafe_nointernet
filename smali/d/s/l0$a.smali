@@ -297,7 +297,7 @@
     if-eqz v1, :cond_0
 
     .line 5
-    invoke-static {v0}, Ld/g/l/s;->P(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->Q(Landroid/view/View;)Z
 
     move-result v1
 
@@ -326,7 +326,7 @@
 
     sub-int/2addr v4, v3
 
-    invoke-static {p1, v4}, Ld/g/l/s;->W(Landroid/view/View;I)V
+    invoke-static {p1, v4}, Ld/g/l/s;->X(Landroid/view/View;I)V
 
     const/4 v3, 0x1
 
@@ -337,7 +337,7 @@
 
     sub-int/2addr v2, v1
 
-    invoke-static {p1, v2}, Ld/g/l/s;->X(Landroid/view/View;I)V
+    invoke-static {p1, v2}, Ld/g/l/s;->Y(Landroid/view/View;I)V
 
     .line 10
     :cond_0

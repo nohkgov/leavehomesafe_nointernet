@@ -21,11 +21,11 @@
 
 
 # instance fields
-.field private d:Lg/f/a/e/n/f/e;
+.field private d:Lg/f/a/c/n/f/e;
 
 .field private final e:Landroid/content/Context;
 
-.field private final f:Lg/f/a/e/i/l/p7;
+.field private final f:Lg/f/a/c/i/l/p7;
 
 
 # direct methods
@@ -48,12 +48,12 @@
     const-string v0, "play-services-mlkit-text-recognition"
 
     .line 1
-    invoke-static {v0}, Lg/f/a/e/i/l/v7;->a(Ljava/lang/String;)Lg/f/a/e/i/l/p7;
+    invoke-static {v0}, Lg/f/a/c/i/l/v7;->a(Ljava/lang/String;)Lg/f/a/c/i/l/p7;
 
     move-result-object v0
 
     .line 2
-    invoke-static {}, Lg/f/a/e/i/l/x7;->a()Lg/f/a/e/i/l/x7;
+    invoke-static {}, Lg/f/a/c/i/l/x7;->a()Lg/f/a/c/i/l/x7;
 
     .line 3
     invoke-direct {p0}, Lg/f/b/a/c/f;-><init>()V
@@ -70,29 +70,29 @@
 
     iput-object p1, p0, Lcom/google/mlkit/vision/text/internal/d;->e:Landroid/content/Context;
 
-    iput-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->f:Lg/f/a/e/i/l/p7;
+    iput-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->f:Lg/f/a/c/i/l/p7;
 
     return-void
 .end method
 
-.method static final synthetic j(JLg/f/a/e/i/l/s5;Lg/f/b/b/a/a;)Lg/f/a/e/i/l/j7;
+.method static final synthetic j(JLg/f/a/c/i/l/s5;Lg/f/b/b/a/a;)Lg/f/a/c/i/l/j7;
     .locals 2
 
-    new-instance v0, Lg/f/a/e/i/l/x6;
+    new-instance v0, Lg/f/a/c/i/l/x6;
 
-    invoke-direct {v0}, Lg/f/a/e/i/l/x6;-><init>()V
+    invoke-direct {v0}, Lg/f/a/c/i/l/x6;-><init>()V
 
-    new-instance v1, Lg/f/a/e/i/l/m5;
+    new-instance v1, Lg/f/a/c/i/l/m5;
 
-    invoke-direct {v1}, Lg/f/a/e/i/l/m5;-><init>()V
+    invoke-direct {v1}, Lg/f/a/c/i/l/m5;-><init>()V
 
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Lg/f/a/e/i/l/m5;->a(Ljava/lang/Long;)Lg/f/a/e/i/l/m5;
+    invoke-virtual {v1, p0}, Lg/f/a/c/i/l/m5;->a(Ljava/lang/Long;)Lg/f/a/c/i/l/m5;
 
-    invoke-virtual {v1, p2}, Lg/f/a/e/i/l/m5;->b(Lg/f/a/e/i/l/s5;)Lg/f/a/e/i/l/m5;
+    invoke-virtual {v1, p2}, Lg/f/a/c/i/l/m5;->b(Lg/f/a/c/i/l/s5;)Lg/f/a/c/i/l/m5;
 
     sget-boolean p0, Lcom/google/mlkit/vision/text/internal/d;->g:Z
 
@@ -100,19 +100,19 @@
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Lg/f/a/e/i/l/m5;->c(Ljava/lang/Boolean;)Lg/f/a/e/i/l/m5;
+    invoke-virtual {v1, p0}, Lg/f/a/c/i/l/m5;->c(Ljava/lang/Boolean;)Lg/f/a/c/i/l/m5;
 
     sget-object p0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-virtual {v1, p0}, Lg/f/a/e/i/l/m5;->d(Ljava/lang/Boolean;)Lg/f/a/e/i/l/m5;
+    invoke-virtual {v1, p0}, Lg/f/a/c/i/l/m5;->d(Ljava/lang/Boolean;)Lg/f/a/c/i/l/m5;
 
-    invoke-virtual {v1, p0}, Lg/f/a/e/i/l/m5;->e(Ljava/lang/Boolean;)Lg/f/a/e/i/l/m5;
+    invoke-virtual {v1, p0}, Lg/f/a/c/i/l/m5;->e(Ljava/lang/Boolean;)Lg/f/a/c/i/l/m5;
 
-    invoke-virtual {v1}, Lg/f/a/e/i/l/m5;->f()Lg/f/a/e/i/l/n5;
+    invoke-virtual {v1}, Lg/f/a/c/i/l/m5;->f()Lg/f/a/c/i/l/n5;
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Lg/f/a/e/i/l/x6;->a(Lg/f/a/e/i/l/n5;)Lg/f/a/e/i/l/x6;
+    invoke-virtual {v0, p0}, Lg/f/a/c/i/l/x6;->a(Lg/f/a/c/i/l/n5;)Lg/f/a/c/i/l/x6;
 
     sget-object p0, Lcom/google/mlkit/vision/text/internal/d;->h:Lcom/google/mlkit/vision/common/internal/c;
 
@@ -126,34 +126,34 @@
 
     move-result p1
 
-    invoke-static {p0, p1}, Lg/f/a/e/i/l/w7;->a(II)Lg/f/a/e/i/l/k5;
+    invoke-static {p0, p1}, Lg/f/a/c/i/l/w7;->a(II)Lg/f/a/c/i/l/k5;
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Lg/f/a/e/i/l/x6;->b(Lg/f/a/e/i/l/k5;)Lg/f/a/e/i/l/x6;
+    invoke-virtual {v0, p0}, Lg/f/a/c/i/l/x6;->b(Lg/f/a/c/i/l/k5;)Lg/f/a/c/i/l/x6;
 
-    invoke-virtual {v0}, Lg/f/a/e/i/l/x6;->c()Lg/f/a/e/i/l/y6;
+    invoke-virtual {v0}, Lg/f/a/c/i/l/x6;->c()Lg/f/a/c/i/l/y6;
 
     move-result-object p0
 
-    new-instance p1, Lg/f/a/e/i/l/v5;
+    new-instance p1, Lg/f/a/c/i/l/v5;
 
-    invoke-direct {p1}, Lg/f/a/e/i/l/v5;-><init>()V
+    invoke-direct {p1}, Lg/f/a/c/i/l/v5;-><init>()V
 
     sget-object p2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-virtual {p1, p2}, Lg/f/a/e/i/l/v5;->c(Ljava/lang/Boolean;)Lg/f/a/e/i/l/v5;
+    invoke-virtual {p1, p2}, Lg/f/a/c/i/l/v5;->c(Ljava/lang/Boolean;)Lg/f/a/c/i/l/v5;
 
-    invoke-virtual {p1, p0}, Lg/f/a/e/i/l/v5;->d(Lg/f/a/e/i/l/y6;)Lg/f/a/e/i/l/v5;
+    invoke-virtual {p1, p0}, Lg/f/a/c/i/l/v5;->d(Lg/f/a/c/i/l/y6;)Lg/f/a/c/i/l/v5;
 
-    invoke-static {p1}, Lg/f/a/e/i/l/j7;->c(Lg/f/a/e/i/l/v5;)Lg/f/a/e/i/l/j7;
+    invoke-static {p1}, Lg/f/a/c/i/l/j7;->c(Lg/f/a/c/i/l/v5;)Lg/f/a/c/i/l/j7;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private final k(Lg/f/a/e/i/l/s5;JLg/f/b/b/a/a;)V
+.method private final k(Lg/f/a/c/i/l/s5;JLg/f/b/b/a/a;)V
     .locals 8
 
     .line 1
@@ -166,21 +166,21 @@
     new-instance p2, Lcom/google/mlkit/vision/text/internal/b;
 
     .line 2
-    invoke-direct {p2, v4, v5, p1, p4}, Lcom/google/mlkit/vision/text/internal/b;-><init>(JLg/f/a/e/i/l/s5;Lg/f/b/b/a/a;)V
+    invoke-direct {p2, v4, v5, p1, p4}, Lcom/google/mlkit/vision/text/internal/b;-><init>(JLg/f/a/c/i/l/s5;Lg/f/b/b/a/a;)V
 
-    iget-object p3, p0, Lcom/google/mlkit/vision/text/internal/d;->f:Lg/f/a/e/i/l/p7;
+    iget-object p3, p0, Lcom/google/mlkit/vision/text/internal/d;->f:Lg/f/a/c/i/l/p7;
 
     .line 3
-    sget-object v0, Lg/f/a/e/i/l/t5;->g:Lg/f/a/e/i/l/t5;
+    sget-object v0, Lg/f/a/c/i/l/t5;->g:Lg/f/a/c/i/l/t5;
 
-    invoke-virtual {p3, p2, v0}, Lg/f/a/e/i/l/p7;->a(Lg/f/a/e/i/l/o7;Lg/f/a/e/i/l/t5;)V
+    invoke-virtual {p3, p2, v0}, Lg/f/a/c/i/l/p7;->a(Lg/f/a/c/i/l/o7;Lg/f/a/c/i/l/t5;)V
 
-    new-instance p2, Lg/f/a/e/i/l/d1;
+    new-instance p2, Lg/f/a/c/i/l/d1;
 
-    invoke-direct {p2}, Lg/f/a/e/i/l/d1;-><init>()V
+    invoke-direct {p2}, Lg/f/a/c/i/l/d1;-><init>()V
 
     .line 4
-    invoke-virtual {p2, p1}, Lg/f/a/e/i/l/d1;->a(Lg/f/a/e/i/l/s5;)Lg/f/a/e/i/l/d1;
+    invoke-virtual {p2, p1}, Lg/f/a/c/i/l/d1;->a(Lg/f/a/c/i/l/s5;)Lg/f/a/c/i/l/d1;
 
     sget-boolean p1, Lcom/google/mlkit/vision/text/internal/d;->g:Z
 
@@ -189,7 +189,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p2, p1}, Lg/f/a/e/i/l/d1;->b(Ljava/lang/Boolean;)Lg/f/a/e/i/l/d1;
+    invoke-virtual {p2, p1}, Lg/f/a/c/i/l/d1;->b(Ljava/lang/Boolean;)Lg/f/a/c/i/l/d1;
 
     sget-object p1, Lcom/google/mlkit/vision/text/internal/d;->h:Lcom/google/mlkit/vision/common/internal/c;
 
@@ -206,25 +206,25 @@
     move-result p3
 
     .line 8
-    invoke-static {p1, p3}, Lg/f/a/e/i/l/w7;->a(II)Lg/f/a/e/i/l/k5;
+    invoke-static {p1, p3}, Lg/f/a/c/i/l/w7;->a(II)Lg/f/a/c/i/l/k5;
 
     move-result-object p1
 
     .line 9
-    invoke-virtual {p2, p1}, Lg/f/a/e/i/l/d1;->c(Lg/f/a/e/i/l/k5;)Lg/f/a/e/i/l/d1;
+    invoke-virtual {p2, p1}, Lg/f/a/c/i/l/d1;->c(Lg/f/a/c/i/l/k5;)Lg/f/a/c/i/l/d1;
 
-    invoke-virtual {p2}, Lg/f/a/e/i/l/d1;->d()Lg/f/a/e/i/l/e1;
+    invoke-virtual {p2}, Lg/f/a/c/i/l/d1;->d()Lg/f/a/c/i/l/e1;
 
     move-result-object v3
 
-    sget-object v7, Lcom/google/mlkit/vision/text/internal/c;->a:Lg/f/a/e/i/l/n7;
+    sget-object v7, Lcom/google/mlkit/vision/text/internal/c;->a:Lg/f/a/c/i/l/n7;
 
-    iget-object v2, p0, Lcom/google/mlkit/vision/text/internal/d;->f:Lg/f/a/e/i/l/p7;
+    iget-object v2, p0, Lcom/google/mlkit/vision/text/internal/d;->f:Lg/f/a/c/i/l/p7;
 
-    sget-object v6, Lg/f/a/e/i/l/t5;->e1:Lg/f/a/e/i/l/t5;
+    sget-object v6, Lg/f/a/c/i/l/t5;->e1:Lg/f/a/c/i/l/t5;
 
     .line 10
-    invoke-virtual/range {v2 .. v7}, Lg/f/a/e/i/l/p7;->b(Ljava/lang/Object;JLg/f/a/e/i/l/t5;Lg/f/a/e/i/l/n7;)V
+    invoke-virtual/range {v2 .. v7}, Lg/f/a/c/i/l/p7;->b(Ljava/lang/Object;JLg/f/a/c/i/l/t5;Lg/f/a/c/i/l/n7;)V
 
     return-void
 .end method
@@ -242,22 +242,22 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/e/n/f/e;
+    iget-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/c/n/f/e;
 
     if-nez v0, :cond_0
 
     .line 1
-    new-instance v0, Lg/f/a/e/n/f/e$a;
+    new-instance v0, Lg/f/a/c/n/f/e$a;
 
     iget-object v1, p0, Lcom/google/mlkit/vision/text/internal/d;->e:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lg/f/a/e/n/f/e$a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lg/f/a/c/n/f/e$a;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lg/f/a/e/n/f/e$a;->a()Lg/f/a/e/n/f/e;
+    invoke-virtual {v0}, Lg/f/a/c/n/f/e$a;->a()Lg/f/a/c/n/f/e;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/e/n/f/e;
+    iput-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/c/n/f/e;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -288,16 +288,16 @@
     :try_start_0
     sput-boolean v0, Lcom/google/mlkit/vision/text/internal/d;->g:Z
 
-    iget-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/e/n/f/e;
+    iget-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/c/n/f/e;
 
     if-eqz v0, :cond_0
 
     .line 1
-    invoke-virtual {v0}, Lg/f/a/e/n/f/e;->a()V
+    invoke-virtual {v0}, Lg/f/a/c/n/f/e;->a()V
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/e/n/f/e;
+    iput-object v0, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/c/n/f/e;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -351,12 +351,12 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/e/n/f/e;
+    iget-object v2, p0, Lcom/google/mlkit/vision/text/internal/d;->d:Lg/f/a/c/n/f/e;
 
     if-eqz v2, :cond_2
 
     .line 2
-    invoke-virtual {v2}, Lg/f/a/e/n/f/e;->c()Z
+    invoke-virtual {v2}, Lg/f/a/c/n/f/e;->c()Z
 
     move-result v3
 
@@ -374,9 +374,9 @@
     if-ne v3, v4, :cond_0
 
     .line 4
-    new-instance v3, Lg/f/a/e/n/b$a;
+    new-instance v3, Lg/f/a/c/n/b$a;
 
-    invoke-direct {v3}, Lg/f/a/e/n/b$a;-><init>()V
+    invoke-direct {v3}, Lg/f/a/c/n/b$a;-><init>()V
 
     .line 5
     invoke-virtual {p1}, Lg/f/b/b/a/a;->c()Landroid/graphics/Bitmap;
@@ -387,7 +387,7 @@
 
     check-cast v4, Landroid/graphics/Bitmap;
 
-    invoke-virtual {v3, v4}, Lg/f/a/e/n/b$a;->b(Landroid/graphics/Bitmap;)Lg/f/a/e/n/b$a;
+    invoke-virtual {v3, v4}, Lg/f/a/c/n/b$a;->b(Landroid/graphics/Bitmap;)Lg/f/a/c/n/b$a;
 
     .line 6
     invoke-virtual {p1}, Lg/f/b/b/a/a;->h()I
@@ -398,10 +398,10 @@
 
     move-result v4
 
-    invoke-virtual {v3, v4}, Lg/f/a/e/n/b$a;->d(I)Lg/f/a/e/n/b$a;
+    invoke-virtual {v3, v4}, Lg/f/a/c/n/b$a;->d(I)Lg/f/a/c/n/b$a;
 
     .line 7
-    invoke-virtual {v3}, Lg/f/a/e/n/b$a;->a()Lg/f/a/e/n/b;
+    invoke-virtual {v3}, Lg/f/a/c/n/b$a;->a()Lg/f/a/c/n/b;
 
     move-result-object v3
 
@@ -409,9 +409,9 @@
 
     .line 8
     :cond_0
-    new-instance v3, Lg/f/a/e/n/b$a;
+    new-instance v3, Lg/f/a/c/n/b$a;
 
-    invoke-direct {v3}, Lg/f/a/e/n/b$a;-><init>()V
+    invoke-direct {v3}, Lg/f/a/c/n/b$a;-><init>()V
 
     .line 9
     invoke-static {}, Lcom/google/mlkit/vision/common/internal/b;->c()Lcom/google/mlkit/vision/common/internal/b;
@@ -422,26 +422,26 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Lg/f/a/e/n/b$a;->b(Landroid/graphics/Bitmap;)Lg/f/a/e/n/b$a;
+    invoke-virtual {v3, v4}, Lg/f/a/c/n/b$a;->b(Landroid/graphics/Bitmap;)Lg/f/a/c/n/b$a;
 
     .line 10
-    invoke-virtual {v3, v5}, Lg/f/a/e/n/b$a;->d(I)Lg/f/a/e/n/b$a;
+    invoke-virtual {v3, v5}, Lg/f/a/c/n/b$a;->d(I)Lg/f/a/c/n/b$a;
 
     .line 11
-    invoke-virtual {v3}, Lg/f/a/e/n/b$a;->a()Lg/f/a/e/n/b;
+    invoke-virtual {v3}, Lg/f/a/c/n/b$a;->a()Lg/f/a/c/n/b;
 
     move-result-object v3
 
     .line 12
     :goto_0
-    invoke-virtual {v2, v3}, Lg/f/a/e/n/f/e;->b(Lg/f/a/e/n/b;)Landroid/util/SparseArray;
+    invoke-virtual {v2, v3}, Lg/f/a/c/n/f/e;->b(Lg/f/a/c/n/b;)Landroid/util/SparseArray;
 
     move-result-object v2
 
     .line 13
-    sget-object v3, Lg/f/a/e/i/l/s5;->c:Lg/f/a/e/i/l/s5;
+    sget-object v3, Lg/f/a/c/i/l/s5;->c:Lg/f/a/c/i/l/s5;
 
-    invoke-direct {p0, v3, v0, v1, p1}, Lcom/google/mlkit/vision/text/internal/d;->k(Lg/f/a/e/i/l/s5;JLg/f/b/b/a/a;)V
+    invoke-direct {p0, v3, v0, v1, p1}, Lcom/google/mlkit/vision/text/internal/d;->k(Lg/f/a/c/i/l/s5;JLg/f/b/b/a/a;)V
 
     sput-boolean v5, Lcom/google/mlkit/vision/text/internal/d;->g:Z
 
@@ -459,9 +459,9 @@
     .line 15
     :cond_1
     :try_start_1
-    sget-object v2, Lg/f/a/e/i/l/s5;->m:Lg/f/a/e/i/l/s5;
+    sget-object v2, Lg/f/a/c/i/l/s5;->m:Lg/f/a/c/i/l/s5;
 
-    invoke-direct {p0, v2, v0, v1, p1}, Lcom/google/mlkit/vision/text/internal/d;->k(Lg/f/a/e/i/l/s5;JLg/f/b/b/a/a;)V
+    invoke-direct {p0, v2, v0, v1, p1}, Lcom/google/mlkit/vision/text/internal/d;->k(Lg/f/a/c/i/l/s5;JLg/f/b/b/a/a;)V
 
     .line 16
     new-instance p1, Lg/f/b/a/a;
@@ -476,9 +476,9 @@
 
     .line 17
     :cond_2
-    sget-object v2, Lg/f/a/e/i/l/s5;->D:Lg/f/a/e/i/l/s5;
+    sget-object v2, Lg/f/a/c/i/l/s5;->D:Lg/f/a/c/i/l/s5;
 
-    invoke-direct {p0, v2, v0, v1, p1}, Lcom/google/mlkit/vision/text/internal/d;->k(Lg/f/a/e/i/l/s5;JLg/f/b/b/a/a;)V
+    invoke-direct {p0, v2, v0, v1, p1}, Lcom/google/mlkit/vision/text/internal/d;->k(Lg/f/a/c/i/l/s5;JLg/f/b/b/a/a;)V
 
     .line 18
     new-instance p1, Lg/f/b/a/a;

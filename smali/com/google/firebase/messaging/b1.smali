@@ -3,7 +3,7 @@
 .source "com.google.firebase:firebase-messaging@@21.1.0"
 
 # interfaces
-.implements Lg/f/a/e/m/f;
+.implements Lg/f/a/c/m/f;
 
 
 # instance fields
@@ -23,12 +23,12 @@
 
 
 # virtual methods
-.method public a(Lg/f/a/e/m/l;)V
+.method public a(Lg/f/a/c/m/l;)V
     .locals 1
 
     iget-object v0, p0, Lcom/google/firebase/messaging/b1;->a:Lcom/google/firebase/messaging/f1$a;
 
-    invoke-static {v0, p1}, Lcom/google/firebase/messaging/c1;->a(Lcom/google/firebase/messaging/f1$a;Lg/f/a/e/m/l;)V
+    invoke-static {v0, p1}, Lcom/google/firebase/messaging/c1;->a(Lcom/google/firebase/messaging/f1$a;Lg/f/a/c/m/l;)V
 
     return-void
 .end method

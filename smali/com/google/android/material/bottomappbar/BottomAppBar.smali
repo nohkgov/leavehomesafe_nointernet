@@ -19,7 +19,7 @@
 # instance fields
 .field private final R:I
 
-.field private final S:Lg/f/a/f/a0/g;
+.field private final S:Lg/f/a/d/a0/g;
 
 .field private T:Landroid/animation/Animator;
 
@@ -51,10 +51,10 @@
 
 .field g0:Landroid/animation/AnimatorListenerAdapter;
 
-.field h0:Lg/f/a/f/l/k;
+.field h0:Lg/f/a/d/l/k;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg/f/a/f/l/k<",
+            "Lg/f/a/d/l/k<",
             "Lcom/google/android/material/floatingactionbutton/FloatingActionButton;",
             ">;"
         }
@@ -194,9 +194,9 @@
     invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->f(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->h0:Lg/f/a/f/l/k;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->h0:Lg/f/a/d/l/k;
 
-    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->g(Lg/f/a/f/l/k;)V
+    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->g(Lg/f/a/d/l/k;)V
 
     return-void
 .end method
@@ -561,14 +561,14 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
     .line 2
-    invoke-virtual {v0}, Lg/f/a/f/a0/g;->B()Lg/f/a/f/a0/k;
+    invoke-virtual {v0}, Lg/f/a/d/a0/g;->B()Lg/f/a/d/a0/k;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lg/f/a/f/a0/k;->p()Lg/f/a/f/a0/f;
+    invoke-virtual {v0}, Lg/f/a/d/a0/k;->p()Lg/f/a/d/a0/f;
 
     move-result-object v0
 
@@ -667,7 +667,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result v0
 
@@ -746,7 +746,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result v0
 
@@ -820,7 +820,7 @@
 
     if-eq v0, p1, :cond_3
 
-    invoke-static {p0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result v0
 
@@ -950,7 +950,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
     iget-boolean v2, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->d0:Z
 
@@ -970,7 +970,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    invoke-virtual {v1, v2}, Lg/f/a/f/a0/g;->U(F)V
+    invoke-virtual {v1, v2}, Lg/f/a/d/a0/g;->U(F)V
 
     if-eqz v0, :cond_1
 
@@ -1057,9 +1057,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
-    invoke-virtual {v0}, Lg/f/a/f/a0/g;->D()Landroid/content/res/ColorStateList;
+    invoke-virtual {v0}, Lg/f/a/d/a0/g;->D()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
@@ -1175,7 +1175,7 @@
     .locals 8
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result v0
 
@@ -1321,9 +1321,9 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
-    invoke-static {p0, v0}, Lg/f/a/f/a0/h;->f(Landroid/view/View;Lg/f/a/f/a0/g;)V
+    invoke-static {p0, v0}, Lg/f/a/d/a0/h;->f(Landroid/view/View;Lg/f/a/d/a0/g;)V
 
     .line 3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getParent()Landroid/view/ViewParent;
@@ -1459,9 +1459,9 @@
     invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->k(F)V
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
-    invoke-virtual {p1}, Lg/f/a/f/a0/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lg/f/a/d/a0/g;->invalidateSelf()V
 
     const/4 p1, 0x1
 
@@ -1477,7 +1477,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
     invoke-static {v0, p1}, Landroidx/core/graphics/drawable/a;->o(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
@@ -1504,9 +1504,9 @@
     invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->h(F)V
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
-    invoke-virtual {p1}, Lg/f/a/f/a0/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lg/f/a/d/a0/g;->invalidateSelf()V
 
     .line 4
     invoke-direct {p0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->p0()V
@@ -1519,21 +1519,21 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
-    invoke-virtual {v0, p1}, Lg/f/a/f/a0/g;->S(F)V
+    invoke-virtual {v0, p1}, Lg/f/a/d/a0/g;->S(F)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
     .line 3
-    invoke-virtual {p1}, Lg/f/a/f/a0/g;->A()I
+    invoke-virtual {p1}, Lg/f/a/d/a0/g;->A()I
 
     move-result p1
 
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
-    invoke-virtual {v0}, Lg/f/a/f/a0/g;->z()I
+    invoke-virtual {v0}, Lg/f/a/d/a0/g;->z()I
 
     move-result v0
 
@@ -1595,9 +1595,9 @@
     invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->i(F)V
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
-    invoke-virtual {p1}, Lg/f/a/f/a0/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lg/f/a/d/a0/g;->invalidateSelf()V
 
     :cond_0
     return-void
@@ -1623,9 +1623,9 @@
     invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->j(F)V
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/f/a0/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->S:Lg/f/a/d/a0/g;
 
-    invoke-virtual {p1}, Lg/f/a/f/a0/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lg/f/a/d/a0/g;->invalidateSelf()V
 
     :cond_0
     return-void

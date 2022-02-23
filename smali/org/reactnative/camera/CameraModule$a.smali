@@ -58,14 +58,14 @@
     move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Lg/f/a/b/e;->p()Z
+    invoke-virtual {p1}, Lg/f/a/a/e;->p()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 4
-    invoke-virtual {p1}, Lg/f/a/b/e;->getSupportedAspectRatios()Ljava/util/Set;
+    invoke-virtual {p1}, Lg/f/a/a/e;->getSupportedAspectRatios()Ljava/util/Set;
 
     move-result-object p1
 
@@ -85,10 +85,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lg/f/a/b/a;
+    check-cast v1, Lg/f/a/a/a;
 
     .line 6
-    invoke-virtual {v1}, Lg/f/a/b/a;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Lg/f/a/a/a;->toString()Ljava/lang/String;
 
     move-result-object v1
 

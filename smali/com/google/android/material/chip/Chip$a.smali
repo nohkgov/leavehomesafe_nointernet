@@ -1,5 +1,5 @@
 .class Lcom/google/android/material/chip/Chip$a;
-.super Lg/f/a/f/x/f;
+.super Lg/f/a/d/x/f;
 .source "Chip.java"
 
 
@@ -25,7 +25,7 @@
     .line 1
     iput-object p1, p0, Lcom/google/android/material/chip/Chip$a;->a:Lcom/google/android/material/chip/Chip;
 
-    invoke-direct {p0}, Lg/f/a/f/x/f;-><init>()V
+    invoke-direct {p0}, Lg/f/a/d/x/f;-><init>()V
 
     return-void
 .end method

@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public a(Landroid/content/Intent;)Lg/f/a/e/m/l;
+.method public a(Landroid/content/Intent;)Lg/f/a/c/m/l;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Intent;",
             ")",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Ljava/lang/Void;",
             ">;"
         }
@@ -50,7 +50,7 @@
     iget-object v0, p0, Lcom/google/firebase/messaging/g$a;->a:Lcom/google/firebase/messaging/g;
 
     .line 1
-    invoke-static {v0, p1}, Lcom/google/firebase/messaging/g;->a(Lcom/google/firebase/messaging/g;Landroid/content/Intent;)Lg/f/a/e/m/l;
+    invoke-static {v0, p1}, Lcom/google/firebase/messaging/g;->a(Lcom/google/firebase/messaging/g;Landroid/content/Intent;)Lg/f/a/c/m/l;
 
     move-result-object p1
 

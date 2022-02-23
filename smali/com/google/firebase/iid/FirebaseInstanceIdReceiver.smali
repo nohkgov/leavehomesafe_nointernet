@@ -1,5 +1,5 @@
 .class public final Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;
-.super Lg/f/a/e/d/b;
+.super Lg/f/a/c/d/b;
 .source "com.google.firebase:firebase-messaging@@21.1.0"
 
 
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lg/f/a/e/d/b;-><init>()V
+    invoke-direct {p0}, Lg/f/a/c/d/b;-><init>()V
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method protected final b(Landroid/content/Context;Lg/f/a/e/d/a;)I
+.method protected final b(Landroid/content/Context;Lg/f/a/c/d/a;)I
     .locals 1
 
     :try_start_0
@@ -39,15 +39,15 @@
     .line 1
     invoke-direct {v0, p1}, Lcom/google/firebase/messaging/o;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p2}, Lg/f/a/e/d/a;->t()Landroid/content/Intent;
+    invoke-virtual {p2}, Lg/f/a/c/d/a;->t()Landroid/content/Intent;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/o;->g(Landroid/content/Intent;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/o;->g(Landroid/content/Intent;)Lg/f/a/c/m/l;
 
     move-result-object p1
 
-    invoke-static {p1}, Lg/f/a/e/m/o;->a(Lg/f/a/e/m/l;)Ljava/lang/Object;
+    invoke-static {p1}, Lg/f/a/c/m/o;->a(Lg/f/a/c/m/l;)Ljava/lang/Object;
 
     move-result-object p1
 

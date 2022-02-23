@@ -119,7 +119,7 @@
 
     move-result-object p4
 
-    sget p5, Lg/f/a/f/d;->mtrl_bottomappbar_fab_bottom_margin:I
+    sget p5, Lg/f/a/d/d;->mtrl_bottomappbar_fab_bottom_margin:I
 
     .line 11
     invoke-virtual {p4, p5}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I

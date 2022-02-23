@@ -3,7 +3,7 @@
 .source "WorkInitializer.java"
 
 # interfaces
-.implements Lg/f/a/c/i/y/b$a;
+.implements Lg/f/a/b/i/y/b$a;
 
 
 # instance fields
@@ -21,7 +21,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/q;)Lg/f/a/c/i/y/b$a;
+.method public static a(Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/q;)Lg/f/a/b/i/y/b$a;
     .locals 1
 
     new-instance v0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/p;

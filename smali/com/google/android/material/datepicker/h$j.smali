@@ -62,7 +62,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/datepicker/h$j;->c:Lcom/google/android/material/datepicker/n;
 
-    invoke-virtual {v1, p1}, Lcom/google/android/material/datepicker/n;->v(I)Lcom/google/android/material/datepicker/l;
+    invoke-virtual {v1, p1}, Lcom/google/android/material/datepicker/n;->A(I)Lcom/google/android/material/datepicker/l;
 
     move-result-object p1
 

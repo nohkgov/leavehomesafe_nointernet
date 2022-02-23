@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/content/Intent;)Lg/f/a/e/m/l;
+.method public abstract a(Landroid/content/Intent;)Lg/f/a/c/m/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Intent;",
             ")",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Ljava/lang/Void;",
             ">;"
         }

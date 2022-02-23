@@ -3,7 +3,7 @@
 .source "MLKitModule.java"
 
 # interfaces
-.implements Lg/f/a/e/m/g;
+.implements Lg/f/a/c/m/g;
 
 
 # annotations

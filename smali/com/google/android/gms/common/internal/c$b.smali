@@ -15,8 +15,8 @@
 
 
 # virtual methods
-.method public abstract onConnectionFailed(Lg/f/a/e/e/a;)V
-    .param p1    # Lg/f/a/e/e/a;
+.method public abstract onConnectionFailed(Lg/f/a/c/e/a;)V
+    .param p1    # Lg/f/a/c/e/a;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param

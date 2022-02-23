@@ -31,7 +31,7 @@
     iput-object p1, p0, Lcom/google/android/gms/common/internal/s;->a:Landroid/content/res/Resources;
 
     .line 4
-    sget v0, Lg/f/a/e/e/i;->common_google_play_services_unknown_issue:I
+    sget v0, Lg/f/a/c/e/i;->common_google_play_services_unknown_issue:I
 
     .line 5
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getResourcePackageName(I)Ljava/lang/String;

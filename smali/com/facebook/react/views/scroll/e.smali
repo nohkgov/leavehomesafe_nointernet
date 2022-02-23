@@ -926,7 +926,7 @@
     const-wide/16 v0, 0x14
 
     .line 8
-    invoke-static {p0, p1, v0, v1}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;J)V
+    invoke-static {p0, p1, v0, v1}, Ld/g/l/s;->f0(Landroid/view/View;Ljava/lang/Runnable;J)V
 
     return-void
 .end method
@@ -1565,7 +1565,7 @@
     invoke-virtual/range {v0 .. v10}, Landroid/widget/OverScroller;->fling(IIIIIIIIII)V
 
     .line 12
-    invoke-static {p0}, Ld/g/l/s;->c0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->d0(Landroid/view/View;)V
 
     goto :goto_0
 

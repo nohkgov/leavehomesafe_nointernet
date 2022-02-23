@@ -29,7 +29,7 @@
 
     const-string v0, "mData"
 
-    invoke-static {p2, v0}, Li/c/a/a;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Li/e/a/c;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/events/c;-><init>(I)V
@@ -70,7 +70,7 @@
 
     const-string v0, "rctEventEmitter"
 
-    invoke-static {p1, v0}, Li/c/a/a;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Li/e/a/c;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/facebook/react/uimanager/events/c;->i()I

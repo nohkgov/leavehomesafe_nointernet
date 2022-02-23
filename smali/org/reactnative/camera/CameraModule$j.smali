@@ -61,7 +61,7 @@
     check-cast p1, Lorg/reactnative/camera/d;
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/b/e;->p()Z
+    invoke-virtual {p1}, Lg/f/a/a/e;->p()Z
 
     move-result v0
 

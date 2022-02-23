@@ -11,11 +11,11 @@
 
 .field private final d:Landroid/content/Intent;
 
-.field private final e:Lg/f/a/e/m/m;
+.field private final e:Lg/f/a/c/m/m;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/firebase/messaging/g;Landroid/content/Intent;Lg/f/a/e/m/m;)V
+.method constructor <init>(Lcom/google/firebase/messaging/g;Landroid/content/Intent;Lg/f/a/c/m/m;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,7 +24,7 @@
 
     iput-object p2, p0, Lcom/google/firebase/messaging/d;->d:Landroid/content/Intent;
 
-    iput-object p3, p0, Lcom/google/firebase/messaging/d;->e:Lg/f/a/e/m/m;
+    iput-object p3, p0, Lcom/google/firebase/messaging/d;->e:Lg/f/a/c/m/m;
 
     return-void
 .end method
@@ -38,9 +38,9 @@
 
     iget-object v1, p0, Lcom/google/firebase/messaging/d;->d:Landroid/content/Intent;
 
-    iget-object v2, p0, Lcom/google/firebase/messaging/d;->e:Lg/f/a/e/m/m;
+    iget-object v2, p0, Lcom/google/firebase/messaging/d;->e:Lg/f/a/c/m/m;
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/firebase/messaging/g;->g(Landroid/content/Intent;Lg/f/a/e/m/m;)V
+    invoke-virtual {v0, v1, v2}, Lcom/google/firebase/messaging/g;->g(Landroid/content/Intent;Lg/f/a/c/m/m;)V
 
     return-void
 .end method

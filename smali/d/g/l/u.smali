@@ -49,7 +49,7 @@
     if-nez v0, :cond_3
 
     .line 6
-    invoke-static {p0}, Ld/g/l/s;->G(Landroid/view/View;)Ljava/lang/String;
+    invoke-static {p0}, Ld/g/l/s;->H(Landroid/view/View;)Ljava/lang/String;
 
     move-result-object p0
 

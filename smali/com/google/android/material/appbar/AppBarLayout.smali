@@ -87,7 +87,7 @@
     .locals 1
 
     .line 2
-    sget v0, Lg/f/a/f/b;->appBarLayoutStyle:I
+    sget v0, Lg/f/a/d/b;->appBarLayoutStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/appbar/AppBarLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -132,15 +132,15 @@
     invoke-static {p0}, Lcom/google/android/material/appbar/e;->a(Landroid/view/View;)V
 
     .line 11
-    sget v2, Lg/f/a/f/j;->Widget_Design_AppBarLayout:I
+    sget v2, Lg/f/a/d/j;->Widget_Design_AppBarLayout:I
 
     invoke-static {p0, p2, p3, v2}, Lcom/google/android/material/appbar/e;->c(Landroid/view/View;Landroid/util/AttributeSet;II)V
 
     .line 12
     :cond_0
-    sget-object v6, Lg/f/a/f/k;->AppBarLayout:[I
+    sget-object v6, Lg/f/a/d/k;->AppBarLayout:[I
 
-    sget v8, Lg/f/a/f/j;->Widget_Design_AppBarLayout:I
+    sget v8, Lg/f/a/d/j;->Widget_Design_AppBarLayout:I
 
     new-array v9, v1, [I
 
@@ -156,13 +156,13 @@
     move-result-object p2
 
     .line 14
-    sget p3, Lg/f/a/f/k;->AppBarLayout_android_background:I
+    sget p3, Lg/f/a/d/k;->AppBarLayout_android_background:I
 
     invoke-virtual {p2, p3}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p3
 
-    invoke-static {p0, p3}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p0, p3}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     .line 15
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getBackground()Landroid/graphics/drawable/Drawable;
@@ -181,9 +181,9 @@
     check-cast p3, Landroid/graphics/drawable/ColorDrawable;
 
     .line 17
-    new-instance v2, Lg/f/a/f/a0/g;
+    new-instance v2, Lg/f/a/d/a0/g;
 
-    invoke-direct {v2}, Lg/f/a/f/a0/g;-><init>()V
+    invoke-direct {v2}, Lg/f/a/d/a0/g;-><init>()V
 
     .line 18
     invoke-virtual {p3}, Landroid/graphics/drawable/ColorDrawable;->getColor()I
@@ -194,17 +194,17 @@
 
     move-result-object p3
 
-    invoke-virtual {v2, p3}, Lg/f/a/f/a0/g;->T(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v2, p3}, Lg/f/a/d/a0/g;->T(Landroid/content/res/ColorStateList;)V
 
     .line 19
-    invoke-virtual {v2, p1}, Lg/f/a/f/a0/g;->L(Landroid/content/Context;)V
+    invoke-virtual {v2, p1}, Lg/f/a/d/a0/g;->L(Landroid/content/Context;)V
 
     .line 20
-    invoke-static {p0, v2}, Ld/g/l/s;->o0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p0, v2}, Ld/g/l/s;->p0(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
     .line 21
     :cond_1
-    sget p1, Lg/f/a/f/k;->AppBarLayout_expanded:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_expanded:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
@@ -213,7 +213,7 @@
     if-eqz p1, :cond_2
 
     .line 22
-    sget p1, Lg/f/a/f/k;->AppBarLayout_expanded:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_expanded:I
 
     .line 23
     invoke-virtual {p2, p1, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -229,7 +229,7 @@
 
     if-lt p1, v3, :cond_3
 
-    sget p1, Lg/f/a/f/k;->AppBarLayout_elevation:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_elevation:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
@@ -238,7 +238,7 @@
     if-eqz p1, :cond_3
 
     .line 26
-    sget p1, Lg/f/a/f/k;->AppBarLayout_elevation:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_elevation:I
 
     .line 27
     invoke-virtual {p2, p1, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -259,7 +259,7 @@
     if-lt p1, p3, :cond_5
 
     .line 30
-    sget p1, Lg/f/a/f/k;->AppBarLayout_android_keyboardNavigationCluster:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_android_keyboardNavigationCluster:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
@@ -268,7 +268,7 @@
     if-eqz p1, :cond_4
 
     .line 31
-    sget p1, Lg/f/a/f/k;->AppBarLayout_android_keyboardNavigationCluster:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_android_keyboardNavigationCluster:I
 
     .line 32
     invoke-virtual {p2, p1, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -280,7 +280,7 @@
 
     .line 34
     :cond_4
-    sget p1, Lg/f/a/f/k;->AppBarLayout_android_touchscreenBlocksFocus:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_android_touchscreenBlocksFocus:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
@@ -289,7 +289,7 @@
     if-eqz p1, :cond_5
 
     .line 35
-    sget p1, Lg/f/a/f/k;->AppBarLayout_android_touchscreenBlocksFocus:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_android_touchscreenBlocksFocus:I
 
     .line 36
     invoke-virtual {p2, p1, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -301,7 +301,7 @@
 
     .line 38
     :cond_5
-    sget p1, Lg/f/a/f/k;->AppBarLayout_liftOnScroll:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_liftOnScroll:I
 
     invoke-virtual {p2, p1, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -310,7 +310,7 @@
     iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->n:Z
 
     .line 39
-    sget p1, Lg/f/a/f/k;->AppBarLayout_liftOnScrollTargetViewId:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_liftOnScrollTargetViewId:I
 
     .line 40
     invoke-virtual {p2, p1, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -320,7 +320,7 @@
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->o:I
 
     .line 41
-    sget p1, Lg/f/a/f/k;->AppBarLayout_statusBarForeground:I
+    sget p1, Lg/f/a/d/k;->AppBarLayout_statusBarForeground:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -336,7 +336,7 @@
 
     invoke-direct {p1, p0}, Lcom/google/android/material/appbar/AppBarLayout$a;-><init>(Lcom/google/android/material/appbar/AppBarLayout;)V
 
-    invoke-static {p0, p1}, Ld/g/l/s;->x0(Landroid/view/View;Ld/g/l/p;)V
+    invoke-static {p0, p1}, Ld/g/l/s;->y0(Landroid/view/View;Ld/g/l/p;)V
 
     return-void
 .end method
@@ -622,7 +622,7 @@
 
     if-eq v2, v3, :cond_0
 
-    invoke-static {v0}, Ld/g/l/s;->v(Landroid/view/View;)Z
+    invoke-static {v0}, Ld/g/l/s;->w(Landroid/view/View;)Z
 
     move-result v0
 
@@ -634,7 +634,7 @@
     return v1
 .end method
 
-.method private u(Lg/f/a/f/a0/g;Z)V
+.method private u(Lg/f/a/d/a0/g;Z)V
     .locals 3
 
     .line 1
@@ -642,7 +642,7 @@
 
     move-result-object v0
 
-    sget v1, Lg/f/a/f/d;->design_appbar_elevation:I
+    sget v1, Lg/f/a/d/d;->design_appbar_elevation:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -701,7 +701,7 @@
 
     move-result-object v0
 
-    sget v1, Lg/f/a/f/g;->app_bar_elevation_anim_duration:I
+    sget v1, Lg/f/a/d/g;->app_bar_elevation_anim_duration:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -715,7 +715,7 @@
     .line 7
     iget-object p2, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:Landroid/animation/ValueAnimator;
 
-    sget-object v0, Lg/f/a/f/l/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object v0, Lg/f/a/d/l/a;->a:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p2, v0}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -724,7 +724,7 @@
 
     new-instance v0, Lcom/google/android/material/appbar/AppBarLayout$b;
 
-    invoke-direct {v0, p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$b;-><init>(Lcom/google/android/material/appbar/AppBarLayout;Lg/f/a/f/a0/g;)V
+    invoke-direct {v0, p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$b;-><init>(Lcom/google/android/material/appbar/AppBarLayout;Lg/f/a/d/a0/g;)V
 
     invoke-virtual {p2, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -1056,7 +1056,7 @@
     if-eqz v4, :cond_1
 
     .line 8
-    invoke-static {v3}, Ld/g/l/s;->z(Landroid/view/View;)I
+    invoke-static {v3}, Ld/g/l/s;->A(Landroid/view/View;)I
 
     move-result v4
 
@@ -1071,7 +1071,7 @@
     if-eqz v4, :cond_2
 
     .line 9
-    invoke-static {v3}, Ld/g/l/s;->z(Landroid/view/View;)I
+    invoke-static {v3}, Ld/g/l/s;->A(Landroid/view/View;)I
 
     move-result v4
 
@@ -1086,7 +1086,7 @@
     if-nez v0, :cond_3
 
     .line 10
-    invoke-static {v3}, Ld/g/l/s;->v(Landroid/view/View;)Z
+    invoke-static {v3}, Ld/g/l/s;->w(Landroid/view/View;)Z
 
     move-result v3
 
@@ -1198,7 +1198,7 @@
     if-eqz v5, :cond_1
 
     .line 8
-    invoke-static {v4}, Ld/g/l/s;->z(Landroid/view/View;)I
+    invoke-static {v4}, Ld/g/l/s;->A(Landroid/view/View;)I
 
     move-result v0
 
@@ -1241,7 +1241,7 @@
     move-result v0
 
     .line 2
-    invoke-static {p0}, Ld/g/l/s;->z(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->A(Landroid/view/View;)I
 
     move-result v1
 
@@ -1271,7 +1271,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Ld/g/l/s;->z(Landroid/view/View;)I
+    invoke-static {v1}, Ld/g/l/s;->A(Landroid/view/View;)I
 
     move-result v1
 
@@ -1410,7 +1410,7 @@
     if-nez v2, :cond_1
 
     .line 8
-    invoke-static {v4}, Ld/g/l/s;->v(Landroid/view/View;)Z
+    invoke-static {v4}, Ld/g/l/s;->w(Landroid/view/View;)Z
 
     move-result v5
 
@@ -1429,7 +1429,7 @@
     if-eqz v5, :cond_2
 
     .line 10
-    invoke-static {v4}, Ld/g/l/s;->z(Landroid/view/View;)I
+    invoke-static {v4}, Ld/g/l/s;->A(Landroid/view/View;)I
 
     move-result v0
 
@@ -1509,7 +1509,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    invoke-static {p0}, Ld/g/l/s;->c0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->d0(Landroid/view/View;)V
 
     .line 4
     :cond_0
@@ -1554,7 +1554,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->v(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->w(Landroid/view/View;)Z
 
     move-result v0
 
@@ -1619,7 +1619,7 @@
     invoke-super {p0}, Landroid/widget/LinearLayout;->onAttachedToWindow()V
 
     .line 2
-    invoke-static {p0}, Lg/f/a/f/a0/h;->e(Landroid/view/View;)V
+    invoke-static {p0}, Lg/f/a/d/a0/h;->e(Landroid/view/View;)V
 
     return-void
 .end method
@@ -1659,12 +1659,12 @@
 
     if-eqz v2, :cond_1
 
-    sget v2, Lg/f/a/f/b;->state_liftable:I
+    sget v2, Lg/f/a/d/b;->state_liftable:I
 
     goto :goto_0
 
     :cond_1
-    sget v2, Lg/f/a/f/b;->state_liftable:I
+    sget v2, Lg/f/a/d/b;->state_liftable:I
 
     neg-int v2, v2
 
@@ -1682,12 +1682,12 @@
 
     if-eqz v2, :cond_2
 
-    sget v2, Lg/f/a/f/b;->state_lifted:I
+    sget v2, Lg/f/a/d/b;->state_lifted:I
 
     goto :goto_1
 
     :cond_2
-    sget v2, Lg/f/a/f/b;->state_lifted:I
+    sget v2, Lg/f/a/d/b;->state_lifted:I
 
     neg-int v2, v2
 
@@ -1701,12 +1701,12 @@
 
     if-eqz v2, :cond_3
 
-    sget v2, Lg/f/a/f/b;->state_collapsible:I
+    sget v2, Lg/f/a/d/b;->state_collapsible:I
 
     goto :goto_2
 
     :cond_3
-    sget v2, Lg/f/a/f/b;->state_collapsible:I
+    sget v2, Lg/f/a/d/b;->state_collapsible:I
 
     neg-int v2, v2
 
@@ -1724,12 +1724,12 @@
 
     if-eqz v2, :cond_4
 
-    sget v2, Lg/f/a/f/b;->state_collapsed:I
+    sget v2, Lg/f/a/d/b;->state_collapsed:I
 
     goto :goto_3
 
     :cond_4
-    sget v2, Lg/f/a/f/b;->state_collapsed:I
+    sget v2, Lg/f/a/d/b;->state_collapsed:I
 
     neg-int v2, v2
 
@@ -1763,7 +1763,7 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
     .line 2
-    invoke-static {p0}, Ld/g/l/s;->v(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->w(Landroid/view/View;)Z
 
     move-result p1
 
@@ -1797,7 +1797,7 @@
 
     move-result-object p4
 
-    invoke-static {p4, p1}, Ld/g/l/s;->X(Landroid/view/View;I)V
+    invoke-static {p4, p1}, Ld/g/l/s;->Y(Landroid/view/View;I)V
 
     add-int/lit8 p3, p3, -0x1
 
@@ -1915,7 +1915,7 @@
     if-eq p1, v0, :cond_2
 
     .line 3
-    invoke-static {p0}, Ld/g/l/s;->v(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->w(Landroid/view/View;)Z
 
     move-result v0
 
@@ -2012,7 +2012,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lg/f/a/f/a0/g;
+    instance-of v0, v0, Lg/f/a/d/a0/g;
 
     if-eqz v0, :cond_0
 
@@ -2021,9 +2021,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lg/f/a/f/a0/g;
+    check-cast v0, Lg/f/a/d/a0/g;
 
-    invoke-direct {p0, v0, p1}, Lcom/google/android/material/appbar/AppBarLayout;->u(Lg/f/a/f/a0/g;Z)V
+    invoke-direct {p0, v0, p1}, Lcom/google/android/material/appbar/AppBarLayout;->u(Lg/f/a/d/a0/g;Z)V
 
     :cond_0
     const/4 p1, 0x1
@@ -2088,7 +2088,7 @@
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->setElevation(F)V
 
     .line 2
-    invoke-static {p0, p1}, Lg/f/a/f/a0/h;->d(Landroid/view/View;F)V
+    invoke-static {p0, p1}, Lg/f/a/d/a0/h;->d(Landroid/view/View;F)V
 
     return-void
 .end method
@@ -2097,7 +2097,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result v0
 
@@ -2198,7 +2198,7 @@
     :cond_2
     iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Landroid/graphics/drawable/Drawable;
 
-    invoke-static {p0}, Ld/g/l/s;->y(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->z(Landroid/view/View;)I
 
     move-result v0
 
@@ -2235,7 +2235,7 @@
     invoke-direct {p0}, Lcom/google/android/material/appbar/AppBarLayout;->v()V
 
     .line 10
-    invoke-static {p0}, Ld/g/l/s;->c0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->d0(Landroid/view/View;)V
 
     :cond_5
     return-void

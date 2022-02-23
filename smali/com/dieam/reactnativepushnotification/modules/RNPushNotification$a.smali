@@ -3,7 +3,7 @@
 .source "RNPushNotification.java"
 
 # interfaces
-.implements Lg/f/a/e/m/f;
+.implements Lg/f/a/c/m/f;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lg/f/a/e/m/f<",
+        "Lg/f/a/c/m/f<",
         "Lcom/google/firebase/iid/l;",
         ">;"
     }
@@ -44,26 +44,26 @@
 
 
 # virtual methods
-.method public a(Lg/f/a/e/m/l;)V
+.method public a(Lg/f/a/c/m/l;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Lcom/google/firebase/iid/l;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->p()Z
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->p()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->k()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->k()Ljava/lang/Exception;
 
     move-result-object p1
 
@@ -82,7 +82,7 @@
     move-result-object v0
 
     .line 4
-    invoke-virtual {p1}, Lg/f/a/e/m/l;->l()Ljava/lang/Object;
+    invoke-virtual {p1}, Lg/f/a/c/m/l;->l()Ljava/lang/Object;
 
     move-result-object p1
 

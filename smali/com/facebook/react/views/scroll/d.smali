@@ -736,13 +736,13 @@
 
     move-result v4
 
-    invoke-static/range {p0 .. p0}, Ld/g/l/s;->D(Landroid/view/View;)I
+    invoke-static/range {p0 .. p0}, Ld/g/l/s;->E(Landroid/view/View;)I
 
     move-result v5
 
     sub-int/2addr v4, v5
 
-    invoke-static/range {p0 .. p0}, Ld/g/l/s;->C(Landroid/view/View;)I
+    invoke-static/range {p0 .. p0}, Ld/g/l/s;->D(Landroid/view/View;)I
 
     move-result v5
 
@@ -1205,7 +1205,7 @@
     const-wide/16 v0, 0x14
 
     .line 7
-    invoke-static {p0, p1, v0, v1}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;J)V
+    invoke-static {p0, p1, v0, v1}, Ld/g/l/s;->f0(Landroid/view/View;Ljava/lang/Runnable;J)V
 
     return-void
 .end method
@@ -1383,13 +1383,13 @@
 
     move-result v0
 
-    invoke-static {p0}, Ld/g/l/s;->D(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->E(Landroid/view/View;)I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    invoke-static {p0}, Ld/g/l/s;->C(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->D(Landroid/view/View;)I
 
     move-result v1
 
@@ -1852,13 +1852,13 @@
 
     move-result v0
 
-    invoke-static {p0}, Ld/g/l/s;->D(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->E(Landroid/view/View;)I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    invoke-static {p0}, Ld/g/l/s;->C(Landroid/view/View;)I
+    invoke-static {p0}, Ld/g/l/s;->D(Landroid/view/View;)I
 
     move-result v1
 
@@ -1903,7 +1903,7 @@
     invoke-virtual/range {v0 .. v10}, Landroid/widget/OverScroller;->fling(IIIIIIIIII)V
 
     .line 10
-    invoke-static {p0}, Ld/g/l/s;->c0(Landroid/view/View;)V
+    invoke-static {p0}, Ld/g/l/s;->d0(Landroid/view/View;)V
 
     goto :goto_0
 

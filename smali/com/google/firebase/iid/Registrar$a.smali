@@ -32,7 +32,7 @@
     return-void
 .end method
 
-.method static final synthetic d(Lg/f/a/e/m/l;)Ljava/lang/String;
+.method static final synthetic d(Lg/f/a/c/m/l;)Ljava/lang/String;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -41,7 +41,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lg/f/a/e/m/l;->l()Ljava/lang/Object;
+    invoke-virtual {p0}, Lg/f/a/c/m/l;->l()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -69,12 +69,12 @@
     return-object v0
 .end method
 
-.method public b()Lg/f/a/e/m/l;
+.method public b()Lg/f/a/c/m/l;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -90,7 +90,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {v0}, Lg/f/a/e/m/o;->f(Ljava/lang/Object;)Lg/f/a/e/m/l;
+    invoke-static {v0}, Lg/f/a/c/m/o;->f(Ljava/lang/Object;)Lg/f/a/c/m/l;
 
     move-result-object v0
 
@@ -100,14 +100,14 @@
     iget-object v0, p0, Lcom/google/firebase/iid/Registrar$a;->a:Lcom/google/firebase/iid/FirebaseInstanceId;
 
     .line 3
-    invoke-virtual {v0}, Lcom/google/firebase/iid/FirebaseInstanceId;->l()Lg/f/a/e/m/l;
+    invoke-virtual {v0}, Lcom/google/firebase/iid/FirebaseInstanceId;->l()Lg/f/a/c/m/l;
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/firebase/iid/q;->a:Lg/f/a/e/m/c;
+    sget-object v1, Lcom/google/firebase/iid/q;->a:Lg/f/a/c/m/c;
 
     .line 4
-    invoke-virtual {v0, v1}, Lg/f/a/e/m/l;->h(Lg/f/a/e/m/c;)Lg/f/a/e/m/l;
+    invoke-virtual {v0, v1}, Lg/f/a/c/m/l;->h(Lg/f/a/c/m/c;)Lg/f/a/c/m/l;
 
     move-result-object v0
 

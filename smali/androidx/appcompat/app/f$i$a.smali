@@ -85,7 +85,7 @@
 
     check-cast p1, Landroid/view/View;
 
-    invoke-static {p1}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p1}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     .line 6
     :cond_1
@@ -119,7 +119,7 @@
     .line 9
     iget-object p1, p1, Landroidx/appcompat/app/f;->x:Landroid/view/ViewGroup;
 
-    invoke-static {p1}, Ld/g/l/s;->i0(Landroid/view/View;)V
+    invoke-static {p1}, Ld/g/l/s;->j0(Landroid/view/View;)V
 
     return-void
 .end method

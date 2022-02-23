@@ -18,7 +18,7 @@
 # instance fields
 .field c:Landroid/os/Bundle;
 
-.field d:[Lg/f/a/e/e/c;
+.field d:[Lg/f/a/c/e/c;
 
 .field private e:I
 
@@ -46,7 +46,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Bundle;[Lg/f/a/e/e/c;ILcom/google/android/gms/common/internal/e;)V
+.method constructor <init>(Landroid/os/Bundle;[Lg/f/a/c/e/c;ILcom/google/android/gms/common/internal/e;)V
     .locals 0
 
     .line 1
@@ -56,7 +56,7 @@
     iput-object p1, p0, Lcom/google/android/gms/common/internal/j0;->c:Landroid/os/Bundle;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/j0;->d:[Lg/f/a/e/e/c;
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/j0;->d:[Lg/f/a/c/e/c;
 
     .line 4
     iput p3, p0, Lcom/google/android/gms/common/internal/j0;->e:I
@@ -84,7 +84,7 @@
     invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/t/c;->d(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/j0;->d:[Lg/f/a/e/e/c;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/j0;->d:[Lg/f/a/c/e/c;
 
     const/4 v2, 0x2
 

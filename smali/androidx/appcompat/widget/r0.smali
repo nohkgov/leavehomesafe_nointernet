@@ -257,7 +257,7 @@
     move v9, p3
 
     .line 21
-    invoke-static/range {v4 .. v10}, Ld/g/l/s;->j0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v4 .. v10}, Ld/g/l/s;->k0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 22
     sget v4, Ld/a/j;->SwitchCompat_android_thumb:I
@@ -3027,7 +3027,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p0}, Ld/g/l/s;->R(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->S(Landroid/view/View;)Z
 
     move-result v0
 

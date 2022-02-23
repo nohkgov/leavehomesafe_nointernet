@@ -952,7 +952,7 @@
     move/from16 v5, p2
 
     .line 6
-    invoke-static/range {v0 .. v6}, Ld/g/l/s;->j0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v0 .. v6}, Ld/g/l/s;->k0(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 7
     sget v0, Ld/a/j;->AppCompatTextHelper_android_textAppearance:I

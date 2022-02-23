@@ -60,5 +60,7 @@
     <string name="generic_error_no_keyguard">此设备不支持 PIN 码、解锁图案或密码。</string>
     <string name="generic_error_user_canceled">用户已取消身份验证。</string>
     <string name="search_menu_title">搜索</string>
+    <string name="shortcutCheckIn">扫描场所二维码</string>
+    <string name="shortcutVaccineRecord">电子针卡</string>
     <string name="status_bar_notification_info_overflow">999+</string>
 </resources>

@@ -74,7 +74,7 @@
     invoke-virtual {p2, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
     .line 3
-    invoke-interface {p0}, Landroid/support/v4/media/session/a;->M()V
+    invoke-interface {p0}, Landroid/support/v4/media/session/a;->L()V
 
     return v2
 
@@ -88,7 +88,7 @@
     move-result p1
 
     .line 6
-    invoke-interface {p0, p1}, Landroid/support/v4/media/session/a;->L(I)V
+    invoke-interface {p0, p1}, Landroid/support/v4/media/session/a;->K(I)V
 
     return v2
 
@@ -107,7 +107,7 @@
 
     .line 9
     :cond_0
-    invoke-interface {p0, v0}, Landroid/support/v4/media/session/a;->b0(Z)V
+    invoke-interface {p0, v0}, Landroid/support/v4/media/session/a;->a0(Z)V
 
     return v2
 
@@ -168,7 +168,7 @@
 
     .line 19
     :cond_2
-    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->k0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
+    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->j0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
 
     return v2
 
@@ -296,7 +296,7 @@
 
     .line 38
     :cond_6
-    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->g0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
+    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->f0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
 
     return v2
 
@@ -338,7 +338,7 @@
 
     .line 45
     :cond_7
-    invoke-interface {p0, p1, v3}, Landroid/support/v4/media/session/a;->h0(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-interface {p0, p1, v3}, Landroid/support/v4/media/session/a;->g0(Ljava/lang/String;Landroid/os/Bundle;)V
 
     return v2
 

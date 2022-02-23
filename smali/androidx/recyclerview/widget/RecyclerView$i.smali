@@ -31,3 +31,15 @@
 
     return-void
 .end method
+
+.method public b(II)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public c(II)V
+    .locals 0
+
+    return-void
+.end method

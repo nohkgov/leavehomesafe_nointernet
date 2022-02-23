@@ -452,7 +452,7 @@
     iput-object v2, v0, Lcom/google/android/material/appbar/a;->d:Ljava/lang/Runnable;
 
     .line 12
-    invoke-static {p2, v2}, Ld/g/l/s;->d0(Landroid/view/View;Ljava/lang/Runnable;)V
+    invoke-static {p2, v2}, Ld/g/l/s;->e0(Landroid/view/View;Ljava/lang/Runnable;)V
 
     const/4 v1, 0x1
 

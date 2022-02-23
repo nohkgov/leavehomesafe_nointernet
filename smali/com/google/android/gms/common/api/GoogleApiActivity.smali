@@ -172,13 +172,13 @@
 
     .line 6
     :cond_0
-    new-instance p2, Lg/f/a/e/e/a;
+    new-instance p2, Lg/f/a/c/e/a;
 
     const/16 v0, 0xd
 
     const/4 v1, 0x0
 
-    invoke-direct {p2, v0, v1}, Lg/f/a/e/e/a;-><init>(ILandroid/app/PendingIntent;)V
+    invoke-direct {p2, v0, v1}, Lg/f/a/c/e/a;-><init>(ILandroid/app/PendingIntent;)V
 
     .line 7
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
@@ -192,7 +192,7 @@
     move-result p3
 
     .line 8
-    invoke-virtual {p1, p2, p3}, Lcom/google/android/gms/common/api/internal/f;->m(Lg/f/a/e/e/a;I)V
+    invoke-virtual {p1, p2, p3}, Lcom/google/android/gms/common/api/internal/f;->m(Lg/f/a/c/e/a;I)V
 
     goto :goto_0
 
@@ -385,13 +385,13 @@
 
     move-result-object p1
 
-    new-instance v1, Lg/f/a/e/e/a;
+    new-instance v1, Lg/f/a/c/e/a;
 
     const/16 v2, 0x16
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, v2, v3}, Lg/f/a/e/e/a;-><init>(ILandroid/app/PendingIntent;)V
+    invoke-direct {v1, v2, v3}, Lg/f/a/c/e/a;-><init>(ILandroid/app/PendingIntent;)V
 
     .line 18
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
@@ -407,7 +407,7 @@
     move-result v2
 
     .line 19
-    invoke-virtual {p1, v1, v2}, Lcom/google/android/gms/common/api/internal/f;->m(Lg/f/a/e/e/a;I)V
+    invoke-virtual {p1, v1, v2}, Lcom/google/android/gms/common/api/internal/f;->m(Lg/f/a/c/e/a;I)V
 
     goto :goto_0
 
@@ -491,14 +491,14 @@
     move-result p1
 
     .line 27
-    invoke-static {}, Lg/f/a/e/e/d;->m()Lg/f/a/e/e/d;
+    invoke-static {}, Lg/f/a/c/e/d;->m()Lg/f/a/c/e/d;
 
     move-result-object v1
 
     const/4 v2, 0x2
 
     .line 28
-    invoke-virtual {v1, p0, p1, v2, p0}, Lg/f/a/e/e/d;->o(Landroid/app/Activity;IILandroid/content/DialogInterface$OnCancelListener;)Z
+    invoke-virtual {v1, p0, p1, v2, p0}, Lg/f/a/c/e/d;->o(Landroid/app/Activity;IILandroid/content/DialogInterface$OnCancelListener;)Z
 
     .line 29
     iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->c:I

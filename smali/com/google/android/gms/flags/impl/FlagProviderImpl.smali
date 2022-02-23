@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/flags/impl/FlagProviderImpl;
-.super Lg/f/a/e/g/f;
+.super Lg/f/a/c/g/f;
 
 
 # annotations
@@ -18,7 +18,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lg/f/a/e/g/f;-><init>()V
+    invoke-direct {p0}, Lg/f/a/c/g/f;-><init>()V
 
     const/4 v0, 0x0
 
@@ -144,11 +144,11 @@
     return-object p1
 .end method
 
-.method public init(Lg/f/a/e/f/a;)V
+.method public init(Lg/f/a/c/f/a;)V
     .locals 2
 
     .line 1
-    invoke-static {p1}, Lg/f/a/e/f/b;->n0(Lg/f/a/e/f/a;)Ljava/lang/Object;
+    invoke-static {p1}, Lg/f/a/c/f/b;->m0(Lg/f/a/c/f/a;)Ljava/lang/Object;
 
     move-result-object p1
 

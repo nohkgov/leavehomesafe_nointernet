@@ -89,13 +89,13 @@
     .line 2
     :cond_0
     :try_start_0
-    invoke-static {p0}, Lg/f/a/e/e/n/b;->a(Landroid/content/Context;)Lg/f/a/e/e/n/a;
+    invoke-static {p0}, Lg/f/a/c/e/n/b;->a(Landroid/content/Context;)Lg/f/a/c/e/n/a;
 
     move-result-object p0
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, p1, v2}, Lg/f/a/e/e/n/a;->c(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {p0, p1, v2}, Lg/f/a/c/e/n/a;->c(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
     move-result-object p0
     :try_end_0
@@ -280,7 +280,7 @@
 
     .line 2
     :cond_1
-    invoke-static {p0}, Lg/f/a/e/e/n/b;->a(Landroid/content/Context;)Lg/f/a/e/e/n/a;
+    invoke-static {p0}, Lg/f/a/c/e/n/b;->a(Landroid/content/Context;)Lg/f/a/c/e/n/a;
 
     move-result-object v1
 
@@ -291,7 +291,7 @@
 
     const-string v2, "android.permission.UPDATE_DEVICE_STATS"
 
-    invoke-virtual {v1, v2, p0}, Lg/f/a/e/e/n/a;->b(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v1, v2, p0}, Lg/f/a/c/e/n/a;->b(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p0
 

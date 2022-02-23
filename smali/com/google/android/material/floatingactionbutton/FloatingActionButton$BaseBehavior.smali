@@ -54,7 +54,7 @@
     invoke-direct {p0, p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
-    sget-object v0, Lg/f/a/f/k;->FloatingActionButton_Behavior_Layout:[I
+    sget-object v0, Lg/f/a/d/k;->FloatingActionButton_Behavior_Layout:[I
 
     .line 5
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -62,7 +62,7 @@
     move-result-object p1
 
     .line 6
-    sget p2, Lg/f/a/f/k;->FloatingActionButton_Behavior_Layout_behavior_autoHide:I
+    sget p2, Lg/f/a/d/k;->FloatingActionButton_Behavior_Layout_behavior_autoHide:I
 
     const/4 v0, 0x1
 
@@ -220,13 +220,13 @@
     if-eqz v4, :cond_4
 
     .line 12
-    invoke-static {p2, v4}, Ld/g/l/s;->X(Landroid/view/View;I)V
+    invoke-static {p2, v4}, Ld/g/l/s;->Y(Landroid/view/View;I)V
 
     :cond_4
     if-eqz v2, :cond_5
 
     .line 13
-    invoke-static {p2, v2}, Ld/g/l/s;->W(Landroid/view/View;I)V
+    invoke-static {p2, v2}, Ld/g/l/s;->X(Landroid/view/View;I)V
 
     :cond_5
     return-void

@@ -503,7 +503,7 @@
     if-lt v2, v3, :cond_1
 
     .line 4
-    invoke-static {p2, p3, p4}, Ld/g/l/s;->z0(Landroid/view/View;II)V
+    invoke-static {p2, p3, p4}, Ld/g/l/s;->A0(Landroid/view/View;II)V
 
     if-eqz v0, :cond_0
 

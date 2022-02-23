@@ -3,7 +3,7 @@
 .source "com.google.firebase:firebase-messaging@@21.1.0"
 
 # interfaces
-.implements Lg/f/a/e/m/h;
+.implements Lg/f/a/c/m/h;
 
 
 # instance fields

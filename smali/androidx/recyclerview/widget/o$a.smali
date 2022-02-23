@@ -1,6 +1,6 @@
 .class Landroidx/recyclerview/widget/o$a;
-.super Ljava/lang/Object;
-.source "ViewBoundsCheck.java"
+.super Landroidx/recyclerview/widget/RecyclerView$t;
+.source "SnapHelper.java"
 
 
 # annotations
@@ -9,210 +9,76 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
-    name = "a"
+    accessFlags = 0x0
+    name = null
 .end annotation
 
 
 # instance fields
-.field a:I
+.field a:Z
 
-.field b:I
-
-.field c:I
-
-.field d:I
-
-.field e:I
+.field final synthetic b:Landroidx/recyclerview/widget/o;
 
 
 # direct methods
-.method constructor <init>()V
-    .locals 1
+.method constructor <init>(Landroidx/recyclerview/widget/o;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Landroidx/recyclerview/widget/o$a;->b:Landroidx/recyclerview/widget/o;
 
-    const/4 v0, 0x0
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$t;-><init>()V
+
+    const/4 p1, 0x0
 
     .line 2
-    iput v0, p0, Landroidx/recyclerview/widget/o$a;->a:I
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/o$a;->a:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method a(I)V
-    .locals 1
+.method public a(Landroidx/recyclerview/widget/RecyclerView;I)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/o$a;->a:I
+    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$t;->a(Landroidx/recyclerview/widget/RecyclerView;I)V
 
-    or-int/2addr p1, v0
+    if-nez p2, :cond_0
 
-    iput p1, p0, Landroidx/recyclerview/widget/o$a;->a:I
+    .line 2
+    iget-boolean p1, p0, Landroidx/recyclerview/widget/o$a;->a:Z
 
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 3
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/o$a;->a:Z
+
+    .line 4
+    iget-object p1, p0, Landroidx/recyclerview/widget/o$a;->b:Landroidx/recyclerview/widget/o;
+
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/o;->l()V
+
+    :cond_0
     return-void
 .end method
 
-.method b()Z
-    .locals 4
-
-    .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/o$a;->a:I
-
-    and-int/lit8 v1, v0, 0x7
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
-
-    .line 2
-    iget v1, p0, Landroidx/recyclerview/widget/o$a;->d:I
-
-    iget v3, p0, Landroidx/recyclerview/widget/o$a;->b:I
-
-    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/o$a;->c(II)I
-
-    move-result v1
-
-    shl-int/2addr v1, v2
-
-    and-int/2addr v0, v1
-
-    if-nez v0, :cond_0
-
-    return v2
-
-    .line 3
-    :cond_0
-    iget v0, p0, Landroidx/recyclerview/widget/o$a;->a:I
-
-    and-int/lit8 v1, v0, 0x70
-
-    if-eqz v1, :cond_1
-
-    .line 4
-    iget v1, p0, Landroidx/recyclerview/widget/o$a;->d:I
-
-    iget v3, p0, Landroidx/recyclerview/widget/o$a;->c:I
-
-    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/o$a;->c(II)I
-
-    move-result v1
-
-    shl-int/lit8 v1, v1, 0x4
-
-    and-int/2addr v0, v1
-
-    if-nez v0, :cond_1
-
-    return v2
-
-    .line 5
-    :cond_1
-    iget v0, p0, Landroidx/recyclerview/widget/o$a;->a:I
-
-    and-int/lit16 v1, v0, 0x700
-
-    if-eqz v1, :cond_2
-
-    .line 6
-    iget v1, p0, Landroidx/recyclerview/widget/o$a;->e:I
-
-    iget v3, p0, Landroidx/recyclerview/widget/o$a;->b:I
-
-    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/o$a;->c(II)I
-
-    move-result v1
-
-    shl-int/lit8 v1, v1, 0x8
-
-    and-int/2addr v0, v1
-
-    if-nez v0, :cond_2
-
-    return v2
-
-    .line 7
-    :cond_2
-    iget v0, p0, Landroidx/recyclerview/widget/o$a;->a:I
-
-    and-int/lit16 v1, v0, 0x7000
-
-    if-eqz v1, :cond_3
-
-    .line 8
-    iget v1, p0, Landroidx/recyclerview/widget/o$a;->e:I
-
-    iget v3, p0, Landroidx/recyclerview/widget/o$a;->c:I
-
-    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/o$a;->c(II)I
-
-    move-result v1
-
-    shl-int/lit8 v1, v1, 0xc
-
-    and-int/2addr v0, v1
-
-    if-nez v0, :cond_3
-
-    return v2
-
-    :cond_3
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method c(II)I
+.method public b(Landroidx/recyclerview/widget/RecyclerView;II)V
     .locals 0
 
-    if-le p1, p2, :cond_0
+    if-nez p2, :cond_0
 
+    if-eqz p3, :cond_1
+
+    :cond_0
     const/4 p1, 0x1
 
-    return p1
-
-    :cond_0
-    if-ne p1, p2, :cond_1
-
-    const/4 p1, 0x2
-
-    return p1
+    .line 1
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/o$a;->a:Z
 
     :cond_1
-    const/4 p1, 0x4
-
-    return p1
-.end method
-
-.method d()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    iput v0, p0, Landroidx/recyclerview/widget/o$a;->a:I
-
-    return-void
-.end method
-
-.method e(IIII)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Landroidx/recyclerview/widget/o$a;->b:I
-
-    .line 2
-    iput p2, p0, Landroidx/recyclerview/widget/o$a;->c:I
-
-    .line 3
-    iput p3, p0, Landroidx/recyclerview/widget/o$a;->d:I
-
-    .line 4
-    iput p4, p0, Landroidx/recyclerview/widget/o$a;->e:I
-
     return-void
 .end method

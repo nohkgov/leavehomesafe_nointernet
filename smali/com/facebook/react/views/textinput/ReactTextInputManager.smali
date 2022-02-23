@@ -3212,7 +3212,7 @@
     invoke-virtual {v1, v3}, Lcom/facebook/react/bridge/WritableNativeMap;->putNull(Ljava/lang/String;)V
 
     .line 10
-    invoke-static {v2}, Ld/g/l/s;->D(Landroid/view/View;)I
+    invoke-static {v2}, Ld/g/l/s;->E(Landroid/view/View;)I
 
     move-result v3
 
@@ -3230,7 +3230,7 @@
     invoke-virtual {v1, v5, v3, v4}, Lcom/facebook/react/bridge/WritableNativeMap;->putDouble(Ljava/lang/String;D)V
 
     .line 12
-    invoke-static {v2}, Ld/g/l/s;->C(Landroid/view/View;)I
+    invoke-static {v2}, Ld/g/l/s;->D(Landroid/view/View;)I
 
     move-result v3
 

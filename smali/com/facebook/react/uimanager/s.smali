@@ -185,7 +185,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Ld/g/l/s;->K(Landroid/view/View;)Z
+    invoke-static {p0}, Ld/g/l/s;->L(Landroid/view/View;)Z
 
     move-result v0
 
@@ -224,7 +224,7 @@
 
     invoke-direct {v0}, Lcom/facebook/react/uimanager/s;-><init>()V
 
-    invoke-static {p0, v0}, Ld/g/l/s;->l0(Landroid/view/View;Ld/g/l/a;)V
+    invoke-static {p0, v0}, Ld/g/l/s;->m0(Landroid/view/View;Ld/g/l/a;)V
 
     :cond_1
     return-void

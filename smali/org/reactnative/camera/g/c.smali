@@ -10,7 +10,7 @@
         "Ljava/lang/Void;",
         "Ljava/lang/Void;",
         "Landroid/util/SparseArray<",
-        "Lg/f/a/e/n/d/a;",
+        "Lg/f/a/c/n/d/a;",
         ">;>;"
     }
 .end annotation
@@ -292,7 +292,7 @@
         value = {
             "(",
             "Landroid/util/SparseArray<",
-            "Lg/f/a/e/n/d/a;",
+            "Lg/f/a/c/n/d/a;",
             ">;)",
             "Lcom/facebook/react/bridge/WritableArray;"
         }
@@ -318,7 +318,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lg/f/a/e/n/d/a;
+    check-cast v2, Lg/f/a/c/n/d/a;
 
     .line 4
     invoke-static {}, Lcom/facebook/react/bridge/Arguments;->createMap()Lcom/facebook/react/bridge/WritableMap;
@@ -326,21 +326,21 @@
     move-result-object v3
 
     .line 5
-    iget-object v4, v2, Lg/f/a/e/n/d/a;->e:Ljava/lang/String;
+    iget-object v4, v2, Lg/f/a/c/n/d/a;->e:Ljava/lang/String;
 
     const-string v5, "data"
 
     invoke-interface {v3, v5, v4}, Lcom/facebook/react/bridge/WritableMap;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
-    iget-object v4, v2, Lg/f/a/e/n/d/a;->d:Ljava/lang/String;
+    iget-object v4, v2, Lg/f/a/c/n/d/a;->d:Ljava/lang/String;
 
     const-string v5, "rawData"
 
     invoke-interface {v3, v5, v4}, Lcom/facebook/react/bridge/WritableMap;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
-    iget v4, v2, Lg/f/a/e/n/d/a;->c:I
+    iget v4, v2, Lg/f/a/c/n/d/a;->c:I
 
     invoke-static {v4}, Lm/b/a/a;->a(I)Ljava/lang/String;
 
@@ -351,7 +351,7 @@
     invoke-interface {v3, v5, v4}, Lcom/facebook/react/bridge/WritableMap;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
-    invoke-virtual {v2}, Lg/f/a/e/n/d/a;->t()Landroid/graphics/Rect;
+    invoke-virtual {v2}, Lg/f/a/c/n/d/a;->t()Landroid/graphics/Rect;
 
     move-result-object v2
 
@@ -384,7 +384,7 @@
             "Ljava/lang/Void;",
             ")",
             "Landroid/util/SparseArray<",
-            "Lg/f/a/e/n/d/a;",
+            "Lg/f/a/c/n/d/a;",
             ">;"
         }
     .end annotation
@@ -448,7 +448,7 @@
         value = {
             "(",
             "Landroid/util/SparseArray<",
-            "Lg/f/a/e/n/d/a;",
+            "Lg/f/a/c/n/d/a;",
             ">;)V"
         }
     .end annotation

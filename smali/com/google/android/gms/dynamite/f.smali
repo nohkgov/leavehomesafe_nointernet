@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract A(Lg/f/a/e/f/a;Ljava/lang/String;Z)Lg/f/a/e/f/a;
+.method public abstract B(Lg/f/a/c/f/a;Ljava/lang/String;Z)I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract C(Lg/f/a/e/f/a;Ljava/lang/String;Z)I
+.method public abstract H(Lg/f/a/c/f/a;Ljava/lang/String;I)Lg/f/a/c/f/a;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,15 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract I(Lg/f/a/e/f/a;Ljava/lang/String;I)Lg/f/a/e/f/a;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract V(Lg/f/a/e/f/a;Ljava/lang/String;I)Lg/f/a/e/f/a;
+.method public abstract U(Lg/f/a/c/f/a;Ljava/lang/String;I)Lg/f/a/c/f/a;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -47,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract h(Lg/f/a/e/f/a;Ljava/lang/String;ILg/f/a/e/f/a;)Lg/f/a/e/f/a;
+.method public abstract h(Lg/f/a/c/f/a;Ljava/lang/String;ILg/f/a/c/f/a;)Lg/f/a/c/f/a;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -55,7 +47,15 @@
     .end annotation
 .end method
 
-.method public abstract n(Lg/f/a/e/f/a;Ljava/lang/String;Z)I
+.method public abstract n(Lg/f/a/c/f/a;Ljava/lang/String;Z)I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract z(Lg/f/a/c/f/a;Ljava/lang/String;Z)Lg/f/a/c/f/a;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

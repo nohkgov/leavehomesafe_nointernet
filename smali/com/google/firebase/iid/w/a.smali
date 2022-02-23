@@ -15,11 +15,11 @@
 .method public abstract a()Ljava/lang/String;
 .end method
 
-.method public abstract b()Lg/f/a/e/m/l;
+.method public abstract b()Lg/f/a/c/m/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lg/f/a/e/m/l<",
+            "Lg/f/a/c/m/l<",
             "Ljava/lang/String;",
             ">;"
         }

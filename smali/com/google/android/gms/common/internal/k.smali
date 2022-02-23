@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract O(ILandroid/os/IBinder;Lcom/google/android/gms/common/internal/j0;)V
+.method public abstract N(ILandroid/os/IBinder;Lcom/google/android/gms/common/internal/j0;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract c0(ILandroid/os/Bundle;)V
+.method public abstract b0(ILandroid/os/Bundle;)V
     .param p1    # I
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
@@ -39,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract j0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
+.method public abstract i0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
     .param p1    # I
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
